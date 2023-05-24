@@ -19,6 +19,8 @@ public class Hello {
         
         System.out.println("Success");
         System.out.println("Pull first. then, code. Commit and Push");
+        
+        System.out.println("example");
     }
     
 }
