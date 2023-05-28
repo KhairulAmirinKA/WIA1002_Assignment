@@ -39,6 +39,8 @@ public class JojoGUI extends Application{
         
         Scene scene= new Scene(pane,600,600);
         primaryStage.setScene(scene);
+        
+        primaryStage.setTitle("JojoLands");
         primaryStage.show();
     }//try
         
