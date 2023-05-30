@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MapController">
+   <children>
+      <Circle fill="#fafafa" layoutX="464.0" layoutY="142.0" radius="37.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="447.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="circle" wrappingWidth="92.67901611328125" />
+      <ImageView fitHeight="118.0" fitWidth="127.0" layoutX="69.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Picture1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="341.0" fitWidth="614.0" layoutX="-5.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Capture.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="92.0" layoutX="196.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Picture3.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

@@ -37,7 +37,7 @@ public class JojoGUI extends Application{
         
         MainMenuController mainMenuController= loader.getController();
         
-        Scene scene= new Scene(pane,600,600);
+        Scene scene= new Scene(pane,600,500);
         primaryStage.setScene(scene);
         
         primaryStage.setTitle("JojoLands");

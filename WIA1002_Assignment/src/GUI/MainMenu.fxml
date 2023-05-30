@@ -7,14 +7,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainMenuController">
+<Pane maxHeight="600" maxWidth="600" minHeight="495.0" minWidth="600" prefHeight="495.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainMenuController">
    <children>
       <Label layoutX="58.0" layoutY="36.0" prefHeight="139.0" prefWidth="160.0" text="JojoLands">
          <font>
             <Font name="Rockwell Condensed" size="49.0" />
          </font>
       </Label>
-      <Button layoutX="58.0" layoutY="166.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="115.0" text="Start">
+      <Button fx:id="start" onAction="#startButton" layoutX="58.0" layoutY="166.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="115.0" text="Start">
          <font>
             <Font size="30.0" />
          </font>
