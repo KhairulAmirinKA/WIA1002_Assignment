@@ -10,12 +10,12 @@
    <children>
       <Circle fill="#fafafa" layoutX="464.0" layoutY="142.0" radius="37.0" stroke="BLACK" strokeType="INSIDE" />
       <Text layoutX="447.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="circle" wrappingWidth="92.67901611328125" />
-      <ImageView fitHeight="118.0" fitWidth="127.0" layoutX="69.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="104.0" fitWidth="110.0" layoutX="47.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Picture1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="341.0" fitWidth="614.0" layoutX="-5.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="341.0" fitWidth="614.0" layoutX="-14.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Capture.PNG" />
          </image>
