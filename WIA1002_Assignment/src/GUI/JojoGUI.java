@@ -30,7 +30,7 @@ public class JojoGUI extends Application{
         
         try {
             
-         
+        //load main menu
         FXMLLoader loader= new FXMLLoader(getClass().getResource("MainMenu.fxml"));
         
         Pane pane= loader.load();
