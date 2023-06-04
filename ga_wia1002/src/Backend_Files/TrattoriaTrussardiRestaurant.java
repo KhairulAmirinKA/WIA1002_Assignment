@@ -4,7 +4,7 @@
 //queue, only one person is chosen in the next turn. Similarly, customers of unspecified
 //ages will be served last for each gender.
 //ym,ow,om,yw....   ow,yw,ow,yw.... unknown age
-package ga_wia1002;
+package Backend_Files;
 
 import java.util.ArrayList;
 import java.util.Collections;
