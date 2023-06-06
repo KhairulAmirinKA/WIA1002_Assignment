@@ -83,9 +83,11 @@ public class JOJOLandsRestaurant{
     }
 
     
-    //Khairul
+    //Khairul Q5
     public void viewSalesInfo() {
         double totalSales = 0.0;
+        
+         System.out.println("View Sales Info");
         
         System.out.println("+-------------------------------------+----------+-------------+");
         System.out.println("| Food                                | Quantity | Total Price |");
@@ -124,10 +126,11 @@ public class JOJOLandsRestaurant{
                 }
             }
         }
-    }
     
+    
+    // Calculate the price for the item based on your pricing logic
     private double calculatePrice(String item, int quantity) {
-        // Calculate the price for the item based on your pricing logic
+        
         // This is just a placeholder, you need to implement the actual calculation
         double price = 0.0;
         
@@ -141,3 +144,4 @@ public class JOJOLandsRestaurant{
         return price;
     }
 }
+

@@ -47,6 +47,7 @@ public class JOJOLandsRestaurantSimulation {
                         System.out.println("Jade Garden: ");
                         jadeGarden.viewWaitingList();
                         jadeGarden.displayOrderProcessingList();
+                        jadeGarden.viewSalesInfo();
                         break;
 
                     case "Cafe Deux Magots":
@@ -57,6 +58,7 @@ public class JOJOLandsRestaurantSimulation {
                         System.out.println("cafeDeuxMagots: ");
                         cafeDeuxMagots.viewWaitingList();
                         cafeDeuxMagots.displayOrderProcessingList();
+                        cafeDeuxMagots.viewSalesInfo();
                         break;
 
                     case "Trattoria Trussardi":
@@ -67,16 +69,18 @@ public class JOJOLandsRestaurantSimulation {
                         System.out.println("trattoriaTrussardi: ");
                         trattoriaTrussardi.viewWaitingList();
                         trattoriaTrussardi.displayOrderProcessingList();
+                        trattoriaTrussardi.viewSalesInfo();
                         break;
 
-                    case "Liberrio":
+                    case "Libeccio":
                         for (Customer customer : customers) {
                             libeccio.addCustomer(customer);
                         }
                         libeccio.processOrders();
                         System.out.println("libeccio: ");
                         libeccio.viewWaitingList();
-                        libeccio.displayOrderProcessingList();                  
+                        libeccio.displayOrderProcessingList();           
+                        libeccio.viewSalesInfo();
                         break;
 
                     case "Savage Garden":
@@ -86,7 +90,8 @@ public class JOJOLandsRestaurantSimulation {
                         savageGarden.processOrders();
                         System.out.println("savageGarden: ");
                         savageGarden.viewWaitingList();
-                        savageGarden.displayOrderProcessingList();                    
+                        savageGarden.displayOrderProcessingList();       
+                        savageGarden.viewSalesInfo();
                         break;
             }
 
