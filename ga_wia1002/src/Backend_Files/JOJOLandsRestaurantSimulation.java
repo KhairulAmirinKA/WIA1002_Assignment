@@ -22,7 +22,7 @@ public class JOJOLandsRestaurantSimulation {
             //generateCustomersFromCSV("residents.csv",numCustomers);会return customers的arraylist出来，比如5个顾客name，age，gender，order
             //所以最后会是List<Customer> customers = customers<Customers>(); return 的customers list的data全部会记录在这里
             //做一个叫customers的list出来，然后这个list里面的data（name,age,gender,order）会从generateCustomersFromCSV的这个fuction extract出来
-            List<Customer> customers = generateCustomersFromCSV("residents.csv",numCustomers,location);
+            List<Customer> customers = generateCustomersFromCSV("src/Backend_Files/residents.csv",numCustomers,location);
 
             //做一个selectedCustomers 的list出来，用来随机选72个里面哪几个进去吃东西
     //        List<Customer> selectedCustomers = selectRandomCustomers(customers);
