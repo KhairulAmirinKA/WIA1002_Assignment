@@ -1,13 +1,20 @@
-| 1  | Pannacotta Fugo        | 16  | Male   |Spaghetti alla Puttanesca ($15.00)             |
-| 2  | Lisa Lisa              | 50  | Female |Spaghetti alla Puttanesca ($15.00)             |
-| 3  | Mikitaka Hazekura      | 216 | Male   |Lamb Chops with Apple Sauce ($25.00)           |
-| 4  | Trish Una              | 15  | Female |Spaghetti alla Puttanesca ($15.00)             |
-| 5  | Guido Mista            | 18  | Male   |Creme caramel ($6.50)                          |
-| 6  | DIO                    | 121 | Male   |Creme caramel ($6.50)                          |
-| 7  | Rohan Kishibe          | 20  | Male   |Creme caramel ($6.50)                          |
-| 8  | Muhammad Avdol         | 29  | Male   |Lamb Chops with Apple Sauce ($25.00)           |
-| 9  | Jean Pierre Polnareff  | 24  | Male   |Spaghetti alla Puttanesca ($15.00)             |
-| 10 | Rikiel                 | 24  | Male   |Spaghetti alla Puttanesca ($15.00)             |
-| 11 | Enya the Hag           | -1  | Female |Creme caramel ($6.50)                          |
-| 12 | Terunosuke Miyamoto    | -1  | Male   |Lamb Chops with Apple Sauce ($25.00)           |
-| 13 | Ghiaccio               | -1  | Male   |Spaghetti alla Puttanesca ($15.00)             |
+| 1  | Hayato Kawajiri        | 11  | Male   |Spaghetti alla Puttanesca ($15.00)             |
+| 2  | Erina Pendleton        | 70  | Female |Lamb Chops with Apple Sauce ($25.00)           |
+| 3  | Cioccolata             | 34  | Male   |Spaghetti alla Puttanesca ($15.00)             |
+| 4  | Lisa Lisa              | 50  | Female |Spaghetti alla Puttanesca ($15.00)             |
+| 5  | Shigekiyo Yangu        | 14  | Male   |Caprese Salad ($10.00)                         |
+| 6  | Diavolo                | 33  | Male   |Creme caramel ($6.50)                          |
+| 7  | Giorno Giovanna        | 15  | Male   |Ghiaccio ($1.01)                               |
+| 8  | Narciso Anasui         | 25  | Male   |Caprese Salad ($10.00)                         |
+| 9  | Koichi Hirose          | 15  | Male   |Caprese Salad ($10.00)                         |
+| 10 | Donatello Versus       | 25  | Male   |Creme caramel ($6.50)                          |
+| 11 | Okuyasu Nijimura       | 15  | Male   |Spaghetti alla Puttanesca ($15.00)             |
+| 12 | Jean Pierre Polnareff  | 24  | Male   |Creme caramel ($6.50)                          |
+| 13 | Pannacotta Fugo        | 16  | Male   |Lamb Chops with Apple Sauce ($25.00)           |
+| 14 | Jonathan Joestar       | 20  | Male   |Caprese Salad ($10.00)                         |
+| 15 | Joseph Joestar         | 18  | Male   |Caprese Salad ($10.00)                         |
+| 16 | Guido Mista            | 18  | Male   |Lamb Chops with Apple Sauce ($25.00)           |
+| 17 | Toshikazu Hazamada     | 18  | Male   |Caprese Salad ($10.00)                         |
+| 18 | Keicho Nijimura        | 18  | Male   |Lamb Chops with Apple Sauce ($25.00)           |
+| 19 | Vanilla Ice            | -1  | Male   |Spaghetti alla Puttanesca ($15.00)             |
+| 20 | Carne                  | -1  | Male   |Caprese Salad ($10.00)                         |

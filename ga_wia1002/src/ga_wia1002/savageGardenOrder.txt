@@ -1,9 +1,7 @@
-| 1  | Mario Zucchero         | 24  | Male   |Joseph’s Tequila ($35.00)                      |
-| 2  | Secco                  | -1  | Male   |Kakyoin’s Cherry ($3.50)                       |
-| 3  | Enrico Pucci           | 39  | Male   |Giorno’s Donuts ($6.66)                        |
-| 4  | Hayato Kawajiri        | 11  | Male   |DIO’s Bread ($36.14)                           |
-| 5  | Anjuro Katagiri        | 34  | Male   |Abbacchio’s Tea ($1.00)                        |
-| 6  | Shigekiyo Yangu        | 14  | Male   |DIO’s Bread ($36.14)                           |
-| 7  | Bruno Bucciarati       | 20  | Male   |DIO’s Bread ($36.14)                           |
-| 8  | Iggy                   | -1  | Male   |Joseph’s Tequila ($35.00)                      |
-| 9  | Yoshikage Kira         | 33  | Male   |Abbacchio’s Tea ($1.00)                        |
+| 1  | Ermes Costello         | 21  | Female |Kakyoin’s Cherry ($3.50)                       |
+| 2  | Pesci                  | -1  | Male   |Joseph’s Tequila ($35.00)                      |
+| 3  | Toyohiro Kanedaichi    | -1  | Male   |Joseph’s Tequila ($35.00)                      |
+| 4  | Melone                 | -1  | Male   |Abbacchio’s Tea ($1.00)                        |
+| 5  | DIO                    | 121 | Male   |Abbacchio’s Tea ($1.00)                        |
+| 6  | Weather Report         | 39  | Male   |Kakyoin’s Cherry ($3.50)                       |
+| 7  | Tonio Trussardi        | 29  | Male   |Kakyoin’s Porridge ($4.44)                     |
