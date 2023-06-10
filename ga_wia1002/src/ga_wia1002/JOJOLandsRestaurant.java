@@ -139,7 +139,7 @@ public abstract class JOJOLandsRestaurant {
    
     public abstract void processOrders();
     
-    //store order
+    //store order to txt file
     public void storeOrder(String restaurant_name){
         
         try{
@@ -166,7 +166,7 @@ public abstract class JOJOLandsRestaurant {
         }
     }
     
-    //view sales
+    //view sales from txt file
     public void viewSales(String restaurant_name){
         
         //for hashmap
