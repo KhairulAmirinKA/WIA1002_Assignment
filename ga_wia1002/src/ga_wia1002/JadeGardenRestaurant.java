@@ -1,6 +1,5 @@
 package ga_wia1002;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
