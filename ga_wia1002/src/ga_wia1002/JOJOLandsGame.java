@@ -11,6 +11,8 @@ public class JOJOLandsGame {
     private JojolandLocation currentLocation;
     private int currentDay;
     private String day;
+    // Create restaurants
+    
 //    private static final String DB_URL = "jdbc:mysql://localhost:3306/game_database";
 //    private static final String DB_USERNAME = "your_username";
 //    private static final String DB_PASSWORD = "your_password";
@@ -18,47 +20,107 @@ public class JOJOLandsGame {
     // ...
     public JOJOLandsGame() {
         map = new JOJOLandsMap();
-        currentLocation = map.getLocation("Jade Garden"); //******************************need change back to "Town Hall"
-        currentDay = 42; // Initialize currentDay to 1//******************************need change back to 1
+        currentLocation = map.getLocation("Town Hall"); //
+        currentDay = 1; // Initialize currentDay to 1
         day = "Sunday";   // Initialize day1 as Sunday
     }
 
     public void start() {
+        showWaitingAndProcessingList showWP_List = new showWaitingAndProcessingList();
+        
         System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
         printCurrentLocation();
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("[1] Move to:");
-            for (JojolandLocation neighbor : currentLocation.getPaths().keySet()) {
-                System.out.print("[" + neighbor.getName().charAt(0) + "] " + neighbor.getName()+"\t\t");
-            }
-            System.out.println(" ");
-            System.out.println("[2] Advance to Next Day");
-            System.out.println("[3] Save Game");
-            System.out.println("[4] Exit");
-            System.out.print("Select: ");
-
-            String input = scanner.nextLine().trim();
-            if (input.equals("2")) {
-                advanceToNextDay();
-                calculateDay();
-                System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
-                printCurrentLocation();
-            } else if (input.equals("3")) {
-                saveGame();
-                System.out.println("Game saved.");
-            } else if (input.equals("4")) {
-                System.out.println("Exiting JOJOLands game. Goodbye!");
-                break;
-            } else {
-                JojolandLocation destination = findDestination(input);
-                if (destination != null) {
-                    moveToLocation(destination);
-                    printCurrentLocation();
-                } else {
-                    System.out.println("Invalid input. Please try again.");
+            //at Town Hall
+            if(currentLocation.getName().equals("Town Hall")){
+                System.out.println("[1] Move to:");
+                for (JojolandLocation neighbor : currentLocation.getPaths().keySet()) {
+                    System.out.print("[" + neighbor.getName().charAt(0) + "] " + neighbor.getName()+"\t\t");
                 }
+                System.out.println(" ");
+            
+                System.out.println("[2] Advance to Next Day");
+                System.out.println("[3] Save Game");
+                System.out.println("[4] Exit");
+                System.out.print("Select: ");
+
+                String input = scanner.nextLine().trim();
+                if (input.equals("2")) {
+                    advanceToNextDay();
+                    calculateDay();
+                    System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
+                    printCurrentLocation();
+                } else if (input.equals("3")) {
+                    saveGame();
+                    System.out.println("Game saved.");
+                } else if (input.equals("4")) {
+                    System.out.println("Exiting JOJOLands game. Goodbye!");
+                    break;
+                } else {
+                    JojolandLocation destination = findDestination(input);
+                    if (destination != null) {
+                        moveToLocation(destination);
+                        printCurrentLocation();
+                    } else {
+                        System.out.println("Invalid input. Please try again.");
+                    }
+                }
+            }
+            
+            
+            //at restaurants
+            if (currentLocation.getName().equals("Savage Garden") || currentLocation.getName().equals("Cafe Deux Magots") || 
+                currentLocation.getName().equals("Jade Garden")|| currentLocation.getName().equals("Trattoria Trussardi") || 
+                currentLocation.getName().equals("Liberrio")) {
+                
+                //print all the instruction you can choose
+                System.out.println("[1] Move to:");
+                for (JojolandLocation neighbor : currentLocation.getPaths().keySet()) {
+                    System.out.print("[" + neighbor.getName().charAt(0) + "] " + neighbor.getName()+"\t\t");
+                }
+                
+                System.out.println(" ");
+                System.out.println("[2] View Waiting List and Order Processing List");       
+                System.out.println("[3] View Menu");
+                System.out.println("[4] View Sales Information");
+                System.out.println("[5] Milagro Man");
+                System.out.println("[6] Back ("+")"); //previous location
+                System.out.println("[7] Back to Town Hall");
+                
+                //receive input
+                System.out.print("Select: ");
+                String input = scanner.nextLine().trim();   
+                
+                if (input.equals("2")) {
+                    showWP_List.displayWaitingAndProcessingList(currentDay,currentLocation.getName());
+                } else if (input.equals("3")) {
+                    //View Menu
+                    
+                } else if (input.equals("4")) {
+                   //view  Sales information
+                   
+                } else if(input.equals("5")){
+                    //[5] Milagro Man
+                    
+                }else if(input.equals("6")){
+                    //[6] back to previous location
+                    
+                }else if(input.equals("7")){
+                    currentLocation = map.getLocation("Town Hall");
+                }
+                
+                
+                else{
+                    JojolandLocation destination = findDestination(input);
+                    if (destination != null) {
+                        moveToLocation(destination);
+                        printCurrentLocation();
+                    } else {
+                        System.out.println("Invalid input. Please try again.");
+                    }
+                }  
             }
         }
     }
