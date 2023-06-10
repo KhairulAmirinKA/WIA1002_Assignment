@@ -1,0 +1,10 @@
+| 1  | George Joestar II      | 32  | Male   |Deep-fried Hiroshima Oysters ($17.00)          |
+| 2  | Weather Report         | 39  | Male   |Poached Tofu with Dried Shrimps ($12.00)       |
+| 3  | Muhammad Avdol         | 29  | Male   |Deep-fried Hiroshima Oysters ($17.00)          |
+| 4  | Foo Fighters           | 22  | Female |Deep-fried Hiroshima Oysters ($17.00)          |
+| 5  | Reimi Sugimoto         | 16  | Female |Braised Goose Web with Vermicelli ($21.00)     |
+| 6  | Formaggio              | -1  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
+| 7  | Shigekiyo Yangu        | 14  | Male   |Deep-fried Hiroshima Oysters ($17.00)          |
+| 8  | Leone Abbacchio        | 21  | Male   |Poached Tofu with Dried Shrimps ($12.00)       |
+| 9  | Tamami Kobayashi       | 20  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
+| 10 | Ken Oyanagi            | 11  | Male   |Scrambled Egg White with Milk ($10.00)         |

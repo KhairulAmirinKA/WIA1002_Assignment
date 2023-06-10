@@ -84,6 +84,7 @@ System.out.println("Jade Garden:");
 jadeGarden.viewWaitingList();
 jadeGarden.processOrders();
 jadeGarden.displayOrderProcessingList();
+jadeGarden.storeOrder();
 
 System.out.println("Cafe Deux Magots:");
 cafeDeuxMagots.viewWaitingList();
