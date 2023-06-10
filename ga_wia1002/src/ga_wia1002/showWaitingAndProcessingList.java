@@ -79,31 +79,41 @@ public class showWaitingAndProcessingList {
                 if (location.equals("Savage Garden")){
                     savageGarden.viewWaitingList();
                     savageGarden.processOrders();
-                    savageGarden.displayOrderProcessingList();             
+                    savageGarden.displayOrderProcessingList();     
+                    savageGarden.storeOrder("savageGarden");
+                    savageGarden.viewSales("savageGarden");
                 }
 
                 else if(location.equals("Cafe Deux Magots")){
                     cafeDeuxMagots.viewWaitingList();
                     cafeDeuxMagots.processOrders();
-                    cafeDeuxMagots.displayOrderProcessingList();               
+                    cafeDeuxMagots.displayOrderProcessingList(); 
+                    cafeDeuxMagots.storeOrder("cafeDeuxMagots");
+                    cafeDeuxMagots.viewSales("cafeDeuxMagots");
                 }
 
                 else if(location.equals("Jade Garden")){
                     jadeGarden.viewWaitingList();
                     jadeGarden.processOrders();
                     jadeGarden.displayOrderProcessingList();
+                    jadeGarden.storeOrder("jadeGarden");
+                    jadeGarden.viewSales("jadeGarden");
                 }
 
                 else if(location.equals("Trattoria Trussardi")){
                     trattoriaTrussardi.viewWaitingList();
                     trattoriaTrussardi.processOrders();
-                    trattoriaTrussardi.displayOrderProcessingList();                
+                    trattoriaTrussardi.displayOrderProcessingList();  
+                    trattoriaTrussardi.storeOrder("trattoriaTrussardi");
+                    trattoriaTrussardi.viewSales("trattoriaTrussardi");
                 }    
 
                 else if(location.equals("Libeccio")){
                     libeccio.viewWaitingList();
                     libeccio.processOrders();
-                    libeccio.displayOrderProcessingList();                
+                    libeccio.displayOrderProcessingList();
+                    libeccio.storeOrder("libeccio");
+                    libeccio.viewSales("libeccio");
                 }
 
                 System.out.println("====================================================================================================");
