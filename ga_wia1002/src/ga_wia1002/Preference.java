@@ -20,6 +20,7 @@ public class Preference {
     private Restaurant JotaroRestaurant = null;
     private List<Restaurant> JonathanFoodList = new ArrayList<>();
     private List<Restaurant> JosephFoodList = new ArrayList<>();
+    
 // Reset trattoriaFrequency at the start of each week
 
     public Preference() {
@@ -148,8 +149,49 @@ public class Preference {
 
         return null;
     }
+    
+    private void viewResidentProfile(String selectedResidentName) {
+      StandManager standManager = new StandManager();   //read stands.csv and residents.csv
+      standManager.loadStands("stands.csv");
+      ResidentManager residentManager = new ResidentManager();
+      residentManager.loadResidents("residents.csv", "stands.csv");
+      List<Resident> residents = residentManager.getResidents(); // Get the populated list of residents
+      System.out.println("====================================================================================");
+      System.out.println(selectedResidentName+"'s Profile:");
+      System.out.println("Name                  : " + selectedResidentName);
 
+      // Search for the resident with the matching name
+      Resident selectedResident = null;
+      for (Resident resident : residents) {
+          if (resident.getName().equals(selectedResidentName)) {
+              selectedResident = resident;
+              break;
+          }
+      }
 
+      if (selectedResident != null) {   //found the resident in residents list(csv file)
+          System.out.println("Age                   : "+selectedResident.getAge());
+          System.out.println("Gender                : " + selectedResident.getGender());
+          System.out.print("Parents               : "+selectedResident.getParents());
+
+          System.out.println();
+          Stand stand = standManager.getStandByUser(selectedResident.getName());
+          if (stand != null) {
+              System.out.println("Stand                 : " + stand.getName());
+              System.out.println("Destructive Power     : " + stand.getDestructivePower());
+              System.out.println("Speed                 : " + stand.getSpeed());
+              System.out.println("Range                 : " + stand.getRange());
+              System.out.println("Stamina               : " + stand.getStamina());
+              System.out.println("Precision             : " + stand.getPrecision());
+              System.out.println("Development Potential : " + stand.getDevelopmentPotential());
+          } else {
+              System.out.println("Stand information not available.");
+          }
+      } else {
+          System.out.println("Resident not found.");
+      }
+  }
+    
     public List<Resident> extractLastOrdersAndRestaurants() {
         List<Resident> extractedResidents = new ArrayList<>();
         initializeRestaurant();
@@ -311,21 +353,23 @@ public class Preference {
         addRestaurant(savageGarden);
     }
 
-    public void printOrderHistory() {
+    public void printOrderHistory(String residentName) {
         for (Resident resident : residents) {
-            if (resident.getName().equals("Jotaro Kujo")||resident.getName().equals("Giorno Giovanna")||resident.getName().equals("Jolyne Cujoh")||
-                    resident.getName().equals("Josuke Higashikata")||resident.getName().equals("Jonathan Joestar")||resident.getName().equals("Joseph Joestar")){
-            System.out.println("====================================================================================");
-            System.out.println("Order History for " + resident.getName());
-            System.out.println("+-----+------------------------------------------------+---------------------+");
-            System.out.println("| Day | Food                                           | Restaurant          |");
-            System.out.println("+-----+------------------------------------------------+---------------------+");
-            for (String order : resident.getOrderHistory()) {
-                System.out.println(order);
-            }
-            System.out.println("====================================================================================");
-            System.out.println();
-        }}
+            if (resident.getName().equals(residentName)){
+                System.out.println(" ");
+                System.out.println("====================================================================================");
+                System.out.println("\nOrder History for " + resident.getName());
+                System.out.println("+-----+------------------------------------------------+---------------------+");
+                System.out.println("| Day | Food                                           | Restaurant          |");
+                System.out.println("+-----+------------------------------------------------+---------------------+");
+                for (String order : resident.getOrderHistory()) {
+                    System.out.println(order);
+                }
+                System.out.println("+-----+------------------------------------------------+---------------------+");
+                System.out.println();
+                System.out.println("====================================================================================");
+                
+            }}
     }
 
     public void getResidents() {
@@ -361,23 +405,23 @@ public class Preference {
             return;
         }
     }
-
-    public void getPreference() {
-        initializeRestaurant();
-        getResidents();
-
-        // Generate food orders
-        generateFoodOrders();
-
-        // Print the order history for each resident
-        printOrderHistory();
-
+    public void printResidentProfile(String residentName){
+            // Generate food orders--important,else will not generate orderHistory
+            initializeRestaurant();
+            getResidents();
+            generateFoodOrders();   //must below initializeRestaurant and getResidents
+            
+            //print profile and orderHistory
+            viewResidentProfile(residentName);
+            printOrderHistory(residentName);
     }
-
 
     public static void main(String[] args) {
         Preference generator = new Preference();
-        generator.getPreference();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the resident’s name: ");
+        String residentName =sc.nextLine();
+        generator.printResidentProfile(residentName);
 
     }
 }
