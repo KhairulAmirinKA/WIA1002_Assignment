@@ -1,14 +1,16 @@
-| 1  | George Joestar II      | 32  | Male   |Scrambled Egg White with Milk ($10.00)         |
-| 2  | Squalo                 | -1  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
-| 3  | Holy Kujo              | 45  | Female |Braised Chicken in Black Bean Sauce ($15.00)   |
-| 4  | Secco                  | -1  | Male   |Scrambled Egg White with Milk ($10.00)         |
-| 5  | Jonathan Joestar       | 20  | Male   |Deep-fried Hiroshima Oysters ($17.00)          |
-| 6  | Formaggio              | -1  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
-| 7  | Suzi Q.                | -1  | Female |Scrambled Egg White with Milk ($10.00)         |
-| 8  | Carne                  | -1  | Male   |Scrambled Egg White with Milk ($10.00)         |
-| 9  | Muhammad Avdol         | 29  | Male   |Poached Tofu with Dried Shrimps ($12.00)       |
-| 10 | Leone Abbacchio        | 21  | Male   |Scrambled Egg White with Milk ($10.00)         |
-| 11 | Enya the Hag           | -1  | Female |Deep-fried Hiroshima Oysters ($17.00)          |
-| 12 | Yuya Fungami           | -1  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
-| 13 | Mikitaka Hazekura      | 216 | Male   |Deep-fried Hiroshima Oysters ($17.00)          |
-| 14 | Toshikazu Hazamada     | 18  | Male   |Braised Goose Web with Vermicelli ($21.00)     |
+| 1  | Noriaki Kakyoin        | 17  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
+| 2  | Weather Report         | 39  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
+| 3  | Donatello Versus       | 25  | Male   |Braised Goose Web with Vermicelli ($21.00)     |
+| 4  | Ermes Costello         | 21  | Female |Scrambled Egg White with Milk ($10.00)         |
+| 5  | Ungalo                 | 24  | Male   |Scrambled Egg White with Milk ($10.00)         |
+| 6  | Sale                   | -1  | Male   |Braised Goose Web with Vermicelli ($21.00)     |
+| 7  | Tamami Kobayashi       | 20  | Male   |Deep-fried Hiroshima Oysters ($17.00)          |
+| 8  | Risotto Nero           | 28  | Male   |Scrambled Egg White with Milk ($10.00)         |
+| 9  | Tonio Trussardi        | 29  | Male   |Scrambled Egg White with Milk ($10.00)         |
+| 10 | Pesci                  | -1  | Male   |Poached Tofu with Dried Shrimps ($12.00)       |
+| 11 | Ken Oyanagi            | 11  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
+| 12 | Melone                 | -1  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
+| 13 | Toyohiro Kanedaichi    | -1  | Male   |Braised Goose Web with Vermicelli ($21.00)     |
+| 14 | Diavolo                | 33  | Male   |Scrambled Egg White with Milk ($10.00)         |
+| 15 | Carne                  | -1  | Male   |Scrambled Egg White with Milk ($10.00)         |
+| 16 | Cioccolata             | 34  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |

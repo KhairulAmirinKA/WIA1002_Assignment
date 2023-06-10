@@ -140,23 +140,23 @@ public abstract class JOJOLandsRestaurant {
     public abstract void processOrders();
     
     //store order
-    public void storeOrder(){
+    public void storeOrder(String restaurant_name){
+        
         try{
           //location
-          String filePath="src\\ga_wia1002\\"+"jadeGarden"+"Order.txt";
+          String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
           
     PrintWriter writer= new PrintWriter(new FileOutputStream(filePath));
     
         for (int i = 0; i < orderProcessingList.size(); i++) {
             Resident customer = orderProcessingList.get(i);
             
-            //store
+            //store data to txt file
             writer.printf("| %-2d | %-22s | %-3d | %-6s |%-46s |%n", i + 1, customer.getName(), customer.getAge(),
                     customer.getGender(),customer.getOrder());
         }
         
         writer.close();
-        
         
       
         }
@@ -167,12 +167,44 @@ public abstract class JOJOLandsRestaurant {
     }
     
     //view sales
-    public void viewSales(){
+    public void viewSales(String restaurant_name){
         
-     try{
+        //for hashmap
+        HashMap<String, Double> restaurantPrice= new HashMap<>();
+        
+        //choose hashmap
+        switch (restaurant_name){
+            
+            case "jadeGarden":
+                restaurantPrice= jadeGarden_Price;
+                break;
+                
+            case "trattoriaTrussardi":
+                restaurantPrice= trattoriaTrussardi_Price;
+                break;
+                
+            case "savageGarden":
+                restaurantPrice= savageGarden_Price;
+                break;
+                
+            case "cafeDeuxMagots":
+                 restaurantPrice= cafeDeuxMagots_Price;
+                break;
+                
+                
+            case "libeccio":
+                 restaurantPrice= libeccio_Price;
+                break;
+        }//switch
+        
+        
+        //read file
+         try{
+             
          //location
-          String filePath="src\\ga_wia1002\\"+"jadeGarden"+"Order.txt";
+          String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
           
+          //read
          Scanner sc= new Scanner(new FileInputStream(filePath));
          
          //map to store the quantity of food
@@ -192,28 +224,34 @@ public abstract class JOJOLandsRestaurant {
                     
                     //calculate the quantity of each food
                     foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
-                    double price = jadeGarden_Price.getOrDefault(foodName, 0.00);
                     
-
-                   
-                   
+                    //get the price of food
+                    double price = restaurantPrice.getOrDefault(foodName, 0.00);
+                      
                 }//if
             }//while
          
          
+         //display food, quantity and price
          System.out.printf("%-48s| %-8s| %-9s\n","|Food", "Quantity", "Price|");
          System.out.println("+-------------------------------------+----------+-------------------+");
          
          //calc total sales
          double totalSales=0; 
+         
          // Displaying the food quantity
         for (String food : foodQuantityMap.keySet()) {
             
-            int quantity = foodQuantityMap.get(food);
+            //get quantity
+            int quantity = foodQuantityMap.getOrDefault(food,0);
             
-            double price = quantity * jadeGarden_Price.get(food);
+            //calculate price. quantity x price per unit  
+            double price = quantity * restaurantPrice.getOrDefault(food,0.0);
+            
+            //calc total sales
             totalSales+= price;
             
+            //display food, quantity and price
             System.out.printf("| %-45s | %-8d | $%-6.2f|%n", food, quantity, price);
            
            

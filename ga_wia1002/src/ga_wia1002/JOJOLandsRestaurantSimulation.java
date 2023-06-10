@@ -14,7 +14,7 @@ public class JOJOLandsRestaurantSimulation {
         String location = "Jade Garden";
 
         if (location.equals("Savage Garden") || location.equals("Cafe Deux Magots") || location.equals("Jade Garden")
-                || location.equals("Trattoria Trussardi") || location.equals("Liberrio")) {
+                || location.equals("Trattoria Trussardi") || location.equals("Libeccio")) {
             if (instruction == 2) { // View Waiting List and Order Processing List
                 System.out.println("====================================================================================================");
                 System.out.println("Restaurant: " + location + "\n");
@@ -84,29 +84,36 @@ System.out.println("Jade Garden:");
 jadeGarden.viewWaitingList();
 jadeGarden.processOrders();
 jadeGarden.displayOrderProcessingList();
-jadeGarden.storeOrder();
-jadeGarden.viewSales();
+jadeGarden.storeOrder("jadeGarden");
+jadeGarden.viewSales("jadeGarden");
 
 System.out.println("Cafe Deux Magots:");
 cafeDeuxMagots.viewWaitingList();
 cafeDeuxMagots.processOrders();
 cafeDeuxMagots.displayOrderProcessingList();
+cafeDeuxMagots.storeOrder("cafeDeuxMagots");
+cafeDeuxMagots.viewSales("cafeDeuxMagots");
 
 System.out.println("Trattoria Trussardi:");
 trattoriaTrussardi.viewWaitingList();
 trattoriaTrussardi.processOrders();
 trattoriaTrussardi.displayOrderProcessingList();
+trattoriaTrussardi.storeOrder("trattoriaTrussardi");
+trattoriaTrussardi.viewSales("trattoriaTrussardi");
 
-System.out.println("Liberrio:");
+System.out.println("Libeccio:");
 libeccio.viewWaitingList();
 libeccio.processOrders();
 libeccio.displayOrderProcessingList();
+libeccio.storeOrder("libeccio");
+libeccio.viewSales("libeccio");
 
 System.out.println("Savage Garden:");
 savageGarden.viewWaitingList();
 savageGarden.processOrders();
-
 savageGarden.displayOrderProcessingList();
+savageGarden.storeOrder("savageGarden");
+savageGarden.viewSales("savageGarden");
             }
 
                 System.out.println("====================================================================================================");

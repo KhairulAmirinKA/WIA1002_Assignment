@@ -1,0 +1,13 @@
+| 1  | Pannacotta Fugo        | 16  | Male   |Spaghetti alla Puttanesca ($15.00)             |
+| 2  | Lisa Lisa              | 50  | Female |Spaghetti alla Puttanesca ($15.00)             |
+| 3  | Mikitaka Hazekura      | 216 | Male   |Lamb Chops with Apple Sauce ($25.00)           |
+| 4  | Trish Una              | 15  | Female |Spaghetti alla Puttanesca ($15.00)             |
+| 5  | Guido Mista            | 18  | Male   |Creme caramel ($6.50)                          |
+| 6  | DIO                    | 121 | Male   |Creme caramel ($6.50)                          |
+| 7  | Rohan Kishibe          | 20  | Male   |Creme caramel ($6.50)                          |
+| 8  | Muhammad Avdol         | 29  | Male   |Lamb Chops with Apple Sauce ($25.00)           |
+| 9  | Jean Pierre Polnareff  | 24  | Male   |Spaghetti alla Puttanesca ($15.00)             |
+| 10 | Rikiel                 | 24  | Male   |Spaghetti alla Puttanesca ($15.00)             |
+| 11 | Enya the Hag           | -1  | Female |Creme caramel ($6.50)                          |
+| 12 | Terunosuke Miyamoto    | -1  | Male   |Lamb Chops with Apple Sauce ($25.00)           |
+| 13 | Ghiaccio               | -1  | Male   |Spaghetti alla Puttanesca ($15.00)             |

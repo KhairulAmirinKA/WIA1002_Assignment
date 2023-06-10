@@ -1,0 +1,21 @@
+| 1  | Erina Pendleton        | 70  | Female |White Asparagus ($26.00)                       |
+| 2  | Emporio Alnino         | 11  | Male   |Spring Lobster Salad ($35.00)                  |
+| 3  | George Joestar II      | 32  | Male   |Sampling Matured Cheese Platter ($23.00)       |
+| 4  | Giorno Giovanna        | 15  | Male   |Truffle-flavoured Poultry Supreme ($34.00)     |
+| 5  | Foo Fighters           | 22  | Female |White Asparagus ($26.00)                       |
+| 6  | Koichi Hirose          | 15  | Male   |Spring Lobster Salad ($35.00)                  |
+| 7  | Leone Abbacchio        | 21  | Male   |Spring Lobster Salad ($35.00)                  |
+| 8  | Josuke Higashikata     | 16  | Male   |Risotto ($13.14)                               |
+| 9  | Jonathan Joestar       | 20  | Male   |Truffle-flavoured Poultry Supreme ($34.00)     |
+| 10 | Reimi Sugimoto         | 16  | Female |Sampling Matured Cheese Platter ($23.00)       |
+| 11 | Joseph Joestar         | 18  | Male   |White Asparagus ($26.00)                       |
+| 12 | Jotaro Kujo            | 17  | Male   |Truffle-flavoured Poultry Supreme ($34.00)     |
+| 13 | Keicho Nijimura        | 18  | Male   |White Asparagus ($26.00)                       |
+| 14 | Narancia Ghirga        | 17  | Male   |Spring Organic Omelette ($23.00)               |
+| 15 | Suzi Q.                | -1  | Female |Truffle-flavoured Poultry Supreme ($34.00)     |
+| 16 | Vanilla Ice            | -1  | Male   |Truffle-flavoured Poultry Supreme ($34.00)     |
+| 17 | Aya Tsuji              | -1  | Female |Spring Organic Omelette ($23.00)               |
+| 18 | Yoshihiro Kira         | -1  | Male   |Truffle-flavoured Poultry Supreme ($34.00)     |
+| 19 | Formaggio              | -1  | Male   |White Asparagus ($26.00)                       |
+| 20 | Illuso                 | -1  | Male   |Truffle-flavoured Poultry Supreme ($34.00)     |
+| 21 | Prosciutto             | -1  | Male   |Spring Organic Omelette ($23.00)               |
