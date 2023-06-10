@@ -18,12 +18,7 @@ public class Preference {
     double remainingBudget=0.0;
     int i=1;
     
-    //create hashMap to store price of each food
-    HashMap<String, Double> jadeGarden_Price = new HashMap<>();
-    HashMap<String, Double> savageGarden_Price = new HashMap<>();
-    HashMap<String, Double> trattoriaTrussardi_Price = new HashMap<>();
-    HashMap<String, Double> libeccio_Price = new HashMap<>();
-    HashMap<String, Double> cafeDeuxMagots_Price = new HashMap<>();
+  
 
 
 // Reset trattoriaFrequency at the start of each week
@@ -237,6 +232,7 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         double foodPrices = Double.parseDouble(strPrice);
         return foodPrices;
     }
+    
     public void initializeRestaurant() {
         
         //jadeGarden
@@ -246,13 +242,6 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         jadeGardenFoods.add("Deep-fried Hiroshima Oysters ($17.00)");
         jadeGardenFoods.add("Poached Tofu with Dried Shrimps ($12.00)");
         jadeGardenFoods.add("Scrambled Egg White with Milk ($10.00)");
-        
-        //store the price into hashmap
-        jadeGarden_Price.put("Braised Chicken in Black Bean Sauce ($15.00)", 15.00);
-        jadeGarden_Price.put("Braised Goose Web with Vermicelli ($21.00)", 21.00);
-        jadeGarden_Price.put("Deep-fried Hiroshima Oysters ($17.00)", 17.00);
-        jadeGarden_Price.put("Poached Tofu with Dried Shrimps ($12.00)", 12.00);
-        jadeGarden_Price.put("Scrambled Egg White with Milk ($10.00)", 10.00);
         Restaurant jadeGarden = new Restaurant("Jade Garden", jadeGardenFoods);
 
         //CafeDeuxMagots
@@ -262,13 +251,6 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         cafeDeuxMagotsFoods.add("Spring Organic Omelette ($23.00)");
         cafeDeuxMagotsFoods.add("Truffle-flavoured Poultry Supreme ($34.00)");
         cafeDeuxMagotsFoods.add("White Asparagus ($26.00)");
-        
-        //store the price into map
-        cafeDeuxMagots_Price.put("Sampling Matured Cheese Platter ($23.00)", 23.00);
-        cafeDeuxMagots_Price.put("Spring Lobster Salad ($35.00)", 35.00);
-        cafeDeuxMagots_Price.put("Spring Organic Omelette ($23.00)", 23.00);
-        cafeDeuxMagots_Price.put("Truffle-flavoured Poultry Supreme ($34.00)", 34.00);
-        cafeDeuxMagots_Price.put("White Asparagus ($26.00)", 26.00);
         Restaurant cafeDeuxMagots = new Restaurant("Cafe Deux Magots", cafeDeuxMagotsFoods);
 
         //TrattoriaTrussardi
@@ -277,12 +259,6 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         trattoriaFoods.add("Creme caramel ($6.50)");
         trattoriaFoods.add("Lamb Chops with Apple Sauce ($25.00)");
         trattoriaFoods.add("Spaghetti alla Puttanesca ($15.00)");
-        
-        //store the price into map
-        trattoriaTrussardi_Price.put("Caprese Salad ($10.00)", 10.00);
-        trattoriaTrussardi_Price.put("Creme caramel ($6.50)", 6.50);
-        trattoriaTrussardi_Price.put("Lamb Chops with Apple Sauce ($25.00)", 25.00);
-        trattoriaTrussardi_Price.put("Spaghetti alla Puttanesca ($15.00)", 15.00);
         Restaurant trattoria = new Restaurant("Trattoria Trussardi", trattoriaFoods);
 
         //libeccio
@@ -293,14 +269,6 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         libeccioFoods.add("Prosciutto and Pesci ($20.23)");
         libeccioFoods.add("Risotto ($13.14)");
         libeccioFoods.add("Zucchero and Sale ($0.60)");
-        
-        //store the price into map
-        libeccio_Price.put("Formaggio ($12.50)", 12.50);
-        libeccio_Price.put("Ghiaccio ($1.01)", 1.01);
-        libeccio_Price.put("Melone ($5.20)", 5.20);
-        libeccio_Price.put("Prosciutto and Pesci ($20.23)", 20.23);
-        libeccio_Price.put("Risotto ($13.14)", 13.14);
-        libeccio_Price.put("Zucchero and Sale ($0.60)", 0.60);
         Restaurant libeccio = new Restaurant("Liberrio", libeccioFoods);
 
         //savageGarden
@@ -311,14 +279,6 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         savageGardenFoods.add("Joseph’s Tequila ($35.00)");
         savageGardenFoods.add("Kakyoin’s Cherry ($3.50)");
         savageGardenFoods.add("Kakyoin’s Porridge ($4.44)");
-        
-        //store price to hashmap
-        savageGarden_Price.put("Abbacchio’s Tea ($1.00)", 1.00);
-        savageGarden_Price.put("DIO’s Bread ($36.14)", 36.14);
-        savageGarden_Price.put("Giorno’s Donuts ($6.66)", 6.66);
-        savageGarden_Price.put("Joseph’s Tequila ($35.00)", 35.00);
-        savageGarden_Price.put("Kakyoin’s Cherry ($3.50)", 3.50);
-        savageGarden_Price.put("Kakyoin’s Porridge ($4.44)", 4.44);
         Restaurant savageGarden = new Restaurant("Savage Garden", savageGardenFoods);
 
         // Add restaurants to the generator
