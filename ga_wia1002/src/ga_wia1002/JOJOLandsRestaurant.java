@@ -3,9 +3,14 @@ package ga_wia1002;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.HashMap;
+import java.util.Scanner;
 
+//IO
 import java.io.PrintWriter;
 import java.io.FileOutputStream;
+
+import java.io.FileNotFoundException;
+import java.io.FileInputStream;       
 import java.io.IOException;
 
 public abstract class JOJOLandsRestaurant {
@@ -162,6 +167,72 @@ public abstract class JOJOLandsRestaurant {
     }
     
     //view sales
+    public void viewSales(){
+        
+     try{
+         //location
+          String filePath="src\\ga_wia1002\\"+"jadeGarden"+"Order.txt";
+          
+         Scanner sc= new Scanner(new FileInputStream(filePath));
+         
+         //map to store the quantity of food
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
+         
+         //read from txt
+         while (sc.hasNextLine()) {
+                String line = sc.nextLine();
+                
+                //split
+                String[] orderData = line.split("\\|");
+                
+                if (orderData.length >= 5) {
+                    
+                    //get food name
+                    String foodName = orderData[5].trim();
+                    
+                    //calculate the quantity of each food
+                    foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
+                    double price = jadeGarden_Price.getOrDefault(foodName, 0.00);
+                    
+
+                   
+                   
+                }//if
+            }//while
+         
+         
+         System.out.printf("%-48s| %-8s| %-9s\n","|Food", "Quantity", "Price|");
+         System.out.println("+-------------------------------------+----------+-------------------+");
+         
+         //calc total sales
+         double totalSales=0; 
+         // Displaying the food quantity
+        for (String food : foodQuantityMap.keySet()) {
+            
+            int quantity = foodQuantityMap.get(food);
+            
+            double price = quantity * jadeGarden_Price.get(food);
+            totalSales+= price;
+            
+            System.out.printf("| %-45s | %-8d | $%-6.2f|%n", food, quantity, price);
+           
+           
+        }// loop food name and quantity
+        System.out.println("+-------------------------------------+----------+-------------------+");
+                 
+        //display the total sales
+            System.out.printf("|%59s|$%.2f\n", "Total Sales", totalSales);
+            
+        System.out.println("+-------------------------------------+----------+-------------------+");
+
+            sc.close();
+     }
+     
+     catch (FileNotFoundException fe){
+         fe.printStackTrace();
+     }
+        
+    }
     
     
     

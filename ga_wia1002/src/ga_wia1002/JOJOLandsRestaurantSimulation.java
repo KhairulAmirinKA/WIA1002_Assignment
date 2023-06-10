@@ -85,6 +85,7 @@ jadeGarden.viewWaitingList();
 jadeGarden.processOrders();
 jadeGarden.displayOrderProcessingList();
 jadeGarden.storeOrder();
+jadeGarden.viewSales();
 
 System.out.println("Cafe Deux Magots:");
 cafeDeuxMagots.viewWaitingList();
