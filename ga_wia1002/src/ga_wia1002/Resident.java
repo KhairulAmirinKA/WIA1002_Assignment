@@ -8,6 +8,7 @@ public class Resident {
     private int age;
     private String gender;
     private String residentialArea;
+    private String parents;
     private String stand;
     private String order;
     private List<String> orderHistory;
@@ -32,17 +33,22 @@ public class Resident {
         this.orderHistory = orderHistory;
     }
  
-    public Resident(String name, int age, String gender, String residentialArea,  String stand) {
+    public Resident(String name, int age, String gender, String residentialArea,  String stand,String parents) {
         this.name = name;
         this.age = age;
         this.gender = gender;
         this.residentialArea = residentialArea;
         this.stand = stand;
+        this.parents =parents;
     }
     
     public Resident(String name) {
         this.name = name;
         this.orderHistory = new ArrayList<>();
+    }
+
+    public String getParents() {
+        return parents;
     }
 
     public void addToOrderHistory(String food, String restaurant) {
