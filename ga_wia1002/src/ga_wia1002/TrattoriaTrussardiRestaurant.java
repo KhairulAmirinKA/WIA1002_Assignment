@@ -4,8 +4,7 @@
 //queue, only one person is chosen in the next turn. Similarly, customers of unspecified
 //ages will be served last for each gender.
 //ym,ow,om,yw....   ow,yw,ow,yw.... unknown age
-package Backend_Files;
-
+package ga_wia1002;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,28 +12,28 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class TrattoriaTrussardiRestaurant extends JOJOLandsRestaurant {
-    public TrattoriaTrussardiRestaurant(String[] menu) {
-        super(menu);
+    public TrattoriaTrussardiRestaurant() {
+        super();
     }
 
     @Override
     public void processOrders() {
-        List<Customer> waitingList = getWaitingList();
-        List<Customer> processedList = TrattoriaTrussardiRule.processOrder(waitingList);
+        List<Resident> waitingList = getWaitingList();
+        List<Resident> processedList = TrattoriaTrussardiRule.processOrder(waitingList);
         orderProcessingList.addAll(processedList);
     }
 }
 
 class TrattoriaTrussardiRule {
-    public static List<Customer> processOrder(List<Customer> waitingList) {
-        List<Customer> processedList = new ArrayList<>();
-        LinkedList<Customer> menLinkedList = new LinkedList<>();
-        LinkedList<Customer> womenLinkedList = new LinkedList<>();
-        LinkedList<Customer> unspecifiedAge = new LinkedList<>();
+    public static List<Resident> processOrder(List<Resident> waitingList) {
+        List<Resident> processedList = new ArrayList<>();
+        LinkedList<Resident> menLinkedList = new LinkedList<>();
+        LinkedList<Resident> womenLinkedList = new LinkedList<>();
+        LinkedList<Resident> unspecifiedAge = new LinkedList<>();
 
         // Separate customers into appropriate queues based on age and gender
-        for (Customer customer : waitingList) {
-            if(customer.getAge()==-1) {
+        for (Resident customer : waitingList) {
+            if(customer.getAge()==-1 ||customer.getGender()==null) {
                 unspecifiedAge.add(customer);
             }
             else if (customer.getGender().equalsIgnoreCase("Male")) {
@@ -46,38 +45,38 @@ class TrattoriaTrussardiRule {
         }
         
         // Sort menQueue in ascending order of age
-        List<Customer> sortedMen = new ArrayList<>(menLinkedList);
+        List<Resident> sortedMen = new ArrayList<>(menLinkedList);
         Collections.sort(sortedMen, (c1, c2) -> Integer.compare(c1.getAge(), c2.getAge()));
         menLinkedList = new LinkedList<>(sortedMen);
 
         // Sort womenQueue in ascending order of age
-        List<Customer> sortedWomen = new ArrayList<>(womenLinkedList);
+        List<Resident> sortedWomen = new ArrayList<>(womenLinkedList);
         Collections.sort(sortedWomen, (c1, c2) -> Integer.compare(c1.getAge(), c2.getAge()));
         womenLinkedList = new LinkedList<>(sortedWomen);
 
         // Process the orders based on the specified rules
         while (!menLinkedList.isEmpty() || !womenLinkedList.isEmpty()) {
             if (!menLinkedList.isEmpty()) {
-                Customer youngestMan = menLinkedList.removeFirst();
+                Resident youngestMan = menLinkedList.removeFirst();
                 processedList.add(youngestMan);
             }
             if (!womenLinkedList.isEmpty()) {
-                Customer oldestWoman = womenLinkedList.removeLast();
+                Resident oldestWoman = womenLinkedList.removeLast();
                 processedList.add(oldestWoman);
             }
             if (!menLinkedList.isEmpty()) {
-                Customer oldestMan = menLinkedList.removeLast();
+                Resident oldestMan = menLinkedList.removeLast();
                 processedList.add(oldestMan);     
             }
             if (!womenLinkedList.isEmpty()) {
-                Customer youngestWomen = womenLinkedList.removeFirst();
+                Resident youngestWomen = womenLinkedList.removeFirst();
                 processedList.add(youngestWomen);
             }
         }
 
         // Process remaining customers of unspecified gender
         while (!unspecifiedAge.isEmpty()) {
-            Customer unknownAge = unspecifiedAge.removeFirst();
+            Resident unknownAge = unspecifiedAge.removeFirst();
             processedList.add(unknownAge);
         }
 

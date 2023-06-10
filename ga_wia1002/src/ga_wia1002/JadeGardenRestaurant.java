@@ -1,11 +1,12 @@
-package Backend_Files;
+package ga_wia1002;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class JadeGardenRestaurant extends JOJOLandsRestaurant {
-    public JadeGardenRestaurant(String[] menu) {
-        super(menu);
+    public JadeGardenRestaurant() {
+        
     }
 
     @Override
@@ -15,8 +16,8 @@ public class JadeGardenRestaurant extends JOJOLandsRestaurant {
 }
 
 class JadeGardenRule {
-    public static List<Customer> processOrder(List<Customer> waitingList) {
-        List<Customer> processedList = new ArrayList<>();
+    public static List<Resident> processOrder(List<Resident> waitingList) {
+        List<Resident> processedList = new ArrayList<>();
         int left = 0;   //1st element
         int right = waitingList.size() - 1; //last element on right
 

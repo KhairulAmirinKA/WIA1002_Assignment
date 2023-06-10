@@ -1,25 +1,24 @@
- package Backend_Files;
-
+ package ga_wia1002;
 import java.util.*;
 
 public class SavageGardenRestaurant extends JOJOLandsRestaurant {
-    public SavageGardenRestaurant(String[] menu) {
-        super(menu);
+    public SavageGardenRestaurant() {
+        super();
     }
 
     @Override
     public void processOrders() {
-        List<Customer> processedList = SavageGardenRule.processOrder(waitingList, day);
+        List<Resident> processedList = SavageGardenRule.processOrder(waitingList, currentDay);
         orderProcessingList.addAll(processedList);
     }}
 class SavageGardenRule {
-    public static List<Customer> processOrder(List<Customer> waitingList, int day) {
-         LinkedList<Customer> processedList = new LinkedList<>();
+    public static List<Resident> processOrder(List<Resident> waitingList, int currentDay) {
+         LinkedList<Resident> processedList = new LinkedList<>();
          int count = 1;
          int index = 1;
 
          while (!waitingList.isEmpty()) {
-             if (count == day) {
+             if (count == currentDay) {
                  // Add the removed person to the end of the processed list
                  processedList.addLast(waitingList.remove(index - 1));
                  count = 1;
