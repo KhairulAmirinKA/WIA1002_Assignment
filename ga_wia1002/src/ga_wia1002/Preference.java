@@ -9,18 +9,17 @@ public class Preference {
     JOJOLandsGame game = new JOJOLandsGame();
     private int currentDay = game.getCurrentDay();
     private static final Random RANDOM = new Random();
-    private  Restaurant JotaroRestaurant;
     private final List<Resident> residents;
     private final List<Restaurant> restaurants;
     private int foodCount;
     double totalFoodCost=0;
-    int trattoriaFrequency=0;
+    private int trattoriaFrequency=0;
     double remainingBudget=0.0;
-    int i=1;
-    
-  
-
-
+    int foodIndex = 0;  //initialize to 1st food of the restaurant
+    int resIndex=0;
+    private Restaurant JotaroRestaurant = null;
+    private List<Restaurant> JonathanFoodList = new ArrayList<>();
+    private List<Restaurant> JosephFoodList = new ArrayList<>();
 // Reset trattoriaFrequency at the start of each week
 
     public Preference() {
@@ -41,65 +40,39 @@ public class Preference {
         while (foodCount <= currentDay) {
             for (Resident resident : residents) {
                 if (resident.getName().equals("Jotaro Kujo")) {
-
-                           String previousRestaurant = getPreviousRestaurant(resident);
-                           Restaurant currentRestaurant = getNextRestaurant(previousRestaurant);
-//                           if(foodCount%7==1){//if Saturday, dine in with Jolyne
-//                               JotaroRestaurant = currentRestaurant;
-//                           }
-                           
-                           String food = getRandomFoodFromRestaurant(currentRestaurant);
-                           resident.setOrder(food);
-                           resident.addToOrderHistory(food, currentRestaurant.getName());
+                    if(foodCount%7==0){    //if Saturday, dine in with Jotaro,Jotaro eat in currentRestaurant
+                        String food = getRandomFoodFromRestaurant(JotaroRestaurant);
+                        resident.addToOrderHistory(food, JotaroRestaurant.getName());       
+                    }
+                    else{
+                           String food = JotaroGetFood();
+                           resident.addToOrderHistory(food, JotaroRestaurant.getName());
                        } 
+                }
                 
-                else if (foodCount >=1 && resident.getName().equals("Jolyne Cujoh")) {
-                    if(foodCount%7==1){    //if Saturday, dine in with Jotaro
-//                       Restaurant currentRestaurant = JotaroRestaurant;
-//                        String food = getRandomFoodFromRestaurant(currentRestaurant);
-//resident.setOrder(food);
-//                        resident.addToOrderHistory(food, currentRestaurant.getName());       
-//                    }
-//                    else{   //other days, can eat anywhere
+                else if (resident.getName().equals("Jolyne Cujoh")) {
+                    if(foodCount%7==0){    //if Saturday, dine in with Jotaro,Jotaro eat in currentRestaurant
+                        String food = JotaroGetFood();
+                        resident.addToOrderHistory(food, JotaroRestaurant.getName());       
+                    }
+                    else{   //other days, can eat anywhere
                         String previousRestaurant = getPreviousRestaurant(resident);
                         Restaurant currentRestaurant = getNextRestaurant(previousRestaurant);   //avoid dining at the same restaurant twice in a row
                         String food = getRandomFoodFromRestaurant(currentRestaurant);
-                        resident.setOrder(food);
                         resident.addToOrderHistory(food, currentRestaurant.getName());
                         } 
                 } 
 
                 else if (resident.getName().equals("Jonathan Joestar")) {
-                    Set<String> uniqueFoods = new HashSet<>();
-                    
-                        Restaurant restaurant = getRandomRestaurant();
-                        String randomFood = getRandomFoodFromRestaurant(restaurant);
-                        String foodRestaurantPair = randomFood + "_" + restaurant.getName();
-                        if (!uniqueFoods.contains(foodRestaurantPair)) {
-                            String[] pair = foodRestaurantPair.split("_");
-                            String food = pair[0];
-                            String restaurantName = pair[1];
-                            resident.setOrder(food);
-                            resident.addToOrderHistory(food, restaurantName);
-                            uniqueFoods.add(foodRestaurantPair);
-                        }
-                    }
+                        Restaurant foodWithRestaurant=JonathanGetFood();
+                            resident.addToOrderHistory(foodWithRestaurant.getFoodName(), foodWithRestaurant.getName());
+                }
 
-                else if (resident.getName().equals("Joseph Joestar")) {
-                    Set<String> uniqueFoods = new HashSet<>();
-                    
-                        Restaurant restaurant = getRandomRestaurant();
-                        String randomFood = getRandomFoodFromRestaurant(restaurant);
-                        String foodRestaurantPair = randomFood + "_" + restaurant.getName();
-                        if (!uniqueFoods.contains(foodRestaurantPair)) {
-                            String[] pair = foodRestaurantPair.split("_");
-                            String food = pair[0];
-                            String restaurantName = pair[1];
-                            resident.setOrder(food);
-                            resident.addToOrderHistory(food, restaurantName);
-                            uniqueFoods.add(foodRestaurantPair);    //to check so that no repetition
-                        }
-                } 
+                else if (resident.getName().equals("Joseph Joestar")) {      
+                        Restaurant foodWithRestaurant=JosephGetFood();
+                            resident.addToOrderHistory(foodWithRestaurant.getFoodName(), foodWithRestaurant.getName());
+                }
+                
 
                 else if (resident.getName().equals("Josuke Higashikata")) {
                     String food = getRandomFoodFromRestaurant(getRandomRestaurant());
@@ -118,60 +91,89 @@ public class Preference {
                         resident.addToOrderHistory("Zucchero and Sale ($0.60)", "Liberrio");
                     }
                 }
-                        
-                else if (resident.getName().equals("Giorno Giovanna")) {      
-                        if(foodCount%7==1){
-                            trattoriaFrequency=0;
+
+                else if (resident.getName().equals("Giorno Giovanna")) {
+                    if(foodCount%7==1){
+                        trattoriaFrequency=0;
+                    }  
+                    if (trattoriaFrequency < 2) {
+                        String food = getNewFoodAtTrattoria();
+                        trattoriaFrequency++;
+                        resident.addToOrderHistory(food, "Trattoria Trussardi");
+                    }} 
+                    else {
+                        String randFood = getRandomFoodFromRestaurant(getNoTrattoria());
+                        resident.addToOrderHistory(randFood, getNoTrattoria().getName());
+                                }
+
+                            }
+                        foodCount++;
                         }
-                        
-                        if(trattoriaFrequency<2){
-                            String food = getNewFoodAtTrattoria(foodCount);
-                            trattoriaFrequency++;
-                            resident.setOrder(food);
-                            resident.addToOrderHistory(food, "Trattoria Trussardi");   
-                        }              
-                        else{
-                            String randFood = getRandomFoodFromRestaurant(getNoTrattoria());
-                            resident.setOrder(randFood);
-                            resident.addToOrderHistory(randFood, getNoTrattoria().getName());
-                        }
-                }
-                
-                else{
-                    Restaurant restaurant = getRandomRestaurant();
-                    String food =getRandomFoodFromRestaurant(restaurant);
-                    resident.setOrder(food);
-                    resident.addToOrderHistory(food, restaurant.getName());
-                }
+                    }
+
+    public List<Restaurant> getAllAvailableFood() {
+        List<Restaurant> allAvailableFood = new ArrayList<>();
+        for (Restaurant res : restaurants) {
+            for (String food : res.getAvailableFoods()) {
+                Restaurant foodWithRestaurant = new Restaurant(food, res.getName());
+                allAvailableFood.add(foodWithRestaurant);
             }
-            foodCount++;
         }
+        return allAvailableFood;
     }
-public List<Resident> extractLastOrdersAndRestaurants() {
-    List<Resident> extractedResidents = new ArrayList<>();
-    initializeRestaurant();
-    getResidents();
-    generateFoodOrders();
-//     Loop over the populated residents list to extract data
-    for (Resident resident : residents) {
-        String lastOrder = "";
-        String lastRestaurant = "";
-        
-List<String> orderHistory = resident.getOrderHistory();
-// Check if the order history is not empty
-if (!orderHistory.isEmpty()) {
-    // Get the last order
-    if (orderHistory.size() >= currentDay) {
-    lastOrder = orderHistory.get(currentDay-1);
-    // Split the order string to separate the food and restaurant names
-    String[] orderParts = lastOrder.split("\\|");
-    lastOrder = orderParts[2].trim();
-        Resident extractedResident = new Resident(resident.getName(), resident.getAge(), resident.getGender(), resident.getResidentialArea(), lastOrder, resident.getOrderHistory());
-        extractedResidents.add(extractedResident);
+    public Restaurant JosephGetFood() {
+        if (JosephFoodList.isEmpty()) {
+            JosephFoodList = new ArrayList<>(getAllAvailableFood());
+            Collections.shuffle(JosephFoodList); //so that he can try food without following restaurant sequence
+        }
+
+        if (!JosephFoodList.isEmpty()) {
+            Restaurant foodWithRestaurant = JosephFoodList.remove(0);
+            return foodWithRestaurant;
+        }
+
+        return null;
     }
-}}
-    return extractedResidents;
-}
+
+    public Restaurant JonathanGetFood() {
+        if (JonathanFoodList.isEmpty()) {
+            JonathanFoodList = new ArrayList<>(getAllAvailableFood());
+            Collections.shuffle(JonathanFoodList); //so that he can try food without following restaurant sequence
+        }
+
+        if (!JonathanFoodList.isEmpty()) {
+            Restaurant foodWithRestaurant = JonathanFoodList.remove(0);
+            return foodWithRestaurant;
+        }
+
+        return null;
+    }
+
+
+    public List<Resident> extractLastOrdersAndRestaurants() {
+        List<Resident> extractedResidents = new ArrayList<>();
+        initializeRestaurant();
+        getResidents();
+        generateFoodOrders();
+    //     Loop over the populated residents list to extract data
+        for (Resident resident : residents) {
+            String lastOrder = "";
+
+    List<String> orderHistory = resident.getOrderHistory();
+    // Check if the order history is not empty
+    if (!orderHistory.isEmpty()) {
+        // Get the last order
+        if (orderHistory.size() >= currentDay) {
+        lastOrder = orderHistory.get(currentDay-1);
+        // Split the order string to separate the food and restaurant names
+        String[] orderParts = lastOrder.split("\\|");
+        lastOrder = orderParts[2].trim();
+            Resident extractedResident = new Resident(resident.getName(), resident.getAge(), resident.getGender(), resident.getResidentialArea(), lastOrder, resident.getOrderHistory());
+            extractedResidents.add(extractedResident);
+        }
+    }}
+        return extractedResidents;
+    }
 
     private String getPreviousRestaurant(Resident resident) {
         List<String> orderHistory = resident.getOrderHistory();
@@ -187,22 +189,41 @@ if (!orderHistory.isEmpty()) {
     }
 
     private Restaurant getNoTrattoria() {
-        return restaurants.get(RANDOM.nextInt(restaurants.size()-1)+1);
+        Restaurant restaurant;
+        do {
+            restaurant = restaurants.get(RANDOM.nextInt(restaurants.size()));
+        } while (restaurant.getName().equals("Trattoria Trussardi"));
+
+        return restaurant;
     }
 
-//    private String getRandomFoodFromRestaurant(Restaurant restaurant) {
-//        List<String> availableFoods = restaurant.getAvailableFoods();
-//        return availableFoods.get(RANDOM.nextInt(availableFoods.size()));
-//    }
-private String getRandomFoodFromRestaurant(Restaurant restaurant) {
-    if (restaurant != null) {
-        List<String> availableFoods = restaurant.getAvailableFoods();
-        if (availableFoods != null && !availableFoods.isEmpty()) {
-            return availableFoods.get(RANDOM.nextInt(availableFoods.size()));
+    private String getRandomFoodFromRestaurant(Restaurant restaurant) {
+        if (restaurant != null) {
+            List<String> availableFoods = restaurant.getAvailableFoods();
+            if (availableFoods != null && !availableFoods.isEmpty()) {
+                return availableFoods.get(RANDOM.nextInt(availableFoods.size()));
+            }
         }
+        return "";  // Return an empty string or handle the null case appropriately
     }
-    return "";  // Return an empty string or handle the null case appropriately
-}
+    
+    private String JotaroGetFood() {
+        String food;
+        if (resIndex >= restaurants.size()) {   //no more restaurants, back to the 1st restaurant
+            resIndex = 0;
+        }
+
+        JotaroRestaurant = restaurants.get(resIndex);   
+        food = JotaroRestaurant.getAvailableFoods().get(foodIndex); //get foods from the restaurant
+
+        foodIndex++;    //next food in the same restaurant
+        if (foodIndex >= JotaroRestaurant.getAvailableFoods().size()) { //all food had been tried 
+            resIndex++;     //move to next restaurant
+            foodIndex = 0;  //1st food from new restaurant
+        }
+
+        return food;
+    }
 
     private Restaurant getNextRestaurant(String previousRestaurant) {
         List<Restaurant> availableRestaurants = new ArrayList<>(restaurants);
@@ -220,10 +241,17 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         return availableRestaurants.get(0);
     }
 
-    private String getNewFoodAtTrattoria(int foodCount) {
-        Restaurant trattoria = restaurants.get(0);
+    private String getNewFoodAtTrattoria() {
+        Restaurant trattoria = null;
+        for (Restaurant restaurant : restaurants) {
+            if (restaurant.getName().equals("Trattoria Trussardi")) {
+                trattoria = restaurant;
+                break;
+            }
+        }
+
         List<String> availableFoods = trattoria.getAvailableFoods();
-        return availableFoods.get((foodCount%4));
+        return availableFoods.get(foodCount%4);
     }
 
     private double getFoodCost(String food) {
@@ -234,8 +262,6 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
     }
     
     public void initializeRestaurant() {
-        
-        //jadeGarden
         List<String> jadeGardenFoods = new ArrayList<>();
         jadeGardenFoods.add("Braised Chicken in Black Bean Sauce ($15.00)");
         jadeGardenFoods.add("Braised Goose Web with Vermicelli ($21.00)");
@@ -244,7 +270,6 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         jadeGardenFoods.add("Scrambled Egg White with Milk ($10.00)");
         Restaurant jadeGarden = new Restaurant("Jade Garden", jadeGardenFoods);
 
-        //CafeDeuxMagots
         List<String> cafeDeuxMagotsFoods = new ArrayList<>();
         cafeDeuxMagotsFoods.add("Sampling Matured Cheese Platter ($23.00)");
         cafeDeuxMagotsFoods.add("Spring Lobster Salad ($35.00)");
@@ -253,7 +278,6 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         cafeDeuxMagotsFoods.add("White Asparagus ($26.00)");
         Restaurant cafeDeuxMagots = new Restaurant("Cafe Deux Magots", cafeDeuxMagotsFoods);
 
-        //TrattoriaTrussardi
         List<String> trattoriaFoods = new ArrayList<>();
         trattoriaFoods.add("Caprese Salad ($10.00)");
         trattoriaFoods.add("Creme caramel ($6.50)");
@@ -261,17 +285,15 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         trattoriaFoods.add("Spaghetti alla Puttanesca ($15.00)");
         Restaurant trattoria = new Restaurant("Trattoria Trussardi", trattoriaFoods);
 
-        //libeccio
-        List<String> libeccioFoods = new ArrayList<>();
-        libeccioFoods.add("Formaggio ($12.50)");
-        libeccioFoods.add("Ghiaccio ($1.01)");
-        libeccioFoods.add("Melone ($5.20)");
-        libeccioFoods.add("Prosciutto and Pesci ($20.23)");
-        libeccioFoods.add("Risotto ($13.14)");
-        libeccioFoods.add("Zucchero and Sale ($0.60)");
-        Restaurant libeccio = new Restaurant("Liberrio", libeccioFoods);
+        List<String> liberrioFoods = new ArrayList<>();
+        liberrioFoods.add("Formaggio ($12.50)");
+        liberrioFoods.add("Ghiaccio ($1.01)");
+        liberrioFoods.add("Melone ($5.20)");
+        liberrioFoods.add("Prosciutto and Pesci ($20.23)");
+        liberrioFoods.add("Risotto ($13.14)");
+        liberrioFoods.add("Zucchero and Sale ($0.60)");
+        Restaurant liberrio = new Restaurant("Liberrio", liberrioFoods);
 
-        //savageGarden
         List<String> savageGardenFoods = new ArrayList<>();
         savageGardenFoods.add("Abbacchio’s Tea ($1.00)");
         savageGardenFoods.add("DIO’s Bread ($36.14)");
@@ -285,14 +307,16 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
         addRestaurant(jadeGarden);
         addRestaurant(cafeDeuxMagots);
         addRestaurant(trattoria);
-        addRestaurant(libeccio);
+        addRestaurant(liberrio);
         addRestaurant(savageGarden);
     }
 
     public void printOrderHistory() {
         for (Resident resident : residents) {
+            if (resident.getName().equals("Jotaro Kujo")||resident.getName().equals("Giorno Giovanna")||resident.getName().equals("Jolyne Cujoh")||
+                    resident.getName().equals("Josuke Higashikata")||resident.getName().equals("Jonathan Joestar")||resident.getName().equals("Joseph Joestar")){
             System.out.println("====================================================================================");
-            System.out.println(i+"Order History for " + resident.getName());
+            System.out.println("Order History for " + resident.getName());
             System.out.println("+-----+------------------------------------------------+---------------------+");
             System.out.println("| Day | Food                                           | Restaurant          |");
             System.out.println("+-----+------------------------------------------------+---------------------+");
@@ -301,51 +325,49 @@ private String getRandomFoodFromRestaurant(Restaurant restaurant) {
             }
             System.out.println("====================================================================================");
             System.out.println();
-            i++;
-        }
+        }}
     }
 
-public void getResidents() {
-    try {
-        BufferedReader reader = new BufferedReader(new FileReader("src\\ga_wia1002\\residents.csv"));
-        String line;
-        boolean headerSkipped = false;
+    public void getResidents() {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("residents.csv"));
+            String line;
+            boolean headerSkipped = false;
 
-        while ((line = reader.readLine()) != null) {
-            if (!headerSkipped) {
-                // Skip the header line
-                headerSkipped = true;
-                continue;
+            while ((line = reader.readLine()) != null) {
+                if (!headerSkipped) {
+                    // Skip the header line
+                    headerSkipped = true;
+                    continue;
+                }
+
+                String[] residentData = line.split(",");
+                String name = residentData[0].trim();
+                int age;
+                if(residentData[1].trim().equals("N/A"))
+                    age=-1;
+                else
+                    age = Integer.parseInt(residentData[1].trim());
+                String gender = residentData[2].trim();
+                Resident resident = new Resident(name);
+                resident.setAge(age);
+                resident.setGender(gender);
+                addResident(resident);
             }
 
-            String[] residentData = line.split(",");
-            String name = residentData[0].trim();
-            int age;
-            if(residentData[1].trim().equals("N/A"))
-                age=-1;
-            else
-                age = Integer.parseInt(residentData[1].trim());
-            String gender = residentData[2].trim();
-            Resident resident = new Resident(name);
-            resident.setAge(age);
-            resident.setGender(gender);
-            addResident(resident);
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return;
         }
-
-        reader.close();
-    } catch (IOException e) {
-        e.printStackTrace();
-        return;
     }
-}
-    
+
     public void getPreference() {
         initializeRestaurant();
         getResidents();
 
         // Generate food orders
         generateFoodOrders();
-//assignResidentsToRestaurants(residents, restaurants);
 
         // Print the order history for each resident
         printOrderHistory();
