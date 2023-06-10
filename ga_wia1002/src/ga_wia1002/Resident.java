@@ -23,24 +23,15 @@ public class Resident {
         this.orderHistory = orderHistory;
     }
 
-    public String getRestaurant() {
-        return restaurant;
-    }
-
-    public Resident(){
-        
-    }
-
     public Resident(String name, int age, String gender,String residentialArea,String order,List<String>orderHistory) {
         this.name = name;
         this.age = age;
         this.gender = gender;
         this.order = order;
-        this.restaurant=restaurant;
         this.residentialArea = residentialArea;
         this.orderHistory = orderHistory;
     }
-    
+ 
     public Resident(String name, int age, String gender, String residentialArea,  String stand) {
         this.name = name;
         this.age = age;
@@ -58,6 +49,10 @@ public class Resident {
         int day = orderHistory.size() + 1;
         String order = String.format("| %-3d | %-46s | %-19s |", day, food, restaurant);
         orderHistory.add(order);
+    }
+
+    public String getRestaurant() {
+        return restaurant;
     }
 
     public String getName() {
