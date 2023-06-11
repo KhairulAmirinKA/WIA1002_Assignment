@@ -12,16 +12,15 @@ public class ProjectJOJOLandSystem {
         standManager = new StandManager();
         residentManager.loadResidents("residents.csv", "stands.csv");
         standManager.loadStands("stands.csv");
-
-        
     }
-public static void main(String[] args) {
-        ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
-        jojoSystem.displayResidentInformation("Polnareff Land");
-        System.out.println();
-        List<Resident> residents = residentManager.getResidentsByResidentialArea("Polnareff Land");
-        jojoSystem.sortResidents(residents, "name(asc);Stamina(desc);Precision(asc)");
-    }
+    
+    public static void main(String[] args) {
+            ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
+            jojoSystem.displayResidentInformation("Polnareff Land");
+            System.out.println();
+            List<Resident> residents = residentManager.getResidentsByResidentialArea("Polnareff Land");
+            jojoSystem.sortResidents(residents, "destructive power(asc);stand(desc)");
+        }
     
     public void displayResidentInformation(String currentLocation) {
         List<Resident> residents = residentManager.getResidentsByResidentialArea(currentLocation);
@@ -70,7 +69,7 @@ public static void main(String[] args) {
         System.out.println();
         }
 
-    public static void sortResidents(List<Resident> residents, String sortingOrder) {
+    public void sortResidents(List<Resident> residents, String sortingOrder) {
 
         List<Resident> sortedResidents = new ArrayList<>(residents);
 
@@ -123,6 +122,21 @@ public static void main(String[] args) {
                    }
                };
                break;
+            case "stand":
+                comparator = (r1, r2) -> {
+                    Stand s1 = standManager.getStandByUser(r1.getName());
+                    Stand s2 = standManager.getStandByUser(r2.getName());
+                    if (s1 != null && s2 != null) {
+                        return s1.getName().compareTo(s2.getName()); // Compare by stand name
+                    } else if (s1 != null) {
+                        return -1;
+                    } else if (s2 != null) {
+                        return 1;
+                    } else {
+                        return 0;
+                    }
+                };
+                break;
            case "speed":
                comparator = (r1, r2) -> {
                    Stand s1 = standManager.getStandByUser(r1.getName());
@@ -211,6 +225,14 @@ public static void main(String[] args) {
                 System.out.println("Invalid sorting direction: " + sortingDirection);
                 return;
             }
+            if (sortingDirection.equalsIgnoreCase("asc")) {
+                comparators.add(comparator);
+            } else if (sortingDirection.equalsIgnoreCase("desc")) {
+                comparators.add(comparator.reversed());
+            } else {
+                System.out.println("Invalid sorting direction: " + sortingDirection);
+                return;
+            }
             comparators.add(comparator);
                }
 
@@ -225,7 +247,7 @@ public static void main(String[] args) {
            }
 
 
-    public static void displaySortedResidents(List<Resident> residents) {
+    public void displaySortedResidents(List<Resident> residents) {
         System.out.println("Sorted Resident Information");
         System.out.println("+----+-----------------------+-----+--------+------------------+-------------------+-------+-------+---------+-----------+-----------------------+");
         System.out.println("| No | Name                  | Age | Gender | Stand            | Destructive Power | Speed | Range | Stamina | Precision | Development Potential |");
@@ -251,3 +273,5 @@ public static void main(String[] args) {
     }
 
     }
+
+
