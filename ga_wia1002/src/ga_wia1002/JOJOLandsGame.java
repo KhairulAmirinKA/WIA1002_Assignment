@@ -28,10 +28,16 @@ public class JOJOLandsGame {
 
     public void start() {
         ResidentManager residentManager = new ResidentManager();
-        residentManager.loadResidents("residents.csv", "stands.csv");
+        
+        //put the file path
+        String residentFilePath="src\\ga_wia1002\\residents.csv";
+        String standFilePath="src\\ga_wia1002\\stands.csv";
+        
+        residentManager.loadResidents(residentFilePath, standFilePath);
+        
         List<Resident> residents = residentManager.getResidents();
         StandManager standManager = new StandManager();
-        standManager.loadStands("stands.csv");
+        standManager.loadStands(standFilePath);
         //Q3 view Waiting List and Processing List 
         showWaitingAndProcessingList showWP_List = new showWaitingAndProcessingList();
         //Q2
