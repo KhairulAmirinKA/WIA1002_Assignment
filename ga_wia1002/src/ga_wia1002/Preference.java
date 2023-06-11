@@ -20,12 +20,10 @@ public class Preference {
     private Restaurant JotaroRestaurant = null;
     private List<Restaurant> JonathanFoodList = new ArrayList<>();
     private List<Restaurant> JosephFoodList = new ArrayList<>();
-    
     //the file path of residents.csv and stands.csv
     static String residentFilePath="src\\ga_wia1002\\residents.csv";
     static String standFilePath="src\\ga_wia1002\\stands.csv";
-    
-// Reset trattoriaFrequency at the start of each week
+
 
     public Preference() {
         residents = new ArrayList<>();
@@ -105,13 +103,18 @@ public class Preference {
                         String food = getNewFoodAtTrattoria();
                         trattoriaFrequency++;
                         resident.addToOrderHistory(food, "Trattoria Trussardi");
-                    }} 
+                    }
                     else {
                         String randFood = getRandomFoodFromRestaurant(getNoTrattoria());
                         resident.addToOrderHistory(randFood, getNoTrattoria().getName());
-                                }
-
+                                }              
                             }
+                else{
+                    Restaurant res = getRandomRestaurant();
+                    String food = getRandomFoodFromRestaurant(res);
+                    resident.addToOrderHistory(food, res.getName());
+                }
+            }
                         foodCount++;
                         }
                     }
@@ -156,11 +159,9 @@ public class Preference {
     
     private void viewResidentProfile(String selectedResidentName) {
       StandManager standManager = new StandManager();   //read stands.csv and residents.csv
-        
       standManager.loadStands(standFilePath);
       ResidentManager residentManager = new ResidentManager();
       residentManager.loadResidents(residentFilePath, standFilePath);
-      
       List<Resident> residents = residentManager.getResidents(); // Get the populated list of residents
       System.out.println("====================================================================================");
       System.out.println(selectedResidentName+"'s Profile:");
@@ -340,7 +341,7 @@ public class Preference {
         libeccioFoods.add("Prosciutto and Pesci ($20.23)");
         libeccioFoods.add("Risotto ($13.14)");
         libeccioFoods.add("Zucchero and Sale ($0.60)");
-        Restaurant libeccio = new Restaurant("Liberrio", libeccioFoods);
+        Restaurant libeccio = new Restaurant("Libeccio", libeccioFoods);
 
         List<String> savageGardenFoods = new ArrayList<>();
         savageGardenFoods.add("Abbacchio’s Tea ($1.00)");
@@ -380,7 +381,7 @@ public class Preference {
 
     public void getResidents() {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(residentFilePath));
+            BufferedReader reader = new BufferedReader(new FileReader("residents.csv"));
             String line;
             boolean headerSkipped = false;
 
@@ -416,7 +417,6 @@ public class Preference {
             initializeRestaurant();
             getResidents();
             generateFoodOrders();   //must below initializeRestaurant and getResidents
-            
             //print profile and orderHistory
             viewResidentProfile(residentName);
             printOrderHistory(residentName);
