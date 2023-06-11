@@ -6,90 +6,15 @@ public class ProjectJOJOLandSystem {
     private static ResidentManager residentManager;
     private static StandManager standManager;
     private static String currentLocation;
-
-    public static void main(String[] args) {
-        
-        Scanner scanner = new Scanner(System.in);
-        ProjectJOJOLandSystem displayResidentInfo = new ProjectJOJOLandSystem();
-        // Ask for the current location
-        System.out.print("Current Location: ");
-        currentLocation = scanner.nextLine().trim();
-
+    
+    public ProjectJOJOLandSystem() {
         residentManager = new ResidentManager();
-        residentManager.loadResidents("residents.csv", "stands.csv");
-        List<Resident> residents = residentManager.getResidents();
         standManager = new StandManager();
-        standManager.loadStands("stands.csv");
-        
-        
-
-        while (true) {
-            System.out.println("[1] Move to:");
-            System.out.println("[A] Cafe Deux Magots [B] Savage Garden");
-            System.out.println("[2] View Resident Information");
-            System.out.println("[3] Back (Savage Garden)");
-            System.out.println("[4] Back to Town Hall");
-            System.out.print("Select: ");
-            String input = scanner.nextLine();
-
-            if (input.equals("1")) {
-                System.out.print("Move to (A/B): ");
-                String moveTo = scanner.nextLine();
-                if (moveTo.equalsIgnoreCase("A")) {
-                    currentLocation = "Cafe Deux Magots";
-                } else if (moveTo.equalsIgnoreCase("B")) {
-                    currentLocation = "Savage Garden";
-                }
-            } else if (input.equals("2")) {
-                displayResidentInfo.displayResidentInformation(currentLocation);
-            } else if (input.equals("3")) {
-                currentLocation = "Savage Garden";
-            } else if (input.equals("4")) {
-                currentLocation = "Town Hall";
-            } else {
-                System.out.println("Invalid option. Please try again.");
-            }
-
-            System.out.println();
-    System.out.println("[1] View Resident's Profile");
-    System.out.println("[2] Sort");
-    System.out.println("[3] Exit");
-    System.out.print("Select: ");
-
-    String option = scanner.nextLine();
-    switch (option) {
-        case "1":
-            System.out.print("Enter the resident number to view profile: ");
-            int residentNumber = scanner.nextInt();
-            if (residentNumber >= 1 && residentNumber <= residents.size()) {
-                Resident selectedResident = residents.get(residentNumber - 1);
-                displayResidentInfo.viewResidentProfile(selectedResident);
-            } else {
-                System.out.println("Invalid resident number.");
-            }
-            break;
-        case "2":
-            System.out.print("Enter the sorting order (e.g., 'Stamina (ASC); Precision (DESC); Stand (ASC)'): ");
-            scanner.nextLine(); // Clear the newline character from previous input
-            String sortingOrder = scanner.nextLine();
-            sortResidents(residents, sortingOrder);
-            displayResidentInfo.displayResidentInformation(currentLocation);
-            
-            break;
-        case "3":
-            // Exit
-            System.exit(0);
-            break;
-        default:
-            System.out.println("Invalid option.");
-            break;
-    }
-        }
     }
     
-    
-
     public void displayResidentInformation(String currentLocation) {
+        residentManager.loadResidents("residents.csv", "stands.csv");
+        standManager.loadStands("stands.csv");
         List<Resident> residents = residentManager.getResidentsByResidentialArea(currentLocation);
         if (residents.isEmpty()) {
             System.out.println("No residents found in " + currentLocation);
