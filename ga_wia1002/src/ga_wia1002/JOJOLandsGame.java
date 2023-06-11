@@ -9,10 +9,10 @@ import java.util.*;
 
 public class JOJOLandsGame {
     private JOJOLandsMap map;
+    private JojolandLocation previousLocation;
     private JojolandLocation currentLocation;
     private int currentDay;
     private String day;
-    // Create restaurants
     
 //    private static final String DB_URL = "jdbc:mysql://localhost:3306/game_database";
 //    private static final String DB_USERNAME = "your_username";
@@ -55,14 +55,34 @@ public class JOJOLandsGame {
                     optionCounter++;
                 }
                 System.out.println(" ");
-            
-                System.out.println("[2] Advance to Next Day");
-                System.out.println("[3] Save Game");
-                System.out.println("[4] Exit");
+                
+                //print other options
+                String[] menuOptions = {
+                    "Advance to Next Day",
+                    "Save Game",
+                    "Exit",
+                };
+                for (int i = 0; i < menuOptions.length; i++) {
+                    System.out.println("[" + (i + 2) + "] " + menuOptions[i]);
+                }        
+                
                 System.out.print("Select: ");
-
                 String input = scanner.nextLine().trim();
-                if (input.equals("2")) {
+                
+                if(input.charAt(0)=='1'){
+                    if (input.length() < 2 || !Character.isDigit(input.charAt(0))) {            //so no error if user only type 1 or A
+                        System.out.println("Invalid input format. Please enter a digit followed by a character.");
+                        continue; // Go back to the beginning of the loop to prompt for input again
+                    }
+                    map.setPreviousLocation(currentLocation);       //set location before travelling as previousLocation
+                    JojolandLocation destination = findDestination(input);
+                    if (destination != null) {
+                        moveToLocation(destination);
+                        printCurrentLocation();        
+                    } else {
+                        System.out.println("Invalid input. Please try again.");
+                    }
+                } else if (input.equals("2")) {
                     advanceToNextDay();
                     calculateDay();
                     System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
@@ -73,19 +93,10 @@ public class JOJOLandsGame {
                 } else if (input.equals("4")) {
                     System.out.println("Exiting JOJOLands game. Goodbye!");
                     break;
-                } else {
-                    JojolandLocation destination = findDestination(input);
-                    if (destination != null) {
-                        moveToLocation(destination);
-                        printCurrentLocation();
-                    } else {
-                        System.out.println("Invalid input. Please try again.");
-                    }
                 }
             }
-            
-            
-            //at restaurants
+
+//at restaurants
             if (currentLocation.getName().equals("Savage Garden") || currentLocation.getName().equals("Cafe Deux Magots") || 
                 currentLocation.getName().equals("Jade Garden")|| currentLocation.getName().equals("Trattoria Trussardi") || 
                 currentLocation.getName().equals("Liberrio")) {
@@ -99,18 +110,37 @@ public class JOJOLandsGame {
                 }
                 System.out.println(" ");
                 
-                System.out.println("[2] View Waiting List and Order Processing List");       
-                System.out.println("[3] View Menu");
-                System.out.println("[4] View Sales Information");
-                System.out.println("[5] Milagro Man");
-                System.out.println("[6] Back ("+")"); //previous location
-                System.out.println("[7] Back to Town Hall");
-                
+                //other options
+                String[] menuOptions = {
+                    "View Waiting List and Order Processing List",
+                    "View Menu",
+                    "View Sales Information",
+                    "Milagro Man",
+                    "Back (" + map.getPreviousLocation().getName() + ")",
+                    "Back to Town Hall"
+                };
+
+                for (int i = 0; i < menuOptions.length; i++) {
+                    System.out.println("[" + (i + 2) + "] " + menuOptions[i]);
+                }                
                 //receive input
                 System.out.print("Select: ");
                 String input = scanner.nextLine().trim();   
-                
-                if (input.equals("2")) {
+         
+                if(input.charAt(0)=='1'){
+                    if (input.length() < 2 || !Character.isDigit(input.charAt(0))) {            //so no error if user only type 1 or A
+                        System.out.println("Invalid input format. Please enter a digit followed by a character.");
+                        continue; 
+                    }
+                    map.setPreviousLocation(currentLocation);       //set location before travelling as previousLocation
+                    JojolandLocation destination = findDestination(input);
+                    if (destination != null) {
+                        moveToLocation(destination);
+                        printCurrentLocation();        
+                    } else {
+                        System.out.println("Invalid input. Please try again.");
+                    }
+                }else if (input.equals("2")) {
                     showWP_List.displayWaitingAndProcessingList(currentDay,currentLocation.getName());
                 } else if (input.equals("3")) {
                     //View Menu
@@ -123,9 +153,15 @@ public class JOJOLandsGame {
                     
                 }else if(input.equals("6")){
                     //[6] back to previous location
+                        currentLocation = map.getPreviousLocation();
+                        moveToLocation(currentLocation);
+                        printCurrentLocation();  
+                        
                     
                 }else if(input.equals("7")){
                     currentLocation = map.getLocation("Town Hall");
+                    moveToLocation(currentLocation);
+                    printCurrentLocation();  
                 }
             }
             
@@ -139,15 +175,34 @@ public class JOJOLandsGame {
                 }
                 System.out.println(" ");
                 
-                System.out.println("[2] View Resident Information");
-                System.out.println("[3] Back (Savage Garden)");
-                System.out.println("[4] Back to Town Hall");
+                // Other options
+                String[] menuOptions = {
+                    "View Resident Information",
+                    "Back (" + map.getPreviousLocation().getName() + ")",
+                    "Back to Town Hall"
+                };
+
+                for (int i = 0; i < menuOptions.length; i++) {
+                    System.out.println("[" + (i + 2) + "] " + menuOptions[i]);
+                }
                 
                 System.out.print("Select: ");
                 String input = scanner.nextLine();  //user instruction
 
-                    
-                if (input.equals("2")) {
+                if(input.charAt(0)=='1'){
+                    if (input.length() < 2 || !Character.isDigit(input.charAt(0))) {            
+                        System.out.println("Invalid input format. Please enter a digit followed by a character.");
+                        continue; 
+                    }
+                    map.setPreviousLocation(currentLocation);       //set location before travelling as previousLocation
+                    JojolandLocation destination = findDestination(input);
+                    if (destination != null) {
+                        moveToLocation(destination);
+                        printCurrentLocation();        
+                    } else {
+                        System.out.println("Invalid input. Please try again.");
+                    }
+                }else if (input.equals("2")) { //[2] View Resident Information
                     displayResidentInfo.displayResidentInformation(currentLocation.getName());
                     System.out.println("\n[1] View Resident's Profile");
                     System.out.println("[2] Sort");
@@ -156,14 +211,14 @@ public class JOJOLandsGame {
                     System.out.print("Select: ");
                     input = scanner.nextLine();  //user instruction
                     
-                    if(input.equals("1")){
+                    if(input.equals("1")){  //[1] View Resident's Profile
                         Scanner sc = new Scanner(System.in);
                         System.out.print("Enter the resident’s name: ");
                         String residentName =sc.nextLine();
                         viewProfile.printResidentProfile(residentName);
                     }
            
-                    else if(input.equals("2")){
+                    else if(input.equals("2")){ //{2} Sort
                         System.out.print("Enter the sorting order (e.g., 'Stamina (ASC); Precision (DESC); Stand (ASC)'): ");
                         scanner.nextLine(); // Clear the newline character from previous input
                         String sortingOrder = scanner.nextLine();
@@ -171,45 +226,45 @@ public class JOJOLandsGame {
                         displayResidentInfo.displayResidentInformation(currentLocation.getName());                           
                     }
                     
-                    else if(input.equals("3")){
+                    else if(input.equals("3")){ //[3] Exit
                         // Exit
                         System.exit(0);
                         break;
                     } 
-                    
-                    
-                } else if (input.equals("3")) {
-                    currentLocation = map.getLocation("Savage Garden");
-                } else if (input.equals("4")) {
+                } else if (input.equals("3")) { //[3]back to previous location
+                    currentLocation = map.getPreviousLocation();
+                    moveToLocation(currentLocation);
+                    printCurrentLocation();
+                } else if (input.equals("4")) { //[4] back to Town Hall
                     currentLocation = map.getLocation("Town Hall");
-                } else{
-                        JojolandLocation destination = findDestination(input);
-                        if (destination != null) {
-                            moveToLocation(destination);
-                            printCurrentLocation();
-                        } else {
-                            System.out.println("Invalid input. Please try again.");
-                        }
-                    }  
+                    moveToLocation(currentLocation);
+                    printCurrentLocation();
+                }
                 }
             }
     }
-
+    
     private void printCurrentLocation() {
         System.out.println("Current Location: " + currentLocation.getName());
     }
 
-    private JojolandLocation findDestination(String input) {
-        for (JojolandLocation neighbor : currentLocation.getPaths().keySet()) {
-            if (neighbor.getName().startsWith(input.toUpperCase())) {
-                return neighbor;
-            }
+    private JojolandLocation findDestination(String input) {    //input is user input
+        String option = input.substring(1); // Extract the option part of the input (e.g., A, B, C), user will key in 1A, A is substring of 1(element behind 1)
+        char optionChar = option.charAt(0);  //eg:after substring, option store A, so 1st character='A'
+        int optionIndex = optionChar - 'A'; // Convert the option character to an index (0 for A, 1 for B, etc.), (A-A=65-65=0)so 1st index(0)=A
+
+        List<JojolandLocation> paths = new ArrayList<>(currentLocation.getPaths().keySet());
+        if (optionIndex >= 0 && optionIndex < paths.size()) {
+            return paths.get(optionIndex);  //return path choosen by user
         }
+
         return null;
     }
 
+
     private void moveToLocation(JojolandLocation destination) {
         System.out.println("Moving to " + destination.getName() + "...");
+        System.out.println("==================================================================================================================");
         currentLocation = destination;
     }
 
