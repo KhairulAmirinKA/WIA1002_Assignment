@@ -71,6 +71,7 @@ public class AnotherOneBitesTheDust {
 
 }
 
+/Savage Garden -> Angelo Rock -> Savage Garden -> Angelo Rock -> Savage Garden
 //Libeccio -> Vineyard -> Joestar Mansion -> Vineyard -> Polnareff Land
 //Jade Garden -> Town Hall -> Morioh Grand Hotel -> Jade Garden -> Town Hall -> Jade Garden -> Town Hall -> Jade Garden -> Town Hall -> Morioh Grand Hotel
-//Savage Garden -> Angelo Rock -> Savage Garden -> Angelo Rock -> Savage Garden
+
