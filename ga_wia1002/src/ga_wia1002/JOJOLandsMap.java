@@ -4,7 +4,8 @@ import java.util.*;
 public class JOJOLandsMap {     //JojolandLocation can receive locationName and all locationPaths info(path and distance)
     private Map<String, JojolandLocation> locations;    //create a map named locations which contain 2 types: String and JojolandLocation 
     private JojolandLocation previousLocation; // Add a variable to keep track of the previous location
-
+    
+    
     public JOJOLandsMap() {
         locations = new HashMap<>();    //intialise locations
         initializeMap();    //key in all value in locations
@@ -14,9 +15,31 @@ public class JOJOLandsMap {     //JojolandLocation can receive locationName and 
            return previousLocation;
        }
 
-    private void initializeMap() {
+    public List<String> getNeighbours(String locationName) {
+        List<String> neighbours = new ArrayList<>();
+        JojolandLocation location = getLocation(locationName);
+        if (location != null) {
+            Map<JojolandLocation, Integer> paths = location.getPaths();
+            for (JojolandLocation neighbour : paths.keySet()) {
+                neighbours.add(neighbour.getName());
+            }
+        }
+        return neighbours;
+    }
+    public int getEdgeWeight(String location1, String location2) {
+        JojolandLocation loc1 = getLocation(location1);
+        JojolandLocation loc2 = getLocation(location2);
+        if (loc1 != null && loc2 != null) {
+            Map<JojolandLocation, Integer> paths = loc1.getPaths();
+            return paths.getOrDefault(loc2, -1); // Return the edge weight or -1 if the edge doesn't exist
+        }
+        return -1; // Return -1 if either location is not found
+    }
+
+
+    public void initializeMap() {
         addLocation("Town Hall");       //add locationName
-        addLocation("Moriah Grand Hotel");
+        addLocation("Morioh Grand Hotel");
         addLocation("Jade Garden");
         addLocation("Cafe Deux Magots");
         addLocation("Polnareff Land");
@@ -30,24 +53,23 @@ public class JOJOLandsMap {     //JojolandLocation can receive locationName and 
         addLocation("Angelo Rock");
         addLocation("Green Dolphin Street Prison");
 
-        addPath("Town Hall", "Moriah Grand Hotel", 5);  //add key(location,destination)and value(distance)
+        addPath("Town Hall", "Morioh Grand Hotel", 5);  //add key(location,destination)and value(distance)
         addPath("Town Hall", "Jade Garden", 5);
         addPath("Town Hall", "Cafe Deux Magots", 4);
         addPath("Cafe Deux Magots", "Polnareff Land", 4);
         addPath("Cafe Deux Magots", "Jade Garden", 3);
         addPath("Cafe Deux Magots", "Savage Garden", 4);
         addPath("Polnareff Land", "Savage Garden", 6);
-        addPath("Moriah Grand Hotel", "Trattoria Trussardi", 6);
-        addPath("Moriah Grand Hotel", "Jade Garden", 3);
+        addPath("Morioh Grand Hotel", "Trattoria Trussardi", 6);
+        addPath("Morioh Grand Hotel", "Jade Garden", 3);
         addPath("Jade Garden", "San Giorgio Maggiore", 2);
         addPath("Jade Garden", "Joestar Mansion", 2);
         addPath("Joestar Mansion", "Savage Garden", 4);
+        addPath("Joestar Mansion", "Libeccio", 6);
+        addPath("Joestar Mansion", "Vineyard", 3);
         addPath("Savage Garden", "Vineyard", 8);
-        addPath("Savage Garden", "Polnareff Land", 6);
-        addPath("Vineyard", "Joestar Mansion", 3);
         addPath("Vineyard", "Libeccio", 6);
         addPath("Vineyard", "DIO's Mansion", 3);
-        addPath("Joestar Mansion", "Libeccio", 6);
         addPath("San Giorgio Maggiore", "Libeccio", 4);
         addPath("Trattoria Trussardi", "San Giorgio Maggiore", 3);
         addPath("Trattoria Trussardi", "Green Dolphin Street Prison", 6);
@@ -87,6 +109,7 @@ class JojolandLocation {    //in this class will have name of location and path 
         this.name = name;
         paths = new HashMap<>();
     }
+
 
     public void addPath(JojolandLocation destination, int distance) {   //the location can addPath, destination and distance
         paths.put(destination, distance);
