@@ -248,5 +248,57 @@ public abstract class JOJOLandsRestaurant {
      }
         
     }
+    
+    
+    //milagro man
+    public void milagroMan(String restaurant_name){
+        
+        System.out.println("Milagro Man mode");
+        
+        //for hashmap
+        HashMap<String, Double> restaurantPrice= new HashMap<>();
+        
+        //choose hashmap
+        switch (restaurant_name){
+            
+            case "jadeGarden":
+                restaurantPrice= jadeGarden_Price;
+                break;
+                
+            case "trattoriaTrussardi":
+                restaurantPrice= trattoriaTrussardi_Price;
+                break;
+                
+            case "savageGarden":
+                restaurantPrice= savageGarden_Price;
+                break;
+                
+            case "cafeDeuxMagots":
+                 restaurantPrice= cafeDeuxMagots_Price;
+                break;
+                
+                
+            case "libeccio":
+                 restaurantPrice= libeccio_Price;
+                break;
+        }//switch
+        
+        Scanner sc= new Scanner(System.in);
+        
+        String foodName;
+        double newPrice;
+        
+        System.out.print("Enter food name: ");
+        foodName= sc.nextLine();
+        
+        System.out.print("Enter new price: $");
+        newPrice= sc.nextDouble();
+        
+        //modify price
+        restaurantPrice.put(foodName, newPrice);
+        
+        
+        
+    }
 }
 

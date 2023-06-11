@@ -1,19 +1,20 @@
-| 1  | Jolyne Cujoh           | 19  | Female |Scrambled Egg White with Milk                  |
-| 2  | Narciso Anasui         | 25  | Male   |Spring Organic Omelette                        |
-| 3  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 4  | Sale                   | -1  | Male   |Zucchero and Sale                              |
-| 5  | DIO                    | 121 | Male   |Formaggio                                      |
-| 6  | Prosciutto             | -1  | Male   |Ghiaccio                                       |
-| 7  | Donatello Versus       | 25  | Male   |Deep-fried Hiroshima Oysters                   |
-| 8  | Pesci                  | -1  | Male   |Melone                                         |
-| 9  | Enrico Pucci           | 39  | Male   |Poached Tofu with Dried Shrimps                |
-| 10 | Diavolo                | 33  | Male   |Spring Lobster Salad                           |
-| 11 | Enya the Hag           | -1  | Female |Poached Tofu with Dried Shrimps                |
-| 12 | Narancia Ghirga        | 17  | Male   |Spring Lobster Salad                           |
-| 13 | Aya Tsuji              | -1  | Female |White Asparagus                                |
-| 14 | Bruno Bucciarati       | 20  | Male   |Joseph’s Tequila                               |
-| 15 | Tonio Trussardi        | 29  | Male   |Poached Tofu with Dried Shrimps                |
-| 16 | Yoshihiro Kira         | -1  | Male   |Prosciutto and Pesci                           |
-| 17 | Anjuro Katagiri        | 34  | Male   |White Asparagus                                |
-| 18 | Masazo Kinoto          | 29  | Male   |Joseph’s Tequila                               |
-| 19 | Keicho Nijimura        | 18  | Male   |Spring Organic Omelette                        |
+| 1  | Erina Pendleton        | 70  | Female |Truffle-flavoured Poultry Supreme              |
+| 2  | Ermes Costello         | 21  | Female |Braised Chicken in Black Bean Sauce            |
+| 3  | Holy Kujo              | 45  | Female |Truffle-flavoured Poultry Supreme              |
+| 4  | Squalo                 | -1  | Male   |Giorno’s Donuts                                |
+| 5  | Jolyne Cujoh           | 19  | Female |Braised Goose Web with Vermicelli              |
+| 6  | Sale                   | -1  | Male   |Truffle-flavoured Poultry Supreme              |
+| 7  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 8  | Prosciutto             | -1  | Male   |Truffle-flavoured Poultry Supreme              |
+| 9  | Jean Pierre Polnareff  | 24  | Male   |Deep-fried Hiroshima Oysters                   |
+| 10 | Ghiaccio               | -1  | Male   |White Asparagus                                |
+| 11 | Donatello Versus       | 25  | Male   |Poached Tofu with Dried Shrimps                |
+| 12 | Diavolo                | 33  | Male   |Sampling Matured Cheese Platter                |
+| 13 | Rikiel                 | 24  | Male   |Kakyoin’s Cherry                               |
+| 14 | Leone Abbacchio        | 21  | Male   |Ghiaccio                                       |
+| 15 | Shigekiyo Yangu        | 14  | Male   |Scrambled Egg White with Milk                  |
+| 16 | Yoshikage Kira         | 33  | Male   |Melone                                         |
+| 17 | Yuya Fungami           | -1  | Male   |Melone                                         |
+| 18 | Masazo Kinoto          | 29  | Male   |Deep-fried Hiroshima Oysters                   |
+| 19 | Akira Otoishi          | 19  | Male   |Deep-fried Hiroshima Oysters                   |
+| 20 | Ken Oyanagi            | 11  | Male   |Deep-fried Hiroshima Oysters                   |

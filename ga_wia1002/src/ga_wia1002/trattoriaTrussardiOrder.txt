@@ -1,1 +1,2 @@
 | 1  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
+| 2  | Jonathan Joestar       | 20  | Male   |Caprese Salad                                  |

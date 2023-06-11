@@ -114,6 +114,7 @@ public class JOJOLandsRestaurantSimulation {
                 savageGarden.displayOrderProcessingList();
                 savageGarden.storeOrder("savageGarden");
                 savageGarden.viewSales("savageGarden");
+              
                             }
 
                 System.out.println("====================================================================================================");
