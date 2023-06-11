@@ -20,7 +20,8 @@ public class Preference {
     private Restaurant JotaroRestaurant = null;
     private List<Restaurant> JonathanFoodList = new ArrayList<>();
     private List<Restaurant> JosephFoodList = new ArrayList<>();
-    //the file path of residents.csv and stands.csv
+    
+    //the file path of residents. and stands.csv
     static String residentFilePath="src\\ga_wia1002\\residents.csv";
     static String standFilePath="src\\ga_wia1002\\stands.csv";
 
@@ -381,7 +382,7 @@ public class Preference {
 
     public void getResidents() {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("residents.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader(residentFilePath));
             String line;
             boolean headerSkipped = false;
 

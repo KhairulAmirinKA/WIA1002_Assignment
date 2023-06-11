@@ -1,22 +1,13 @@
-| 1  | Mikitaka Hazekura      | 216 | Male   |Spring Lobster Salad                           |
-| 2  | Emporio Alnino         | 11  | Male   |Giorno’s Donuts                                |
-| 3  | Enrico Pucci           | 39  | Male   |Spring Lobster Salad                           |
-| 4  | Trish Una              | 15  | Female |Formaggio                                      |
-| 5  | Cioccolata             | 34  | Male   |Ghiaccio                                       |
-| 6  | Noriaki Kakyoin        | 17  | Male   |Spring Lobster Salad                           |
-| 7  | Muhammad Avdol         | 29  | Male   |Scrambled Egg White with Milk                  |
-| 8  | Narancia Ghirga        | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 9  | Narciso Anasui         | 25  | Male   |Formaggio                                      |
-| 10 | Toshikazu Hazamada     | 18  | Male   |Kakyoin’s Porridge                             |
-| 11 | Ungalo                 | 24  | Male   |Melone                                         |
-| 12 | Guido Mista            | 18  | Male   |Scrambled Egg White with Milk                  |
-| 13 | Foo Fighters           | 22  | Female |Sampling Matured Cheese Platter                |
-| 14 | Rohan Kishibe          | 20  | Male   |Prosciutto and Pesci                           |
-| 15 | Bruno Bucciarati       | 20  | Male   |Formaggio                                      |
-| 16 | Bruno Bucciarati       | 20  | Male   |Formaggio                                      |
-| 17 | Enya the Hag           | -1  | Female |White Asparagus                                |
-| 18 | Vanilla Ice            | -1  | Male   |Truffle-flavoured Poultry Supreme              |
-| 19 | Aya Tsuji              | -1  | Female |Zucchero and Sale                              |
-| 20 | Terunosuke Miyamoto    | -1  | Male   |Scrambled Egg White with Milk                  |
-| 21 | Illuso                 | -1  | Male   |Kakyoin’s Cherry                               |
-| 22 | Tizzano                | -1  | Male   |Spring Lobster Salad                           |
+| 1  | Erina Pendleton        | 70  | Female |White Asparagus                                |
+| 2  | Emporio Alnino         | 11  | Male   |Spring Lobster Salad                           |
+| 3  | Anjuro Katagiri        | 34  | Male   |Spring Lobster Salad                           |
+| 4  | Koichi Hirose          | 15  | Male   |Sampling Matured Cheese Platter                |
+| 5  | Jonathan Joestar       | 20  | Male   |Sampling Matured Cheese Platter                |
+| 6  | Okuyasu Nijimura       | 15  | Male   |Spring Organic Omelette                        |
+| 7  | Joseph Joestar         | 18  | Male   |Truffle-flavoured Poultry Supreme              |
+| 8  | Joseph Joestar         | 18  | Male   |Truffle-flavoured Poultry Supreme              |
+| 9  | Guido Mista            | 18  | Male   |Spring Organic Omelette                        |
+| 10 | Guido Mista            | 18  | Male   |Spring Organic Omelette                        |
+| 11 | Suzi Q.                | -1  | Female |Truffle-flavoured Poultry Supreme              |
+| 12 | Vanilla Ice            | -1  | Male   |Spring Organic Omelette                        |
+| 13 | Prosciutto             | -1  | Male   |Spring Lobster Salad                           |

@@ -1,2 +1,14 @@
-| 1  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
-| 2  | Jonathan Joestar       | 20  | Male   |Caprese Salad                                  |
+| 1  | Hayato Kawajiri        | 11  | Male   |Lamb Chops with Apple Sauce                    |
+| 2  | DIO                    | 121 | Male   |Creme caramel                                  |
+| 3  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
+| 4  | Enrico Pucci           | 39  | Male   |Creme caramel                                  |
+| 5  | Pannacotta Fugo        | 16  | Male   |Caprese Salad                                  |
+| 6  | Cioccolata             | 34  | Male   |Lamb Chops with Apple Sauce                    |
+| 7  | Keicho Nijimura        | 18  | Male   |Spaghetti alla Puttanesca                      |
+| 8  | Muhammad Avdol         | 29  | Male   |Spaghetti alla Puttanesca                      |
+| 9  | Rohan Kishibe          | 20  | Male   |Caprese Salad                                  |
+| 10 | Risotto Nero           | 28  | Male   |Caprese Salad                                  |
+| 11 | Mario Zucchero         | 24  | Male   |Lamb Chops with Apple Sauce                    |
+| 12 | Donatello Versus       | 25  | Male   |Spaghetti alla Puttanesca                      |
+| 13 | Carne                  | -1  | Male   |Caprese Salad                                  |
+| 14 | Melone                 | -1  | Male   |Creme caramel                                  |

@@ -1,20 +1,11 @@
-| 1  | Erina Pendleton        | 70  | Female |Truffle-flavoured Poultry Supreme              |
-| 2  | Ermes Costello         | 21  | Female |Braised Chicken in Black Bean Sauce            |
-| 3  | Holy Kujo              | 45  | Female |Truffle-flavoured Poultry Supreme              |
-| 4  | Squalo                 | -1  | Male   |Giorno’s Donuts                                |
-| 5  | Jolyne Cujoh           | 19  | Female |Braised Goose Web with Vermicelli              |
-| 6  | Sale                   | -1  | Male   |Truffle-flavoured Poultry Supreme              |
-| 7  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 8  | Prosciutto             | -1  | Male   |Truffle-flavoured Poultry Supreme              |
-| 9  | Jean Pierre Polnareff  | 24  | Male   |Deep-fried Hiroshima Oysters                   |
-| 10 | Ghiaccio               | -1  | Male   |White Asparagus                                |
-| 11 | Donatello Versus       | 25  | Male   |Poached Tofu with Dried Shrimps                |
-| 12 | Diavolo                | 33  | Male   |Sampling Matured Cheese Platter                |
-| 13 | Rikiel                 | 24  | Male   |Kakyoin’s Cherry                               |
-| 14 | Leone Abbacchio        | 21  | Male   |Ghiaccio                                       |
-| 15 | Shigekiyo Yangu        | 14  | Male   |Scrambled Egg White with Milk                  |
-| 16 | Yoshikage Kira         | 33  | Male   |Melone                                         |
-| 17 | Yuya Fungami           | -1  | Male   |Melone                                         |
-| 18 | Masazo Kinoto          | 29  | Male   |Deep-fried Hiroshima Oysters                   |
-| 19 | Akira Otoishi          | 19  | Male   |Deep-fried Hiroshima Oysters                   |
-| 20 | Ken Oyanagi            | 11  | Male   |Deep-fried Hiroshima Oysters                   |
+| 1  | Holy Kujo              | 45  | Female |Scrambled Egg White with Milk                  |
+| 2  | Tizzano                | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 3  | Jolyne Cujoh           | 19  | Female |Braised Chicken in Black Bean Sauce            |
+| 4  | Squalo                 | -1  | Male   |Poached Tofu with Dried Shrimps                |
+| 5  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 6  | Illuso                 | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 7  | Jean Pierre Polnareff  | 24  | Male   |Deep-fried Hiroshima Oysters                   |
+| 8  | Narancia Ghirga        | 17  | Male   |Deep-fried Hiroshima Oysters                   |
+| 9  | Ungalo                 | 24  | Male   |Deep-fried Hiroshima Oysters                   |
+| 10 | Toyohiro Kanedaichi    | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 11 | Reimi Sugimoto         | 16  | Female |Deep-fried Hiroshima Oysters                   |
