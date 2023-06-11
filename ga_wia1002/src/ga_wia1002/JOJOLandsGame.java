@@ -1,5 +1,4 @@
 package ga_wia1002;
-import static ga_wia1002.ProjectJOJOLandSystem.sortResidents;
 import java.util.*;
 //import java.sql.Connection;
 //import java.sql.DriverManager;
@@ -24,24 +23,19 @@ public class JOJOLandsGame {
         currentLocation = map.getLocation("Town Hall"); //
         currentDay = 1; // Initialize currentDay to 1
         day = "Sunday";   // Initialize day1 as Sunday
+        
     }
 
     public void start() {
         ResidentManager residentManager = new ResidentManager();
-        
-        //put the file path
-        String residentFilePath="src\\ga_wia1002\\residents.csv";
-        String standFilePath="src\\ga_wia1002\\stands.csv";
-        
-        residentManager.loadResidents(residentFilePath, standFilePath);
-        
+        residentManager.loadResidents("residents.csv", "stands.csv");
         List<Resident> residents = residentManager.getResidents();
         StandManager standManager = new StandManager();
-        standManager.loadStands(standFilePath);
+        standManager.loadStands("stands.csv");
+        ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
+        
         //Q3 view Waiting List and Processing List 
         showWaitingAndProcessingList showWP_List = new showWaitingAndProcessingList();
-        //Q2
-        ProjectJOJOLandSystem displayResidentInfo = new ProjectJOJOLandSystem();
         
         //Q4-view resident's profile
         Preference viewProfile = new Preference();
@@ -105,7 +99,7 @@ public class JOJOLandsGame {
 //at restaurants
             if (currentLocation.getName().equals("Savage Garden") || currentLocation.getName().equals("Cafe Deux Magots") || 
                 currentLocation.getName().equals("Jade Garden")|| currentLocation.getName().equals("Trattoria Trussardi") || 
-                currentLocation.getName().equals("Libeccio")) {
+                currentLocation.getName().equals("Liberrio")) {
                 
                 //print all the instruction you can choose
                 System.out.println("[1] Move to:");
@@ -209,7 +203,7 @@ public class JOJOLandsGame {
                         System.out.println("Invalid input. Please try again.");
                     }
                 }else if (input.equals("2")) { //[2] View Resident Information
-                    displayResidentInfo.displayResidentInformation(currentLocation.getName());
+                    jojoSystem.displayResidentInformation(currentLocation.getName());
                     System.out.println("\n[1] View Resident's Profile");
                     System.out.println("[2] Sort");
                     System.out.println("[3] Exit");
@@ -225,13 +219,11 @@ public class JOJOLandsGame {
                     }
            
                     else if(input.equals("2")){ //{2} Sort
-                        System.out.print("Enter the sorting order (e.g., 'Stamina (ASC); Precision (DESC); Stand (ASC)'): ");
-                        scanner.nextLine(); // Clear the newline character from previous input
+                        List<Resident> sortResident = residentManager.getResidentsByResidentialArea(currentLocation.getName());//must in loop,so can get location
+                        System.out.print("Enter the sorting order (e.g., Stamina (asc); Precision (desc); Stand (asc)): ");
                         String sortingOrder = scanner.nextLine();
-                        sortResidents(residents, sortingOrder);
-                        displayResidentInfo.displayResidentInformation(currentLocation.getName());                           
+                        jojoSystem.sortResidents(sortResident, sortingOrder); // Update sortResident with the sorted list    
                     }
-                    
                     else if(input.equals("3")){ //[3] Exit
                         // Exit
                         System.exit(0);
@@ -340,6 +332,7 @@ public class JOJOLandsGame {
     public static void main(String[] args) {
         JOJOLandsGame game = new JOJOLandsGame();
         game.start();
+        
     }
 }
 
