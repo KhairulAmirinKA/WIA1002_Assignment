@@ -62,6 +62,7 @@ public abstract class JOJOLandsRestaurant {
 
     public JOJOLandsRestaurant(List<Resident> waitingList) {
         this.waitingList =waitingList;
+     //   orderProcessingList = new ArrayList<>();
     }
 
     public int getCurrentDay() {

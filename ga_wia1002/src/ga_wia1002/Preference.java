@@ -333,14 +333,14 @@ public class Preference {
         trattoriaFoods.add("Spaghetti alla Puttanesca ($15.00)");
         Restaurant trattoria = new Restaurant("Trattoria Trussardi", trattoriaFoods);
 
-        List<String> liberrioFoods = new ArrayList<>();
-        liberrioFoods.add("Formaggio ($12.50)");
-        liberrioFoods.add("Ghiaccio ($1.01)");
-        liberrioFoods.add("Melone ($5.20)");
-        liberrioFoods.add("Prosciutto and Pesci ($20.23)");
-        liberrioFoods.add("Risotto ($13.14)");
-        liberrioFoods.add("Zucchero and Sale ($0.60)");
-        Restaurant liberrio = new Restaurant("Liberrio", liberrioFoods);
+        List<String> libeccioFoods = new ArrayList<>();
+        libeccioFoods.add("Formaggio ($12.50)");
+        libeccioFoods.add("Ghiaccio ($1.01)");
+        libeccioFoods.add("Melone ($5.20)");
+        libeccioFoods.add("Prosciutto and Pesci ($20.23)");
+        libeccioFoods.add("Risotto ($13.14)");
+        libeccioFoods.add("Zucchero and Sale ($0.60)");
+        Restaurant libeccio = new Restaurant("Liberrio", libeccioFoods);
 
         List<String> savageGardenFoods = new ArrayList<>();
         savageGardenFoods.add("Abbacchio’s Tea ($1.00)");
@@ -355,7 +355,7 @@ public class Preference {
         addRestaurant(jadeGarden);
         addRestaurant(cafeDeuxMagots);
         addRestaurant(trattoria);
-        addRestaurant(liberrio);
+        addRestaurant(libeccio);
         addRestaurant(savageGarden);
     }
 

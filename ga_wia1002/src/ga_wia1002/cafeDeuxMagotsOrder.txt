@@ -1,16 +1,25 @@
-| 1  | Mikitaka Hazekura      | 216 | Male   |Abbacchio’s Tea                                |
-| 2  | Hayato Kawajiri        | 11  | Male   |Zucchero and Sale                              |
-| 3  | Holy Kujo              | 45  | Female |Braised Chicken in Black Bean Sauce            |
-| 4  | Koichi Hirose          | 15  | Male   |Truffle-flavoured Poultry Supreme              |
-| 5  | Tomoko Higashikata     | 37  | Female |Giorno’s Donuts                                |
-| 6  | Pannacotta Fugo        | 16  | Male   |Prosciutto and Pesci                           |
-| 7  | Anjuro Katagiri        | 34  | Male   |Kakyoin’s Cherry                               |
-| 8  | Joseph Joestar         | 18  | Male   |White Asparagus                                |
-| 9  | Cioccolata             | 34  | Male   |DIO’s Bread                                    |
-| 10 | Jonathan Joestar       | 20  | Male   |Truffle-flavoured Poultry Supreme              |
-| 11 | Diavolo                | 33  | Male   |Kakyoin’s Cherry                               |
-| 12 | Ermes Costello         | 21  | Female |Spring Organic Omelette                        |
-| 13 | Mario Zucchero         | 24  | Male   |Truffle-flavoured Poultry Supreme              |
-| 14 | Mario Zucchero         | 24  | Male   |Truffle-flavoured Poultry Supreme              |
-| 15 | Iggy                   | -1  | Male   |Braised Goose Web with Vermicelli              |
-| 16 | Toyohiro Kanedaichi    | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 1  | Lisa Lisa              | 50  | Female |Kakyoin’s Cherry                               |
+| 2  | Hayato Kawajiri        | 11  | Male   |Prosciutto and Pesci                           |
+| 3  | Cioccolata             | 34  | Male   |Risotto                                        |
+| 4  | Shigekiyo Yangu        | 14  | Male   |Zucchero and Sale                              |
+| 5  | George Joestar II      | 32  | Male   |Prosciutto and Pesci                           |
+| 6  | Joseph Joestar         | 18  | Male   |Spring Lobster Salad                           |
+| 7  | Jean Pierre Polnareff  | 24  | Male   |Abbacchio’s Tea                                |
+| 8  | Toshikazu Hazamada     | 18  | Male   |Giorno’s Donuts                                |
+| 9  | Rikiel                 | 24  | Male   |Ghiaccio                                       |
+| 10 | Guido Mista            | 18  | Male   |Kakyoin’s Cherry                               |
+| 11 | Ungalo                 | 24  | Male   |White Asparagus                                |
+| 12 | Akira Otoishi          | 19  | Male   |Braised Chicken in Black Bean Sauce            |
+| 13 | Mario Zucchero         | 24  | Male   |Sampling Matured Cheese Platter                |
+| 14 | Jonathan Joestar       | 20  | Male   |Spring Organic Omelette                        |
+| 15 | Leone Abbacchio        | 21  | Male   |Spring Organic Omelette                        |
+| 16 | Rohan Kishibe          | 20  | Male   |Sampling Matured Cheese Platter                |
+| 17 | Ermes Costello         | 21  | Female |Zucchero and Sale                              |
+| 18 | Ermes Costello         | 21  | Female |Zucchero and Sale                              |
+| 19 | Iggy                   | -1  | Male   |DIO’s Bread                                    |
+| 20 | Yuya Fungami           | -1  | Male   |Spring Organic Omelette                        |
+| 21 | Terunosuke Miyamoto    | -1  | Male   |Prosciutto and Pesci                           |
+| 22 | Toyohiro Kanedaichi    | -1  | Male   |Formaggio                                      |
+| 23 | Melone                 | -1  | Male   |Risotto                                        |
+| 24 | Secco                  | -1  | Male   |Spring Organic Omelette                        |
+| 25 | Tizzano                | -1  | Male   |Zucchero and Sale                              |

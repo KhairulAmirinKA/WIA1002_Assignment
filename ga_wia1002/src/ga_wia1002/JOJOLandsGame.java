@@ -105,7 +105,7 @@ public class JOJOLandsGame {
 //at restaurants
             if (currentLocation.getName().equals("Savage Garden") || currentLocation.getName().equals("Cafe Deux Magots") || 
                 currentLocation.getName().equals("Jade Garden")|| currentLocation.getName().equals("Trattoria Trussardi") || 
-                currentLocation.getName().equals("Liberrio")) {
+                currentLocation.getName().equals("Libeccio")) {
                 
                 //print all the instruction you can choose
                 System.out.println("[1] Move to:");
