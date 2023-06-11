@@ -21,6 +21,10 @@ public class Preference {
     private List<Restaurant> JonathanFoodList = new ArrayList<>();
     private List<Restaurant> JosephFoodList = new ArrayList<>();
     
+    //the file path of residents.csv and stands.csv
+    static String residentFilePath="src\\ga_wia1002\\residents.csv";
+    static String standFilePath="src\\ga_wia1002\\stands.csv";
+    
 // Reset trattoriaFrequency at the start of each week
 
     public Preference() {
@@ -152,9 +156,11 @@ public class Preference {
     
     private void viewResidentProfile(String selectedResidentName) {
       StandManager standManager = new StandManager();   //read stands.csv and residents.csv
-      standManager.loadStands("stands.csv");
+        
+      standManager.loadStands(standFilePath);
       ResidentManager residentManager = new ResidentManager();
-      residentManager.loadResidents("residents.csv", "stands.csv");
+      residentManager.loadResidents(residentFilePath, standFilePath);
+      
       List<Resident> residents = residentManager.getResidents(); // Get the populated list of residents
       System.out.println("====================================================================================");
       System.out.println(selectedResidentName+"'s Profile:");
@@ -374,7 +380,7 @@ public class Preference {
 
     public void getResidents() {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("residents.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader(residentFilePath));
             String line;
             boolean headerSkipped = false;
 

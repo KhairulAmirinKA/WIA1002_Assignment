@@ -1,11 +1,16 @@
-| 1  | Holy Kujo              | 45  | Female |Poached Tofu with Dried Shrimps ($12.00)       |
-| 2  | Secco                  | -1  | Male   |Deep-fried Hiroshima Oysters ($17.00)          |
-| 3  | Enrico Pucci           | 39  | Male   |Poached Tofu with Dried Shrimps ($12.00)       |
-| 4  | Mario Zucchero         | 24  | Male   |Braised Goose Web with Vermicelli ($21.00)     |
-| 5  | Rikiel                 | 24  | Male   |Scrambled Egg White with Milk ($10.00)         |
-| 6  | Illuso                 | -1  | Male   |Scrambled Egg White with Milk ($10.00)         |
-| 7  | Ungalo                 | 24  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
-| 8  | Formaggio              | -1  | Male   |Braised Chicken in Black Bean Sauce ($15.00)   |
-| 9  | Tamami Kobayashi       | 20  | Male   |Poached Tofu with Dried Shrimps ($12.00)       |
-| 10 | Anjuro Katagiri        | 34  | Male   |Scrambled Egg White with Milk ($10.00)         |
-| 11 | Yukako Yamagishi       | -1  | Female |Deep-fried Hiroshima Oysters ($17.00)          |
+| 1  | Jolyne Cujoh           | 19  | Female |Scrambled Egg White with Milk                  |
+| 2  | Squalo                 | -1  | Male   |Sampling Matured Cheese Platter                |
+| 3  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 4  | Melone                 | -1  | Male   |Abbacchio’s Tea                                |
+| 5  | DIO                    | 121 | Male   |Spring Lobster Salad                           |
+| 6  | Ghiaccio               | -1  | Male   |Giorno’s Donuts                                |
+| 7  | Enrico Pucci           | 39  | Male   |Sampling Matured Cheese Platter                |
+| 8  | Bruno Bucciarati       | 20  | Male   |Braised Goose Web with Vermicelli              |
+| 9  | Rikiel                 | 24  | Male   |Deep-fried Hiroshima Oysters                   |
+| 10 | Yoshihiro Kira         | -1  | Male   |Spring Lobster Salad                           |
+| 11 | Okuyasu Nijimura       | 15  | Male   |Melone                                         |
+| 12 | Masazo Kinoto          | 29  | Male   |Deep-fried Hiroshima Oysters                   |
+| 13 | Reimi Sugimoto         | 16  | Female |Spring Lobster Salad                           |
+| 14 | Ken Oyanagi            | 11  | Male   |Prosciutto and Pesci                           |
+| 15 | Tamami Kobayashi       | 20  | Male   |Joseph’s Tequila                               |
+| 16 | Akira Otoishi          | 19  | Male   |Spring Lobster Salad                           |

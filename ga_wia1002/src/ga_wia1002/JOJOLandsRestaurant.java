@@ -113,6 +113,7 @@ public abstract class JOJOLandsRestaurant {
     }
 
     public abstract void processOrders();
+    
     //store order to txt file
     public void storeOrder(String restaurant_name){
         
@@ -125,9 +126,10 @@ public abstract class JOJOLandsRestaurant {
         for (int i = 0; i < orderProcessingList.size(); i++) {
             Resident customer = orderProcessingList.get(i);
             
+            String foodName= customer.getOrder().replaceAll("\\s*\\(\\$\\d+\\.\\d+\\)", "");
             //store data to txt file
             writer.printf("| %-2d | %-22s | %-3d | %-6s |%-46s |%n", i + 1, customer.getName(), customer.getAge(),
-                    customer.getGender(),customer.getOrder());
+                    customer.getGender(),foodName);
         }
         
         writer.close();

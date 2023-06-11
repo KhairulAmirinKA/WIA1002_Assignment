@@ -1,7 +1,23 @@
-| 1  | Ermes Costello         | 21  | Female |Kakyoin’s Cherry ($3.50)                       |
-| 2  | Pesci                  | -1  | Male   |Joseph’s Tequila ($35.00)                      |
-| 3  | Toyohiro Kanedaichi    | -1  | Male   |Joseph’s Tequila ($35.00)                      |
-| 4  | Melone                 | -1  | Male   |Abbacchio’s Tea ($1.00)                        |
-| 5  | DIO                    | 121 | Male   |Abbacchio’s Tea ($1.00)                        |
-| 6  | Weather Report         | 39  | Male   |Kakyoin’s Cherry ($3.50)                       |
-| 7  | Tonio Trussardi        | 29  | Male   |Kakyoin’s Porridge ($4.44)                     |
+| 1  | Erina Pendleton        | 70  | Female |Kakyoin’s Porridge                             |
+| 2  | George Joestar II      | 32  | Male   |Prosciutto and Pesci                           |
+| 3  | Lisa Lisa              | 50  | Female |Zucchero and Sale                              |
+| 4  | Suzi Q.                | -1  | Female |Sampling Matured Cheese Platter                |
+| 5  | Noriaki Kakyoin        | 17  | Male   |Risotto                                        |
+| 6  | Donatello Versus       | 25  | Male   |Deep-fried Hiroshima Oysters                   |
+| 7  | Enya the Hag           | -1  | Female |Sampling Matured Cheese Platter                |
+| 8  | Vanilla Ice            | -1  | Male   |Spring Lobster Salad                           |
+| 9  | Rohan Kishibe          | 20  | Male   |Braised Chicken in Black Bean Sauce            |
+| 10 | Shigekiyo Yangu        | 14  | Male   |Prosciutto and Pesci                           |
+| 11 | Tonio Trussardi        | 29  | Male   |Poached Tofu with Dried Shrimps                |
+| 12 | Yukako Yamagishi       | -1  | Female |Kakyoin’s Porridge                             |
+| 13 | Terunosuke Miyamoto    | -1  | Male   |Kakyoin’s Porridge                             |
+| 14 | Leone Abbacchio        | 21  | Male   |Poached Tofu with Dried Shrimps                |
+| 15 | Narancia Ghirga        | 17  | Male   |Ghiaccio                                       |
+| 16 | Trish Una              | 15  | Female |Abbacchio’s Tea                                |
+| 17 | Formaggio              | -1  | Male   |Truffle-flavoured Poultry Supreme              |
+| 18 | Illuso                 | -1  | Male   |Risotto                                        |
+| 19 | Risotto Nero           | 28  | Male   |Abbacchio’s Tea                                |
+| 20 | Tizzano                | -1  | Male   |Truffle-flavoured Poultry Supreme              |
+| 21 | Emporio Alnino         | 11  | Male   |Deep-fried Hiroshima Oysters                   |
+| 22 | Foo Fighters           | 22  | Female |Deep-fried Hiroshima Oysters                   |
+| 23 | Weather Report         | 39  | Male   |Spring Lobster Salad                           |

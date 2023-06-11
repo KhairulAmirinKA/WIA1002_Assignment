@@ -14,7 +14,7 @@ public class JOJOLandsRestaurantSimulation {
         String location = "Jade Garden";
 
         if (location.equals("Savage Garden") || location.equals("Cafe Deux Magots") || location.equals("Jade Garden")
-                || location.equals("Trattoria Trussardi") || location.equals("Liberrio")) {
+                || location.equals("Trattoria Trussardi") || location.equals("Libeccio")) {
             if (instruction == 2) { // View Waiting List and Order Processing List
                 System.out.println("====================================================================================================");
                 System.out.println("Restaurant: " + location + "\n\n");
@@ -60,7 +60,7 @@ public class JOJOLandsRestaurantSimulation {
                             trattoriaTrussardiWaitingOrder.add(resident); // Add current resident to Trattoria Trussardi waiting list
                             break;
 
-                        case "Liberrio":
+                        case "Libeccio":
                             libeccioWaitingOrder.add(resident); // Add current resident to Liberrio waiting list
                             break;
 
@@ -84,24 +84,24 @@ public class JOJOLandsRestaurantSimulation {
                 jadeGarden.viewWaitingList();
                 jadeGarden.processOrders();
                 jadeGarden.displayOrderProcessingList();
-                jadeGarden.storeOrder("libeccio");
-                jadeGarden.viewSales("libeccio");
+                jadeGarden.storeOrder("jadeGarden");
+                jadeGarden.viewSales("jadeGarden");
 
                 System.out.println("Cafe Deux Magots:");
                 cafeDeuxMagots.viewWaitingList();
                 cafeDeuxMagots.processOrders();
                 cafeDeuxMagots.displayOrderProcessingList();
-                cafeDeuxMagots.storeOrder("libeccio");
-                cafeDeuxMagots.viewSales("libeccio");
+                cafeDeuxMagots.storeOrder("cafeDeuxMagots");
+                cafeDeuxMagots.viewSales("cafeDeuxMagots");
 
                 System.out.println("Trattoria Trussardi:");
                 trattoriaTrussardi.viewWaitingList();
                 trattoriaTrussardi.processOrders();
                 trattoriaTrussardi.displayOrderProcessingList();
-                trattoriaTrussardi.storeOrder("libeccio");
-                trattoriaTrussardi.viewSales("libeccio");
+                trattoriaTrussardi.storeOrder("trattoriaTrussardi");
+                trattoriaTrussardi.viewSales("trattoriaTrussardi");
 
-                System.out.println("Liberrio:");
+                System.out.println("Libeccio:");
                 libeccio.viewWaitingList();
                 libeccio.processOrders();
                 libeccio.displayOrderProcessingList();
