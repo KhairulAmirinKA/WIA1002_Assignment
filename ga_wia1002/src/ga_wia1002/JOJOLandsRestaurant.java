@@ -6,8 +6,6 @@ import java.io.*;
 public class JOJOLandsRestaurant {
     protected List<Resident> waitingList;
     protected List<Resident> orderProcessingList;
-    JOJOLandsGame game;
-    int currentDay;
 
     //create hashMap to store price of each food
     HashMap<String, Double> jadeGarden_Price = new HashMap<>();
@@ -19,8 +17,6 @@ public class JOJOLandsRestaurant {
     public JOJOLandsRestaurant(){
         waitingList=new ArrayList<>();
         orderProcessingList=new ArrayList<>();
-        game = new JOJOLandsGame();
-        currentDay=game.getCurrentDay();  
  
         //store the jadeGarden price into hashmap
         jadeGarden_Price.put("Braised Chicken in Black Bean Sauce", 15.00);
@@ -59,14 +55,52 @@ public class JOJOLandsRestaurant {
         savageGarden_Price.put("Kakyoin’s Cherry", 3.50);
         savageGarden_Price.put("Kakyoin’s Porridge", 4.44);
     }
+    
+    public void viewMenu(String restaurantName) {
+        Map<String, Double> menu;
+        switch (restaurantName){          
+            case "Jade Garden":
+                menu= jadeGarden_Price;
+                break;
+                
+            case "Trattoria Trussardi":
+                menu= trattoriaTrussardi_Price;
+                break;
+                
+            case "Savage Garden":
+                menu= savageGarden_Price;
+                break;
+                
+            case "Cafe Deux Magots":
+                 menu= cafeDeuxMagots_Price;
+                break;
+                
+            case "Libeccio":
+                 menu= libeccio_Price;
+                break;
+            default:
+                 System.out.println("Restaurant not found.");
+                 return; // Exit the method if restaurant not found
+        }
+        System.out.println("===================================================================================================");
+        System.out.println("Menu for " + restaurantName + ":");
+        System.out.println("+-----------------------------------------------+-----------------+");
+        System.out.println("| Menu                                          | Price($)        |");
+        System.out.println("+-----------------------------------------------+-----------------+");
+        for (Map.Entry<String, Double> entry : menu.entrySet()) {
+            
+            String foodItem = entry.getKey();    
+            double price = entry.getValue();
+            
+            System.out.printf("|%-46s | %-15.2f |%n",foodItem , price);
+        }
+        
+        System.out.println("+-----------------------------------------------+-----------------+");
+    }
 
     public JOJOLandsRestaurant(List<Resident> waitingList) {
         this.waitingList =waitingList;
      //   orderProcessingList = new ArrayList<>();
-    }
-
-    public int getCurrentDay() {
-        return currentDay;
     }
 
     public void setWaitingList(List<Resident> waitingList) {
@@ -146,7 +180,7 @@ public class JOJOLandsRestaurant {
     }
     
     //view sales from txt file
-    public void viewSales(String restaurant_name){
+    public void viewSales(String restaurant_name,int currentDay){
         
         //for hashmap
         HashMap<String, Double> restaurantPrice= new HashMap<>();
@@ -210,9 +244,9 @@ public class JOJOLandsRestaurant {
                 }//if
             }//while
          
-         
          //display food, quantity and price
-         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("===================================================================================================");
+         System.out.println("Restaurant: "+restaurant_name);
          System.out.println("Day "+currentDay+" Sales");
          System.out.println("+-----------------------------------------------+-------------------+");
          System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
