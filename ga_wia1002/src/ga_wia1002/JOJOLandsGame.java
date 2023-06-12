@@ -5,13 +5,9 @@ public class JOJOLandsGame{
     private JOJOLandsMap map;
     private JojolandLocation previousLocation;
     private JojolandLocation currentLocation;
-    private int currentDay;
     private String day;
+    int currentDay;
     
-    //the file path of residents. and stands.csv
-    static String residentFilePath="src\\ga_wia1002\\residents.csv";
-    static String standFilePath="src\\ga_wia1002\\stands.csv";
-
     public JOJOLandsGame() {
         map = new JOJOLandsMap();
         currentLocation = map.getLocation("Town Hall"); //
@@ -34,6 +30,7 @@ public class JOJOLandsGame{
         //Q4-view resident's profile
         Preference viewProfile = new Preference();
         
+        //Q4 viewMenu
         JOJOLandsRestaurant jojoRestaurant = new JOJOLandsRestaurant();
         //start
         System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
@@ -139,10 +136,10 @@ public class JOJOLandsGame{
                     resInfo.processList(currentDay,currentLocation.getName());  
                     resInfo.displayWaitingAndProcessingList(currentLocation.getName());
                 } else if (input.equals("3")) {
-                    //View Menu
+                    jojoRestaurant.viewMenu(currentLocation.getName());
                     
                 } else if (input.equals("4")) {
-                    resInfo.viewSales(currentLocation.getName());
+                    resInfo.viewSales(currentLocation.getName(),currentDay);
                    
                 } else if(input.equals("5")){
                     //[5] Milagro Man
@@ -211,7 +208,7 @@ public class JOJOLandsGame{
                         Scanner sc = new Scanner(System.in);
                         System.out.print("Enter the resident’s name: ");
                         String residentName =sc.nextLine();
-                        viewProfile.printResidentProfile(residentName);
+                        viewProfile.printResidentProfile(residentName,currentDay);
                     }
            
                     else if(input.equals("2")){ //{2} Sort
