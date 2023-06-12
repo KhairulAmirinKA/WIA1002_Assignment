@@ -28,9 +28,10 @@ public class RestaurantInfo {
         List<Resident> savageGardenWaitingOrder = new ArrayList<>();
 
         Preference prefer = new Preference();
-        List<Resident> waitingOrder = prefer.extractLastOrdersAndRestaurants();
+        List<Resident> waitingOrder = prefer.extractLastOrdersAndRestaurants(currentDay);
+        List<Resident> waitingOrderCopy = new ArrayList<>(waitingOrder);
 
-        for (Resident resident : waitingOrder) {
+        for (Resident resident : waitingOrderCopy) {
             // Get the last order from the orderHistory list
             List<String> orderHistory = resident.getOrderHistory();
             String lastOrder = orderHistory.get(currentDay - 1);
@@ -97,7 +98,7 @@ public class RestaurantInfo {
                 savageGarden.storeOrder(location);
                 break;
         }
-        //rearrange waiting list to correct queue sccording special order rule for each restaurant
+        //rearrange waiting list to correct queue according special order rule for each restaurant
     }
 
     public void displayWaitingAndProcessingList(String location){
@@ -132,26 +133,26 @@ public class RestaurantInfo {
         System.out.println("====================================================================================================");
     }
 
-    public void viewSales(String location){
+    public void viewSales(String location,int currentDay){
         switch (location) {
             case "Jade Garden":                                                              
-                jadeGarden.viewSales(location);
+                jadeGarden.viewSales(location,currentDay);
                 break;
 
             case "Cafe Deux Magots":
-                cafeDeuxMagots.viewSales(location);
+                cafeDeuxMagots.viewSales(location,currentDay);
                 break;
 
             case "Trattoria Trussardi":
-                trattoriaTrussardi.viewSales(location);
+                trattoriaTrussardi.viewSales(location,currentDay);
                 break;
 
             case "Libeccio":
-                libeccio.viewSales(location);
+                libeccio.viewSales(location,currentDay);
                 break;
 
             case "Savage Garden":
-                savageGarden.viewSales(location);
+                savageGarden.viewSales(location,currentDay);
                 break;
         }            
     }
@@ -163,7 +164,8 @@ public class RestaurantInfo {
 //        String location = "Jade Garden";
 //        RestaurantInfo sc = new RestaurantInfo();
 //        sc.processList(currentDay,location);
-//        sc.viewSales(location);
+//        sc.displayWaitingAndProcessingList(location);
+//        sc.viewSales(location,currentDay);
 //    }    
 }
 
