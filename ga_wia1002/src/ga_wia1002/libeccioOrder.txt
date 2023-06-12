@@ -1,17 +1,12 @@
-| 1  | Ermes Costello         | 21  | Female |Ghiaccio                                       |
-| 2  | Secco                  | -1  | Male   |Melone                                         |
-| 3  | Sale                   | -1  | Male   |Prosciutto and Pesci                           |
-| 4  | Formaggio              | -1  | Male   |Melone                                         |
-| 5  | Leone Abbacchio        | 21  | Male   |Prosciutto and Pesci                           |
-| 6  | Bruno Bucciarati       | 20  | Male   |Risotto                                        |
-| 7  | Yoshihiro Kira         | -1  | Male   |Prosciutto and Pesci                           |
-| 8  | Terunosuke Miyamoto    | -1  | Male   |Formaggio                                      |
-| 9  | Masazo Kinoto          | 29  | Male   |Melone                                         |
-| 10 | Yukako Yamagishi       | -1  | Female |Formaggio                                      |
-| 11 | Tonio Trussardi        | 29  | Male   |Melone                                         |
-| 12 | Shigekiyo Yangu        | 14  | Male   |Zucchero and Sale                              |
-| 13 | Mikitaka Hazekura      | 216 | Male   |Formaggio                                      |
-| 14 | Enya the Hag           | -1  | Female |Ghiaccio                                       |
-| 15 | Tomoko Higashikata     | 37  | Female |Prosciutto and Pesci                           |
-| 16 | Lisa Lisa              | 50  | Female |Formaggio                                      |
-| 17 | George Joestar II      | 32  | Male   |Ghiaccio                                       |
+| 1  | Ermes Costello         | 21  | Female |Risotto                                        |
+| 2  | Ghiaccio               | -1  | Male   |Formaggio                                      |
+| 3  | Leone Abbacchio        | 21  | Male   |Formaggio                                      |
+| 4  | Guido Mista            | 18  | Male   |Risotto                                        |
+| 5  | Toyohiro Kanedaichi    | -1  | Male   |Formaggio                                      |
+| 6  | Masazo Kinoto          | 29  | Male   |Zucchero and Sale                              |
+| 7  | Tonio Trussardi        | 29  | Male   |Ghiaccio                                       |
+| 8  | Shigekiyo Yangu        | 14  | Male   |Melone                                         |
+| 9  | Rohan Kishibe          | 20  | Male   |Formaggio                                      |
+| 10 | Okuyasu Nijimura       | 15  | Male   |Formaggio                                      |
+| 11 | Aya Tsuji              | -1  | Female |Zucchero and Sale                              |
+| 12 | Suzi Q.                | -1  | Female |Risotto                                        |

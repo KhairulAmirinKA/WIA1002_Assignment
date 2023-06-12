@@ -7,6 +7,10 @@ public class JOJOLandsGame{
     private JojolandLocation currentLocation;
     private int currentDay;
     private String day;
+    
+    //the file path of residents. and stands.csv
+    static String residentFilePath="src\\ga_wia1002\\residents.csv";
+    static String standFilePath="src\\ga_wia1002\\stands.csv";
 
     public JOJOLandsGame() {
         map = new JOJOLandsMap();
@@ -18,10 +22,10 @@ public class JOJOLandsGame{
 
     public void start() {
         ResidentManager residentManager = new ResidentManager();
-        residentManager.loadResidents("residents.csv", "stands.csv");
+        residentManager.loadResidents(residentFilePath, standFilePath);
         List<Resident> residents = residentManager.getResidents();
         StandManager standManager = new StandManager();
-        standManager.loadStands("stands.csv");
+        standManager.loadStands(standFilePath);
         ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
         
         //Q3 view Waiting List and Processing List 

@@ -1,17 +1,15 @@
-| 1  | Iggy                   | -1  | Male   |Kakyoin’s Porridge                             |
-| 2  | Noriaki Kakyoin        | 17  | Male   |Joseph’s Tequila                               |
-| 3  | Rikiel                 | 24  | Male   |Kakyoin’s Porridge                             |
-| 4  | Aya Tsuji              | -1  | Female |Kakyoin’s Porridge                             |
-| 5  | Tamami Kobayashi       | 20  | Male   |Kakyoin’s Porridge                             |
-| 6  | Toshikazu Hazamada     | 18  | Male   |Kakyoin’s Porridge                             |
-| 7  | Yuya Fungami           | -1  | Male   |Abbacchio’s Tea                                |
-| 8  | Akira Otoishi          | 19  | Male   |Joseph’s Tequila                               |
-| 9  | Ken Oyanagi            | 11  | Male   |Giorno’s Donuts                                |
-| 10 | Yoshikage Kira         | 33  | Male   |Giorno’s Donuts                                |
-| 11 | Trish Una              | 15  | Female |DIO’s Bread                                    |
-| 12 | Diavolo                | 33  | Male   |Kakyoin’s Cherry                               |
-| 13 | Ghiaccio               | -1  | Male   |Joseph’s Tequila                               |
-| 14 | Pesci                  | -1  | Male   |Joseph’s Tequila                               |
-| 15 | Foo Fighters           | 22  | Female |Abbacchio’s Tea                                |
-| 16 | Narciso Anasui         | 25  | Male   |Kakyoin’s Porridge                             |
-| 17 | Weather Report         | 39  | Male   |DIO’s Bread                                    |
+| 1  | George Joestar II      | 32  | Male   |Giorno’s Donuts                                |
+| 2  | Joseph Joestar         | 18  | Male   |Giorno’s Donuts                                |
+| 3  | Lisa Lisa              | 50  | Female |DIO’s Bread                                    |
+| 4  | Tomoko Higashikata     | 37  | Female |Kakyoin’s Porridge                             |
+| 5  | Enya the Hag           | -1  | Female |Giorno’s Donuts                                |
+| 6  | Rikiel                 | 24  | Male   |Joseph’s Tequila                               |
+| 7  | Akira Otoishi          | 19  | Male   |Giorno’s Donuts                                |
+| 8  | Keicho Nijimura        | 18  | Male   |Kakyoin’s Cherry                               |
+| 9  | Yoshikage Kira         | 33  | Male   |Kakyoin’s Cherry                               |
+| 10 | Cioccolata             | 34  | Male   |Abbacchio’s Tea                                |
+| 11 | Formaggio              | -1  | Male   |DIO’s Bread                                    |
+| 12 | Pesci                  | -1  | Male   |Giorno’s Donuts                                |
+| 13 | Sale                   | -1  | Male   |DIO’s Bread                                    |
+| 14 | Squalo                 | -1  | Male   |DIO’s Bread                                    |
+| 15 | Tizzano                | -1  | Male   |Abbacchio’s Tea                                |
