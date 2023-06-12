@@ -1,4 +1,8 @@
+package ga_wia1002;
+import java.util.*;
+
 public class AnotherOneBitesTheDust {
+    
     public AnotherOneBitesTheDust() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Yoshikage Kira’s path: ");
@@ -71,7 +75,7 @@ public class AnotherOneBitesTheDust {
 
 }
 
-/Savage Garden -> Angelo Rock -> Savage Garden -> Angelo Rock -> Savage Garden
+//Savage Garden -> Angelo Rock -> Savage Garden -> Angelo Rock -> Savage Garden
 //Libeccio -> Vineyard -> Joestar Mansion -> Vineyard -> Polnareff Land
 //Jade Garden -> Town Hall -> Morioh Grand Hotel -> Jade Garden -> Town Hall -> Jade Garden -> Town Hall -> Jade Garden -> Town Hall -> Morioh Grand Hotel
 

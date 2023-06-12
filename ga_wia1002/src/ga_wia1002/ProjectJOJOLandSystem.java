@@ -7,11 +7,16 @@ public class ProjectJOJOLandSystem {
     private static StandManager standManager;
     private static String currentLocation;
     
+    //the file path of residents.csv and stands.csv
+    static String residentFilePath="src\\ga_wia1002\\residents.csv";
+    static String standFilePath="src\\ga_wia1002\\stands.csv";
+
+    
     public ProjectJOJOLandSystem() {
         residentManager = new ResidentManager();
         standManager = new StandManager();
-        residentManager.loadResidents("residents.csv", "stands.csv");
-        standManager.loadStands("stands.csv");
+        residentManager.loadResidents(residentFilePath, standFilePath);
+        standManager.loadStands(standFilePath);
     }
     
     public static void main(String[] args) {
