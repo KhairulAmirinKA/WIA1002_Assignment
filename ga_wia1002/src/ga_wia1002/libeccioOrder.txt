@@ -1,12 +1,13 @@
-| 1  | Ermes Costello         | 21  | Female |Risotto                                        |
-| 2  | Ghiaccio               | -1  | Male   |Formaggio                                      |
-| 3  | Leone Abbacchio        | 21  | Male   |Formaggio                                      |
-| 4  | Guido Mista            | 18  | Male   |Risotto                                        |
-| 5  | Toyohiro Kanedaichi    | -1  | Male   |Formaggio                                      |
-| 6  | Masazo Kinoto          | 29  | Male   |Zucchero and Sale                              |
-| 7  | Tonio Trussardi        | 29  | Male   |Ghiaccio                                       |
-| 8  | Shigekiyo Yangu        | 14  | Male   |Melone                                         |
-| 9  | Rohan Kishibe          | 20  | Male   |Formaggio                                      |
-| 10 | Okuyasu Nijimura       | 15  | Male   |Formaggio                                      |
-| 11 | Aya Tsuji              | -1  | Female |Zucchero and Sale                              |
-| 12 | Suzi Q.                | -1  | Female |Risotto                                        |
+| 1  | Narciso Anasui         | 25  | Male   |Formaggio                                      |
+| 2  | Tizzano                | -1  | Male   |Melone                                         |
+| 3  | Keicho Nijimura        | 18  | Male   |Formaggio                                      |
+| 4  | Anjuro Katagiri        | 34  | Male   |Zucchero and Sale                              |
+| 5  | Yuya Fungami           | -1  | Male   |Ghiaccio                                       |
+| 6  | Tamami Kobayashi       | 20  | Male   |Ghiaccio                                       |
+| 7  | Okuyasu Nijimura       | 15  | Male   |Formaggio                                      |
+| 8  | Ungalo                 | 24  | Male   |Prosciutto and Pesci                           |
+| 9  | Rikiel                 | 24  | Male   |Risotto                                        |
+| 10 | DIO                    | 121 | Male   |Melone                                         |
+| 11 | Iggy                   | -1  | Male   |Formaggio                                      |
+| 12 | Joseph Joestar         | 18  | Male   |Ghiaccio                                       |
+| 13 | George Joestar II      | 32  | Male   |Risotto                                        |

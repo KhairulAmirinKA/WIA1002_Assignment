@@ -251,6 +251,7 @@ public class JOJOLandsRestaurant {
          System.out.println("+-----------------------------------------------+-------------------+");
          System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
          System.out.println("+-----------------------------------------------+-------------------+");
+        
          //calc total sales
          double totalSales=0; 
          
@@ -286,8 +287,8 @@ public class JOJOLandsRestaurant {
         
     }
 
-    //milagro man
-    public void milagroMan(String restaurant_name){
+    //milagro man map. will return hashmap
+    public HashMap<String,Double> milagroManMap(String restaurant_name){
         
         System.out.println("Milagro Man mode");
         
@@ -297,24 +298,24 @@ public class JOJOLandsRestaurant {
         //choose hashmap
         switch (restaurant_name){
             
-            case "jadeGarden":
+            case "Jade Garden":
                 restaurantPrice= jadeGarden_Price;
                 break;
                 
-            case "trattoriaTrussardi":
+            case "Trattoria Trussardi":
                 restaurantPrice= trattoriaTrussardi_Price;
                 break;
                 
-            case "savageGarden":
+            case "Savage Garden":
                 restaurantPrice= savageGarden_Price;
                 break;
                 
-            case "cafeDeuxMagots":
+            case "Cafe Deux Magots":
                  restaurantPrice= cafeDeuxMagots_Price;
                 break;
                 
                 
-            case "libeccio":
+            case "Libeccio":
                  restaurantPrice= libeccio_Price;
                 break;
         }//switch
@@ -324,6 +325,7 @@ public class JOJOLandsRestaurant {
         String foodName;
         double newPrice;
         
+        
         System.out.print("Enter food name: ");
         foodName= sc.nextLine();
         
@@ -332,6 +334,96 @@ public class JOJOLandsRestaurant {
         
         //modify price
         restaurantPrice.put(foodName, newPrice);
+        
+        return restaurantPrice;
     }
+    
+    //view the modified sales using milagro 
+    public void viewSalesMilagro(String restaurant_name,int currentDay){
+        
+        //load hashmap of milagro
+        HashMap<String, Double> restaurantPrice= milagroManMap(restaurant_name);
+   
+        //read file
+        try{
+             
+          //location
+          String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
+          
+         //read
+         Scanner sc= new Scanner(new FileInputStream(filePath));
+         
+         //map to store the quantity of food
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
+         
+         //read from txt
+         while (sc.hasNextLine()) {
+                String line = sc.nextLine();
+                
+                //split
+                String[] orderData = line.split("\\|");
+                
+                if (orderData.length >= 5) {
+                    
+                    //get food name
+                    String foodName = orderData[5].trim();
+                    
+                    //calculate the quantity of each food
+                    foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
+                    
+                    //get the price of food
+                    double price = restaurantPrice.getOrDefault(foodName, 0.00);
+                      
+                }//if
+            }//while
+         
+         //display food, quantity and price
+         System.out.println("===================================================================================================");
+         System.out.println("Restaurant: "+restaurant_name+" (Milagro Man Mode)");
+         System.out.println("Day "+currentDay+" Sales");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
+         System.out.println("+-----------------------------------------------+-------------------+");
+        
+         //calc total sales
+         double totalSales=0; 
+         
+         
+         // Displaying the food quantity
+        for (String food : foodQuantityMap.keySet()) {
+            
+            //get quantity
+            int quantity = foodQuantityMap.getOrDefault(food,0);
+            
+            //calculate price. quantity x price per unit  
+            double price = quantity * restaurantPrice.getOrDefault(food,0.0);
+            
+            //calc total sales
+            totalSales+= price;
+            
+            //display food, quantity and price
+            System.out.printf("| %-45s | %-8d | $%-6.2f|%n", food, quantity, price);
+           
+        }// loop food name and quantity
+        System.out.println("+-----------------------------------------------+-------------------+");
+                 
+        //display the total sales
+            System.out.printf("|%57s | $%.2f|\n", "Total Sales", totalSales);
+            
+        System.out.println("+-----------------------------------------------+-------------------+");
+
+            sc.close();
+     }
+     
+     catch (FileNotFoundException fe){
+         fe.printStackTrace();
+     }
+        
+    }
+    
+    
+    
+    
+    
 }
 

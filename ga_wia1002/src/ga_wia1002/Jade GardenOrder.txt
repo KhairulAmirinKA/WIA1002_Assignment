@@ -1,0 +1,14 @@
+| 1  | George Joestar II      | 32  | Male   |Braised Chicken in Black Bean Sauce            |
+| 2  | Mario Zucchero         | 24  | Male   |Poached Tofu with Dried Shrimps                |
+| 3  | Jolyne Cujoh           | 19  | Female |Braised Chicken in Black Bean Sauce            |
+| 4  | Trish Una              | 15  | Female |Braised Goose Web with Vermicelli              |
+| 5  | Jonathan Joestar       | 20  | Male   |Scrambled Egg White with Milk                  |
+| 6  | Narancia Ghirga        | 17  | Male   |Poached Tofu with Dried Shrimps                |
+| 7  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 8  | Leone Abbacchio        | 21  | Male   |Braised Chicken in Black Bean Sauce            |
+| 9  | Muhammad Avdol         | 29  | Male   |Braised Chicken in Black Bean Sauce            |
+| 10 | Bruno Bucciarati       | 20  | Male   |Scrambled Egg White with Milk                  |
+| 11 | Enya the Hag           | -1  | Female |Scrambled Egg White with Milk                  |
+| 12 | Yoshikage Kira         | 33  | Male   |Braised Chicken in Black Bean Sauce            |
+| 13 | Rikiel                 | 24  | Male   |Poached Tofu with Dried Shrimps                |
+| 14 | Okuyasu Nijimura       | 15  | Male   |Braised Chicken in Black Bean Sauce            |
