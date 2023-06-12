@@ -19,3 +19,9 @@ How to start project?
 5. Git > Commit. write message to notify us
 7. Right click the project.
 8. Git > Remote > Push.
+
+Read, Write Files
+//the file path of residents. and stands.csv
+    static String residentFilePath="src\\ga_wia1002\\residents.csv";
+    static String standFilePath="src\\ga_wia1002\\stands.csv";
+use the codes
