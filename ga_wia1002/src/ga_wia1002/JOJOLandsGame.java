@@ -22,10 +22,10 @@ public class JOJOLandsGame{
 
     public void start() {
         ResidentManager residentManager = new ResidentManager();
-        residentManager.loadResidents(residentFilePath, standFilePath);
+        residentManager.loadResidents("residents.csv", "stands.csv");
         List<Resident> residents = residentManager.getResidents();
         StandManager standManager = new StandManager();
-        standManager.loadStands(standFilePath);
+        standManager.loadStands("stands.csv");
         ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
         
         //Q3 view Waiting List and Processing List 
