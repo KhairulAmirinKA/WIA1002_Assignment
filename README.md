@@ -20,8 +20,12 @@ How to start project?
 7. Right click the project.
 8. Git > Remote > Push.
 
-Read, Write Files
+Read, Write Files<br>
+
+```
 //the file path of residents. and stands.csv
     static String residentFilePath="src\\ga_wia1002\\residents.csv";
     static String standFilePath="src\\ga_wia1002\\stands.csv";
+```
 use the codes
+
