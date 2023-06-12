@@ -14,16 +14,17 @@ public class LibeccioRestaurant extends JOJOLandsRestaurant {
 }
 class LibeccioRule{
     public static List<Resident> processOrder(List<Resident> waitingList, int currentDay) {
+         List<Resident> waitingListCopy = new ArrayList<>(waitingList);
          LinkedList<Resident> processedList = new LinkedList<>();
          int count = 1;     //person said number start from 1
          int index = 1;
 
-         while (!waitingList.isEmpty()) {
+         while (!waitingListCopy.isEmpty()) {
              if (count %currentDay==0) {
                  // Add the removed person to the end of the processed list
-                 processedList.addLast(waitingList.remove(index - 1));      //eg: person in 1st position is index 0 so need index-1 , person choosen served last
+                 processedList.addLast(waitingListCopy.remove(index - 1));      //eg: person in 1st position is index 0 so need index-1 , person choosen served last
 
-                 if (index > waitingList.size()) {     //check this person's index out of 
+                 if (index > waitingListCopy.size()) {     //check this person's index out of 
                      // Reached the end of the waiting list, start over from the 1st person
                      index = 1; //back to 1st person's index
                  }
@@ -34,7 +35,7 @@ class LibeccioRule{
                  count++;   //next person's count
                  index++;   //next person's index
 
-                 if (index > waitingList.size()) {
+                 if (index > waitingListCopy.size()) {
                      // Reached the end of the waiting list, start over from the first person
                      index = 1; 
                  }
