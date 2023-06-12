@@ -7,23 +7,21 @@ public class JOJOLandsGame{
     private JojolandLocation currentLocation;
     private int currentDay;
     private String day;
-    static String residentFilePath="src\\ga_wia1002\\residents.csv";
-    static String standFilePath="src\\ga_wia1002\\stands.csv";
-    
+
     public JOJOLandsGame() {
         map = new JOJOLandsMap();
         currentLocation = map.getLocation("Town Hall"); //
         currentDay = 1; // Initialize currentDay to 1
         day = "Sunday";   // Initialize day1 as Sunday
-
+        
     }
 
     public void start() {
         ResidentManager residentManager = new ResidentManager();
-        residentManager.loadResidents(residentFilePath, standFilePath);
+        residentManager.loadResidents("residents.csv", "stands.csv");
         List<Resident> residents = residentManager.getResidents();
         StandManager standManager = new StandManager();
-        standManager.loadStands(standFilePath);
+        standManager.loadStands("stands.csv");
         ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
         
         //Q3 view Waiting List and Processing List 
@@ -94,9 +92,6 @@ public class JOJOLandsGame{
                 currentLocation.getName().equals("Jade Garden")|| currentLocation.getName().equals("Trattoria Trussardi") || 
                 currentLocation.getName().equals("Liberrio")) {
                 
-                //generate food and restaurant with proper queue *** out of option part to prevent renew food and customer on the same day
-                resInfo.processList(currentDay,currentLocation.getName());  
-                
                 //print all the instruction you can choose
                 System.out.println("[1] Move to:");
                 int optionCounter = 1;
@@ -137,6 +132,7 @@ public class JOJOLandsGame{
                         System.out.println("Invalid input. Please try again.");
                     }
                 }else if (input.equals("2")) {
+                    resInfo.processList(currentDay,currentLocation.getName());  
                     resInfo.displayWaitingAndProcessingList(currentLocation.getName());
                 } else if (input.equals("3")) {
                     //View Menu
