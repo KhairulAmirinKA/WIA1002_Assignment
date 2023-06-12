@@ -7,6 +7,8 @@ public class JOJOLandsRestaurantSimulation {
         Scanner sc = new Scanner(System.in);
         System.out.print("Select: ");
         int instruction = sc.nextInt();
+        
+
         JOJOLandsGame game = new JOJOLandsGame();
         int currentDay =game.getCurrentDay();
         String location = "Jade Garden";
@@ -18,7 +20,7 @@ public class JOJOLandsRestaurantSimulation {
                 System.out.println("Restaurant: " + location + "\n\n");
 
                 Preference prefer = new Preference();
-                List<Resident> waitingOrder = prefer.extractLastOrdersAndRestaurants();
+                List<Resident> waitingOrder = prefer.extractLastOrdersAndRestaurants(currentDay);
 
                 // Create separate copies of the waitingOrder list for each restaurant
                 List<Resident> jadeGardenWaitingOrder = new ArrayList<>();
@@ -82,35 +84,35 @@ public class JOJOLandsRestaurantSimulation {
                 jadeGarden.processOrders();
                 jadeGarden.displayOrderProcessingList();
                 jadeGarden.storeOrder("Jade Garden");
-                jadeGarden.viewSales("Jade Garden");
+                jadeGarden.viewSales("Jade Garden",currentDay);
 
                 System.out.println("Cafe Deux Magots:");
                 cafeDeuxMagots.viewWaitingList();
                 cafeDeuxMagots.processOrders();
                 cafeDeuxMagots.displayOrderProcessingList();
                 cafeDeuxMagots.storeOrder("Cafe Deux Magots");
-                cafeDeuxMagots.viewSales("Cafe Deux Magots");
+                cafeDeuxMagots.viewSales("Cafe Deux Magots",currentDay);
 
                 System.out.println("Trattoria Trussardi:");
                 trattoriaTrussardi.viewWaitingList();
                 trattoriaTrussardi.processOrders();
                 trattoriaTrussardi.displayOrderProcessingList();
                 trattoriaTrussardi.storeOrder("Trattoria Trussardi");
-                trattoriaTrussardi.viewSales("Trattoria Trussardi");
+                trattoriaTrussardi.viewSales("Trattoria Trussardi",currentDay);
 
                 System.out.println("Libeccio:");
                 libeccio.viewWaitingList();
                 libeccio.processOrders();
                 libeccio.displayOrderProcessingList();
                 libeccio.storeOrder("Libeccio");
-                libeccio.viewSales("Libeccio");
+                libeccio.viewSales("Libeccio",currentDay);
 
                 System.out.println("Savage Garden:");
                 savageGarden.viewWaitingList();
                 savageGarden.processOrders();
                 savageGarden.displayOrderProcessingList();
                 savageGarden.storeOrder("Savage Garden");
-                savageGarden.viewSales("Savage Garden");
+                savageGarden.viewSales("Savage Garden",currentDay);
               
                             }
 
