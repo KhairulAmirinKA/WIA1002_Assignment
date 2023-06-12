@@ -3,14 +3,13 @@ package ga_wia1002;
 import java.util.*;
 import java.io.*;
 
-public abstract class JOJOLandsRestaurant {
+public class JOJOLandsRestaurant {
     protected List<Resident> waitingList;
     protected List<Resident> orderProcessingList;
-    protected String[] menu;
-    JOJOLandsGame game = new JOJOLandsGame();
-    int currentDay=game.getCurrentDay();
+    JOJOLandsGame game;
+    int currentDay;
 
-      //create hashMap to store price of each food
+    //create hashMap to store price of each food
     HashMap<String, Double> jadeGarden_Price = new HashMap<>();
     HashMap<String, Double> savageGarden_Price = new HashMap<>();
     HashMap<String, Double> trattoriaTrussardi_Price = new HashMap<>();
@@ -20,7 +19,8 @@ public abstract class JOJOLandsRestaurant {
     public JOJOLandsRestaurant(){
         waitingList=new ArrayList<>();
         orderProcessingList=new ArrayList<>();
-    
+        game = new JOJOLandsGame();
+        currentDay=game.getCurrentDay();  
  
         //store the jadeGarden price into hashmap
         jadeGarden_Price.put("Braised Chicken in Black Bean Sauce", 15.00);
@@ -82,7 +82,7 @@ public abstract class JOJOLandsRestaurant {
         waitingList.add(customer);
         orderProcessingList.add(customer);
     }
-    
+
     public void viewWaitingList() {
         System.out.println("Waiting List: ");
         System.out.println("+----+------------------------+-----+--------+-----------------------------------------------+");
@@ -113,7 +113,9 @@ public abstract class JOJOLandsRestaurant {
         System.out.println("+----+------------------------+-----+--------+-----------------------------------------------+-");
     }
 
-    public abstract void processOrders();
+    public void processOrders(){
+        System.out.println("This is not a restaurant, no waiting list and processing list available");
+    }
     
     //store order to txt file
     public void storeOrder(String restaurant_name){
@@ -152,36 +154,36 @@ public abstract class JOJOLandsRestaurant {
         //choose hashmap
         switch (restaurant_name){
             
-            case "jadeGarden":
+            case "Jade Garden":
                 restaurantPrice= jadeGarden_Price;
                 break;
                 
-            case "trattoriaTrussardi":
+            case "Trattoria Trussardi":
                 restaurantPrice= trattoriaTrussardi_Price;
                 break;
                 
-            case "savageGarden":
+            case "Savage Garden":
                 restaurantPrice= savageGarden_Price;
                 break;
                 
-            case "cafeDeuxMagots":
+            case "Cafe Deux Magots":
                  restaurantPrice= cafeDeuxMagots_Price;
                 break;
                 
                 
-            case "libeccio":
+            case "Libeccio":
                  restaurantPrice= libeccio_Price;
                 break;
         }//switch
         
         
         //read file
-         try{
+        try{
              
-         //location
+          //location
           String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
           
-          //read
+         //read
          Scanner sc= new Scanner(new FileInputStream(filePath));
          
          //map to store the quantity of food
@@ -210,9 +212,11 @@ public abstract class JOJOLandsRestaurant {
          
          
          //display food, quantity and price
-         System.out.printf("%-48s| %-8s| %-9s\n","|Food", "Quantity", "Price|");
-         System.out.println("+-------------------------------------+----------+-------------------+");
-         
+         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("Day "+currentDay+" Sales");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
+         System.out.println("+-----------------------------------------------+-------------------+");
          //calc total sales
          double totalSales=0; 
          
@@ -231,14 +235,13 @@ public abstract class JOJOLandsRestaurant {
             //display food, quantity and price
             System.out.printf("| %-45s | %-8d | $%-6.2f|%n", food, quantity, price);
            
-           
         }// loop food name and quantity
-        System.out.println("+-------------------------------------+----------+-------------------+");
+        System.out.println("+-----------------------------------------------+-------------------+");
                  
         //display the total sales
-            System.out.printf("|%59s|$%.2f\n", "Total Sales", totalSales);
+            System.out.printf("|%57s | $%.2f|\n", "Total Sales", totalSales);
             
-        System.out.println("+-------------------------------------+----------+-------------------+");
+        System.out.println("+-----------------------------------------------+-------------------+");
 
             sc.close();
      }
@@ -248,8 +251,7 @@ public abstract class JOJOLandsRestaurant {
      }
         
     }
-    
-    
+
     //milagro man
     public void milagroMan(String restaurant_name){
         
@@ -296,9 +298,6 @@ public abstract class JOJOLandsRestaurant {
         
         //modify price
         restaurantPrice.put(foodName, newPrice);
-        
-        
-        
     }
 }
 
