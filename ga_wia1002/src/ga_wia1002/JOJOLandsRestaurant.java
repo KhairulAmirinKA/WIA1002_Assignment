@@ -322,6 +322,8 @@ public class JOJOLandsRestaurant {
         
         Scanner sc= new Scanner(System.in);
         
+        
+        //modify food
         String foodName;
         double newPrice;
         
@@ -421,6 +423,31 @@ public class JOJOLandsRestaurant {
         
     }
     
+    //milagro (Experimental process)
+    public void milagroMan(String restaurant_name, int currentDay){
+        
+        Scanner sc= new Scanner(System.in);
+        
+        int choice=0;
+        
+        while (choice!=3){
+        System.out.println("[1] Modify Food Prices");
+        System.out.println("[2] View Sales Information");
+        System.out.println("[3] Exit Milagro Man");
+        
+        System.out.print("Select: ");
+        choice= sc.nextInt();
+        
+        //modify
+        if (choice==1){
+            milagroManMap(restaurant_name);
+        }
+        
+        else if (choice==2){
+            viewSalesMilagro(restaurant_name, currentDay);
+        }
+        }//while
+    }
     
     
     

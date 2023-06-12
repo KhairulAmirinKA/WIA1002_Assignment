@@ -1,14 +1,18 @@
-| 1  | George Joestar II      | 32  | Male   |Braised Chicken in Black Bean Sauce            |
-| 2  | Mario Zucchero         | 24  | Male   |Poached Tofu with Dried Shrimps                |
+| 1  | Erina Pendleton        | 70  | Female |Poached Tofu with Dried Shrimps                |
+| 2  | Tizzano                | -1  | Male   |Deep-fried Hiroshima Oysters                   |
 | 3  | Jolyne Cujoh           | 19  | Female |Braised Chicken in Black Bean Sauce            |
-| 4  | Trish Una              | 15  | Female |Braised Goose Web with Vermicelli              |
-| 5  | Jonathan Joestar       | 20  | Male   |Scrambled Egg White with Milk                  |
-| 6  | Narancia Ghirga        | 17  | Male   |Poached Tofu with Dried Shrimps                |
+| 4  | Risotto Nero           | 28  | Male   |Poached Tofu with Dried Shrimps                |
+| 5  | Joseph Joestar         | 18  | Male   |Poached Tofu with Dried Shrimps                |
+| 6  | Melone                 | -1  | Male   |Poached Tofu with Dried Shrimps                |
 | 7  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 8  | Leone Abbacchio        | 21  | Male   |Braised Chicken in Black Bean Sauce            |
-| 9  | Muhammad Avdol         | 29  | Male   |Braised Chicken in Black Bean Sauce            |
-| 10 | Bruno Bucciarati       | 20  | Male   |Scrambled Egg White with Milk                  |
-| 11 | Enya the Hag           | -1  | Female |Scrambled Egg White with Milk                  |
-| 12 | Yoshikage Kira         | 33  | Male   |Braised Chicken in Black Bean Sauce            |
-| 13 | Rikiel                 | 24  | Male   |Poached Tofu with Dried Shrimps                |
-| 14 | Okuyasu Nijimura       | 15  | Male   |Braised Chicken in Black Bean Sauce            |
+| 8  | Ken Oyanagi            | 11  | Male   |Scrambled Egg White with Milk                  |
+| 9  | Lisa Lisa              | 50  | Female |Deep-fried Hiroshima Oysters                   |
+| 10 | Anjuro Katagiri        | 34  | Male   |Braised Chicken in Black Bean Sauce            |
+| 11 | Suzi Q.                | -1  | Female |Deep-fried Hiroshima Oysters                   |
+| 12 | Tonio Trussardi        | 29  | Male   |Poached Tofu with Dried Shrimps                |
+| 13 | Noriaki Kakyoin        | 17  | Male   |Poached Tofu with Dried Shrimps                |
+| 14 | Tamami Kobayashi       | 20  | Male   |Poached Tofu with Dried Shrimps                |
+| 15 | DIO                    | 121 | Male   |Braised Chicken in Black Bean Sauce            |
+| 16 | Shigekiyo Yangu        | 14  | Male   |Scrambled Egg White with Milk                  |
+| 17 | Enrico Pucci           | 39  | Male   |Poached Tofu with Dried Shrimps                |
+| 18 | Okuyasu Nijimura       | 15  | Male   |Poached Tofu with Dried Shrimps                |
