@@ -1,33 +1,21 @@
 package ga_wia1002;
 import java.util.*;
-//import java.sql.Connection;
-//import java.sql.DriverManager;
-//import java.sql.PreparedStatement;
-//import java.sql.SQLException;
 
-
-public class JOJOLandsGame {
+public class JOJOLandsGame{
     private JOJOLandsMap map;
     private JojolandLocation previousLocation;
     private JojolandLocation currentLocation;
     private int currentDay;
     private String day;
-    
-    //the file path of residents. and stands.csv
     static String residentFilePath="src\\ga_wia1002\\residents.csv";
     static String standFilePath="src\\ga_wia1002\\stands.csv";
-
-//    private static final String DB_URL = "jdbc:mysql://localhost:3306/game_database";
-//    private static final String DB_USERNAME = "your_username";
-//    private static final String DB_PASSWORD = "your_password";
-
-    // ...
+    
     public JOJOLandsGame() {
         map = new JOJOLandsMap();
         currentLocation = map.getLocation("Town Hall"); //
         currentDay = 1; // Initialize currentDay to 1
         day = "Sunday";   // Initialize day1 as Sunday
-        
+
     }
 
     public void start() {
@@ -39,11 +27,12 @@ public class JOJOLandsGame {
         ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
         
         //Q3 view Waiting List and Processing List 
-        showWaitingAndProcessingList showWP_List = new showWaitingAndProcessingList();
+        RestaurantInfo resInfo = new RestaurantInfo();
         
         //Q4-view resident's profile
         Preference viewProfile = new Preference();
         
+        JOJOLandsRestaurant jojoRestaurant = new JOJOLandsRestaurant();
         //start
         System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
         printCurrentLocation();
@@ -105,6 +94,9 @@ public class JOJOLandsGame {
                 currentLocation.getName().equals("Jade Garden")|| currentLocation.getName().equals("Trattoria Trussardi") || 
                 currentLocation.getName().equals("Liberrio")) {
                 
+                //generate food and restaurant with proper queue *** out of option part to prevent renew food and customer on the same day
+                resInfo.processList(currentDay,currentLocation.getName());  
+                
                 //print all the instruction you can choose
                 System.out.println("[1] Move to:");
                 int optionCounter = 1;
@@ -145,12 +137,12 @@ public class JOJOLandsGame {
                         System.out.println("Invalid input. Please try again.");
                     }
                 }else if (input.equals("2")) {
-                    showWP_List.displayWaitingAndProcessingList(currentDay,currentLocation.getName());
+                    resInfo.displayWaitingAndProcessingList(currentLocation.getName());
                 } else if (input.equals("3")) {
                     //View Menu
                     
                 } else if (input.equals("4")) {
-                   //view  Sales information
+                    resInfo.viewSales(currentLocation.getName());
                    
                 } else if(input.equals("5")){
                     //[5] Milagro Man
@@ -264,7 +256,11 @@ public class JOJOLandsGame {
     }
 
 
-    private void moveToLocation(JojolandLocation destination) {
+    private void moveToLocation(JojolandLocation destination) {    
+        if (destination.equals(currentLocation)) {
+        // Base case: Stop recursion if destination is the same as current location
+        return;
+        }
         System.out.println("Moving to " + destination.getName() + "...");
         System.out.println("==================================================================================================================");
         currentLocation = destination;
@@ -313,24 +309,7 @@ public class JOJOLandsGame {
     }
 
     private void saveGame() {
-//        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD)) {
-//            String query = "INSERT INTO saved_games (current_location, current_day) VALUES (?, ?)";
-//
-//            try (PreparedStatement statement = connection.prepareStatement(query)) {
-//                statement.setString(1, currentLocation.getName());
-//                statement.setInt(2, currentDay);
-//                // Set any other relevant parameters here
-//                
-//                int rowsAffected = statement.executeUpdate();
-//                if (rowsAffected > 0) {
-//                    System.out.println("Game saved.");
-//                } else {
-//                    System.out.println("Failed to save the game.");
-//                }
-//            }
-//        } catch (SQLException e) {
-//            System.out.println("Error saving the game: " + e.getMessage());
-//        }
+
     }
 
     public static void main(String[] args) {
