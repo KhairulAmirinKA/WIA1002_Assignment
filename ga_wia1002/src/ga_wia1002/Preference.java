@@ -1,13 +1,9 @@
 
 package ga_wia1002;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class Preference {
-    JOJOLandsGame game = new JOJOLandsGame();
-    private int currentDay = game.getCurrentDay();
     private static final Random RANDOM = new Random();
     private final List<Resident> residents;
     private final List<Restaurant> restaurants;
@@ -20,8 +16,7 @@ public class Preference {
     private Restaurant JotaroRestaurant = null;
     private List<Restaurant> JonathanFoodList = new ArrayList<>();
     private List<Restaurant> JosephFoodList = new ArrayList<>();
-    
-    //the file path of residents. and stands.csv
+    //the file path of residents.csv and stands.csv
     static String residentFilePath="src\\ga_wia1002\\residents.csv";
     static String standFilePath="src\\ga_wia1002\\stands.csv";
 
@@ -40,7 +35,7 @@ public class Preference {
         restaurants.add(restaurant);
     }
 
-    public void generateFoodOrders() {
+    public void generateFoodOrders(int currentDay) {
         while (foodCount <= currentDay) {
             for (Resident resident : residents) {
                 if (resident.getName().equals("Jotaro Kujo")) {
@@ -160,9 +155,9 @@ public class Preference {
     
     private void viewResidentProfile(String selectedResidentName) {
       StandManager standManager = new StandManager();   //read stands.csv and residents.csv
-      standManager.loadStands(standFilePath);
+      standManager.loadStands("stands.csv");
       ResidentManager residentManager = new ResidentManager();
-      residentManager.loadResidents(residentFilePath, standFilePath);
+      residentManager.loadResidents("residents.csv", "stands.csv");
       List<Resident> residents = residentManager.getResidents(); // Get the populated list of residents
       System.out.println("====================================================================================");
       System.out.println(selectedResidentName+"'s Profile:");
@@ -200,11 +195,11 @@ public class Preference {
       }
   }
     
-    public List<Resident> extractLastOrdersAndRestaurants() {
+    public List<Resident> extractLastOrdersAndRestaurants(int currentDay) {
         List<Resident> extractedResidents = new ArrayList<>();
         initializeRestaurant();
         getResidents();
-        generateFoodOrders();
+        generateFoodOrders(currentDay);
     //     Loop over the populated residents list to extract data
         for (Resident resident : residents) {
             String lastOrder = "";
@@ -382,7 +377,7 @@ public class Preference {
 
     public void getResidents() {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(residentFilePath));
+            BufferedReader reader = new BufferedReader(new FileReader("residents.csv"));
             String line;
             boolean headerSkipped = false;
 
@@ -413,23 +408,24 @@ public class Preference {
             return;
         }
     }
-    public void printResidentProfile(String residentName){
+    public void printResidentProfile(String residentName,int currentDay){
             // Generate food orders--important,else will not generate orderHistory
             initializeRestaurant();
             getResidents();
-            generateFoodOrders();   //must below initializeRestaurant and getResidents
+            generateFoodOrders(currentDay);   //must below initializeRestaurant and getResidents
             //print profile and orderHistory
             viewResidentProfile(residentName);
             printOrderHistory(residentName);
     }
 
-    public static void main(String[] args) {
-        Preference generator = new Preference();
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the resident’s name: ");
-        String residentName =sc.nextLine();
-        generator.printResidentProfile(residentName);
-
-    }
+//    public static void main(String[] args) {
+//        Preference generator = new Preference();
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter the resident’s name: ");
+//        String residentName =sc.nextLine();
+//        JOJOLandsGame game = new JOJOLandsGame();
+//        int currentDay=game.getCurrentDay();
+//        generator.printResidentProfile(residentName,currentDay);
+//    }
 }
 
