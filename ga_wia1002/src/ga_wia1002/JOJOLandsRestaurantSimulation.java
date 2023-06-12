@@ -7,8 +7,6 @@ public class JOJOLandsRestaurantSimulation {
         Scanner sc = new Scanner(System.in);
         System.out.print("Select: ");
         int instruction = sc.nextInt();
-        
-
         JOJOLandsGame game = new JOJOLandsGame();
         int currentDay =game.getCurrentDay();
         String location = "Jade Garden";
@@ -21,7 +19,6 @@ public class JOJOLandsRestaurantSimulation {
 
                 Preference prefer = new Preference();
                 List<Resident> waitingOrder = prefer.extractLastOrdersAndRestaurants();
-                List<Resident> copyWaitingOrder = new ArrayList<>(waitingOrder);
 
                 // Create separate copies of the waitingOrder list for each restaurant
                 List<Resident> jadeGardenWaitingOrder = new ArrayList<>();
@@ -37,7 +34,7 @@ public class JOJOLandsRestaurantSimulation {
                 JOJOLandsRestaurant libeccio = new LibeccioRestaurant();
                 JOJOLandsRestaurant savageGarden = new SavageGardenRestaurant();
 
-                for (Resident resident : copyWaitingOrder) {
+                for (Resident resident : waitingOrder) {
                     // Get the last order from the orderHistory list
                     List<String> orderHistory = resident.getOrderHistory();
                     String lastOrder = orderHistory.get(currentDay - 1);
@@ -72,48 +69,48 @@ public class JOJOLandsRestaurantSimulation {
                     }
                 }
 
-                // Set the waiting lists for each restaurant
-                ((JadeGardenRestaurant) jadeGarden).setWaitingList(jadeGardenWaitingOrder);
-                ((CafeDeuxMagotsRestaurant) cafeDeuxMagots).setWaitingList(cafeDeuxMagotsWaitingOrder);
-                ((TrattoriaTrussardiRestaurant) trattoriaTrussardi).setWaitingList(trattoriaTrussardiWaitingOrder);
-                ((LibeccioRestaurant) libeccio).setWaitingList(libeccioWaitingOrder);
-                ((SavageGardenRestaurant) savageGarden).setWaitingList(savageGardenWaitingOrder);
+                // Set the waiting lists for each restaurant, so food waiting list from other restaurant do not mix together
+                jadeGarden.setWaitingList(jadeGardenWaitingOrder);
+                cafeDeuxMagots.setWaitingList(cafeDeuxMagotsWaitingOrder);
+                trattoriaTrussardi.setWaitingList(trattoriaTrussardiWaitingOrder);
+                libeccio.setWaitingList(libeccioWaitingOrder);
+                savageGarden.setWaitingList(savageGardenWaitingOrder);
 
                 // Print waiting list before process orders (to avoid waitingOrder be cleared 1st)and processing list for each restaurant
                 System.out.println("Jade Garden:");
                 jadeGarden.viewWaitingList();
                 jadeGarden.processOrders();
                 jadeGarden.displayOrderProcessingList();
-                jadeGarden.storeOrder("jadeGarden");
-                jadeGarden.viewSales("jadeGarden");
+                jadeGarden.storeOrder("Jade Garden");
+                jadeGarden.viewSales("Jade Garden");
 
                 System.out.println("Cafe Deux Magots:");
                 cafeDeuxMagots.viewWaitingList();
                 cafeDeuxMagots.processOrders();
                 cafeDeuxMagots.displayOrderProcessingList();
-                cafeDeuxMagots.storeOrder("cafeDeuxMagots");
-                cafeDeuxMagots.viewSales("cafeDeuxMagots");
+                cafeDeuxMagots.storeOrder("Cafe Deux Magots");
+                cafeDeuxMagots.viewSales("Cafe Deux Magots");
 
                 System.out.println("Trattoria Trussardi:");
                 trattoriaTrussardi.viewWaitingList();
                 trattoriaTrussardi.processOrders();
                 trattoriaTrussardi.displayOrderProcessingList();
-                trattoriaTrussardi.storeOrder("trattoriaTrussardi");
-                trattoriaTrussardi.viewSales("trattoriaTrussardi");
+                trattoriaTrussardi.storeOrder("Trattoria Trussardi");
+                trattoriaTrussardi.viewSales("Trattoria Trussardi");
 
                 System.out.println("Libeccio:");
                 libeccio.viewWaitingList();
                 libeccio.processOrders();
                 libeccio.displayOrderProcessingList();
-                libeccio.storeOrder("libeccio");
-                libeccio.viewSales("libeccio");
+                libeccio.storeOrder("Libeccio");
+                libeccio.viewSales("Libeccio");
 
                 System.out.println("Savage Garden:");
                 savageGarden.viewWaitingList();
                 savageGarden.processOrders();
                 savageGarden.displayOrderProcessingList();
-                savageGarden.storeOrder("savageGarden");
-                savageGarden.viewSales("savageGarden");
+                savageGarden.storeOrder("Savage Garden");
+                savageGarden.viewSales("Savage Garden");
               
                             }
 
