@@ -1,5 +1,4 @@
 package ga_wia1002;
-
 import java.util.*;
 
 public class CafeDeuxMagotsRestaurant extends JOJOLandsRestaurant {
@@ -9,55 +8,49 @@ public class CafeDeuxMagotsRestaurant extends JOJOLandsRestaurant {
 
     @Override
     public void processOrders() {
-        Queue<Resident> customerQueue = new LinkedList<>(waitingList);
-        List<Resident> processedList = CafeDeuxMagotsRule.processOrder(customerQueue);
+        LinkedList<Resident> waitingCustomer = new LinkedList<>(waitingList);
+        List<Resident> processedList = CafeDeuxMagotsRule.processOrder(waitingCustomer);
         orderProcessingList.addAll(processedList);
     }
 }
 
 class CafeDeuxMagotsRule {
-    public static List<Resident> processOrder(Queue<Resident> customerQueue) {
+    public static List<Resident> processOrder(LinkedList<Resident> waitingList) {
         List<Resident> processedList = new ArrayList<>();
-        List<Resident> temp = new ArrayList<>();
+        LinkedList<Resident> knownAge = new LinkedList<>();
+        Queue<Resident> unknownAge = new LinkedList<>();
+        List<Resident> correctOrder = new LinkedList<>();
 
-        while (!customerQueue.isEmpty()) {
-            Resident oldest = null;
-            Resident youngest = null;
-
-            Iterator<Resident> iterator = customerQueue.iterator();
-            while (iterator.hasNext()) {
-                Resident customer = iterator.next();
-
-                if (customer.getAge() != -1) {
-                    if (oldest == null || customer.getAge() > oldest.getAge()) {
-                        oldest = customer;
-                    }
-                    if (youngest == null || customer.getAge() < youngest.getAge()) {
-                        youngest = customer;
-                    }
-                }
-            }
-
-            if (oldest != null) {
-                processedList.add(oldest);
-                customerQueue.remove(oldest);
-            }
-
-            if (youngest != null) {
-                processedList.add(youngest);
-                customerQueue.remove(youngest);
-            }
-
-            if (oldest == null && youngest == null) {
-                // No customers with age != -1, process any remaining customers
-                temp.addAll(customerQueue);
-                customerQueue.clear();
+        // Separate customers into appropriate queues based on age
+        for (Resident customer : waitingList) {
+            if (customer.getAge() == -1) {
+                unknownAge.offer(customer);
+            } else {
+                knownAge.add(customer);
             }
         }
 
+        // Sort knownAge in ascending order
+        knownAge.sort(Comparator.comparingInt(Resident::getAge));
+
+// Remove customers from waitingList and rearrange them in correct order
+while (!knownAge.isEmpty()||!unknownAge.isEmpty()) {
+    if (!knownAge.isEmpty()) {
+        if(knownAge.size()==1){
+            correctOrder.add(knownAge.removeLast());
+        }
+        else{
+        correctOrder.add(knownAge.removeLast());  // Add oldest
+        correctOrder.add(knownAge.removeFirst()); // Add youngest
+        } }
+    else {
+            correctOrder.add(unknownAge.poll());
+        }
+    }
         // Add customers with age = -1 at the end
-        processedList.addAll(temp);
+        processedList.addAll(correctOrder);
 
         return processedList;
     }
 }
+
