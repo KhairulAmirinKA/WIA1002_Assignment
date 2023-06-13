@@ -7,25 +7,14 @@ public class ProjectJOJOLandSystem {
     private static StandManager standManager;
     private static String currentLocation;
     
-    //the file path of residents.csv and stands.csv
-    static String residentFilePath="src\\ga_wia1002\\residents.csv";
-    static String standFilePath="src\\ga_wia1002\\stands.csv";
-
-    
     public ProjectJOJOLandSystem() {
         residentManager = new ResidentManager();
         standManager = new StandManager();
-        residentManager.loadResidents(residentFilePath, standFilePath);
-        standManager.loadStands(standFilePath);
+        residentManager.loadResidents("residents.csv", "stands.csv");
+        standManager.loadStands("stands.csv");
+
+        
     }
-    
-    public static void main(String[] args) {
-            ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
-            jojoSystem.displayResidentInformation("Polnareff Land");
-            System.out.println();
-            List<Resident> residents = residentManager.getResidentsByResidentialArea("Polnareff Land");
-            jojoSystem.sortResidents(residents, "destructive power(asc);stand(desc)");
-        }
     
     public void displayResidentInformation(String currentLocation) {
         List<Resident> residents = residentManager.getResidentsByResidentialArea(currentLocation);
@@ -35,33 +24,33 @@ public class ProjectJOJOLandSystem {
         }
 
         System.out.println("Resident Information in " + currentLocation);
-        System.out.println("+----+-----------------------+-----+--------+------------------+");
-        System.out.println("| No | Name                  | Age | Gender | Stand            |");
-        System.out.println("+----+-----------------------+-----+--------+------------------+");
+        System.out.println("+----+-----------------------+-----+--------+--------------------------+");
+        System.out.println("| No | Name                  | Age | Gender | Stand                    |");
+        System.out.println("+----+-----------------------+-----+--------+--------------------------+");
         int counter = 1;
         for (Resident resident : residents) {
             Stand stand = standManager.getStandByUser(resident.getName());
-            System.out.printf("| %-2d | %-21s | %-3s | %-6s | %-16s |\n",
+            System.out.printf("| %-2d | %-21s | %-3s | %-6s | %-24s |\n",
                     counter, resident.getName(), resident.getAge(), resident.getGender(), stand != null ? stand.getName() : "N/A");
             counter++;
         }
-        System.out.println("+----+-----------------------+-----+--------+------------------+");
+        System.out.println("-+-------------------+------------+------------+--------------+----------------+-");
 
         System.out.println();
-        System.out.println("-+-------------------+-------+-------+---------+-----------+-");
-        System.out.println(" | Destructive Power | Speed | Range | Stamina | Precision |");
-        System.out.println("-+-------------------+-------+-------+---------+-----------+-");
+        System.out.println("-+-------------------+------------+------------+--------------+----------------+-");
+        System.out.println(" | Destructive Power | Speed      | Range      | Stamina      | Precision      |");
+        System.out.println("-+-------------------+------------+------------+--------------+----------------+-");
         for (Resident resident : residents) {
             Stand stand = standManager.getStandByUser(resident.getName());
             if (stand != null) {
-                System.out.printf(" | %-17s | %-5s | %-5s | %-7s | %-9s |\n",
+                System.out.printf(" | %-17s | %-10s | %-10s | %-12s | %-14s |\n",
                         stand.getDestructivePower(), stand.getSpeed(), stand.getRange(),
                         stand.getStamina(), stand.getPrecision());
             } else {
-                System.out.println("| N/A | N/A | N/A | N/A | N/A |");
+                System.out.printf(" | %-17s | %-5s | %-5s | %-7s | %-9s |\n","N/A","N/A","N/A","N/A","N/A");
             }
         }
-        System.out.println("-+-------------------+-------+-------+---------+-----------+-");
+        System.out.println("-+-------------------+------------+------------+--------------+----------------+-");
         System.out.println("-+-----------------------+");
         System.out.println(" | Development Potential |");
         System.out.println("-+-----------------------+");
@@ -202,7 +191,7 @@ public class ProjectJOJOLandSystem {
                    }
                };
                break;
-           case "potential":
+           case "development potential":
                comparator = (r1, r2) -> {
                    Stand s1 = standManager.getStandByUser(r1.getName());
                    Stand s2 = standManager.getStandByUser(r2.getName());
@@ -254,14 +243,14 @@ public class ProjectJOJOLandSystem {
 
     public void displaySortedResidents(List<Resident> residents) {
         System.out.println("Sorted Resident Information");
-        System.out.println("+----+-----------------------+-----+--------+------------------+-------------------+-------+-------+---------+-----------+-----------------------+");
-        System.out.println("| No | Name                  | Age | Gender | Stand            | Destructive Power | Speed | Range | Stamina | Precision | Development Potential |");
-        System.out.println("+----+-----------------------+-----+--------+------------------+-------------------+-------+-------+---------+-----------+-----------------------+");
+        System.out.println("+----+-----------------------+-----+--------+--------------------------+-------------------+------------+------------+--------------+----------------+-----------------------+");
+        System.out.println("| No | Name                  | Age | Gender | Stand                    | Destructive Power | Speed      | Range      | Stamina      | Precision      | Development Potential |");
+        System.out.println("+----+-----------------------+-----+--------+--------------------------+-------------------+------------+------------+--------------+----------------+-----------------------+");
 
         int counter = 1;
         for (Resident resident : residents) {
             Stand stand = standManager.getStandByUser(resident.getName());
-            System.out.printf("| %-2d | %-21s | %-3s | %-6s | %-16s | %-17s | %-5s | %-5s | %-7s | %-9s | %-21s |\n",
+            System.out.printf("| %-2d | %-21s | %-3s | %-6s | %-24s | %-17s | %-10s | %-10s | %-12s | %-14s | %-21s |\n",
                     counter, resident.getName(), resident.getAge(), resident.getGender(),
                     stand != null ? stand.getName() : "N/A",
                     stand != null ? stand.getDestructivePower() : "N/A",
@@ -272,11 +261,19 @@ public class ProjectJOJOLandSystem {
                     stand != null ? stand.getDevelopmentPotential() : "N/A");
             counter++;
         }
-
-        System.out.println("+----+-----------------------+-----+--------+------------------+-------------------+-------+-------+---------+-----------+-----------------------+");
+        
+        System.out.println("+----+-----------------------+-----+--------+--------------------------+-------------------+------------+------------+--------------+----------------+-----------------------+");
         System.out.println();
     }
-
+    
+    //tester
+//    public static void main(String[] args) {
+//            ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
+//            jojoSystem.displayResidentInformation("Polnareff Land");
+//            System.out.println();
+//            List<Resident> residents = residentManager.getResidentsByResidentialArea("Polnareff Land");
+//            jojoSystem.sortResidents(residents, "destructive power(asc);stand(desc)");
+//        }
     }
 
 
