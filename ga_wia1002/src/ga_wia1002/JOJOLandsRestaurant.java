@@ -343,12 +343,65 @@ public class JOJOLandsRestaurant {
         return restaurantPrice;
     }
     
-    //view the modified sales using milagro 
-    public void viewSalesMilagro(String restaurant_name,int currentDay){
+    //milagroMan mode 13/6. including modify and view sales milagro
+    public void MilagroMode(String restaurant_name,int currentDay){
         
+        Scanner sc1= new Scanner(System.in);
+        
+        int choice=0;
+        
+        //list of choices
+        while (choice!=3){
+        System.out.println("[1] Modify Food Prices");
+        System.out.println("[2] View Sales Information");
+        System.out.println("[3] Exit Milagro Man");
+        
+        System.out.print("Select: ");
+        choice= sc1.nextInt();
+        
+        //choice=3 exiting
+        if (choice==3){
+            System.out.println("Exiting Milagro Man Mode");
+            break;
+        }
+        
+        //temp
+        HashMap<String, Double> restaurantPrice= jadeGarden_Price;
+        
+        //choose hashmap according to location
+        switch (restaurant_name){
+            
+            case "Jade Garden":
+                restaurantPrice= jadeGarden_Price;
+                break;
+                
+            case "Trattoria Trussardi":
+                restaurantPrice= trattoriaTrussardi_Price;
+                break;
+                
+            case "Savage Garden":
+                restaurantPrice= savageGarden_Price;
+                break;
+                
+            case "Cafe Deux Magots":
+                 restaurantPrice= cafeDeuxMagots_Price;
+                break;
+                
+                
+            case "Libeccio":
+                 restaurantPrice= libeccio_Price;
+                break;
+        }//switch
+        
+        
+        //modify food prices
+        if (choice==1){
         //load hashmap of milagro
-        HashMap<String, Double> restaurantPrice= milagroManMap(restaurant_name);
-   
+         restaurantPrice= milagroManMap(restaurant_name);  }
+        
+        //view sales with milagro man mode
+        else if (choice==2){
+            
         //read file
         try{
              
@@ -424,33 +477,10 @@ public class JOJOLandsRestaurant {
          fe.printStackTrace();
      }
         
-    }
-    
-    //milagro (Experimental process)
-    public void milagroMan(String restaurant_name, int currentDay){
+        } //choice==2
+    } //while choice
         
-        Scanner sc= new Scanner(System.in);
-        
-        int choice=0;
-        
-        while (choice!=3){
-        System.out.println("[1] Modify Food Prices");
-        System.out.println("[2] View Sales Information");
-        System.out.println("[3] Exit Milagro Man");
-        
-        System.out.print("Select: ");
-        choice= sc.nextInt();
-        
-        //modify
-        if (choice==1){
-            milagroManMap(restaurant_name);
-        }
-        
-        else if (choice==2){
-            viewSalesMilagro(restaurant_name, currentDay);
-        }
-        }//while
-    }
+    } 
     
     
     

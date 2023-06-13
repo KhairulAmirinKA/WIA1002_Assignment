@@ -84,9 +84,8 @@ public class JOJOLandsRestaurantSimulation {
                 jadeGarden.processOrders();
                 jadeGarden.displayOrderProcessingList();
                 jadeGarden.storeOrder("Jade Garden");
-                jadeGarden.viewSales("Jade Garden",currentDay);
-                jadeGarden.viewSalesMilagro("Jade Garden", currentDay); //milagro man
-             //  jadeGarden.milagroMan("Jade Garden", currentDay);  //experiment
+                jadeGarden.viewSales("Jade Garden");
+                jadeGarden.MilagroMode("Jade Garden", currentDay);
 
                 System.out.println("Cafe Deux Magots:");
                 cafeDeuxMagots.viewWaitingList();
