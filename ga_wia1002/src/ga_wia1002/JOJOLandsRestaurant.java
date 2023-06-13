@@ -160,7 +160,7 @@ public class JOJOLandsRestaurant {
         
         try{
           //location
-          String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ currentDay+" Order.txt";
           
     PrintWriter writer= new PrintWriter(new FileOutputStream(filePath));
     
@@ -219,7 +219,7 @@ public class JOJOLandsRestaurant {
         try{
              
           //location
-          String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ currentDay+" Order.txt";
           
          //read
          Scanner sc= new Scanner(new FileInputStream(filePath));
@@ -342,6 +342,178 @@ public class JOJOLandsRestaurant {
         
         return restaurantPrice;
     }
+    //total sales
+    public void viewTotalSales(String restaurant_name){
+        Scanner sc= new Scanner(System.in);
+        
+        //start and end day
+        int startDay=0 , endDay=0;
+        
+        System.out.println();
+        System.out.println(restaurant_name+" Total Sales");
+        
+        System.out.print("Enter Start Day: ");
+        startDay= sc.nextInt();
+        
+        System.out.print("Enter End Day: ");
+        endDay= sc.nextInt();
+        
+        //read file
+        try{
+            
+            //file to store the total order
+            String totalSaleFile= "src\\ga_wia1002\\"+restaurant_name+" Total Order.txt";
+         PrintWriter writer= new PrintWriter(new FileOutputStream(totalSaleFile));
+         
+         
+         //read all files from day 1 to end day
+            for (int i=startDay; i<= endDay; i++){
+                
+            //location to read.
+            //eg: Jade Garden Day 1 Order.txt
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ i+" Order.txt";
+          
+         //file scanner
+         Scanner fileSc= new Scanner(new FileInputStream(filePath));
+         
+         //loop to write
+         while( fileSc.hasNextLine()){
+             String line= fileSc.nextLine();
+             
+             //write to a new file: totalsales.txt
+             writer.println(line);
+             
+         }//while
+         
+         fileSc.close();
+       
+         
+            }//for
+            
+            writer.close();
+        }//try
+        
+        catch (FileNotFoundException fe){
+            fe.printStackTrace();
+        }  //end of write to file
+        
+        
+        
+        //display the total sales
+        //for hashmap
+        HashMap<String, Double> restaurantPrice= new HashMap<>();
+        
+        //choose hashmap
+        switch (restaurant_name){
+            
+            case "Jade Garden":
+                restaurantPrice= jadeGarden_Price;
+                break;
+                
+            case "Trattoria Trussardi":
+                restaurantPrice= trattoriaTrussardi_Price;
+                break;
+                
+            case "Savage Garden":
+                restaurantPrice= savageGarden_Price;
+                break;
+                
+            case "Cafe Deux Magots":
+                 restaurantPrice= cafeDeuxMagots_Price;
+                break;
+                
+                
+            case "Libeccio":
+                 restaurantPrice= libeccio_Price;
+                break;
+        }//switch
+        
+        
+        //read file containing total order
+        try{
+             
+          //location
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Total Order.txt";
+          
+         //read
+         Scanner fileSc= new Scanner(new FileInputStream(filePath));
+         
+         //map to store the quantity of food
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
+         
+         //read from txt
+         while (fileSc.hasNextLine()) {
+                String line = fileSc.nextLine();
+                
+                //split
+                String[] orderData = line.split("\\|");
+                
+                if (orderData.length >= 5) {
+                    
+                    //get food name
+                    String foodName = orderData[5].trim();
+                    
+                    //calculate the quantity of each food
+                    foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
+                    
+                    //get the price of food
+                    double price = restaurantPrice.getOrDefault(foodName, 0.00);
+                      
+                }//if
+            }//while
+         
+         
+         //display food, quantity and price
+         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.printf("Total and Average Sales (Day %d - %d)\n", startDay, endDay);
+         System.out.println("+-----------------------------------------------+-------------------+");
+         System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         
+        //calc total sales and average
+         double totalSales=0;
+         double averageSales=0;
+         
+         // Displaying the food quantity
+        for (String food : foodQuantityMap.keySet()) {
+            
+            //get quantity
+            int quantity = foodQuantityMap.getOrDefault(food,0);
+            
+            //calculate price. quantity x price per unit  
+            double price = quantity * restaurantPrice.getOrDefault(food,0.0);
+            
+            //calc total sales
+            totalSales+= price;
+            
+            //display food, quantity and price
+            System.out.printf("| %-45s | %-8d | $%-6.2f|%n", food, quantity, price);
+           
+        }// loop food name and quantity
+        System.out.println("+-----------------------------------------------+-------------------+");
+                 
+        //display the total sales
+            System.out.printf("|%57s | $%.2f|\n", "Total Sales", totalSales);
+            
+            //calc average sales
+            averageSales= totalSales/ (endDay-startDay+1);
+            
+            //display the average sales
+            System.out.printf("|%57s | $%.2f|\n", "Average Sales", averageSales);
+            
+        System.out.println("+-----------------------------------------------+-------------------+");
+
+            fileSc.close();
+     }
+     
+     catch (FileNotFoundException fe){
+         fe.printStackTrace();
+     }
+        
+                
+            
+                
+    }// end of viewTotalSales
     
     //milagroMan mode 13/6. including modify and view sales milagro
     public void MilagroMode(String restaurant_name,int currentDay){
@@ -352,6 +524,7 @@ public class JOJOLandsRestaurant {
         
         //list of choices
         while (choice!=3){
+        System.out.println(restaurant_name+" (Milagro Man Mode)");
         System.out.println("[1] Modify Food Prices");
         System.out.println("[2] View Sales Information");
         System.out.println("[3] Exit Milagro Man");
@@ -406,7 +579,7 @@ public class JOJOLandsRestaurant {
         try{
              
           //location
-          String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ currentDay+" Order.txt";
           
          //read
          Scanner sc= new Scanner(new FileInputStream(filePath));
@@ -481,6 +654,8 @@ public class JOJOLandsRestaurant {
     } //while choice
         
     } 
+    
+    
     
     
     

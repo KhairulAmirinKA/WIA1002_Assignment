@@ -85,14 +85,17 @@ public class JOJOLandsRestaurantSimulation {
                 jadeGarden.displayOrderProcessingList();
                 jadeGarden.storeOrder("Jade Garden");
                 jadeGarden.viewSales("Jade Garden");
+                jadeGarden.viewTotalSales("Jade Garden");
                 jadeGarden.MilagroMode("Jade Garden", currentDay);
+                
 
                 System.out.println("Cafe Deux Magots:");
                 cafeDeuxMagots.viewWaitingList();
                 cafeDeuxMagots.processOrders();
                 cafeDeuxMagots.displayOrderProcessingList();
                 cafeDeuxMagots.storeOrder("Cafe Deux Magots");
-                cafeDeuxMagots.viewSales("Cafe Deux Magots",currentDay);
+                cafeDeuxMagots.viewSales("Cafe Deux Magots");
+                cafeDeuxMagots.viewTotalSales("Cafe Deux Magots");
 
                 System.out.println("Trattoria Trussardi:");
                 trattoriaTrussardi.viewWaitingList();
