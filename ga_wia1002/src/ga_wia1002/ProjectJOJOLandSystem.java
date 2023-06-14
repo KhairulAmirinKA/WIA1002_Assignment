@@ -34,7 +34,7 @@ public class ProjectJOJOLandSystem {
                     counter, resident.getName(), resident.getAge(), resident.getGender(), stand != null ? stand.getName() : "N/A");
             counter++;
         }
-        System.out.println("-+-------------------+------------+------------+--------------+----------------+-");
+        System.out.println("+----+-----------------------+-----+--------+--------------------------+");
 
         System.out.println();
         System.out.println("-+-------------------+------------+------------+--------------+----------------+-");
@@ -47,7 +47,7 @@ public class ProjectJOJOLandSystem {
                         stand.getDestructivePower(), stand.getSpeed(), stand.getRange(),
                         stand.getStamina(), stand.getPrecision());
             } else {
-                System.out.printf(" | %-17s | %-5s | %-5s | %-7s | %-9s |\n","N/A","N/A","N/A","N/A","N/A");
+                System.out.printf(" | %-17s | %-10s | %-10s | %-12s | %-14s |\n","N/A","N/A","N/A","N/A","N/A");
             }
         }
         System.out.println("-+-------------------+------------+------------+--------------+----------------+-");
