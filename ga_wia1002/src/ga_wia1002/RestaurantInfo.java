@@ -75,27 +75,27 @@ public class RestaurantInfo {
         switch (location) {
             case "Jade Garden":                                                       
                 jadeGarden.processOrders();         
-                jadeGarden.storeOrder(location);
+                jadeGarden.storeOrder(location, currentDay);
                 break;
 
             case "Cafe Deux Magots":
                 cafeDeuxMagots.processOrders();
-                cafeDeuxMagots.storeOrder(location);
+                cafeDeuxMagots.storeOrder(location, currentDay);
                 break;
 
             case "Trattoria Trussardi":
                 trattoriaTrussardi.processOrders();
-                trattoriaTrussardi.storeOrder(location);
+                trattoriaTrussardi.storeOrder(location, currentDay);
                 break;
 
             case "Libeccio":
                 libeccio.processOrders();
-                libeccio.storeOrder(location);
+                libeccio.storeOrder(location, currentDay);
                 break;
 
             case "Savage Garden":
                 savageGarden.processOrders();                           
-                savageGarden.storeOrder(location);
+                savageGarden.storeOrder(location, currentDay);
                 break;
         }
         //rearrange waiting list to correct queue according special order rule for each restaurant
@@ -137,6 +137,7 @@ public class RestaurantInfo {
         switch (location) {
             case "Jade Garden":                                                              
                 jadeGarden.viewSales(location,currentDay);
+                jadeGarden.viewTotalSales(location);
                 break;
 
             case "Cafe Deux Magots":
