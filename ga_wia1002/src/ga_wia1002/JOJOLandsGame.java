@@ -535,4 +535,3 @@ private boolean isBackKey(String currentInput) {
     }
 }
 
-

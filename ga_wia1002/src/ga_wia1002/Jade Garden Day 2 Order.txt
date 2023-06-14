@@ -1,11 +1,13 @@
-| 1  | Jolyne Cujoh           | 19  | Female |Deep-fried Hiroshima Oysters                   |
-| 2  | Foo Fighters           | 22  | Female |Scrambled Egg White with Milk                  |
-| 3  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 4  | Ermes Costello         | 21  | Female |Scrambled Egg White with Milk                  |
-| 5  | Suzi Q.                | -1  | Female |Deep-fried Hiroshima Oysters                   |
-| 6  | Pesci                  | -1  | Male   |Scrambled Egg White with Milk                  |
-| 7  | Yukako Yamagishi       | -1  | Female |Deep-fried Hiroshima Oysters                   |
-| 8  | Melone                 | -1  | Male   |Poached Tofu with Dried Shrimps                |
-| 9  | Yuya Fungami           | -1  | Male   |Braised Goose Web with Vermicelli              |
-| 10 | Yoshikage Kira         | 33  | Male   |Deep-fried Hiroshima Oysters                   |
-| 11 | Akira Otoishi          | 19  | Male   |Braised Chicken in Black Bean Sauce            |
+| 1  | Holy Kujo              | 45  | Female |Braised Chicken in Black Bean Sauce            |
+| 2  | Weather Report         | 39  | Male   |Scrambled Egg White with Milk                  |
+| 3  | Jotaro Kujo            | 17  | Male   |Braised Goose Web with Vermicelli              |
+| 4  | Emporio Alnino         | 11  | Male   |Braised Chicken in Black Bean Sauce            |
+| 5  | Muhammad Avdol         | 29  | Male   |Scrambled Egg White with Milk                  |
+| 6  | Tizzano                | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 7  | Koichi Hirose          | 15  | Male   |Deep-fried Hiroshima Oysters                   |
+| 8  | Prosciutto             | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 9  | Rohan Kishibe          | 20  | Male   |Scrambled Egg White with Milk                  |
+| 10 | Pesci                  | -1  | Male   |Deep-fried Hiroshima Oysters                   |
+| 11 | Toshikazu Hazamada     | 18  | Male   |Deep-fried Hiroshima Oysters                   |
+| 12 | Melone                 | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 13 | Cioccolata             | 34  | Male   |Poached Tofu with Dried Shrimps                |

@@ -7,8 +7,8 @@ public class JOJOLandsRestaurant {
     protected List<Resident> waitingList;
     protected List<Resident> orderProcessingList;
     protected JOJOLandsGame game;
-    //protected int currentDay;
-    //protected int currentDay= JOJOLandsGame.currentDay;  //penting
+    protected int currentDay;
+    //protected int currentDay= JOJOLandsGame.currentDay;  //
 
     //create hashMap to store price of each food
     HashMap<String, Double> jadeGarden_Price = new HashMap<>();
