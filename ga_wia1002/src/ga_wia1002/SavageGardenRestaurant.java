@@ -2,8 +2,10 @@
 import java.util.*;
 
 public class SavageGardenRestaurant extends JOJOLandsRestaurant {
-    public SavageGardenRestaurant() {
+    private int currentDay;
+    public SavageGardenRestaurant(int currentDay) {
         super();
+        this.currentDay=currentDay;
     }
 
     @Override
