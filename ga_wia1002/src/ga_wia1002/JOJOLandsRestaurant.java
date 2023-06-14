@@ -7,7 +7,8 @@ public class JOJOLandsRestaurant {
     protected List<Resident> waitingList;
     protected List<Resident> orderProcessingList;
     protected JOJOLandsGame game;
-    protected int currentDay;
+    //protected int currentDay;
+    //protected int currentDay= JOJOLandsGame.currentDay;  //penting
 
     //create hashMap to store price of each food
     HashMap<String, Double> jadeGarden_Price = new HashMap<>();
@@ -20,7 +21,7 @@ public class JOJOLandsRestaurant {
         waitingList=new ArrayList<>();
         orderProcessingList=new ArrayList<>();
         game = new JOJOLandsGame();
-        currentDay=game.getCurrentDay();  
+        //currentDay=game.getCurrentDay(); // marked 
         
         //store the jadeGarden price into hashmap
         jadeGarden_Price.put("Braised Chicken in Black Bean Sauce", 15.00);
@@ -52,12 +53,12 @@ public class JOJOLandsRestaurant {
         libeccio_Price.put("Zucchero and Sale", 0.60);
          
         //store savagegarden price to hashmap
-        savageGarden_Price.put("Abbacchio’s Tea", 1.00);
-        savageGarden_Price.put("DIO’s Bread", 36.14);
-        savageGarden_Price.put("Giorno’s Donuts", 6.66);
-        savageGarden_Price.put("Joseph’s Tequila", 35.00);
-        savageGarden_Price.put("Kakyoin’s Cherry", 3.50);
-        savageGarden_Price.put("Kakyoin’s Porridge", 4.44);
+        savageGarden_Price.put("Abbacchioâ€™s Tea", 1.00);
+        savageGarden_Price.put("DIOâ€™s Bread", 36.14);
+        savageGarden_Price.put("Giornoâ€™s Donuts", 6.66);
+        savageGarden_Price.put("Josephâ€™s Tequila", 35.00);
+        savageGarden_Price.put("Kakyoinâ€™s Cherry", 3.50);
+        savageGarden_Price.put("Kakyoinâ€™s Porridge", 4.44);
     }
     
     public void viewMenu(String restaurantName) {
@@ -156,7 +157,7 @@ public class JOJOLandsRestaurant {
     }
     
     //store order to txt file
-    public void storeOrder(String restaurant_name){
+    public void storeOrder(String restaurant_name, int currentDay){
         
         try{
           //location
@@ -184,7 +185,7 @@ public class JOJOLandsRestaurant {
     }
     
     //view sales from txt file
-    public void viewSales(String restaurant_name){
+    public void viewSales(String restaurant_name, int currentDay){
         
         //for hashmap
         HashMap<String, Double> restaurantPrice= new HashMap<>();
@@ -342,6 +343,7 @@ public class JOJOLandsRestaurant {
         
         return restaurantPrice;
     }
+    
     //total sales
     public void viewTotalSales(String restaurant_name){
         Scanner sc= new Scanner(System.in);
