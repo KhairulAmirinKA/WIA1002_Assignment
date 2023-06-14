@@ -133,6 +133,7 @@ public class RestaurantInfo {
         System.out.println("====================================================================================================");
     }
 
+    //view sales on JOjogame
     public void viewSales(String location,int currentDay){
         switch (location) {
             case "Jade Garden":                                                              
@@ -157,6 +158,32 @@ public class RestaurantInfo {
                 break;
         }            
     }
+    
+    //view total and average sales in JOJOLandsGame
+    public void viewTotalSales(String location){
+        switch (location) {
+            case "Jade Garden": 
+                jadeGarden.viewTotalSales(location);
+                break;
+
+            case "Cafe Deux Magots":
+                cafeDeuxMagots.viewTotalSales(location);
+                break;
+
+            case "Trattoria Trussardi":
+                trattoriaTrussardi.viewTotalSales(location);
+                break;
+
+            case "Libeccio":
+                libeccio.viewTotalSales(location);
+                break;
+
+            case "Savage Garden":
+                savageGarden.viewTotalSales(location);
+                break;
+        }            
+    }
+    
     
 // tester    
 //    public static void main(String[] args) {

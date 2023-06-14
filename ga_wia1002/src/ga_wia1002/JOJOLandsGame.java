@@ -348,7 +348,7 @@ public class JOJOLandsGame{
                     //[1]view Sales
                         System.out.print("Enter Day: ");
                         select= scanner.nextLine();
-                        resInfo.viewSales(currentLocation.getName());
+                        resInfo.viewSales(currentLocation.getName(), currentDay);
                         break;
                 case("2A"):
                     //[2A] Minimum Sales
@@ -361,6 +361,7 @@ public class JOJOLandsGame{
                     break;
                 case("2D"):
                     //[2D]Total and Average Sales
+                    resInfo.viewTotalSales(currentLocation.getName());
                     break;      
                 }
                     
