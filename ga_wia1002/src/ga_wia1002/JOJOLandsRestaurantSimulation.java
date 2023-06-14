@@ -79,44 +79,44 @@ public class JOJOLandsRestaurantSimulation {
                 savageGarden.setWaitingList(savageGardenWaitingOrder);
 
                 // Print waiting list before process orders (to avoid waitingOrder be cleared 1st)and processing list for each restaurant
-                System.out.println("Jade Garden:");
-                jadeGarden.viewWaitingList();
-                jadeGarden.processOrders();
-                jadeGarden.displayOrderProcessingList();
-                jadeGarden.storeOrder("Jade Garden");
-                jadeGarden.viewSales("Jade Garden");
-                jadeGarden.viewTotalSales("Jade Garden");
-                jadeGarden.MilagroMode("Jade Garden", currentDay);
-                
-
-                System.out.println("Cafe Deux Magots:");
-                cafeDeuxMagots.viewWaitingList();
-                cafeDeuxMagots.processOrders();
-                cafeDeuxMagots.displayOrderProcessingList();
-                cafeDeuxMagots.storeOrder("Cafe Deux Magots");
-                cafeDeuxMagots.viewSales("Cafe Deux Magots");
-                cafeDeuxMagots.viewTotalSales("Cafe Deux Magots");
+//                System.out.println("Jade Garden:");
+//                jadeGarden.viewWaitingList();
+//                jadeGarden.processOrders();
+//                jadeGarden.displayOrderProcessingList();
+//                jadeGarden.storeOrder("Jade Garden", currentDay);
+//                jadeGarden.viewSales("Jade Garden", currentDay);
+//                jadeGarden.viewTotalSales("Jade Garden");
+//                jadeGarden.MilagroMode("Jade Garden", currentDay);
+//                
+//
+//                System.out.println("Cafe Deux Magots:");
+//                cafeDeuxMagots.viewWaitingList();
+//                cafeDeuxMagots.processOrders();
+//                cafeDeuxMagots.displayOrderProcessingList();
+//                cafeDeuxMagots.storeOrder("Cafe Deux Magots", currentDay);
+//                cafeDeuxMagots.viewSales("Cafe Deux Magots", currentDay);
+//                cafeDeuxMagots.viewTotalSales("Cafe Deux Magots");
 
                 System.out.println("Trattoria Trussardi:");
                 trattoriaTrussardi.viewWaitingList();
                 trattoriaTrussardi.processOrders();
                 trattoriaTrussardi.displayOrderProcessingList();
-                trattoriaTrussardi.storeOrder("Trattoria Trussardi");
-                trattoriaTrussardi.viewSales("Trattoria Trussardi",currentDay);
+                trattoriaTrussardi.storeOrder("Trattoria Trussardi", currentDay);
+                trattoriaTrussardi.viewSales("Trattoria Trussardi", currentDay);
 
                 System.out.println("Libeccio:");
                 libeccio.viewWaitingList();
                 libeccio.processOrders();
                 libeccio.displayOrderProcessingList();
-                libeccio.storeOrder("Libeccio");
-                libeccio.viewSales("Libeccio",currentDay);
+                libeccio.storeOrder("Libeccio", currentDay);
+                libeccio.viewSales("Libeccio", currentDay);
 
                 System.out.println("Savage Garden:");
                 savageGarden.viewWaitingList();
                 savageGarden.processOrders();
                 savageGarden.displayOrderProcessingList();
-                savageGarden.storeOrder("Savage Garden");
-                savageGarden.viewSales("Savage Garden",currentDay);
+                savageGarden.storeOrder("Savage Garden", currentDay);
+                savageGarden.viewSales("Savage Garden", currentDay);
               
                             }
 
