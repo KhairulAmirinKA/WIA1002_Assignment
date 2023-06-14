@@ -23,6 +23,20 @@ public class JOJOLandsGame{
 
     public void start() {
         //start
+//        System.out.println("Welcome, the fantastical realm of JOJOLands.");
+//        System.out.println("[1] Start Game");
+//        System.out.println("[2] Load Game");
+//        System.out.println("[3] Exit");
+//       
+//        System.out.println("\n Select: ");
+//        String select = scanner.nextLine();
+//        System.out.println("========================================================================================================");
+//        System.out.println("Select a map:");
+//        System.out.println("[1] Default Map");
+//        System.out.println("[2] Parallel Map");
+//        System.out.println("[3] Alternate Map");
+     
+        
         System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
         printCurrentLocation();
         movementHistory.add(currentLocation);
@@ -52,17 +66,9 @@ public class JOJOLandsGame{
                 
                 //at Residential Area
                 else if(isResidentialArea(currentLocation.getName())){
-                    if(!otherResidentialArea(input,currentInput)){
-                        break;
-                    }
+                    ResidentialArea(input,currentInput);
                 }
                 
-                //at Morioh Grand Garden
-                else if(currentLocation.getName().equals("Morioh Grand Hotel")){
-                    if(!Morioh(input,currentInput)){
-                       break;
-                    }
-                }
                 System.out.println("Currentlocation: "+currentLocation.getName()+" PreviousLocation: "+map.getPreviousLocation().getName());
                 System.out.println("Current Input: "+input+" Previous input: "+currentInput);
                 System.out.println("Back key? "+ isBackKey(currentInput));
@@ -84,36 +90,62 @@ public class JOJOLandsGame{
     }
     
     private void otherOption(String currentInput) {   // Print other menu options
+        System.out.println("current Input inside OtherOption: "+currentInput);
         String[] menuOptions;
         String backLocation=backLocation();
         String forwardLocation = forwardLocation();
         
+        //at TownHall
         if (currentLocation.getName().equals("Town Hall")) {
-            menuOptions = new String[]{"Advance to Next Day", "Save Game", "Exit"};
+            menuOptions = new String[]{"Advance to Next Day", "Save Game", "Exit"};          
+        }
+        //at restaurant
+        else if(isRestaurant(currentLocation.getName())){   
+            if(isBackKey(currentInput)){    //[7][Forward]
+                menuOptions = new String[]{"View Waiting List and Order Processing List", "View Menu", "View Sales Information", "Milagro Man",
+                        "Back (" + backLocation + ")","Forward (" + forwardLocation + ")", "Back to Town Hall"};                   
+            }        
+            else {
+                menuOptions = new String[]{"View Waiting List and Order Processing List", "View Menu", "View Sales Information", "Milagro Man",
+                        "Back (" + backLocation + ")", "Back to Town Hall"};
+                }
         }
         
-        else if(isBackKey(currentInput)&&isRestaurant(currentLocation.getName())){    //[Forward]
-            menuOptions = new String[]{"View Waiting List and Order Processing List", "View Menu", "View Sales Information", "Milagro Man",
-                    "Back (" + backLocation + ")","Forward (" + forwardLocation + ")", "Back to Town Hall"};                   
-        }        
-        else if (isRestaurant(currentLocation.getName())&&!isBackKey(currentInput)) {
-            menuOptions = new String[]{"View Waiting List and Order Processing List", "View Menu", "View Sales Information", "Milagro Man",
-                    "Back (" + backLocation + ")", "Back to Town Hall"};
+        else if(currentLocation.getName().equals("Green Dolphin Street Prison")){
+            if(isBackKey(currentInput)){    //[6]Forward
+                menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall","Dirty Deeds Done Dirt Cheap", "Forward (" + forwardLocation + ")"}; 
             }
-        
-        else if(currentLocation.getName().equals("Morioh Grand Hotel")&&isBackKey(currentInput)){    //[Forward]
-           menuOptions= new String[]{"View Resident Information","The Hand","Back (" + backLocation + ")","Forward (" + forwardLocation + ")","Back to Town Hall"}; 
-        }        
-        else if(currentLocation.getName().equals("Morioh Grand Hotel")&&!isBackKey(currentInput)){    
-           menuOptions= new String[]{"View Resident Information","The Hand","Back (" + backLocation + ")","Back to Town Hall"}; 
+            else{
+                menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall","Dirty Deeds Done Dirt Cheap"}; 
+            }
         }
         
-        else if(isResidentialArea(currentLocation.getName())&&isBackKey(currentInput)){ //[Forward]
-            menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Forward (" + forwardLocation + ")","Back to Town Hall"};
+        else if(currentLocation.getName().equals("Morioh Grand Hotel")){    
+            if(isBackKey(currentInput)){ //[6][Forward]
+                menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall","The Hand", "Forward (" + forwardLocation + ")"}; 
+            }        
+            else{
+                menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall","The Hand"}; 
+            }
         }
-        else if(isResidentialArea(currentLocation.getName())&&!isBackKey(currentInput)){
-            menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall"};
-        }        
+        
+        else if(currentLocation.getName().equals("Angelo Rock")){    
+            if(isBackKey(currentInput)){    //[7][Forward]
+                menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall","Red Hot Chili Pepper","Another One Bites the Dust","Forward (" + forwardLocation + ")"}; 
+            }
+            else{   //no [Forward]
+                menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall","Red Hot Chili Pepper","Another One Bites the Dust"}; 
+            }
+        }
+        
+        else if(isResidentialArea(currentLocation.getName())){ 
+            if(isBackKey(currentInput)){//[5][Forward]
+                        menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall","Forward (" + forwardLocation + ")"};
+                    }
+            else{ 
+                        menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall"};
+                    }        
+        }
  
         else {
             return; //exit loop
@@ -140,7 +172,7 @@ public class JOJOLandsGame{
             map.setPreviousLocation(currentLocation);
             moveToLocation(destination);
         } else {
-            System.out.println("Invalid input. Please try again.");
+            System.out.println("\nInvalid input. Please try again.");
         }
     }
     
@@ -176,12 +208,13 @@ public class JOJOLandsGame{
                locationName.equals("Joestar Mansion") ||
                locationName.equals("San Giorgio Maggiore") ||
                locationName.equals("Green Dolphin Street Prison")||
-               locationName.equals("Angelo Rock") ||
                locationName.equals("DIO's Mansion") ||
-               locationName.equals("Vineyard") ;            
+               locationName.equals("Vineyard") ||  
+               locationName.equals("Angelo Rock") ||    
+               locationName.equals("Morioh Grand Hotel") ;     
     }
 
-    private boolean otherResidentialArea(String input,String currentInput) {
+    private void ResidentialArea(String input,String currentInput) {
         Preference viewProfile = new Preference();//Q4-view resident's profile
         ResidentManager residentManager = new ResidentManager();
         residentManager.loadResidents("residents.csv", "stands.csv");
@@ -189,62 +222,14 @@ public class JOJOLandsGame{
         StandManager standManager = new StandManager();
         standManager.loadStands("stands.csv");
         ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
+        DirtyDeeds dd = new DirtyDeeds();   //extraFeaturesQ4
         
-                if (input.equals("2")) {
+                while (input.equals("2")) {
                 // View Resident Information
                 jojoSystem.displayResidentInformation(currentLocation.getName());
                 System.out.println("\n[1] View Resident's Profile");
                 System.out.println("[2] Sort");
                 System.out.println("[3] Exit");
-
-                System.out.print("Select: ");
-                String select = scanner.nextLine(); // user instruction
-
-                if (select.equals("1")) {
-                    // [1] View Resident's Profile
-                    Scanner sc = new Scanner(System.in);
-                    System.out.print("Enter the resident’s name: ");
-                    String residentName = sc.nextLine();
-                    viewProfile.printResidentProfile(residentName, currentDay);
-                } else if (select.equals("2")) {
-                    // {2} Sort
-                    List<Resident> sortResident = residentManager.getResidentsByResidentialArea(currentLocation.getName());
-                    System.out.print("Enter the sorting order (e.g., Stamina (asc); Precision (desc); Stand (asc)): ");
-                    String sortingOrder = scanner.nextLine();
-                    jojoSystem.sortResidents(sortResident, sortingOrder); // Update sortResident with the sorted list
-                } else if (select.equals("3")) {
-                    return false;
-                }
-                
-            } else if (input.equals("3")) {
-                // [3] Back to previous location
-                moveBack();
-                
-            } else if (input.equals("4")&&!isBackKey(currentInput)||input.equals("5")) {
-                // [4] Back to Town Hall
-                currentLocation = map.getLocation("Town Hall");
-                moveToLocation(currentLocation);
-            } else if(input.equals("4")&&isBackKey(currentInput)){    //[Back] is previously chosen,[4] Forward
-                moveForward();
-            }
-        return true;
-    }
-    
-   private boolean Morioh(String input,String currentInput) {
-        Preference viewProfile = new Preference();//Q4-view resident's profile
-        ResidentManager residentManager = new ResidentManager();
-        residentManager.loadResidents("residents.csv", "stands.csv");
-        List<Resident> residents = residentManager.getResidents();
-        StandManager standManager = new StandManager();
-        standManager.loadStands("stands.csv");
-        ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
-        
-                if (input.equals("2")) {
-                // View Resident Information
-                    jojoSystem.displayResidentInformation(currentLocation.getName());
-                    System.out.println("\n[1] View Resident's Profile");
-                    System.out.println("[2] Sort");
-                    System.out.println("[3] Exit");
 
                 System.out.print("Select: ");
                 String select = scanner.nextLine(); // user instruction
@@ -262,33 +247,86 @@ public class JOJOLandsGame{
                         String sortingOrder = scanner.nextLine();
                         jojoSystem.sortResidents(sortResident, sortingOrder); // Update sortResident with the sorted list
                     } else if (select.equals("3")) {
-                        return false;
-                      }
+                        //[3]Exit
+                        System.out.println("==========================================================================================================================");
+                        printCurrentLocation();
+                        break;
+                    } 
+                 } 
+                if (input.equals("3")) {
+                    // [3] Back
+                    moveBack();
+                }               
+                else if(input.equals("4")){
+                    //[4]Back to Town Hall
+                    currentLocation = map.getLocation("Town Hall");
+                    moveToLocation(currentLocation);    
+                }
+                
+                if(isBackKey(currentInput)){   //[Forward] case
+                    if(currentLocation.getName().equals("Angelo Rock")){
+                        if(input.equals("5")){
+                            //[5]Red Hot Chili Pepper
+                        }
+                        else if(input.equals("6")){
+                            //[6] Another One Bites the Dust
+                        }
+                        else if(input.equals("7")){
+                            //[7] Forward
+                            moveForward();
+                        }
                     }
-                
-                else if(input.equals("3")){
-                //[3]The Hand
-                } 
-                
-                else if (input.equals("4")) {
-                // [4] Back to previous location
-                moveBack();               
+                    if(currentLocation.getName().equals("Green Dolphin Street Prison")){
+                        if(input.equals("5")){
+                         //[5]Dirty Deeds Done Dirt Cheap
+                         dd.runDirtyDeeds();
+                        }
+                        else if(input.equals("6")){
+                          //[6] Forward
+                          moveForward();
+                        }
+                    }
+                    if(currentLocation.getName().equals("Morioh Grand Hotel")){
+                        if(input.equals("5")){
+                            //[5] The Hand
+                        }
+                        else if(input.equals("6")){
+                            //[6] Forward
+                            moveForward();
+                        }        
+                    }
+                    else{   //otherResidentialArea
+                        if(input.equals("5")){
+                            //[5]Forward
+                            moveForward();
+                        }
+                    }
                 }
                 
-                else if (input.equals("5")&&!isBackKey(currentInput)||input.equals("6")) {
-                // [5] Back to Town Hall
-                currentLocation = map.getLocation("Town Hall");
-                moveToLocation(currentLocation);
+                if(!isBackKey(currentInput)){   //no [Forward]--normal case
+                    
+                    if(currentLocation.getName().equals("Green Dolphin Street Prison")){
+                        if(input.equals("5")){
+                         //[5]Dirty Deeds Done Dirt Cheap
+                         dd.runDirtyDeeds();
+                        }
+                    }                    
+                    if(currentLocation.getName().equals("Angelo Rock")){
+                        if(input.equals("5")){
+                            //[5]Red Hot Chili Pepper
+                        }
+                        else if(input.equals("6")){
+                            //[6] Another One Bites the Dust
+                        }
+                    }
+                    if(currentLocation.getName().equals("Morioh Grand Hotel")){
+                        if(input.equals("5")){
+                            //[5] The Hand
+                        }
+                    }        
                 }
-                
-                else if(isBackKey(currentInput)&&input.equals(5)){  //previously select [Back]
-                // [5]Forward
-                moveForward();
-                }
-                        
-        return true;
     }
-   
+
     private void restaurants(String input, String currentInput) {
         RestaurantInfo resInfo = new RestaurantInfo();
         JOJOLandsRestaurant jojoRestaurant = new JOJOLandsRestaurant();
@@ -298,10 +336,49 @@ public class JOJOLandsGame{
             resInfo.displayWaitingAndProcessingList(currentLocation.getName());
         } else if (input.equals("3")) {
             jojoRestaurant.viewMenu(currentLocation.getName());
-        } else if (input.equals("4")) {
-            resInfo.viewSales(currentLocation.getName());
-        } else if (input.equals("5")) {
+        } while (input.equals("4")) {
+            //[4]View Sales Information
+            System.out.println("==========================================================================================================================");
+            System.out.println("Restaurant: "+currentLocation.getName());
+            System.out.println("Sales Information");
+            System.out.println("[1] View Sales");
+            System.out.println("[2] View Agrregated Information");
+            System.out.println("\t[A] Minimum Sales");
+            System.out.println("\t[B] Maximum Sales");
+            System.out.println("\t[C] Top k Highest Sales");
+            System.out.println("\t[D] Total and Average Sales");
+            System.out.println("[3] Exit");
+            System.out.print("\nSelect: ");
+            String select =scanner.nextLine();
+            System.out.println("==========================================================================================================================");
+            switch(select){
+                case("1"):
+                    //[1]view Sales
+                        System.out.print("Enter Day: ");
+                        select= scanner.nextLine();
+                        resInfo.viewSales(currentLocation.getName());
+                        break;
+                case("2A"):
+                    //[2A] Minimum Sales
+                    break;
+                case("2B"):
+                    //[2B]Maximum Sales
+                    break;
+                case("2C"):
+                    //[2C]Top k Highest Sales
+                    break;
+                case("2D"):
+                    //[2D]Total and Average Sales
+                    break;      
+                }
+                    
+            if(select.equals("3")){
+                    //exit
+                    break;         
+            }    
+        } if (input.equals("5")) {
             //[5] Milagro Man
+            
         } else if (input.equals("6")) {
             //[6] Back
             moveBack();
@@ -317,18 +394,6 @@ public class JOJOLandsGame{
       
 
 private boolean isBackKey(String currentInput) {
-    if (currentLocation.getName().equals("Morioh Grand Hotel") && currentInput.equals("4")) {
-        return true;
-    }
-    
-    if (isRestaurant(currentLocation.getName()) && currentInput.equals("6")) {
-        return true;
-    }
-    
-    if (isResidentialArea(currentLocation.getName()) && currentInput.equals("3")) {
-        return true;
-    }
-    
     if (isResidentialArea(currentLocation.getName())&&isRestaurant(map.getPreviousLocation().getName()) && currentInput.equals("6")) {
         return true;
     }
@@ -336,6 +401,12 @@ private boolean isBackKey(String currentInput) {
     if (isResidentialArea(map.getPreviousLocation().getName())&&isRestaurant(currentLocation.getName()) && currentInput.equals("3")) {
         return true;
     }    
+    if(isRestaurant(currentLocation.getName())&&isRestaurant(map.getPreviousLocation().getName()) && currentInput.equals("6")) {
+        return true;
+    }  
+    if (isResidentialArea(currentLocation.getName()) &&isResidentialArea(map.getPreviousLocation().getName())&& currentInput.equals("3")) {
+        return true;
+    }
     
     return false;
 }    
