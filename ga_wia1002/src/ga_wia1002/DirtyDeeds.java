@@ -11,13 +11,8 @@ public class DirtyDeeds {
         map = new JOJOLandsMap();
     }
 
-    public static void main(String[] args) {
-        DirtyDeeds dd = new DirtyDeeds();
-        map.initializeMap();
-        dd.runDirtyDeeds();
-    }
-
     public void runDirtyDeeds() {
+        map.initializeMap();
         List<String> currentPath = new ArrayList<>();
         System.out.print("Source: ");
         String source = sc.nextLine();
@@ -87,4 +82,9 @@ public class DirtyDeeds {
         paths.sort(Comparator.comparingDouble(DirtyDeeds::calculateDistance));
     }
 
+    //tester
+//    public static void main(String[] args) {
+//        DirtyDeeds dd = new DirtyDeeds();
+//        dd.runDirtyDeeds();
+//    }    
 }
