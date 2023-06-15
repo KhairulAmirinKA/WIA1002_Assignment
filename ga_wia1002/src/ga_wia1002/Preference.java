@@ -16,6 +16,7 @@ public class Preference {
     private Restaurant JotaroRestaurant = null;
     private List<Restaurant> JonathanFoodList = new ArrayList<>();
     private List<Restaurant> JosephFoodList = new ArrayList<>();
+    private List<Restaurant> GiornoFoodList = new ArrayList<>();
     //the file path of residents.csv and stands.csv
     static String residentFilePath="src\\ga_wia1002\\residents.csv";
     static String standFilePath="src\\ga_wia1002\\stands.csv";
@@ -87,7 +88,7 @@ public class Preference {
                         resident.addToOrderHistory(food, getRandomRestaurant().getName());
                     } else {
                         remainingBudget =remainingBudget+refund- 0.6;
-                        resident.addToOrderHistory("Zucchero and Sale ($0.60)", "Liberrio");
+                        resident.addToOrderHistory("Zucchero and Sale ($0.60)", "Libeccio");
                     }
                 }
 
@@ -101,8 +102,8 @@ public class Preference {
                         resident.addToOrderHistory(food, "Trattoria Trussardi");
                     }
                     else {
-                        String randFood = getRandomFoodFromRestaurant(getNoTrattoria());
-                        resident.addToOrderHistory(randFood, getNoTrattoria().getName());
+                        Restaurant foodWithRestaurant = GiornoGetFoodFromNoTra();
+                        resident.addToOrderHistory(foodWithRestaurant.getFoodName(), foodWithRestaurant.getName());
                                 }              
                             }
                 else{
@@ -125,6 +126,7 @@ public class Preference {
         }
         return allAvailableFood;
     }
+    
     public Restaurant JosephGetFood() {
         if (JosephFoodList.isEmpty()) {
             JosephFoodList = new ArrayList<>(getAllAvailableFood());
@@ -133,6 +135,20 @@ public class Preference {
 
         if (!JosephFoodList.isEmpty()) {
             Restaurant foodWithRestaurant = JosephFoodList.remove(0);
+            return foodWithRestaurant;
+        }
+
+        return null;
+    }
+    
+    public Restaurant GiornoGetFoodFromNoTra(){
+        if (GiornoFoodList.isEmpty()) {
+            GiornoFoodList = new ArrayList<>(getRandomFoodFromNoTrattoria());
+            Collections.shuffle(GiornoFoodList); //so that he can try food without following restaurant sequence
+        }
+
+        if (!GiornoFoodList.isEmpty()) {
+            Restaurant foodWithRestaurant = GiornoFoodList.remove(0);
             return foodWithRestaurant;
         }
 
@@ -153,7 +169,7 @@ public class Preference {
         return null;
     }
     
-    private void viewResidentProfile(String selectedResidentName) {
+    private void viewResidentProfile(String selectedResidentName,String currentLocation) {
       StandManager standManager = new StandManager();   //read stands.csv and residents.csv
       standManager.loadStands("stands.csv");
       ResidentManager residentManager = new ResidentManager();
@@ -166,7 +182,7 @@ public class Preference {
       // Search for the resident with the matching name
       Resident selectedResident = null;
       for (Resident resident : residents) {
-          if (resident.getName().equals(selectedResidentName)) {
+          if (resident.getName().equals(selectedResidentName)&&resident.getResidentialArea().equals(currentLocation)) {
               selectedResident = resident;
               break;
           }
@@ -193,7 +209,7 @@ public class Preference {
       } else {
           System.out.println("Resident not found.");
       }
-  }
+    }
     
     public List<Resident> extractLastOrdersAndRestaurants(int currentDay) {
         List<Resident> extractedResidents = new ArrayList<>();
@@ -233,13 +249,16 @@ public class Preference {
         return restaurants.get(RANDOM.nextInt(restaurants.size()));
     }
 
-    private Restaurant getNoTrattoria() {
-        Restaurant restaurant;
-        do {
-            restaurant = restaurants.get(RANDOM.nextInt(restaurants.size()));
-        } while (restaurant.getName().equals("Trattoria Trussardi"));
-
-        return restaurant;
+    private List<Restaurant> getRandomFoodFromNoTrattoria(){
+        List<Restaurant> foodExceptTra = new ArrayList<>();
+            for (Restaurant res : restaurants) {
+                if(!res.getName().equals("Trattoria Trussardi")){
+                    for (String food : res.getAvailableFoods()) {
+                        Restaurant foodWithRestaurant = new Restaurant(food, res.getName());
+                        foodExceptTra.add(foodWithRestaurant);
+                }
+        }}
+        return foodExceptTra;
     }
 
     private String getRandomFoodFromRestaurant(Restaurant restaurant) {
@@ -408,24 +427,27 @@ public class Preference {
             return;
         }
     }
-    public void printResidentProfile(String residentName,int currentDay){
+    
+    public void printResidentProfile(String residentName,int currentDay,String currentLocation){
             // Generate food orders--important,else will not generate orderHistory
             initializeRestaurant();
             getResidents();
             generateFoodOrders(currentDay);   //must below initializeRestaurant and getResidents
             //print profile and orderHistory
-            viewResidentProfile(residentName);
+            viewResidentProfile(residentName,currentLocation);
             printOrderHistory(residentName);
     }
 
+//    tester
 //    public static void main(String[] args) {
 //        Preference generator = new Preference();
 //        Scanner sc = new Scanner(System.in);
+//        String currentLocation = "Joestar Mansion";
 //        System.out.print("Enter the resident’s name: ");
 //        String residentName =sc.nextLine();
 //        JOJOLandsGame game = new JOJOLandsGame();
-//        int currentDay=game.getCurrentDay();
-//        generator.printResidentProfile(residentName,currentDay);
+//        int currentDay= 6; //game.getCurrentDay();
+//        generator.printResidentProfile(residentName,currentDay,currentLocation);
 //    }
 }
 
