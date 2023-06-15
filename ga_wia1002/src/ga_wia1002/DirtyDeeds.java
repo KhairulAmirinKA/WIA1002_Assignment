@@ -18,7 +18,7 @@ public class DirtyDeeds {
         String source = sc.nextLine();
         System.out.print("Destination: ");
         String destination = sc.nextLine();
-        System.out.println("\n======================================================================");
+        System.out.println("\n==================================================================================================================");
 
         currentPath.add(source);
         findPossiblePaths(source, destination, currentPath, paths);
@@ -45,7 +45,7 @@ public class DirtyDeeds {
             }
         System.out.printf(" (%.2f km)\n", distance);
     }
-        System.out.println("======================================================================");
+        System.out.println("==================================================================================================================");
         System.out.println();
     }
 
