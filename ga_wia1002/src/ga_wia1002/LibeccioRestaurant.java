@@ -3,8 +3,10 @@ package ga_wia1002;
 import java.util.*;
 
 public class LibeccioRestaurant extends JOJOLandsRestaurant {
-    public LibeccioRestaurant() {
+    private int currentDay;
+    public LibeccioRestaurant(int currentDay) {
         super();
+        this.currentDay=currentDay;
     }
 
     @Override

@@ -1,7 +1,6 @@
 package ga_wia1002;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class JadeGardenRestaurant extends JOJOLandsRestaurant {
     public JadeGardenRestaurant() {
@@ -16,19 +15,17 @@ public class JadeGardenRestaurant extends JOJOLandsRestaurant {
 
 class JadeGardenRule {
     public static List<Resident> processOrder(List<Resident> waitingList) {
+        LinkedList<Resident> waitingListCopy = new LinkedList<>(waitingList);
         List<Resident> processedList = new ArrayList<>();
-        int left = 0;   //1st element
-        int right = waitingList.size() - 1; //last element on right
-
-        while (left <= right) {
-            processedList.add(waitingList.get(left));
-            if (left != right) {
-                processedList.add(waitingList.get(right));
+        
+        while (!waitingListCopy.isEmpty()) {
+            if(waitingListCopy.size()>1){
+                processedList.add(waitingListCopy.removeFirst());
+                processedList.add(waitingListCopy.removeLast());
+            }else{
+                processedList.add(waitingListCopy.removeLast());
             }
-            left++;
-            right--;
         }
-
         return processedList;
     }
 }

@@ -1,13 +1,15 @@
-| 1  | Holy Kujo              | 45  | Female |Braised Chicken in Black Bean Sauce            |
-| 2  | Weather Report         | 39  | Male   |Scrambled Egg White with Milk                  |
-| 3  | Jotaro Kujo            | 17  | Male   |Braised Goose Web with Vermicelli              |
-| 4  | Emporio Alnino         | 11  | Male   |Braised Chicken in Black Bean Sauce            |
-| 5  | Muhammad Avdol         | 29  | Male   |Scrambled Egg White with Milk                  |
-| 6  | Tizzano                | -1  | Male   |Braised Chicken in Black Bean Sauce            |
-| 7  | Koichi Hirose          | 15  | Male   |Deep-fried Hiroshima Oysters                   |
-| 8  | Prosciutto             | -1  | Male   |Braised Chicken in Black Bean Sauce            |
-| 9  | Rohan Kishibe          | 20  | Male   |Scrambled Egg White with Milk                  |
-| 10 | Pesci                  | -1  | Male   |Deep-fried Hiroshima Oysters                   |
-| 11 | Toshikazu Hazamada     | 18  | Male   |Deep-fried Hiroshima Oysters                   |
-| 12 | Melone                 | -1  | Male   |Braised Chicken in Black Bean Sauce            |
-| 13 | Cioccolata             | 34  | Male   |Poached Tofu with Dried Shrimps                |
+| 1  | Holy Kujo              | 45  | Female |Braised Goose Web with Vermicelli              |
+| 2  | Narciso Anasui         | 25  | Male   |Braised Goose Web with Vermicelli              |
+| 3  | Jonathan Joestar       | 20  | Male   |Deep-fried Hiroshima Oysters                   |
+| 4  | Sale                   | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 5  | Jotaro Kujo            | 17  | Male   |Braised Goose Web with Vermicelli              |
+| 6  | Prosciutto             | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 7  | Tomoko Higashikata     | 37  | Female |Braised Goose Web with Vermicelli              |
+| 8  | Illuso                 | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 9  | Jean Pierre Polnareff  | 24  | Male   |Poached Tofu with Dried Shrimps                |
+| 10 | Trish Una              | 15  | Female |Deep-fried Hiroshima Oysters                   |
+| 11 | Muhammad Avdol         | 29  | Male   |Braised Chicken in Black Bean Sauce            |
+| 12 | Yoshihiro Kira         | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 13 | Aya Tsuji              | -1  | Female |Poached Tofu with Dried Shrimps                |
+| 14 | Yukako Yamagishi       | -1  | Female |Scrambled Egg White with Milk                  |
+| 15 | Hayato Kawajiri        | 11  | Male   |Scrambled Egg White with Milk                  |

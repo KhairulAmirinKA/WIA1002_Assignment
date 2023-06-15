@@ -10,13 +10,57 @@ public class RestaurantInfo {
     private JOJOLandsRestaurant libeccio ;
     private JOJOLandsRestaurant savageGarden ;
 
-    public RestaurantInfo() {
+    //create hashMap to store price of each food
+    HashMap<String, Double> jadeGarden_Price = new HashMap<>();
+    HashMap<String, Double> savageGarden_Price = new HashMap<>();
+    HashMap<String, Double> trattoriaTrussardi_Price = new HashMap<>();
+    HashMap<String, Double> libeccio_Price = new HashMap<>();
+    HashMap<String, Double> cafeDeuxMagots_Price = new HashMap<>();    
+
+    public RestaurantInfo(int currentDay) {
         // Create restaurants
         jadeGarden = new JadeGardenRestaurant();
         cafeDeuxMagots = new CafeDeuxMagotsRestaurant();
         trattoriaTrussardi = new TrattoriaTrussardiRestaurant();
-        libeccio = new LibeccioRestaurant();
-        savageGarden = new SavageGardenRestaurant();
+        libeccio = new LibeccioRestaurant(currentDay);
+        savageGarden = new SavageGardenRestaurant(currentDay);
+        
+                //store the jadeGarden price into hashmap
+        jadeGarden_Price.put("Braised Chicken in Black Bean Sauce", 15.00);
+        jadeGarden_Price.put("Braised Goose Web with Vermicelli", 21.00);
+        jadeGarden_Price.put("Deep-fried Hiroshima Oysters", 17.00);
+        jadeGarden_Price.put("Poached Tofu with Dried Shrimps", 12.00);
+        jadeGarden_Price.put("Scrambled Egg White with Milk", 10.00);
+        
+             
+        //store the deux magots price into map
+        cafeDeuxMagots_Price.put("Sampling Matured Cheese Platter", 23.00);
+        cafeDeuxMagots_Price.put("Spring Lobster Salad", 35.00);
+        cafeDeuxMagots_Price.put("Spring Organic Omelette", 23.00);
+        cafeDeuxMagots_Price.put("Truffle-flavoured Poultry Supreme", 34.00);
+        cafeDeuxMagots_Price.put("White Asparagus", 26.00);
+        
+        //store the trattoria price into map
+        trattoriaTrussardi_Price.put("Caprese Salad", 10.00);
+        trattoriaTrussardi_Price.put("Creme caramel", 6.50);
+        trattoriaTrussardi_Price.put("Lamb Chops with Apple Sauce", 25.00);
+        trattoriaTrussardi_Price.put("Spaghetti alla Puttanesca", 15.00);
+          
+        //store the libeccio price into map
+        libeccio_Price.put("Formaggio", 12.50);
+        libeccio_Price.put("Ghiaccio", 1.01);
+        libeccio_Price.put("Melone", 5.20);
+        libeccio_Price.put("Prosciutto and Pesci", 20.23);
+        libeccio_Price.put("Risotto", 13.14);
+        libeccio_Price.put("Zucchero and Sale", 0.60);
+         
+        //store savagegarden price to hashmap
+        savageGarden_Price.put("Abbacchio’s Tea", 1.00);
+        savageGarden_Price.put("DIO’s Bread", 36.14);
+        savageGarden_Price.put("Giorno’s Donuts", 6.66);
+        savageGarden_Price.put("Joseph’s Tequila", 35.00);
+        savageGarden_Price.put("Kakyoin’s Cherry", 3.50);
+        savageGarden_Price.put("Kakyoin’s Porridge", 4.44);
     }              
         
     public void processList(int currentDay,String location){
@@ -75,27 +119,27 @@ public class RestaurantInfo {
         switch (location) {
             case "Jade Garden":                                                       
                 jadeGarden.processOrders();         
-                jadeGarden.storeOrder(location, currentDay);
+                jadeGarden.storeOrder(location);
                 break;
 
             case "Cafe Deux Magots":
                 cafeDeuxMagots.processOrders();
-                cafeDeuxMagots.storeOrder(location, currentDay);
+                cafeDeuxMagots.storeOrder(location);
                 break;
 
             case "Trattoria Trussardi":
                 trattoriaTrussardi.processOrders();
-                trattoriaTrussardi.storeOrder(location, currentDay);
+                trattoriaTrussardi.storeOrder(location);
                 break;
 
             case "Libeccio":
                 libeccio.processOrders();
-                libeccio.storeOrder(location, currentDay);
+                libeccio.storeOrder(location);
                 break;
 
             case "Savage Garden":
                 savageGarden.processOrders();                           
-                savageGarden.storeOrder(location, currentDay);
+                savageGarden.storeOrder(location);
                 break;
         }
         //rearrange waiting list to correct queue according special order rule for each restaurant
@@ -133,40 +177,114 @@ public class RestaurantInfo {
         System.out.println("====================================================================================================");
     }
 
-    public void viewSales(String location,int currentDay){
+    public void viewSales(String location,int userInputDay){
         switch (location) {
             case "Jade Garden":                                                              
-                jadeGarden.viewSales(location,currentDay);
-                jadeGarden.viewTotalSales(location);
+                jadeGarden.viewSales(location,userInputDay);
                 break;
 
             case "Cafe Deux Magots":
-                cafeDeuxMagots.viewSales(location,currentDay);
+                cafeDeuxMagots.viewSales(location,userInputDay);
                 break;
 
             case "Trattoria Trussardi":
-                trattoriaTrussardi.viewSales(location,currentDay);
+                trattoriaTrussardi.viewSales(location,userInputDay);
                 break;
 
             case "Libeccio":
-                libeccio.viewSales(location,currentDay);
+                libeccio.viewSales(location, userInputDay);
                 break;
 
             case "Savage Garden":
-                savageGarden.viewSales(location,currentDay);
+                savageGarden.viewSales(location,userInputDay);
                 break;
         }            
     }
     
-// tester    
+    public void viewMenu(String restaurantName) {
+        Map<String, Double> menu;
+        switch (restaurantName){          
+            case "Jade Garden":
+                menu= jadeGarden_Price;
+                break;
+                
+            case "Trattoria Trussardi":
+                menu= trattoriaTrussardi_Price;
+                break;
+                
+            case "Savage Garden":
+                menu= savageGarden_Price;
+                break;
+                
+            case "Cafe Deux Magots":
+                 menu= cafeDeuxMagots_Price;
+                break;
+                
+            case "Libeccio":
+                 menu= libeccio_Price;
+                break;
+            default:
+                 System.out.println("Restaurant not found.");
+                 return; // Exit the method if restaurant not found
+        }
+
+        System.out.println("=========================================================================================================");
+        System.out.println("Menu for " + restaurantName + ":");
+        System.out.println("+-----------------------------------------------+-----------------+");
+        System.out.println("| Menu                                          | Price($)        |");
+        System.out.println("+-----------------------------------------------+-----------------+");
+        for (Map.Entry<String, Double> entry : menu.entrySet()) {
+            
+            String foodItem = entry.getKey();    
+            double price = entry.getValue();
+            
+            System.out.printf("|%-46s | %-15.2f |%n",foodItem , price);
+        }
+        
+        System.out.println("+-----------------------------------------------+-----------------+");
+    }
+    
+    //view total and average sales in JOJOLandsGame
+    public void viewTotalSales(String location){
+        switch (location) {
+            case "Jade Garden": 
+                jadeGarden.viewTotalSales(location);
+                break;
+
+            case "Cafe Deux Magots":
+                cafeDeuxMagots.viewTotalSales(location);
+                break;
+
+            case "Trattoria Trussardi":
+                trattoriaTrussardi.viewTotalSales(location);
+                break;
+
+            case "Libeccio":
+                libeccio.viewTotalSales(location);
+                break;
+
+            case "Savage Garden":
+                savageGarden.viewTotalSales(location);
+                break;
+        }            
+    }    
+    
+//// tester    
 //    public static void main(String[] args) {
+//
+//        String location = "Savage Garden";        
 //        JOJOLandsGame game = new JOJOLandsGame();
-//        int currentDay =game.getCurrentDay();
-//        String location = "Jade Garden";
-//        RestaurantInfo sc = new RestaurantInfo();
-//        sc.processList(currentDay,location);
-//        sc.displayWaitingAndProcessingList(location);
-//        sc.viewSales(location,currentDay);
+//                Scanner scanner = new Scanner(System.in);
+//                System.out.println("Enter Day: ");
+//        int userInputDay =scanner.nextInt();
+//        RestaurantInfo sc = new RestaurantInfo(userInputDay);
+//        sc.processList(game.getCurrentDay(),location);
+//        sc.displayWaitingAndProcessingList(location);        
+//
+//
+//            sc.viewSales(location,userInputDay);
+//       
+//        System.out.println("Game currentDay: "+game.getCurrentDay());
 //    }    
 }
 

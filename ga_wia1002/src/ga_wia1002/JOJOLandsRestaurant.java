@@ -3,12 +3,10 @@ package ga_wia1002;
 import java.util.*;
 import java.io.*;
 
-public class JOJOLandsRestaurant {
+public abstract class JOJOLandsRestaurant {
     protected List<Resident> waitingList;
     protected List<Resident> orderProcessingList;
     protected JOJOLandsGame game;
-    protected int currentDay;
-    //protected int currentDay= JOJOLandsGame.currentDay;  //
 
     //create hashMap to store price of each food
     HashMap<String, Double> jadeGarden_Price = new HashMap<>();
@@ -21,8 +19,7 @@ public class JOJOLandsRestaurant {
         waitingList=new ArrayList<>();
         orderProcessingList=new ArrayList<>();
         game = new JOJOLandsGame();
-        //currentDay=game.getCurrentDay(); // marked 
-        
+ 
         //store the jadeGarden price into hashmap
         jadeGarden_Price.put("Braised Chicken in Black Bean Sauce", 15.00);
         jadeGarden_Price.put("Braised Goose Web with Vermicelli", 21.00);
@@ -53,56 +50,14 @@ public class JOJOLandsRestaurant {
         libeccio_Price.put("Zucchero and Sale", 0.60);
          
         //store savagegarden price to hashmap
-        savageGarden_Price.put("Abbacchioâ€™s Tea", 1.00);
-        savageGarden_Price.put("DIOâ€™s Bread", 36.14);
-        savageGarden_Price.put("Giornoâ€™s Donuts", 6.66);
-        savageGarden_Price.put("Josephâ€™s Tequila", 35.00);
-        savageGarden_Price.put("Kakyoinâ€™s Cherry", 3.50);
-        savageGarden_Price.put("Kakyoinâ€™s Porridge", 4.44);
+        savageGarden_Price.put("Abbacchio’s Tea", 1.00);
+        savageGarden_Price.put("DIO’s Bread", 36.14);
+        savageGarden_Price.put("Giorno’s Donuts", 6.66);
+        savageGarden_Price.put("Joseph’s Tequila", 35.00);
+        savageGarden_Price.put("Kakyoin’s Cherry", 3.50);
+        savageGarden_Price.put("Kakyoin’s Porridge", 4.44);
     }
     
-    public void viewMenu(String restaurantName) {
-        Map<String, Double> menu;
-        switch (restaurantName){          
-            case "Jade Garden":
-                menu= jadeGarden_Price;
-                break;
-                
-            case "Trattoria Trussardi":
-                menu= trattoriaTrussardi_Price;
-                break;
-                
-            case "Savage Garden":
-                menu= savageGarden_Price;
-                break;
-                
-            case "Cafe Deux Magots":
-                 menu= cafeDeuxMagots_Price;
-                break;
-                
-            case "Libeccio":
-                 menu= libeccio_Price;
-                break;
-            default:
-                 System.out.println("Restaurant not found.");
-                 return; // Exit the method if restaurant not found
-        }
-        System.out.println("===================================================================================================");
-        System.out.println("Menu for " + restaurantName + ":");
-        System.out.println("+-----------------------------------------------+-----------------+");
-        System.out.println("| Menu                                          | Price($)        |");
-        System.out.println("+-----------------------------------------------+-----------------+");
-        for (Map.Entry<String, Double> entry : menu.entrySet()) {
-            
-            String foodItem = entry.getKey();    
-            double price = entry.getValue();
-            
-            System.out.printf("|%-46s | %-15.2f |%n",foodItem , price);
-        }
-        
-        System.out.println("+-----------------------------------------------+-----------------+");
-    }
-
     public JOJOLandsRestaurant(List<Resident> waitingList) {
         this.waitingList =waitingList;
      //   orderProcessingList = new ArrayList<>();
@@ -152,16 +107,14 @@ public class JOJOLandsRestaurant {
         System.out.println("+----+------------------------+-----+--------+-----------------------------------------------+-");
     }
 
-    public void processOrders(){
-        System.out.println("This is not a restaurant, no waiting list and processing list available");
-    }
+    public abstract void processOrders();
     
     //store order to txt file
-    public void storeOrder(String restaurant_name, int currentDay){
+    public void storeOrder(String restaurant_name){
         
         try{
           //location
-          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ currentDay+" Order.txt";
+          String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
           
     PrintWriter writer= new PrintWriter(new FileOutputStream(filePath));
     
@@ -185,7 +138,7 @@ public class JOJOLandsRestaurant {
     }
     
     //view sales from txt file
-    public void viewSales(String restaurant_name, int currentDay){
+    public void viewSales(String restaurant_name,int userInputDay){
         
         //for hashmap
         HashMap<String, Double> restaurantPrice= new HashMap<>();
@@ -220,7 +173,7 @@ public class JOJOLandsRestaurant {
         try{
              
           //location
-          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ currentDay+" Order.txt";
+          String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
           
          //read
          Scanner sc= new Scanner(new FileInputStream(filePath));
@@ -252,7 +205,7 @@ public class JOJOLandsRestaurant {
          
          //display food, quantity and price
          System.out.println("\nRestaurant: "+restaurant_name);
-         System.out.println("Day "+currentDay+" Sales");
+         System.out.println("Day "+userInputDay+" Sales");
          System.out.println("+-----------------------------------------------+-------------------+");
          System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
          System.out.println("+-----------------------------------------------+-------------------+");
@@ -290,6 +243,7 @@ public class JOJOLandsRestaurant {
      }
         
     }
+
 
     //milagro man map. will return hashmap
     public HashMap<String,Double> milagroManMap(String restaurant_name){
@@ -656,10 +610,6 @@ public class JOJOLandsRestaurant {
     } //while choice
         
     } 
-    
-    
-    
-    
     
     
 }

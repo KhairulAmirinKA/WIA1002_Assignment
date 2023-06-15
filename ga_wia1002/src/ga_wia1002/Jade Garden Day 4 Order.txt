@@ -1,0 +1,14 @@
+| 1  | Jotaro Kujo            | 17  | Male   |Poached Tofu with Dried Shrimps                |
+| 2  | Weather Report         | 39  | Male   |Scrambled Egg White with Milk                  |
+| 3  | Noriaki Kakyoin        | 17  | Male   |Deep-fried Hiroshima Oysters                   |
+| 4  | Ermes Costello         | 21  | Female |Braised Goose Web with Vermicelli              |
+| 5  | Rikiel                 | 24  | Male   |Poached Tofu with Dried Shrimps                |
+| 6  | Emporio Alnino         | 11  | Male   |Scrambled Egg White with Milk                  |
+| 7  | Aya Tsuji              | -1  | Female |Poached Tofu with Dried Shrimps                |
+| 8  | Pesci                  | -1  | Male   |Scrambled Egg White with Milk                  |
+| 9  | Rohan Kishibe          | 20  | Male   |Poached Tofu with Dried Shrimps                |
+| 10 | Cioccolata             | 34  | Male   |Scrambled Egg White with Milk                  |
+| 11 | Tamami Kobayashi       | 20  | Male   |Braised Goose Web with Vermicelli              |
+| 12 | Narancia Ghirga        | 17  | Male   |Scrambled Egg White with Milk                  |
+| 13 | Tonio Trussardi        | 29  | Male   |Deep-fried Hiroshima Oysters                   |
+| 14 | Bruno Bucciarati       | 20  | Male   |Scrambled Egg White with Milk                  |
