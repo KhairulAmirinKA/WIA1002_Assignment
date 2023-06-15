@@ -8,6 +8,7 @@ package ga_wia1002;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -45,14 +46,9 @@ class TrattoriaTrussardiRule {
         }
         
         // Sort menQueue in ascending order of age
-        List<Resident> sortedMen = new ArrayList<>(menLinkedList);
-        Collections.sort(sortedMen, (c1, c2) -> Integer.compare(c1.getAge(), c2.getAge()));
-        menLinkedList = new LinkedList<>(sortedMen);
-
+        menLinkedList.sort(Comparator.comparingInt(Resident::getAge));
         // Sort womenQueue in ascending order of age
-        List<Resident> sortedWomen = new ArrayList<>(womenLinkedList);
-        Collections.sort(sortedWomen, (c1, c2) -> Integer.compare(c1.getAge(), c2.getAge()));
-        womenLinkedList = new LinkedList<>(sortedWomen);
+        womenLinkedList.sort(Comparator.comparingInt(Resident::getAge));
 
         // Process the orders based on the specified rules
         while (!menLinkedList.isEmpty() || !womenLinkedList.isEmpty()) {
