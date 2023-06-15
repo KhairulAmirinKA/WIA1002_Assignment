@@ -137,9 +137,8 @@ public abstract class JOJOLandsRestaurant {
         }
     }
     
-    //view sales from txt file
-    public void viewSales(String restaurant_name,int userInputDay){
-        
+    //choose hashmap based on restaurant name
+    public HashMap<String, Double> chooseHashMap(String restaurant_name){
         //for hashmap
         HashMap<String, Double> restaurantPrice= new HashMap<>();
         
@@ -168,6 +167,15 @@ public abstract class JOJOLandsRestaurant {
                 break;
         }//switch
         
+        return restaurantPrice;
+    }
+    
+    
+    //view sales from txt file
+    public void viewSales(String restaurant_name,int userInputDay){
+        
+        //for hashmap
+        HashMap<String, Double> restaurantPrice= chooseHashMap(restaurant_name);
         
         //read file
         try{
@@ -243,41 +251,14 @@ public abstract class JOJOLandsRestaurant {
      }
         
     }
-
-
+    
     //milagro man map. will return hashmap
     public HashMap<String,Double> milagroManMap(String restaurant_name){
         
         System.out.println("Milagro Man mode");
         
         //for hashmap
-        HashMap<String, Double> restaurantPrice= new HashMap<>();
-        
-        //choose hashmap
-        switch (restaurant_name){
-            
-            case "Jade Garden":
-                restaurantPrice= jadeGarden_Price;
-                break;
-                
-            case "Trattoria Trussardi":
-                restaurantPrice= trattoriaTrussardi_Price;
-                break;
-                
-            case "Savage Garden":
-                restaurantPrice= savageGarden_Price;
-                break;
-                
-            case "Cafe Deux Magots":
-                 restaurantPrice= cafeDeuxMagots_Price;
-                break;
-                
-                
-            case "Libeccio":
-                 restaurantPrice= libeccio_Price;
-                break;
-        }//switch
-        
+        HashMap<String, Double> restaurantPrice= chooseHashMap(restaurant_name);
         Scanner sc= new Scanner(System.in);
         
         
@@ -357,32 +338,7 @@ public abstract class JOJOLandsRestaurant {
         
         //display the total sales
         //for hashmap
-        HashMap<String, Double> restaurantPrice= new HashMap<>();
-        
-        //choose hashmap
-        switch (restaurant_name){
-            
-            case "Jade Garden":
-                restaurantPrice= jadeGarden_Price;
-                break;
-                
-            case "Trattoria Trussardi":
-                restaurantPrice= trattoriaTrussardi_Price;
-                break;
-                
-            case "Savage Garden":
-                restaurantPrice= savageGarden_Price;
-                break;
-                
-            case "Cafe Deux Magots":
-                 restaurantPrice= cafeDeuxMagots_Price;
-                break;
-                
-                
-            case "Libeccio":
-                 restaurantPrice= libeccio_Price;
-                break;
-        }//switch
+        HashMap<String, Double> restaurantPrice= chooseHashMap(restaurant_name);
         
         
         //read file containing total order
@@ -495,32 +451,7 @@ public abstract class JOJOLandsRestaurant {
         }
         
         //temp
-        HashMap<String, Double> restaurantPrice= jadeGarden_Price;
-        
-        //choose hashmap according to location
-        switch (restaurant_name){
-            
-            case "Jade Garden":
-                restaurantPrice= jadeGarden_Price;
-                break;
-                
-            case "Trattoria Trussardi":
-                restaurantPrice= trattoriaTrussardi_Price;
-                break;
-                
-            case "Savage Garden":
-                restaurantPrice= savageGarden_Price;
-                break;
-                
-            case "Cafe Deux Magots":
-                 restaurantPrice= cafeDeuxMagots_Price;
-                break;
-                
-                
-            case "Libeccio":
-                 restaurantPrice= libeccio_Price;
-                break;
-        }//switch
+        HashMap<String, Double> restaurantPrice= chooseHashMap(restaurant_name);
         
         
         //modify food prices

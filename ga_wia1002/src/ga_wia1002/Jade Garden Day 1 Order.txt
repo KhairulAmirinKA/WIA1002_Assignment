@@ -1,19 +1,17 @@
-| 1  | Erina Pendleton        | 70  | Female |Braised Goose Web with Vermicelli              |
-| 2  | Weather Report         | 39  | Male   |Deep-fried Hiroshima Oysters                   |
-| 3  | Jolyne Cujoh           | 19  | Female |Poached Tofu with Dried Shrimps                |
-| 4  | Emporio Alnino         | 11  | Male   |Braised Goose Web with Vermicelli              |
-| 5  | Jonathan Joestar       | 20  | Male   |Braised Goose Web with Vermicelli              |
-| 6  | Sale                   | -1  | Male   |Braised Chicken in Black Bean Sauce            |
-| 7  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 8  | Pesci                  | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 1  | George Joestar II      | 32  | Male   |Deep-fried Hiroshima Oysters                   |
+| 2  | Ermes Costello         | 21  | Female |Braised Chicken in Black Bean Sauce            |
+| 3  | Jolyne Cujoh           | 19  | Female |Scrambled Egg White with Milk                  |
+| 4  | Tizzano                | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 5  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 6  | Mario Zucchero         | 24  | Male   |Scrambled Egg White with Milk                  |
+| 7  | Iggy                   | -1  | Male   |Scrambled Egg White with Milk                  |
+| 8  | Ghiaccio               | -1  | Male   |Braised Chicken in Black Bean Sauce            |
 | 9  | Jean Pierre Polnareff  | 24  | Male   |Poached Tofu with Dried Shrimps                |
-| 10 | Cioccolata             | 34  | Male   |Poached Tofu with Dried Shrimps                |
-| 11 | Noriaki Kakyoin        | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 12 | Pannacotta Fugo        | 16  | Male   |Deep-fried Hiroshima Oysters                   |
-| 13 | Ungalo                 | 24  | Male   |Poached Tofu with Dried Shrimps                |
-| 14 | Leone Abbacchio        | 21  | Male   |Poached Tofu with Dried Shrimps                |
-| 15 | Vanilla Ice            | -1  | Male   |Poached Tofu with Dried Shrimps                |
-| 16 | Guido Mista            | 18  | Male   |Poached Tofu with Dried Shrimps                |
-| 17 | Okuyasu Nijimura       | 15  | Male   |Braised Goose Web with Vermicelli              |
-| 18 | Bruno Bucciarati       | 20  | Male   |Braised Chicken in Black Bean Sauce            |
-| 19 | Yoshikage Kira         | 33  | Male   |Braised Goose Web with Vermicelli              |
+| 10 | Diavolo                | 33  | Male   |Deep-fried Hiroshima Oysters                   |
+| 11 | Muhammad Avdol         | 29  | Male   |Scrambled Egg White with Milk                  |
+| 12 | Cioccolata             | 34  | Male   |Braised Goose Web with Vermicelli              |
+| 13 | Noriaki Kakyoin        | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 14 | Masazo Kinoto          | 29  | Male   |Poached Tofu with Dried Shrimps                |
+| 15 | Enrico Pucci           | 39  | Male   |Deep-fried Hiroshima Oysters                   |
+| 16 | Keicho Nijimura        | 18  | Male   |Poached Tofu with Dried Shrimps                |
+| 17 | Anjuro Katagiri        | 34  | Male   |Scrambled Egg White with Milk                  |

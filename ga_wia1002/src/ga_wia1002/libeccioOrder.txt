@@ -1,13 +1,13 @@
-| 1  | Narciso Anasui         | 25  | Male   |Formaggio                                      |
-| 2  | Tizzano                | -1  | Male   |Melone                                         |
-| 3  | Keicho Nijimura        | 18  | Male   |Formaggio                                      |
-| 4  | Anjuro Katagiri        | 34  | Male   |Zucchero and Sale                              |
-| 5  | Yuya Fungami           | -1  | Male   |Ghiaccio                                       |
-| 6  | Tamami Kobayashi       | 20  | Male   |Ghiaccio                                       |
-| 7  | Okuyasu Nijimura       | 15  | Male   |Formaggio                                      |
-| 8  | Ungalo                 | 24  | Male   |Prosciutto and Pesci                           |
-| 9  | Rikiel                 | 24  | Male   |Risotto                                        |
-| 10 | DIO                    | 121 | Male   |Melone                                         |
-| 11 | Iggy                   | -1  | Male   |Formaggio                                      |
-| 12 | Joseph Joestar         | 18  | Male   |Ghiaccio                                       |
-| 13 | George Joestar II      | 32  | Male   |Risotto                                        |
+| 1  | Tizzano                | -1  | Male   |Zucchero and Sale                              |
+| 2  | Mario Zucchero         | 24  | Male   |Melone                                         |
+| 3  | Cioccolata             | 34  | Male   |Prosciutto and Pesci                           |
+| 4  | Trish Una              | 15  | Female |Ghiaccio                                       |
+| 5  | Pannacotta Fugo        | 16  | Male   |Formaggio                                      |
+| 6  | Toyohiro Kanedaichi    | -1  | Male   |Ghiaccio                                       |
+| 7  | Tonio Trussardi        | 29  | Male   |Melone                                         |
+| 8  | Mikitaka Hazekura      | 216 | Male   |Prosciutto and Pesci                           |
+| 9  | Vanilla Ice            | -1  | Male   |Ghiaccio                                       |
+| 10 | Enya the Hag           | -1  | Female |Risotto                                        |
+| 11 | Muhammad Avdol         | 29  | Male   |Prosciutto and Pesci                           |
+| 12 | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
+| 13 | George Joestar II      | 32  | Male   |Formaggio                                      |

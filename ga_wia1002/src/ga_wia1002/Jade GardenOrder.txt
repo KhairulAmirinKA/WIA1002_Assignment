@@ -1,0 +1,12 @@
+| 1  | Jolyne Cujoh           | 19  | Female |Braised Chicken in Black Bean Sauce            |
+| 2  | Foo Fighters           | 22  | Female |Poached Tofu with Dried Shrimps                |
+| 3  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 4  | Ermes Costello         | 21  | Female |Braised Goose Web with Vermicelli              |
+| 5  | Lisa Lisa              | 50  | Female |Braised Goose Web with Vermicelli              |
+| 6  | Cioccolata             | 34  | Male   |Scrambled Egg White with Milk                  |
+| 7  | Rikiel                 | 24  | Male   |Braised Chicken in Black Bean Sauce            |
+| 8  | Narancia Ghirga        | 17  | Male   |Deep-fried Hiroshima Oysters                   |
+| 9  | Reimi Sugimoto         | 16  | Female |Braised Chicken in Black Bean Sauce            |
+| 10 | Ken Oyanagi            | 11  | Male   |Braised Chicken in Black Bean Sauce            |
+| 11 | Yuya Fungami           | -1  | Male   |Poached Tofu with Dried Shrimps                |
+| 12 | Keicho Nijimura        | 18  | Male   |Braised Chicken in Black Bean Sauce            |
