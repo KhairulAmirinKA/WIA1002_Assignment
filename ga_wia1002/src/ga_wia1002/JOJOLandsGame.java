@@ -35,7 +35,7 @@ public class JOJOLandsGame{
 //        System.out.println("[2] Parallel Map");
 //        System.out.println("[3] Alternate Map");
      
-        
+
         System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
         printCurrentLocation();
         movementHistory.add(currentLocation);
@@ -66,9 +66,7 @@ public class JOJOLandsGame{
                 else if(isResidentialArea(currentLocation.getName())){
                     ResidentialArea(input);
                 }
-                
-                System.out.println("movementHistory: "+movementHistory.size());
-                System.out.println("forwarHistory: "+forwardHistory.size());
+
                 System.out.println("CurrentDay: "+currentDay);
         }
         
@@ -414,6 +412,7 @@ public class JOJOLandsGame{
     }
 
     private void advanceToNextDay() {
+        System.out.println("==========================================================================================================================");
         currentDay++;
     }
 
