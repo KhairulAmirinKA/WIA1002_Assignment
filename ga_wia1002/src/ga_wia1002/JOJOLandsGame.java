@@ -17,7 +17,7 @@ public class JOJOLandsGame{
         day = "Sunday";   // Initialize day1 as Sunday
         scanner = new Scanner(System.in);
         movementHistory = new Stack<>();
-        forwardHistory = new Stack<>(); // Initialize the forward history stack        
+        forwardHistory = new Stack<>(); // Initialize the forward history stack    
     }
 
     public void start() {
@@ -69,7 +69,7 @@ public class JOJOLandsGame{
                 
                 System.out.println("movementHistory: "+movementHistory.size());
                 System.out.println("forwarHistory: "+forwardHistory.size());
-                
+                System.out.println("CurrentDay: "+currentDay);
         }
         
     }
@@ -231,7 +231,7 @@ public class JOJOLandsGame{
                         Scanner sc = new Scanner(System.in);
                         System.out.print("Enter the resident’s name: ");
                         String residentName = sc.nextLine();
-                        viewProfile.printResidentProfile(residentName, currentDay);
+                        viewProfile.printResidentProfile(residentName, currentDay,currentLocation.getName());
                     } else if (select.equals("2")) {
                         // {2} Sort
                         List<Resident> sortResident = residentManager.getResidentsByResidentialArea(currentLocation.getName());
@@ -320,14 +320,13 @@ public class JOJOLandsGame{
     }
 
     private void restaurants(String input) {
-        RestaurantInfo resInfo = new RestaurantInfo();
-        JOJOLandsRestaurant jojoRestaurant = new JOJOLandsRestaurant();
+        RestaurantInfo resInfo = new RestaurantInfo(currentDay);
 
         if (input.equals("2")) {
             resInfo.processList(currentDay, currentLocation.getName());
             resInfo.displayWaitingAndProcessingList(currentLocation.getName());
         } else if (input.equals("3")) {
-            jojoRestaurant.viewMenu(currentLocation.getName());
+            resInfo.viewMenu(currentLocation.getName());
         } while (input.equals("4")) {
             //[4]View Sales Information
             System.out.println("==========================================================================================================================");
@@ -347,8 +346,8 @@ public class JOJOLandsGame{
                 case("1"):
                     //[1]view Sales
                         System.out.print("Enter Day: ");
-                        select= scanner.nextLine();
-                        resInfo.viewSales(currentLocation.getName(), currentDay);
+                        int userInputDay= scanner.nextInt();
+                        resInfo.viewSales(currentLocation.getName(),userInputDay);
                         break;
                 case("2A"):
                     //[2A] Minimum Sales
