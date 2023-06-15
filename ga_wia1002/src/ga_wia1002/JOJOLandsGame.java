@@ -349,9 +349,11 @@ public class JOJOLandsGame{
                         break;
                 case("2A"):
                     //[2A] Minimum Sales
+                    resInfo.viewMinimumSales(currentLocation.getName());
                     break;
                 case("2B"):
                     //[2B]Maximum Sales
+                    resInfo.viewMaximumSales(currentLocation.getName());
                     break;
                 case("2C"):
                     //[2C]Top k Highest Sales
@@ -368,6 +370,7 @@ public class JOJOLandsGame{
             }    
         } if (input.equals("5")) {
             //[5] Milagro Man
+            resInfo.MilagroMode(currentLocation.getName(), currentDay);
             
         } else if (input.equals("6")) {
             //[6] Back

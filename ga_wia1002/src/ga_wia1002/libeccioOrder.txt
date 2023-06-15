@@ -1,13 +1,13 @@
-| 1  | Tizzano                | -1  | Male   |Zucchero and Sale                              |
-| 2  | Mario Zucchero         | 24  | Male   |Melone                                         |
-| 3  | Cioccolata             | 34  | Male   |Prosciutto and Pesci                           |
-| 4  | Trish Una              | 15  | Female |Ghiaccio                                       |
-| 5  | Pannacotta Fugo        | 16  | Male   |Formaggio                                      |
-| 6  | Toyohiro Kanedaichi    | -1  | Male   |Ghiaccio                                       |
-| 7  | Tonio Trussardi        | 29  | Male   |Melone                                         |
-| 8  | Mikitaka Hazekura      | 216 | Male   |Prosciutto and Pesci                           |
-| 9  | Vanilla Ice            | -1  | Male   |Ghiaccio                                       |
-| 10 | Enya the Hag           | -1  | Female |Risotto                                        |
-| 11 | Muhammad Avdol         | 29  | Male   |Prosciutto and Pesci                           |
-| 12 | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
-| 13 | George Joestar II      | 32  | Male   |Formaggio                                      |
+| 1  | Ermes Costello         | 21  | Female |Ghiaccio                                       |
+| 2  | Tomoko Higashikata     | 37  | Female |Ghiaccio                                       |
+| 3  | Anjuro Katagiri        | 34  | Male   |Formaggio                                      |
+| 4  | Weather Report         | 39  | Male   |Melone                                         |
+| 5  | Guido Mista            | 18  | Male   |Melone                                         |
+| 6  | Okuyasu Nijimura       | 15  | Male   |Prosciutto and Pesci                           |
+| 7  | Jonathan Joestar       | 20  | Male   |Risotto                                        |
+| 8  | Narciso Anasui         | 25  | Male   |Melone                                         |
+| 9  | Pesci                  | -1  | Male   |Formaggio                                      |
+| 10 | Keicho Nijimura        | 18  | Male   |Risotto                                        |
+| 11 | Akira Otoishi          | 19  | Male   |Risotto                                        |
+| 12 | Vanilla Ice            | -1  | Male   |Ghiaccio                                       |
+| 13 | Suzi Q.                | -1  | Female |Prosciutto and Pesci                           |

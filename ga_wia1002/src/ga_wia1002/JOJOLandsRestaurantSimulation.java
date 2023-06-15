@@ -33,8 +33,8 @@ public class JOJOLandsRestaurantSimulation {
                 JOJOLandsRestaurant jadeGarden = new JadeGardenRestaurant();
                 JOJOLandsRestaurant cafeDeuxMagots = new CafeDeuxMagotsRestaurant();
                 JOJOLandsRestaurant trattoriaTrussardi = new TrattoriaTrussardiRestaurant();
-                JOJOLandsRestaurant libeccio = new LibeccioRestaurant();
-                JOJOLandsRestaurant savageGarden = new SavageGardenRestaurant();
+                JOJOLandsRestaurant libeccio = new LibeccioRestaurant(currentDay);
+                JOJOLandsRestaurant savageGarden = new SavageGardenRestaurant(currentDay);
 
                 for (Resident resident : waitingOrder) {
                     // Get the last order from the orderHistory list
@@ -89,34 +89,36 @@ public class JOJOLandsRestaurantSimulation {
 //                jadeGarden.MilagroMode("Jade Garden", currentDay);
 //                
 //
-//                System.out.println("Cafe Deux Magots:");
-//                cafeDeuxMagots.viewWaitingList();
-//                cafeDeuxMagots.processOrders();
-//                cafeDeuxMagots.displayOrderProcessingList();
-//                cafeDeuxMagots.storeOrder("Cafe Deux Magots", currentDay);
-//                cafeDeuxMagots.viewSales("Cafe Deux Magots", currentDay);
-//                cafeDeuxMagots.viewTotalSales("Cafe Deux Magots");
+                System.out.println("Cafe Deux Magots:");
+                cafeDeuxMagots.viewWaitingList();
+                cafeDeuxMagots.processOrders();
+                cafeDeuxMagots.displayOrderProcessingList();
+                cafeDeuxMagots.storeOrder("Cafe Deux Magots");
+                cafeDeuxMagots.viewSales("Cafe Deux Magots", currentDay);
+                cafeDeuxMagots.viewTotalSales("Cafe Deux Magots");
+                cafeDeuxMagots.MilagroMode("Cafe Deux Magots", currentDay);
+                cafeDeuxMagots.viewMinimumSales("Cafe Deux Magots");
 
-                System.out.println("Trattoria Trussardi:");
-                trattoriaTrussardi.viewWaitingList();
-                trattoriaTrussardi.processOrders();
-                trattoriaTrussardi.displayOrderProcessingList();
-                trattoriaTrussardi.storeOrder("Trattoria Trussardi", currentDay);
-                trattoriaTrussardi.viewSales("Trattoria Trussardi", currentDay);
+//                System.out.println("Trattoria Trussardi:");
+//                trattoriaTrussardi.viewWaitingList();
+//                trattoriaTrussardi.processOrders();
+//                trattoriaTrussardi.displayOrderProcessingList();
+//                trattoriaTrussardi.storeOrder("Trattoria Trussardi");
+//                trattoriaTrussardi.viewSales("Trattoria Trussardi", currentDay);
 
-                System.out.println("Libeccio:");
-                libeccio.viewWaitingList();
-                libeccio.processOrders();
-                libeccio.displayOrderProcessingList();
-                libeccio.storeOrder("Libeccio", currentDay);
-                libeccio.viewSales("Libeccio", currentDay);
-
-                System.out.println("Savage Garden:");
-                savageGarden.viewWaitingList();
-                savageGarden.processOrders();
-                savageGarden.displayOrderProcessingList();
-                savageGarden.storeOrder("Savage Garden", currentDay);
-                savageGarden.viewSales("Savage Garden", currentDay);
+//                System.out.println("Libeccio:");
+//                libeccio.viewWaitingList();
+//                libeccio.processOrders();
+//                libeccio.displayOrderProcessingList();
+//                libeccio.storeOrder("Libeccio");
+//                libeccio.viewSales("Libeccio", currentDay);
+//
+//                System.out.println("Savage Garden:");
+//                savageGarden.viewWaitingList();
+//                savageGarden.processOrders();
+//                savageGarden.displayOrderProcessingList();
+//                savageGarden.storeOrder("Savage Garden");
+//                savageGarden.viewSales("Savage Garden", currentDay);
               
                             }
 

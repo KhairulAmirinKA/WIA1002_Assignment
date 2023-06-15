@@ -269,6 +269,81 @@ public class RestaurantInfo {
         }            
     }    
     
+    //view minimum sales
+    public void viewMinimumSales(String location){
+        switch (location) {
+            case "Jade Garden": 
+                jadeGarden.viewMinimumSales(location);
+                break;
+
+            case "Cafe Deux Magots":
+                cafeDeuxMagots.viewMinimumSales(location);
+                break;
+
+            case "Trattoria Trussardi":
+                trattoriaTrussardi.viewMinimumSales(location);
+                break;
+
+            case "Libeccio":
+                libeccio.viewMinimumSales(location);
+                break;
+
+            case "Savage Garden":
+                savageGarden.viewMinimumSales(location);
+                break;
+        }            
+    } 
+    
+    //view max sales
+    public void viewMaximumSales(String location){
+        switch (location) {
+            case "Jade Garden": 
+                jadeGarden.viewMaximumSales(location);
+                break;
+
+            case "Cafe Deux Magots":
+                cafeDeuxMagots.viewMaximumSales(location);
+                break;
+
+            case "Trattoria Trussardi":
+                trattoriaTrussardi.viewMaximumSales(location);
+                break;
+
+            case "Libeccio":
+                libeccio.viewMaximumSales(location);
+                break;
+
+            case "Savage Garden":
+                savageGarden.viewMaximumSales(location);
+                break;
+        }            
+    }
+    
+    //milagro mode
+    public void MilagroMode(String location, int currentDay){
+        switch (location) {
+            case "Jade Garden": 
+                jadeGarden.MilagroMode(location,currentDay );
+                break;
+
+            case "Cafe Deux Magots":
+                cafeDeuxMagots.MilagroMode(location, currentDay);
+                break;
+
+            case "Trattoria Trussardi":
+                trattoriaTrussardi.MilagroMode(location, currentDay);
+                break;
+
+            case "Libeccio":
+                libeccio.MilagroMode(location, currentDay);
+                break;
+
+            case "Savage Garden":
+                savageGarden.MilagroMode(location, currentDay);
+                break;
+        }            
+    } 
+    
 //// tester    
 //    public static void main(String[] args) {
 //

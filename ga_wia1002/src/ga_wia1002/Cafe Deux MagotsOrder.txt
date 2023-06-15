@@ -1,12 +1,13 @@
-| 1  | Diavolo                | 33  | Male   |Spring Organic Omelette                        |
+| 1  | DIO                    | 121 | Male   |White Asparagus                                |
 | 2  | Emporio Alnino         | 11  | Male   |Sampling Matured Cheese Platter                |
-| 3  | Yoshikage Kira         | 33  | Male   |Spring Lobster Salad                           |
-| 4  | Trish Una              | 15  | Female |Truffle-flavoured Poultry Supreme              |
-| 5  | Donatello Versus       | 25  | Male   |Sampling Matured Cheese Platter                |
-| 6  | Narancia Ghirga        | 17  | Male   |Truffle-flavoured Poultry Supreme              |
-| 7  | Rikiel                 | 24  | Male   |Spring Organic Omelette                        |
-| 8  | Jonathan Joestar       | 20  | Male   |Truffle-flavoured Poultry Supreme              |
-| 9  | Foo Fighters           | 22  | Female |Spring Organic Omelette                        |
-| 10 | Iggy                   | -1  | Male   |Sampling Matured Cheese Platter                |
-| 11 | Formaggio              | -1  | Male   |Spring Lobster Salad                           |
-| 12 | Pesci                  | -1  | Male   |Spring Organic Omelette                        |
+| 3  | Lisa Lisa              | 50  | Female |White Asparagus                                |
+| 4  | Okuyasu Nijimura       | 15  | Male   |Spring Organic Omelette                        |
+| 5  | George Joestar II      | 32  | Male   |Truffle-flavoured Poultry Supreme              |
+| 6  | Reimi Sugimoto         | 16  | Female |Spring Lobster Salad                           |
+| 7  | Donatello Versus       | 25  | Male   |Spring Lobster Salad                           |
+| 8  | Ungalo                 | 24  | Male   |Spring Lobster Salad                           |
+| 9  | Iggy                   | -1  | Male   |White Asparagus                                |
+| 10 | Yoshihiro Kira         | -1  | Male   |Sampling Matured Cheese Platter                |
+| 11 | Formaggio              | -1  | Male   |Spring Organic Omelette                        |
+| 12 | Pesci                  | -1  | Male   |Sampling Matured Cheese Platter                |
+| 13 | Sale                   | -1  | Male   |Truffle-flavoured Poultry Supreme              |

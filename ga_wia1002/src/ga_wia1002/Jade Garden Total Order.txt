@@ -15,3 +15,33 @@
 | 15 | Enrico Pucci           | 39  | Male   |Deep-fried Hiroshima Oysters                   |
 | 16 | Keicho Nijimura        | 18  | Male   |Poached Tofu with Dried Shrimps                |
 | 17 | Anjuro Katagiri        | 34  | Male   |Scrambled Egg White with Milk                  |
+| 1  | Holy Kujo              | 45  | Female |Braised Goose Web with Vermicelli              |
+| 2  | Narciso Anasui         | 25  | Male   |Braised Goose Web with Vermicelli              |
+| 3  | Jonathan Joestar       | 20  | Male   |Deep-fried Hiroshima Oysters                   |
+| 4  | Sale                   | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 5  | Jotaro Kujo            | 17  | Male   |Braised Goose Web with Vermicelli              |
+| 6  | Prosciutto             | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 7  | Tomoko Higashikata     | 37  | Female |Braised Goose Web with Vermicelli              |
+| 8  | Illuso                 | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 9  | Jean Pierre Polnareff  | 24  | Male   |Poached Tofu with Dried Shrimps                |
+| 10 | Trish Una              | 15  | Female |Deep-fried Hiroshima Oysters                   |
+| 11 | Muhammad Avdol         | 29  | Male   |Braised Chicken in Black Bean Sauce            |
+| 12 | Yoshihiro Kira         | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 13 | Aya Tsuji              | -1  | Female |Poached Tofu with Dried Shrimps                |
+| 14 | Yukako Yamagishi       | -1  | Female |Scrambled Egg White with Milk                  |
+| 15 | Hayato Kawajiri        | 11  | Male   |Scrambled Egg White with Milk                  |
+| 1  | George Joestar II      | 32  | Male   |Scrambled Egg White with Milk                  |
+| 2  | Tizzano                | -1  | Male   |Deep-fried Hiroshima Oysters                   |
+| 3  | Joseph Joestar         | 18  | Male   |Poached Tofu with Dried Shrimps                |
+| 4  | Risotto Nero           | 28  | Male   |Braised Chicken in Black Bean Sauce            |
+| 5  | Jotaro Kujo            | 17  | Male   |Deep-fried Hiroshima Oysters                   |
+| 6  | Mario Zucchero         | 24  | Male   |Deep-fried Hiroshima Oysters                   |
+| 7  | Iggy                   | -1  | Male   |Poached Tofu with Dried Shrimps                |
+| 8  | Formaggio              | -1  | Male   |Poached Tofu with Dried Shrimps                |
+| 9  | Muhammad Avdol         | 29  | Male   |Deep-fried Hiroshima Oysters                   |
+| 10 | Cioccolata             | 34  | Male   |Braised Goose Web with Vermicelli              |
+| 11 | Aya Tsuji              | -1  | Female |Poached Tofu with Dried Shrimps                |
+| 12 | Carne                  | -1  | Male   |Scrambled Egg White with Milk                  |
+| 13 | Tonio Trussardi        | 29  | Male   |Braised Chicken in Black Bean Sauce            |
+| 14 | Bruno Bucciarati       | 20  | Male   |Braised Chicken in Black Bean Sauce            |
+| 15 | Masazo Kinoto          | 29  | Male   |Deep-fried Hiroshima Oysters                   |
