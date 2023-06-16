@@ -357,6 +357,7 @@ public class JOJOLandsGame{
                     break;
                 case("2C"):
                     //[2C]Top k Highest Sales
+                    resInfo.view_K_Highest(currentLocation.getName());
                     break;
                 case("2D"):
                     //[2D]Total and Average Sales

@@ -319,6 +319,31 @@ public class RestaurantInfo {
         }            
     }
     
+    //view K-highest sales
+    public void view_K_Highest(String location){
+        switch (location) {
+            case "Jade Garden": 
+                jadeGarden.view_K_Highest_Sales(location);
+                break;
+
+            case "Cafe Deux Magots":
+                cafeDeuxMagots.view_K_Highest_Sales(location);
+                break;
+
+            case "Trattoria Trussardi":
+                trattoriaTrussardi.view_K_Highest_Sales(location);
+                break;
+
+            case "Libeccio":
+                libeccio.view_K_Highest_Sales(location);
+                break;
+
+            case "Savage Garden":
+                savageGarden.view_K_Highest_Sales(location);
+                break;
+        }            
+    }
+    
     //milagro mode
     public void MilagroMode(String location, int currentDay){
         switch (location) {

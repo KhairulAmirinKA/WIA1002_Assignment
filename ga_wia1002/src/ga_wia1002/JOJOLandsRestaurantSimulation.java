@@ -98,6 +98,7 @@ public class JOJOLandsRestaurantSimulation {
                 cafeDeuxMagots.viewTotalSales("Cafe Deux Magots");
                 cafeDeuxMagots.MilagroMode("Cafe Deux Magots", currentDay);
                 cafeDeuxMagots.viewMinimumSales("Cafe Deux Magots");
+                cafeDeuxMagots.view_K_Highest_Sales("Cafe Deux Magots");
 
 //                System.out.println("Trattoria Trussardi:");
 //                trattoriaTrussardi.viewWaitingList();

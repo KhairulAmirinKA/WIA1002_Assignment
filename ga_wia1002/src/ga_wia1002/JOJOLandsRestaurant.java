@@ -1,6 +1,7 @@
 package ga_wia1002;
 
 import java.util.*;
+import java.util.stream.Collectors;
 import java.io.*;
 
 public abstract class JOJOLandsRestaurant {
@@ -945,5 +946,229 @@ public abstract class JOJOLandsRestaurant {
             
                 
     }// end of viewMaxSales
+    
+    
+    //k hIGHEST sales
+    public void view_K_Highest_Sales(String restaurant_name){
+        
+        //for hashmap
+        HashMap<String, Double> restaurantPrice= chooseHashMap(restaurant_name);
+        
+        Scanner sc= new Scanner(System.in);
+        
+        //start and end day
+        int startDay=0 , endDay=0;
+        
+        int k;
+        
+        System.out.println();
+        System.out.println(restaurant_name+" K-Highest Sales");
+        
+        System.out.print("Enter Start Day: ");
+        startDay= sc.nextInt();
+        
+        System.out.print("Enter End Day: ");
+        endDay= sc.nextInt();
+        
+        System.out.print("Enter k value: ");
+        k= sc.nextInt();
+        
+        //array to store sales
+        double[] sales_arr=new double[endDay];
+        
+        //hashmap to store sales for each day
+        HashMap<Integer, Double> daySalesMap= new HashMap<>();
+        
+        double totalSales=0;
+        
+        
+        //read file
+        try{  
+         
+            
+            
+         //read all files from day 1 to end day
+            for (int i=startDay; i<= endDay; i++){
+                
+                totalSales=0;
+                
+            //location to read.
+            //eg: Jade Garden Day 1 Order.txt
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ i+" Order.txt";
+          
+         //file scanner
+         Scanner fileSc= new Scanner(new FileInputStream(filePath));
+         
+         //map to store the quantity of food
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
+         
+         
+         //loop to write
+         while( fileSc.hasNextLine()){
+             String line= fileSc.nextLine();
+             //split
+                String[] orderData = line.split("\\|");
+                
+                if (orderData.length >= 5) {
+                    
+                    //get food name
+                    String foodName = orderData[5].trim();
+                    
+                    //calculate the quantity of each food
+                    foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
+                    
+                    //get the price of food
+                    double price = restaurantPrice.getOrDefault(foodName, 0.00);
+                      
+                }//if
+            }//while
+         
+  
+         
+         // Displaying the food quantity
+        for (String food : foodQuantityMap.keySet()) {
+            
+            //get quantity
+            int quantity = foodQuantityMap.getOrDefault(food,0);
+            
+            //calculate price. quantity x price per unit  
+            double price = quantity * restaurantPrice.getOrDefault(food,0.0);
+            
+            //calc total sales
+            totalSales+= price;
+  
+        //add totalSales for each day to array
+        sales_arr[i-1]= totalSales;
+        
+        //put totalSales according to day
+        daySalesMap.put(i, totalSales);
+         
+         fileSc.close();
+       
+        }
+            }//for startDay<=endDay
+            
+        }// end of 1st try
+        
+        catch  (FileNotFoundException e){
+            e.printStackTrace();}
+            
+            
+            //sort daySalesMap according to value
+            List< Map.Entry<Integer, Double> > sortedList= 
+                    daySalesMap.entrySet().stream().
+                    sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                    .collect(Collectors.toList());
+            
+            //get key from K highest
+            List<Integer> highestKeys= 
+                    sortedList.subList(0, k).stream()
+                    .map(entry-> entry.getKey())
+                    .collect(Collectors.toList());
+           
+            Integer[] day_with_highestSales= (Integer[]) highestKeys.toArray();
+           
+            System.out.println("ANALYSIS");
+            System.out.println(day_with_highestSales.length);
+            for (Integer i: day_with_highestSales){
+                System.out.println("Day "+ i);
+            }
+            
+            try{
+            //display minimum sales
+            //location to read.
+            
+            for ( int i=0; i<k; i++){
+            //eg: Jade Garden Day 1 Order.txt
+           String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ day_with_highestSales[i]+" Order.txt";
+          
+         //file scanner
+          Scanner fileSc= new Scanner(new FileInputStream(filePath));
+         
+         //map to store the quantity of food
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
+         
+         
+         //loop to write
+         while( fileSc.hasNextLine()){
+             String line= fileSc.nextLine();
+             //split
+                String[] orderData = line.split("\\|");
+                
+                if (orderData.length >= 5) {
+                    
+                    //get food name
+                    String foodName = orderData[5].trim();
+                    
+                    //calculate the quantity of each food
+                    foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
+                    
+                    //get the price of food
+                    double price = restaurantPrice.getOrDefault(foodName, 0.00);
+                      
+                }//if
+            }//while
+         
+         
+         //display food, quantity and price
+         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("Day "+day_with_highestSales[i]+" Sales");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         //calc total sales
+          totalSales=0; 
+         
+         // Displaying the food quantity
+        for (String food : foodQuantityMap.keySet()) {
+            
+            //get quantity
+            int quantity = foodQuantityMap.getOrDefault(food,0);
+            
+            //calculate price. quantity x price per unit  
+            double price = quantity * restaurantPrice.getOrDefault(food,0.0);
+            
+            //calc total sales
+            totalSales+= price;
+            
+            //display food, quantity and price
+            System.out.printf("| %-45s | %-8d | $%-6.2f|%n", food, quantity, price);
+           
+        }// loop food name and quantity
+        System.out.println("+-----------------------------------------------+-------------------+");
+                 
+        //display the total sales
+            System.out.printf("|%57s | $%.2f|\n", "Total Sales", totalSales);
+            
+        System.out.println("+-----------------------------------------------+-------------------+");
+            }//for 
+            
+            }//try
+            catch (FileNotFoundException fe2){
+                fe2.printStackTrace();
+                        
+            }
+            
+            
+   
+ 
+ 
+           
+        
+            
+    }// end of viewKHighest
+    
+
+    
+    
+    
 }
+    
+    
+    
+    
+    
+  
+    
+
 

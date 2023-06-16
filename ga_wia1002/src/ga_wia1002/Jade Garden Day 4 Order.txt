@@ -1,14 +1,13 @@
-| 1  | Jotaro Kujo            | 17  | Male   |Poached Tofu with Dried Shrimps                |
-| 2  | Weather Report         | 39  | Male   |Scrambled Egg White with Milk                  |
-| 3  | Noriaki Kakyoin        | 17  | Male   |Deep-fried Hiroshima Oysters                   |
-| 4  | Ermes Costello         | 21  | Female |Braised Goose Web with Vermicelli              |
-| 5  | Rikiel                 | 24  | Male   |Poached Tofu with Dried Shrimps                |
-| 6  | Emporio Alnino         | 11  | Male   |Scrambled Egg White with Milk                  |
-| 7  | Aya Tsuji              | -1  | Female |Poached Tofu with Dried Shrimps                |
-| 8  | Pesci                  | -1  | Male   |Scrambled Egg White with Milk                  |
-| 9  | Rohan Kishibe          | 20  | Male   |Poached Tofu with Dried Shrimps                |
-| 10 | Cioccolata             | 34  | Male   |Scrambled Egg White with Milk                  |
-| 11 | Tamami Kobayashi       | 20  | Male   |Braised Goose Web with Vermicelli              |
-| 12 | Narancia Ghirga        | 17  | Male   |Scrambled Egg White with Milk                  |
-| 13 | Tonio Trussardi        | 29  | Male   |Deep-fried Hiroshima Oysters                   |
-| 14 | Bruno Bucciarati       | 20  | Male   |Scrambled Egg White with Milk                  |
+| 1  | Joseph Joestar         | 18  | Male   |Scrambled Egg White with Milk                  |
+| 2  | Pesci                  | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 3  | Josuke Higashikata     | 16  | Male   |Spring Lobster Salad                           |
+| 4  | Diavolo                | 33  | Male   |Braised Goose Web with Vermicelli              |
+| 5  | Jotaro Kujo            | 17  | Male   |Poached Tofu with Dried Shrimps                |
+| 6  | Tamami Kobayashi       | 20  | Male   |Deep-fried Hiroshima Oysters                   |
+| 7  | Iggy                   | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 8  | Rohan Kishibe          | 20  | Male   |Scrambled Egg White with Milk                  |
+| 9  | Jean Pierre Polnareff  | 24  | Male   |Scrambled Egg White with Milk                  |
+| 10 | Reimi Sugimoto         | 16  | Female |Scrambled Egg White with Milk                  |
+| 11 | Donatello Versus       | 25  | Male   |Deep-fried Hiroshima Oysters                   |
+| 12 | Hayato Kawajiri        | 11  | Male   |Poached Tofu with Dried Shrimps                |
+| 13 | Aya Tsuji              | -1  | Female |Braised Goose Web with Vermicelli              |

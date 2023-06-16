@@ -1,12 +1,10 @@
-| 1  | Holy Kujo              | 45  | Female |Braised Chicken in Black Bean Sauce            |
-| 2  | Weather Report         | 39  | Male   |Braised Chicken in Black Bean Sauce            |
+| 1  | Jonathan Joestar       | 20  | Male   |Scrambled Egg White with Milk                  |
+| 2  | Sale                   | -1  | Male   |Poached Tofu with Dried Shrimps                |
 | 3  | Jotaro Kujo            | 17  | Male   |Deep-fried Hiroshima Oysters                   |
-| 4  | Foo Fighters           | 22  | Female |Scrambled Egg White with Milk                  |
-| 5  | Muhammad Avdol         | 29  | Male   |Deep-fried Hiroshima Oysters                   |
-| 6  | Mario Zucchero         | 24  | Male   |Poached Tofu with Dried Shrimps                |
-| 7  | Mikitaka Hazekura      | 216 | Male   |Braised Chicken in Black Bean Sauce            |
-| 8  | Cioccolata             | 34  | Male   |Deep-fried Hiroshima Oysters                   |
-| 9  | Toshikazu Hazamada     | 18  | Male   |Scrambled Egg White with Milk                  |
-| 10 | Leone Abbacchio        | 21  | Male   |Braised Chicken in Black Bean Sauce            |
-| 11 | Ken Oyanagi            | 11  | Male   |Poached Tofu with Dried Shrimps                |
-| 12 | Yoshikage Kira         | 33  | Male   |Deep-fried Hiroshima Oysters                   |
+| 4  | Risotto Nero           | 28  | Male   |Scrambled Egg White with Milk                  |
+| 5  | Tomoko Higashikata     | 37  | Female |Scrambled Egg White with Milk                  |
+| 6  | Formaggio              | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 7  | Iggy                   | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 8  | Narancia Ghirga        | 17  | Male   |Poached Tofu with Dried Shrimps                |
+| 9  | Ungalo                 | 24  | Male   |Braised Goose Web with Vermicelli              |
+| 10 | Terunosuke Miyamoto    | -1  | Male   |Braised Goose Web with Vermicelli              |

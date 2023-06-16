@@ -1,14 +1,14 @@
-| 1  | Erina Pendleton        | 70  | Female |Braised Goose Web with Vermicelli              |
-| 2  | Weather Report         | 39  | Male   |Braised Chicken in Black Bean Sauce            |
-| 3  | Jolyne Cujoh           | 19  | Female |Deep-fried Hiroshima Oysters                   |
-| 4  | Foo Fighters           | 22  | Female |Deep-fried Hiroshima Oysters                   |
-| 5  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 6  | Tizzano                | -1  | Male   |Deep-fried Hiroshima Oysters                   |
-| 7  | Reimi Sugimoto         | 16  | Female |Scrambled Egg White with Milk                  |
-| 8  | Sale                   | -1  | Male   |Braised Goose Web with Vermicelli              |
-| 9  | Yukako Yamagishi       | -1  | Female |Braised Chicken in Black Bean Sauce            |
-| 10 | Ghiaccio               | -1  | Male   |Braised Chicken in Black Bean Sauce            |
-| 11 | Masazo Kinoto          | 29  | Male   |Deep-fried Hiroshima Oysters                   |
-| 12 | Formaggio              | -1  | Male   |Poached Tofu with Dried Shrimps                |
-| 13 | Guido Mista            | 18  | Male   |Braised Chicken in Black Bean Sauce            |
-| 14 | Trish Una              | 15  | Female |Poached Tofu with Dried Shrimps                |
+| 1  | Holy Kujo              | 45  | Female |Braised Goose Web with Vermicelli              |
+| 2  | Foo Fighters           | 22  | Female |Braised Chicken in Black Bean Sauce            |
+| 3  | Jolyne Cujoh           | 19  | Female |Scrambled Egg White with Milk                  |
+| 4  | Emporio Alnino         | 11  | Male   |Braised Goose Web with Vermicelli              |
+| 5  | Joseph Joestar         | 18  | Male   |Braised Goose Web with Vermicelli              |
+| 6  | Melone                 | -1  | Male   |Scrambled Egg White with Milk                  |
+| 7  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 8  | Mario Zucchero         | 24  | Male   |Deep-fried Hiroshima Oysters                   |
+| 9  | Lisa Lisa              | 50  | Female |Deep-fried Hiroshima Oysters                   |
+| 10 | Bruno Bucciarati       | 20  | Male   |Scrambled Egg White with Milk                  |
+| 11 | DIO                    | 121 | Male   |Scrambled Egg White with Milk                  |
+| 12 | Yoshihiro Kira         | -1  | Male   |Scrambled Egg White with Milk                  |
+| 13 | Ungalo                 | 24  | Male   |Scrambled Egg White with Milk                  |
+| 14 | Shigekiyo Yangu        | 14  | Male   |Scrambled Egg White with Milk                  |
