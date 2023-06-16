@@ -5,6 +5,8 @@
  */
 package Test;
 
+import java.util.HashMap;
+
 /**
  *
  * @author Abdul Hadi
@@ -45,5 +47,34 @@ public class testing {
         for (double d: arr){
             System.out.println(d);
         }
+        
+        
+        
+        HashMap<String, Integer> hashMap = new HashMap<>(); // Declare the HashMap outside the try-catch block
+
+try {
+    // Initialize the HashMap inside the try block
+    //hashMap = new HashMap<>();
+    hashMap.put("key", 10);
+    // Other code that modifies or uses the HashMap
+} catch (Exception e) {
+    // Handle the exception
+    e.printStackTrace();
+}
+
+// You can access the data of the HashMap outside the try-catch block
+if (hashMap != null) {
+    Integer value = hashMap.get("key");
+    if (value != null) {
+        System.out.println(value);
+    } else {
+        System.out.println("Key not found in the HashMap.");
+    }
+} else {
+    System.out.println("HashMap was not initialized or an exception occurred.");
+}
+
+        System.out.println(hashMap.get("key"));
+
     }
 }

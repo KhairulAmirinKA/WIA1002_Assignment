@@ -984,9 +984,7 @@ public abstract class JOJOLandsRestaurant {
         
         //read file
         try{  
-         
-            
-            
+              
          //read all files from day 1 to end day
             for (int i=startDay; i<= endDay; i++){
                 
@@ -1053,6 +1051,8 @@ public abstract class JOJOLandsRestaurant {
         catch  (FileNotFoundException e){
             e.printStackTrace();}
             
+        
+        //transformation
             
             //sort daySalesMap according to value
             List< Map.Entry<Integer, Double> > sortedList= 
@@ -1066,11 +1066,18 @@ public abstract class JOJOLandsRestaurant {
                     .map(entry-> entry.getKey())
                     .collect(Collectors.toList());
            
-            Integer[] day_with_highestSales= (Integer[]) highestKeys.toArray();
-           
-            System.out.println("ANALYSIS");
-            System.out.println(day_with_highestSales.length);
-            for (Integer i: day_with_highestSales){
+            //create an array containing the day with highest key
+            int[] day_with_highestSales = new int[highestKeys.size()];
+            
+            //store the array with day with highest key. descending
+         for (int i = 0; i < highestKeys.size(); i++) {
+             day_with_highestSales[i] = highestKeys.get(i);
+            }
+         
+           //FOR DEbugging
+            System.out.println("\nANALYSIS");
+            System.out.println("k= "+day_with_highestSales.length);
+            for (int i: day_with_highestSales){
                 System.out.println("Day "+ i);
             }
             
@@ -1150,12 +1157,7 @@ public abstract class JOJOLandsRestaurant {
             }
             
             
-   
- 
- 
-           
-        
-            
+       
     }// end of viewKHighest
     
 

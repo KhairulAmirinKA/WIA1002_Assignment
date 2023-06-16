@@ -1,5 +1,14 @@
-package ga_wia1002;
+package Test;
 
+import ga_wia1002.CafeDeuxMagotsRestaurant;
+import ga_wia1002.JOJOLandsGame;
+import ga_wia1002.JOJOLandsRestaurant;
+import ga_wia1002.JadeGardenRestaurant;
+import ga_wia1002.LibeccioRestaurant;
+import ga_wia1002.Preference;
+import ga_wia1002.Resident;
+import ga_wia1002.SavageGardenRestaurant;
+import ga_wia1002.TrattoriaTrussardiRestaurant;
 import java.util.*;
 
 public class showWaitingAndProcessingList {
