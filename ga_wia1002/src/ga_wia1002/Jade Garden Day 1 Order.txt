@@ -1,17 +1,17 @@
-| 1  | George Joestar II      | 32  | Male   |Deep-fried Hiroshima Oysters                   |
-| 2  | Ermes Costello         | 21  | Female |Braised Chicken in Black Bean Sauce            |
-| 3  | Jolyne Cujoh           | 19  | Female |Scrambled Egg White with Milk                  |
-| 4  | Tizzano                | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 1  | Jolyne Cujoh           | 19  | Female |Deep-fried Hiroshima Oysters                   |
+| 2  | Trish Una              | 15  | Female |Deep-fried Hiroshima Oysters                   |
+| 3  | Jonathan Joestar       | 20  | Male   |Deep-fried Hiroshima Oysters                   |
+| 4  | Bruno Bucciarati       | 20  | Male   |Deep-fried Hiroshima Oysters                   |
 | 5  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 6  | Mario Zucchero         | 24  | Male   |Scrambled Egg White with Milk                  |
-| 7  | Iggy                   | -1  | Male   |Scrambled Egg White with Milk                  |
-| 8  | Ghiaccio               | -1  | Male   |Braised Chicken in Black Bean Sauce            |
-| 9  | Jean Pierre Polnareff  | 24  | Male   |Poached Tofu with Dried Shrimps                |
-| 10 | Diavolo                | 33  | Male   |Deep-fried Hiroshima Oysters                   |
-| 11 | Muhammad Avdol         | 29  | Male   |Scrambled Egg White with Milk                  |
-| 12 | Cioccolata             | 34  | Male   |Braised Goose Web with Vermicelli              |
-| 13 | Noriaki Kakyoin        | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 14 | Masazo Kinoto          | 29  | Male   |Poached Tofu with Dried Shrimps                |
-| 15 | Enrico Pucci           | 39  | Male   |Deep-fried Hiroshima Oysters                   |
-| 16 | Keicho Nijimura        | 18  | Male   |Poached Tofu with Dried Shrimps                |
-| 17 | Anjuro Katagiri        | 34  | Male   |Scrambled Egg White with Milk                  |
+| 6  | Masazo Kinoto          | 29  | Male   |Braised Chicken in Black Bean Sauce            |
+| 7  | Jean Pierre Polnareff  | 24  | Male   |Deep-fried Hiroshima Oysters                   |
+| 8  | Akira Otoishi          | 19  | Male   |Scrambled Egg White with Milk                  |
+| 9  | Muhammad Avdol         | 29  | Male   |Poached Tofu with Dried Shrimps                |
+| 10 | Yukako Yamagishi       | -1  | Female |Braised Goose Web with Vermicelli              |
+| 11 | Enya the Hag           | -1  | Female |Braised Chicken in Black Bean Sauce            |
+| 12 | Tamami Kobayashi       | 20  | Male   |Braised Chicken in Black Bean Sauce            |
+| 13 | Ungalo                 | 24  | Male   |Braised Chicken in Black Bean Sauce            |
+| 14 | Mikitaka Hazekura      | 216 | Male   |Scrambled Egg White with Milk                  |
+| 15 | Vanilla Ice            | -1  | Male   |Deep-fried Hiroshima Oysters                   |
+| 16 | Koichi Hirose          | 15  | Male   |Poached Tofu with Dried Shrimps                |
+| 17 | Aya Tsuji              | -1  | Female |Poached Tofu with Dried Shrimps                |

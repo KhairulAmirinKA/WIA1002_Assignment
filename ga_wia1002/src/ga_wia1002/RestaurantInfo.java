@@ -119,17 +119,17 @@ public class RestaurantInfo {
         switch (location) {
             case "Jade Garden":                                                       
                 jadeGarden.processOrders();         
-                jadeGarden.storeOrder(location);
+                jadeGarden.storeOrder(location, currentDay);
                 break;
 
             case "Cafe Deux Magots":
                 cafeDeuxMagots.processOrders();
-                cafeDeuxMagots.storeOrder(location);
+                cafeDeuxMagots.storeOrder(location, currentDay);
                 break;
 
             case "Trattoria Trussardi":
                 trattoriaTrussardi.processOrders();
-                trattoriaTrussardi.storeOrder(location);
+                trattoriaTrussardi.storeOrder(location, currentDay);
                 break;
 
             case "Libeccio":

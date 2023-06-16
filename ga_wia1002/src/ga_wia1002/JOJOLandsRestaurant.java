@@ -137,6 +137,34 @@ public abstract class JOJOLandsRestaurant {
         }
     }
     
+    //store order to txt file based on day
+    public void storeOrder(String restaurant_name, int currentDay){
+        
+        try{
+          //eg: Jade Garden Day 1 Order.txt
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ currentDay+" Order.txt";
+          
+    PrintWriter writer= new PrintWriter(new FileOutputStream(filePath));
+    
+        for (int i = 0; i < orderProcessingList.size(); i++) {
+            Resident customer = orderProcessingList.get(i);
+            
+            String foodName= customer.getOrder().replaceAll("\\s*\\(\\$\\d+\\.\\d+\\)", "");
+            //store data to txt file
+            writer.printf("| %-2d | %-22s | %-3d | %-6s |%-46s |%n", i + 1, customer.getName(), customer.getAge(),
+                    customer.getGender(),foodName);
+        }
+        
+        writer.close();
+        
+      
+        }
+        
+        catch (IOException ie){
+            ie.printStackTrace();
+        }
+    }
+    
     //choose hashmap based on restaurant name
     public HashMap<String, Double> chooseHashMap(String restaurant_name){
         //for hashmap
@@ -180,8 +208,8 @@ public abstract class JOJOLandsRestaurant {
         //read file
         try{
              
-          //location
-          String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
+          //eg: Jade Garden Day 1 Order.txt
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ userInputDay+" Order.txt";
           
          //read
          Scanner sc= new Scanner(new FileInputStream(filePath));
@@ -724,13 +752,7 @@ public abstract class JOJOLandsRestaurant {
         
         
         
-        
-        
-        
-        
-        
             
-                
     }// end of viewMinimumSales
     
     //minimum sales

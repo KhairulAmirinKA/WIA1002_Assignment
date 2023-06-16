@@ -1,15 +1,12 @@
-| 1  | George Joestar II      | 32  | Male   |Scrambled Egg White with Milk                  |
-| 2  | Tizzano                | -1  | Male   |Deep-fried Hiroshima Oysters                   |
-| 3  | Joseph Joestar         | 18  | Male   |Poached Tofu with Dried Shrimps                |
-| 4  | Risotto Nero           | 28  | Male   |Braised Chicken in Black Bean Sauce            |
-| 5  | Jotaro Kujo            | 17  | Male   |Deep-fried Hiroshima Oysters                   |
-| 6  | Mario Zucchero         | 24  | Male   |Deep-fried Hiroshima Oysters                   |
-| 7  | Iggy                   | -1  | Male   |Poached Tofu with Dried Shrimps                |
-| 8  | Formaggio              | -1  | Male   |Poached Tofu with Dried Shrimps                |
-| 9  | Muhammad Avdol         | 29  | Male   |Deep-fried Hiroshima Oysters                   |
-| 10 | Cioccolata             | 34  | Male   |Braised Goose Web with Vermicelli              |
-| 11 | Aya Tsuji              | -1  | Female |Poached Tofu with Dried Shrimps                |
-| 12 | Carne                  | -1  | Male   |Scrambled Egg White with Milk                  |
-| 13 | Tonio Trussardi        | 29  | Male   |Braised Chicken in Black Bean Sauce            |
-| 14 | Bruno Bucciarati       | 20  | Male   |Braised Chicken in Black Bean Sauce            |
-| 15 | Masazo Kinoto          | 29  | Male   |Deep-fried Hiroshima Oysters                   |
+| 1  | Holy Kujo              | 45  | Female |Braised Chicken in Black Bean Sauce            |
+| 2  | Weather Report         | 39  | Male   |Braised Chicken in Black Bean Sauce            |
+| 3  | Jotaro Kujo            | 17  | Male   |Deep-fried Hiroshima Oysters                   |
+| 4  | Foo Fighters           | 22  | Female |Scrambled Egg White with Milk                  |
+| 5  | Muhammad Avdol         | 29  | Male   |Deep-fried Hiroshima Oysters                   |
+| 6  | Mario Zucchero         | 24  | Male   |Poached Tofu with Dried Shrimps                |
+| 7  | Mikitaka Hazekura      | 216 | Male   |Braised Chicken in Black Bean Sauce            |
+| 8  | Cioccolata             | 34  | Male   |Deep-fried Hiroshima Oysters                   |
+| 9  | Toshikazu Hazamada     | 18  | Male   |Scrambled Egg White with Milk                  |
+| 10 | Leone Abbacchio        | 21  | Male   |Braised Chicken in Black Bean Sauce            |
+| 11 | Ken Oyanagi            | 11  | Male   |Poached Tofu with Dried Shrimps                |
+| 12 | Yoshikage Kira         | 33  | Male   |Deep-fried Hiroshima Oysters                   |
