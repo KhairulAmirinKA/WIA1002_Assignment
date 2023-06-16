@@ -70,7 +70,9 @@ public class AnotherOneBitesTheDust {
     }
     
     public static void main(String[] args) {
-    
+
+        AnotherOneBitesTheDust bitedust = new AnotherOneBitesTheDust();
+        bitedust.findLongestRepeatedPath("");
 }
 
 }
