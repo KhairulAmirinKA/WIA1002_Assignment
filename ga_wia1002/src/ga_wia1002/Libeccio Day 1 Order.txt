@@ -1,13 +1,6 @@
-| 1  | Narciso Anasui         | 25  | Male   |Ghiaccio                                       |
-| 2  | Ghiaccio               | -1  | Male   |Prosciutto and Pesci                           |
-| 3  | Trish Una              | 15  | Female |Prosciutto and Pesci                           |
-| 4  | Bruno Bucciarati       | 20  | Male   |Formaggio                                      |
-| 5  | Terunosuke Miyamoto    | -1  | Male   |Ghiaccio                                       |
-| 6  | Shigekiyo Yangu        | 14  | Male   |Ghiaccio                                       |
-| 7  | Aya Tsuji              | -1  | Female |Formaggio                                      |
-| 8  | Ungalo                 | 24  | Male   |Ghiaccio                                       |
-| 9  | Enrico Pucci           | 39  | Male   |Ghiaccio                                       |
-| 10 | Noriaki Kakyoin        | 17  | Male   |Risotto                                        |
-| 11 | Jean Pierre Polnareff  | 24  | Male   |Ghiaccio                                       |
-| 12 | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
-| 13 | Jonathan Joestar       | 20  | Male   |Formaggio                                      |
+| 1  | Squalo                 | -1  | Male   |Risotto                                        |
+| 2  | Mario Zucchero         | 24  | Male   |Risotto                                        |
+| 3  | Leone Abbacchio        | 21  | Male   |Zucchero and Sale                              |
+| 4  | Koichi Hirose          | 15  | Male   |Risotto                                        |
+| 5  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
+| 6  | Jonathan Joestar       | 20  | Male   |Zucchero and Sale                              |

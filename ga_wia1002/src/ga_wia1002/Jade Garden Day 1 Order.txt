@@ -1,17 +1,14 @@
-| 1  | Jolyne Cujoh           | 19  | Female |Deep-fried Hiroshima Oysters                   |
-| 2  | Trish Una              | 15  | Female |Deep-fried Hiroshima Oysters                   |
-| 3  | Jonathan Joestar       | 20  | Male   |Deep-fried Hiroshima Oysters                   |
-| 4  | Bruno Bucciarati       | 20  | Male   |Deep-fried Hiroshima Oysters                   |
+| 1  | Erina Pendleton        | 70  | Female |Braised Goose Web with Vermicelli              |
+| 2  | Weather Report         | 39  | Male   |Braised Chicken in Black Bean Sauce            |
+| 3  | Jolyne Cujoh           | 19  | Female |Deep-fried Hiroshima Oysters                   |
+| 4  | Foo Fighters           | 22  | Female |Deep-fried Hiroshima Oysters                   |
 | 5  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 6  | Masazo Kinoto          | 29  | Male   |Braised Chicken in Black Bean Sauce            |
-| 7  | Jean Pierre Polnareff  | 24  | Male   |Deep-fried Hiroshima Oysters                   |
-| 8  | Akira Otoishi          | 19  | Male   |Scrambled Egg White with Milk                  |
-| 9  | Muhammad Avdol         | 29  | Male   |Poached Tofu with Dried Shrimps                |
-| 10 | Yukako Yamagishi       | -1  | Female |Braised Goose Web with Vermicelli              |
-| 11 | Enya the Hag           | -1  | Female |Braised Chicken in Black Bean Sauce            |
-| 12 | Tamami Kobayashi       | 20  | Male   |Braised Chicken in Black Bean Sauce            |
-| 13 | Ungalo                 | 24  | Male   |Braised Chicken in Black Bean Sauce            |
-| 14 | Mikitaka Hazekura      | 216 | Male   |Scrambled Egg White with Milk                  |
-| 15 | Vanilla Ice            | -1  | Male   |Deep-fried Hiroshima Oysters                   |
-| 16 | Koichi Hirose          | 15  | Male   |Poached Tofu with Dried Shrimps                |
-| 17 | Aya Tsuji              | -1  | Female |Poached Tofu with Dried Shrimps                |
+| 6  | Tizzano                | -1  | Male   |Deep-fried Hiroshima Oysters                   |
+| 7  | Reimi Sugimoto         | 16  | Female |Scrambled Egg White with Milk                  |
+| 8  | Sale                   | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 9  | Yukako Yamagishi       | -1  | Female |Braised Chicken in Black Bean Sauce            |
+| 10 | Ghiaccio               | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 11 | Masazo Kinoto          | 29  | Male   |Deep-fried Hiroshima Oysters                   |
+| 12 | Formaggio              | -1  | Male   |Poached Tofu with Dried Shrimps                |
+| 13 | Guido Mista            | 18  | Male   |Braised Chicken in Black Bean Sauce            |
+| 14 | Trish Una              | 15  | Female |Poached Tofu with Dried Shrimps                |

@@ -134,7 +134,7 @@ public class RestaurantInfo {
 
             case "Libeccio":
                 libeccio.processOrders();
-                libeccio.storeOrder(location);
+                libeccio.storeOrder(location, currentDay);
                 break;
 
             case "Savage Garden":
