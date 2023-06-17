@@ -115,7 +115,7 @@ public abstract class JOJOLandsRestaurant {
     public abstract void processOrders();
     
     //store order to txt file based on day
-    public void storeOrder(String restaurant_name, int currentDay){
+    public void storeOrder(String restaurant_name,int currentDay){
         
         try{
           //eg: Jade Garden Day 1 Order.txt
@@ -639,7 +639,7 @@ public abstract class JOJOLandsRestaurant {
         int startDay=0 , endDay=0;
         
         System.out.println();
-        System.out.println(restaurant_name+" Minimum Sales");
+        System.out.println(restaurant_name+" Maximum Sales");
         
         System.out.print("Enter Start Day: ");
         startDay= sc.nextInt();
