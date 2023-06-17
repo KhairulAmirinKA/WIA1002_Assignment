@@ -78,6 +78,10 @@ public abstract class JOJOLandsRestaurant {
         orderProcessingList.add(customer);
     }
 
+    public List<Resident> getOrderProcessingList() {
+        return orderProcessingList;
+    }
+
     public void viewWaitingList() {
         System.out.println("Waiting List: ");
         System.out.println("+----+------------------------+-----+--------+-----------------------------------------------+");
@@ -110,34 +114,6 @@ public abstract class JOJOLandsRestaurant {
 
     public abstract void processOrders();
     
-    //store order to txt file
-    public void storeOrder(String restaurant_name){
-        
-        try{
-          //location
-          String filePath="src\\ga_wia1002\\"+restaurant_name+"Order.txt";
-          
-    PrintWriter writer= new PrintWriter(new FileOutputStream(filePath));
-    
-        for (int i = 0; i < orderProcessingList.size(); i++) {
-            Resident customer = orderProcessingList.get(i);
-            
-            String foodName= customer.getOrder().replaceAll("\\s*\\(\\$\\d+\\.\\d+\\)", "");
-            //store data to txt file
-            writer.printf("| %-2d | %-22s | %-3d | %-6s |%-46s |%n", i + 1, customer.getName(), customer.getAge(),
-                    customer.getGender(),foodName);
-        }
-        
-        writer.close();
-        
-      
-        }
-        
-        catch (IOException ie){
-            ie.printStackTrace();
-        }
-    }
-    
     //store order to txt file based on day
     public void storeOrder(String restaurant_name, int currentDay){
         
@@ -147,8 +123,8 @@ public abstract class JOJOLandsRestaurant {
           
     PrintWriter writer= new PrintWriter(new FileOutputStream(filePath));
     
-        for (int i = 0; i < orderProcessingList.size(); i++) {
-            Resident customer = orderProcessingList.get(i);
+        for (int i = 0; i < waitingList.size(); i++) {
+            Resident customer = waitingList.get(i);
             
             String foodName= customer.getOrder().replaceAll("\\s*\\(\\$\\d+\\.\\d+\\)", "");
             //store data to txt file
@@ -829,17 +805,7 @@ public abstract class JOJOLandsRestaurant {
         
         catch (FileNotFoundException fe){
             fe.printStackTrace();
-        }  //end of write to file
-        
-        
-        
-        
-        
-        
-        
-        
-            
-                
+        }  //end of write to file             
     }// end of viewMaxSales
     
     
