@@ -4,11 +4,11 @@ import java.util.*;
 public class JOJOLandsMap {     //JojolandLocation can receive locationName and all locationPaths info(path and distance)
     private Map<String, JojolandLocation> locations;    //create a map named locations which contain 2 types: String and JojolandLocation 
     private JojolandLocation previousLocation; // Add a variable to keep track of the previous location
-    
+
     
     public JOJOLandsMap() {
         locations = new HashMap<>();    //intialise locations
-        initializeMap();    //key in all value in locations
+        
         previousLocation = null; // Initialize previousLocation as null
     }
     public JojolandLocation getPreviousLocation() {
@@ -37,23 +37,23 @@ public class JOJOLandsMap {     //JojolandLocation can receive locationName and 
     }
 
 
-    public void initializeMap() {
-        addLocation("Town Hall");       //add locationName
-        addLocation("Morioh Grand Hotel");
-        addLocation("Jade Garden");
-        addLocation("Cafe Deux Magots");
-        addLocation("Polnareff Land");
-        addLocation("Savage Garden");
-        addLocation("Trattoria Trussardi");
-        addLocation("San Giorgio Maggiore");
-        addLocation("Joestar Mansion");
-        addLocation("Vineyard");
-        addLocation("Libeccio");
-        addLocation("DIO's Mansion");
-        addLocation("Angelo Rock");
-        addLocation("Green Dolphin Street Prison");
-
-        addPath("Town Hall", "Morioh Grand Hotel", 5);  //add key(location,destination)and value(distance)
+public void initializeDefaultMap(){
+    addLocation("Town Hall");
+    addLocation("Morioh Grand Hotel");
+    addLocation("Jade Garden");
+    addLocation("Cafe Deux Magots");
+    addLocation("Polnareff Land");
+    addLocation("Savage Garden");
+    addLocation("Trattoria Trussardi");
+    addLocation("San Giorgio Maggiore");
+    addLocation("Joestar Mansion");
+    addLocation("Vineyard");
+    addLocation("Libeccio");
+    addLocation("DIO's Mansion");
+    addLocation("Angelo Rock");
+    addLocation("Green Dolphin Street Prison");
+  
+        addPath("Town Hall", "Morioh Grand Hotel", 5);
         addPath("Town Hall", "Jade Garden", 5);
         addPath("Town Hall", "Cafe Deux Magots", 4);
         addPath("Cafe Deux Magots", "Polnareff Land", 4);
@@ -77,7 +77,96 @@ public class JOJOLandsMap {     //JojolandLocation can receive locationName and 
         addPath("Libeccio", "DIO's Mansion", 2);
         addPath("DIO's Mansion", "Angelo Rock", 3);
         addPath("Angelo Rock", "Green Dolphin Street Prison", 2);
+}
+  public void initializeParallelMap () {
+    addLocation("Town Hall");
+    addLocation("Morioh Grand Hotel");
+    addLocation("Jade Garden");
+    addLocation("Cafe Deux Magots");
+    addLocation("Polnareff Land");
+    addLocation("Savage Garden");
+    addLocation("Trattoria Trussardi");
+    addLocation("San Giorgio Maggiore");
+    addLocation("Joestar Mansion");
+    addLocation("Vineyard");
+    addLocation("Libeccio");
+    addLocation("DIO's Mansion");
+    addLocation("Angelo Rock");
+    addLocation("Green Dolphin Street Prison");
+        addPath("Town Hall", "Trattoria Trussardi", 6);
+        addPath("Town Hall", "Vineyard", 3);
+        addPath("Town Hall", "Libeccio", 2);
+        addPath("Town Hall", "Cafe Deux Magots", 4);
+        addPath("Morioh Grand Hotel", "Joestar Mansion", 4);
+        addPath("Morioh Grand Hotel", "Cafe Deux Magots", 6);
+        addPath("Trattoria Trussardi", "Joestar Mansion", 5);
+        addPath("Trattoria Trussardi", "DIO's Mansion", 4);
+        addPath("Trattoria Trussardi", "Angelo Rock", 3);
+        addPath("Green Dolphin Street Prison", "Angelo Rock", 8);
+        addPath("Green Dolphin Street Prison", "DIO's Mansion", 6);
+        addPath("Angelo Rock", "DIO's Mansion", 1);
+        addPath("Vineyard", "Libeccio", 3);
+        addPath("Savage Garden", "Jade Garden", 4);
+        addPath("Savage Garden", "San Giorgio Maggiore", 6);
+        addPath("Savage Garden", "Cafe Deux Magots", 5);
+        addPath("Polnareff Land", "Cafe Deux Magots", 2);
+        addPath("Cafe Deux Magots", "Jade Garden", 3);
     }
+  public void initializedAlternateMap () {
+    addLocation("Town Hall");
+    addLocation("Morioh Grand Hotel");
+    addLocation("Jade Garden");
+    addLocation("Cafe Deux Magots");
+    addLocation("Polnareff Land");
+    addLocation("Savage Garden");
+    addLocation("Trattoria Trussardi");
+    addLocation("San Giorgio Maggiore");
+    addLocation("Joestar Mansion");
+    addLocation("Vineyard");
+    addLocation("Libeccio");
+    addLocation("DIO's Mansion");
+    addLocation("Angelo Rock");
+    addLocation("Green Dolphin Street Prison");
+    addPath("Town Hall", "Morioh Grand Hotel", 2);
+    addPath("Town Hall", "Green Dolphin Street Prison", 3);
+    addPath("Town Hall", "Libeccio", 7);
+
+    addPath("Morioh Grand Hotel", "San Giorgio Maggiore", 3);
+    addPath("Morioh Grand Hotel", "Joestar Mansion", 4);
+    addPath("Morioh Grand Hotel", "Green Dolphin Street Prison", 2);
+
+    addPath("Trattoria Trussardi", "Green Dolphin Street Prison", 4);
+    addPath("Trattoria Trussardi", "Joestar Mansion", 5);
+    addPath("Trattoria Trussardi", "Libeccio", 1);
+
+    addPath("Green Dolphin Street Prison", "Angelo Rock", 6);
+
+    addPath("Angelo Rock", "Libeccio", 6);
+    addPath("Angelo Rock", "Polnareff Land", 2);
+    addPath("Angelo Rock", "Jade Garden", 1);
+
+    addPath("DIO's Mansion", "Cafe Deux Magots", 1);
+    addPath("DIO's Mansion", "Polnareff Land", 2);
+    addPath("DIO's Mansion", "Libeccio", 2);
+
+    addPath("Vineyard", "Savage Garden", 4);
+    addPath("Vineyard", "Cafe Deux Magots", 4);
+
+    addPath("Savage Garden", "San Giorgio Maggiore", 6);
+
+    addPath("Polnareff Land", "Jade Garden", 2);
+
+    addPath("Cafe Deux Magots", "Polnareff Land", 4);
+
+    addPath("Jade Garden", "Trattoria Trussardi", 3);
+
+    addPath("San Giorgio Maggiore", "Jade Garden", 2);
+
+    addPath("Libeccio", "DIO's Mansion", 5);
+    addPath("Libeccio", "Trattoria Trussardi", 1);
+    }  
+  
+
 
     private void addLocation(String locationName) {     //a method to receive String locationName
         JojolandLocation location = new JojolandLocation(locationName);
@@ -93,7 +182,7 @@ public class JOJOLandsMap {     //JojolandLocation can receive locationName and 
 
     public JojolandLocation getLocation(String locationName) {
         return locations.get(locationName);
-    }
+    }  
 
     public void setPreviousLocation(JojolandLocation location) {
         previousLocation = location;

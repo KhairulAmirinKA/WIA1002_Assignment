@@ -2,7 +2,7 @@ package ga_wia1002;
 import java.util.*;
 
 public class JOJOLandsGame{
-    private JOJOLandsMap map;
+    private static JOJOLandsMap map;
     private JojolandLocation currentLocation;
     private String day;
     int currentDay;
@@ -11,6 +11,10 @@ public class JOJOLandsGame{
     private Stack<JojolandLocation> forwardHistory;    
     private boolean diffDay;
     RestaurantInfo resInfo ;
+    private int selectedMapType;
+    private SaveLoad saveLoad;
+    private Container gameData;
+
     
     public JOJOLandsGame() {
         map = new JOJOLandsMap();
@@ -21,7 +25,119 @@ public class JOJOLandsGame{
         movementHistory = new Stack<>();
         forwardHistory = new Stack<>(); // Initialize the forward history stack    
         diffDay=true;
+        saveLoad = new SaveLoad();
     }
+        public class JOJOLandsInterface {
+            private static JOJOLandsMap jojoMaps;
+
+            public JOJOLandsInterface(JOJOLandsMap jojoMaps) {
+            this.jojoMaps = jojoMaps;
+    }
+        }        
+    public void startGame() {
+        displayMainMenu();
+        int menuChoice = getMenuChoice();
+
+        switch (menuChoice) {
+            case 1:
+               loadMap();
+                // Start the game
+                break;
+            case 2:
+                loadGame();
+                // Continue the game
+                break;
+            case 3:
+                exitGame();
+                break;
+            default:
+                System.out.println("Invalid choice. Please try again.");
+                startGame();
+                break;
+        }
+    }
+
+    private void displayMainMenu() {
+        System.out.println("Welcome to the fantastical realm of JOJOLands.");
+        System.out.println("[1] Start Game");
+        System.out.println("[2] Load Game");
+        System.out.println("[3] Exit");
+    }
+
+    private void displayMapSelectionMenu() {
+        System.out.println("Select a map:");
+        System.out.println("[1] Default Map");
+        System.out.println("[2] Parallel Map");
+        System.out.println("[3] Alternate Map");
+    }
+
+    private int getMenuChoice() {
+        int choice = scanner.nextInt();
+        scanner.nextLine(); // Consume the newline character
+        return choice;
+    }
+
+    private String getSaveFilePath() {
+        System.out.println("Enter the path of your save file:");
+        String filePath = scanner.nextLine();
+        return filePath;
+    }
+
+public void loadMap() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Select a map type:");
+    System.out.println("1. Default Map");
+    System.out.println("2. Parallel Map");
+    System.out.println("3. Alternate Map");
+    int choice = scanner.nextInt();
+    scanner.nextLine(); // Consume the newline character
+
+    String mapType;
+    if (choice == 1) {
+        mapType = "Default";
+        map.initializeDefaultMap();
+    } else if (choice == 2) {
+        mapType = "Parallel";
+        map.initializeParallelMap();
+    } else if (choice == 3) {
+        mapType = "Alternate";
+        map.initializedAlternateMap();
+    } else {
+        System.out.println("Invalid choice. Using default map.");
+        mapType = "Default";
+        map.initializeDefaultMap();
+    }
+
+    System.out.println("Map loaded successfully!");
+}
+
+
+
+    public void loadGame() {
+        gameData = saveLoad.load();
+        if (gameData != null) {
+            // Process the loaded game data
+            System.out.println("Game data loaded successfully!");
+        } else {
+            System.out.println("Failed to load game data.");
+        }
+    }
+    public void exitGame() {
+    System.out.println("Exiting JOJOLands...");
+    // Perform any necessary cleanup or saving operations here
+
+    System.exit(0); // Exit the program with a status of 0 (successful termination)
+}
+
+
+    public static void main(String[] args) {
+    JOJOLandsGame game = new JOJOLandsGame();
+    game.startGame();
+    game.start();
+}
+
+
+
 
     public void start() {
         //start
@@ -426,7 +542,11 @@ public class JOJOLandsGame{
     }      
 
     private void printCurrentLocation() {
+        if (currentLocation != null) {
         System.out.println("Current Location: " + currentLocation.getName());
+    } else {
+        System.out.println("Current Location is not set.");
+    }
     }
 
     private JojolandLocation findDestination(String input) {    //input is user input
@@ -542,11 +662,9 @@ public class JOJOLandsGame{
             System.out.println("No forward history available.");
         }
     }
-    public static void main(String[] args) {
-        JOJOLandsGame game = new JOJOLandsGame();
-        game.start();
+
         
     }
-}
+
 
 

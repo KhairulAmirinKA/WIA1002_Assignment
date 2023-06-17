@@ -1,14 +1,15 @@
 | 1  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
-| 2  | Jonathan Joestar       | 20  | Male   |Creme caramel                                  |
-| 3  | Iggy                   | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 4  | Jean Pierre Polnareff  | 24  | Male   |Lamb Chops with Apple Sauce                    |
-| 5  | DIO                    | 121 | Male   |Caprese Salad                                  |
-| 6  | Aya Tsuji              | -1  | Female |Lamb Chops with Apple Sauce                    |
-| 7  | Tamami Kobayashi       | 20  | Male   |Creme caramel                                  |
-| 8  | Yoshihiro Kira         | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 9  | Leone Abbacchio        | 21  | Male   |Caprese Salad                                  |
-| 10 | Melone                 | -1  | Male   |Caprese Salad                                  |
-| 11 | Prosciutto             | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 12 | Secco                  | -1  | Male   |Creme caramel                                  |
-| 13 | Foo Fighters           | 22  | Female |Caprese Salad                                  |
-| 14 | Weather Report         | 39  | Male   |Lamb Chops with Apple Sauce                    |
+| 2  | Noriaki Kakyoin        | 17  | Male   |Caprese Salad                                  |
+| 3  | Rohan Kishibe          | 20  | Male   |Spaghetti alla Puttanesca                      |
+| 4  | Toshikazu Hazamada     | 18  | Male   |Caprese Salad                                  |
+| 5  | Yukako Yamagishi       | -1  | Female |Creme caramel                                  |
+| 6  | Akira Otoishi          | 19  | Male   |Caprese Salad                                  |
+| 7  | Anjuro Katagiri        | 34  | Male   |Spaghetti alla Puttanesca                      |
+| 8  | Keicho Nijimura        | 18  | Male   |Caprese Salad                                  |
+| 9  | Ken Oyanagi            | 11  | Male   |Caprese Salad                                  |
+| 10 | Mario Zucchero         | 24  | Male   |Caprese Salad                                  |
+| 11 | Pesci                  | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 12 | Prosciutto             | -1  | Male   |Creme caramel                                  |
+| 13 | Sale                   | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 14 | Squalo                 | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 15 | Foo Fighters           | 22  | Female |Spaghetti alla Puttanesca                      |

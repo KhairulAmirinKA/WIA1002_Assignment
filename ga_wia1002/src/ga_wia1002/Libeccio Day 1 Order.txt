@@ -1,13 +1,14 @@
-| 1  | Joseph Joestar         | 18  | Male   |Risotto                                        |
-| 2  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
-| 3  | Ungalo                 | 24  | Male   |Risotto                                        |
-| 4  | Reimi Sugimoto         | 16  | Female |Zucchero and Sale                              |
-| 5  | Akira Otoishi          | 19  | Male   |Risotto                                        |
-| 6  | Anjuro Katagiri        | 34  | Male   |Zucchero and Sale                              |
-| 7  | Bruno Bucciarati       | 20  | Male   |Melone                                         |
-| 8  | Guido Mista            | 18  | Male   |Risotto                                        |
-| 9  | Narancia Ghirga        | 17  | Male   |Melone                                         |
-| 10 | Pannacotta Fugo        | 16  | Male   |Ghiaccio                                       |
-| 11 | Ghiaccio               | -1  | Male   |Zucchero and Sale                              |
-| 12 | Emporio Alnino         | 11  | Male   |Formaggio                                      |
-| 13 | Narciso Anasui         | 25  | Male   |Prosciutto and Pesci                           |
+| 1  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
+| 2  | Lisa Lisa              | 50  | Female |Melone                                         |
+| 3  | Suzi Q.                | -1  | Female |Risotto                                        |
+| 4  | Jean Pierre Polnareff  | 24  | Male   |Prosciutto and Pesci                           |
+| 5  | DIO                    | 121 | Male   |Melone                                         |
+| 6  | Ungalo                 | 24  | Male   |Zucchero and Sale                              |
+| 7  | Shigekiyo Yangu        | 14  | Male   |Zucchero and Sale                              |
+| 8  | Yuya Fungami           | -1  | Male   |Ghiaccio                                       |
+| 9  | Masazo Kinoto          | 29  | Male   |Zucchero and Sale                              |
+| 10 | Yoshihiro Kira         | -1  | Male   |Prosciutto and Pesci                           |
+| 11 | Ghiaccio               | -1  | Male   |Risotto                                        |
+| 12 | Illuso                 | -1  | Male   |Formaggio                                      |
+| 13 | Secco                  | -1  | Male   |Risotto                                        |
+| 14 | Narciso Anasui         | 25  | Male   |Formaggio                                      |
