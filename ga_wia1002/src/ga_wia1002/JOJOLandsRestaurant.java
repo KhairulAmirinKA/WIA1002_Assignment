@@ -295,12 +295,21 @@ public abstract class JOJOLandsRestaurant {
         String foodName;
         double newPrice;
         
+        //DAY
+        int startDay, endDay;
+        
         
         System.out.print("Enter food name: ");
         foodName= sc.nextLine();
         
         System.out.print("Enter new price: $");
         newPrice= sc.nextDouble();
+        
+        System.out.print("Enter Start Day: ");
+        startDay= sc.nextInt();
+        
+        System.out.print("Enter End Day: ");
+        endDay= sc.nextInt();
         
         //modify price
         restaurantPrice.put(foodName, newPrice);
@@ -642,7 +651,7 @@ public abstract class JOJOLandsRestaurant {
             
     }// end of viewMinimumSales
     
-    //minimum sales
+    //max sales
     public void viewMaximumSales(String restaurant_name){
         
         //for hashmap
@@ -1046,6 +1055,9 @@ public abstract class JOJOLandsRestaurant {
        
     }// end of viewKHighest
     
+    
+    //===================================================
+    //MIlagro zone! it is not Dio!!!!
 
     //milagroMan mode 13/6. including modify and view sales milagro
     public void MilagroMode(String restaurant_name,int currentDay){
@@ -1101,7 +1113,7 @@ public abstract class JOJOLandsRestaurant {
                     //[1]view Sales
                         System.out.print("Enter Day: ");
                         int userInputDay= sc1.nextInt();
-                        //resInfo.viewSales(currentLocation.getName(),userInputDay);
+                        viewSales_Milagro(restaurant_name, userInputDay, restaurantPrice);
                         break;
                 case("2A"):
                     //[2A] Minimum Sales
@@ -1109,11 +1121,11 @@ public abstract class JOJOLandsRestaurant {
                     break;
                 case("2B"):
                     //[2B]Maximum Sales
-                    //resInfo.viewMaximumSales(currentLocation.getName());
+                    viewMaximumSales_Milagro(restaurant_name, restaurantPrice);
                     break;
                 case("2C"):
                     //[2C]Top k Highest Sales
-                    //resInfo.view_K_Highest(currentLocation.getName());
+                    view_K_Highest_Sales_Milagro(restaurant_name, restaurantPrice);
                     break;
                 case("2D"):
                     //[2D]Total and Average Sales
@@ -1129,9 +1141,88 @@ public abstract class JOJOLandsRestaurant {
     }//end of milagro mode
     
   
+    //view sales milagro from txt file
+    public void viewSales_Milagro(String restaurant_name,int userInputDay,
+            HashMap<String,Double> restaurantPrice){    
+        
+        //read file
+        try{
+             
+          //eg: Jade Garden Day 1 Order.txt
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ userInputDay+" Order.txt";
+          
+         //read
+         Scanner sc= new Scanner(new FileInputStream(filePath));
+         
+         //map to store the quantity of food
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
+         
+         //read from txt
+         while (sc.hasNextLine()) {
+                String line = sc.nextLine();
+                
+                //split
+                String[] orderData = line.split("\\|");
+                
+                if (orderData.length >= 5) {
+                    
+                    //get food name
+                    String foodName = orderData[5].trim();
+                    
+                    //calculate the quantity of each food
+                    foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
+                    
+                    //get the price of food
+                    double price = restaurantPrice.getOrDefault(foodName, 0.00);
+                      
+                }//if
+            }//while
+         
+         
+         //display food, quantity and price
+         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("Day "+userInputDay+" Sales");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         //calc total sales
+         double totalSales=0; 
+         
+         // Displaying the food quantity
+        for (String food : foodQuantityMap.keySet()) {
+            
+            //get quantity
+            int quantity = foodQuantityMap.getOrDefault(food,0);
+            
+            //calculate price. quantity x price per unit  
+            double price = quantity * restaurantPrice.getOrDefault(food,0.0);
+            
+            //calc total sales
+            totalSales+= price;
+            
+            //display food, quantity and price
+            System.out.printf("| %-45s | %-8d | $%-6.2f|%n", food, quantity, price);
+           
+        }// loop food name and quantity
+        System.out.println("+-----------------------------------------------+-------------------+");
+                 
+        //display the total sales
+            System.out.printf("|%57s | $%.2f|\n", "Total Sales", totalSales);
+            
+        System.out.println("+-----------------------------------------------+-------------------+");
+
+            sc.close();
+     }
+     
+     catch (FileNotFoundException fe){
+         fe.printStackTrace();
+     }
+        
+    }
     
     //total and average sales milagro
-    public void viewTotalSales_Milagro(String restaurant_name, HashMap<String,Double> restaurantPrice){
+    public void viewTotalSales_Milagro(String restaurant_name,
+      HashMap<String,Double> restaurantPrice){
         Scanner sc= new Scanner(System.in);
         
         //start and end day
@@ -1277,15 +1368,16 @@ public abstract class JOJOLandsRestaurant {
     }// end of viewTotalSales
     
     //minimum sales milagro
-    public void viewMinimumSales_Milagro(String restaurant_name, HashMap<String, Double> restaurantPrice){
-           
+    public void viewMinimumSales_Milagro(String restaurant_name, 
+            HashMap<String, Double> restaurantPrice){  
+        
         Scanner sc= new Scanner(System.in);
         
         //start and end day
         int startDay=0 , endDay=0;
         
         System.out.println();
-        System.out.println(restaurant_name+" Minimum Sales (Milagro Mode)");
+        System.out.println(restaurant_name+" Minimum Sales");
         
         System.out.print("Enter Start Day: ");
         startDay= sc.nextInt();
@@ -1353,11 +1445,11 @@ public abstract class JOJOLandsRestaurant {
         sales_arr[i-1]= totalSales;
          
          fileSc.close();
-       
+        }
          
             }//for startDay<=endDay
             
-            
+            //CALCULATION
             //find the minimum sales from sales_arr
             double minimum_sales= sales_arr[0];
             int day_minimumSales=1;
@@ -1377,13 +1469,13 @@ public abstract class JOJOLandsRestaurant {
             //display minimum sales
             //location to read.
             //eg: Jade Garden Day 1 Order.txt
-           filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ day_minimumSales+" Order.txt";
+           String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ day_minimumSales+" Order.txt";
           
          //file scanner
-          fileSc= new Scanner(new FileInputStream(filePath));
+          Scanner fileSc= new Scanner(new FileInputStream(filePath));
          
          //map to store the quantity of food
-         foodQuantityMap= new HashMap<>();
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
          
          
          //loop to write
@@ -1414,7 +1506,7 @@ public abstract class JOJOLandsRestaurant {
          System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
          System.out.println("+-----------------------------------------------+-------------------+");
          //calc total sales
-          totalSales=0; 
+         double totalSales=0; 
          
          // Displaying the food quantity
         for (String food : foodQuantityMap.keySet()) {
@@ -1446,7 +1538,190 @@ public abstract class JOJOLandsRestaurant {
             
             
             
+        
+        }//try. 
+        
+        catch (FileNotFoundException fe){
+            fe.printStackTrace();
+        }  //end of write to file
+        
+        
+         
+    } // end of viewMinimumSales
+    
+    
+    //max sales milagro
+    public void viewMaximumSales_Milagro(String restaurant_name,
+      HashMap<String, Double> restaurantPrice){
+        
+        Scanner sc= new Scanner(System.in);
+        
+        //start and end day
+        int startDay=0 , endDay=0;
+        
+        System.out.println();
+        System.out.println(restaurant_name+" Minimum Sales");
+        
+        System.out.print("Enter Start Day: ");
+        startDay= sc.nextInt();
+        
+        System.out.print("Enter End Day: ");
+        endDay= sc.nextInt();
+        
+        //array to store sales
+        double[] sales_arr=new double[endDay];
+        
+        //read file
+        try{  
+         
+         //read all files from day 1 to end day
+            for (int i=startDay; i<= endDay; i++){
+                
+            //location to read.
+            //eg: Jade Garden Day 1 Order.txt
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ i+" Order.txt";
+          
+         //file scanner
+         Scanner fileSc= new Scanner(new FileInputStream(filePath));
+         
+         //map to store the quantity of food
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
+         
+         
+         //loop to write
+         while( fileSc.hasNextLine()){
+             String line= fileSc.nextLine();
+             //split
+                String[] orderData = line.split("\\|");
+                
+                if (orderData.length >= 5) {
+                    
+                    //get food name
+                    String foodName = orderData[5].trim();
+                    
+                    //calculate the quantity of each food
+                    foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
+                    
+                    //get the price of food
+                    double price = restaurantPrice.getOrDefault(foodName, 0.00);
+                      
+                }//if
+            }//while
+         
+        
+         //calc total sales
+         double totalSales=0; 
+         
+         // Displaying the food quantity
+        for (String food : foodQuantityMap.keySet()) {
+            
+            //get quantity
+            int quantity = foodQuantityMap.getOrDefault(food,0);
+            
+            //calculate price. quantity x price per unit  
+            double price = quantity * restaurantPrice.getOrDefault(food,0.0);
+            
+            //calc total sales
+            totalSales+= price;
+  
+        //add totalSales for each day to array
+        sales_arr[i-1]= totalSales;
+         
+         fileSc.close();
         }
+         
+            }//for startDay<=endDay
+            
+            //ANALYSIS
+            //find the max sales from sales_arr
+            double maximum_sales= sales_arr[0];
+            int day_maximumSales=1;
+            
+            for (int j=0; j< sales_arr.length; j++){
+                
+                if (sales_arr[j]> maximum_sales){
+                    maximum_sales= sales_arr[j];
+                    day_maximumSales= j+1;
+                }
+            }
+            
+            System.out.printf("Minimum Sales is: $%.2f on day %d",maximum_sales, day_maximumSales);
+           
+            
+            try{
+            //display minimum sales
+            //location to read.
+            //eg: Jade Garden Day 1 Order.txt
+           String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ day_maximumSales+" Order.txt";
+          
+         //file scanner
+          Scanner fileSc= new Scanner(new FileInputStream(filePath));
+         
+         //map to store the quantity of food
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
+         
+         
+         //loop to write
+         while( fileSc.hasNextLine()){
+             String line= fileSc.nextLine();
+             //split
+                String[] orderData = line.split("\\|");
+                
+                if (orderData.length >= 5) {
+                    
+                    //get food name
+                    String foodName = orderData[5].trim();
+                    
+                    //calculate the quantity of each food
+                    foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
+                    
+                    //get the price of food
+                    double price = restaurantPrice.getOrDefault(foodName, 0.00);
+                      
+                }//if
+            }//while
+         
+         
+         //display food, quantity and price
+         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("Day "+day_maximumSales+" Sales");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         //calc total sales
+        double  totalSales=0; 
+         
+         // Displaying the food quantity
+        for (String food : foodQuantityMap.keySet()) {
+            
+            //get quantity
+            int quantity = foodQuantityMap.getOrDefault(food,0);
+            
+            //calculate price. quantity x price per unit  
+            double price = quantity * restaurantPrice.getOrDefault(food,0.0);
+            
+            //calc total sales
+            totalSales+= price;
+            
+            //display food, quantity and price
+            System.out.printf("| %-45s | %-8d | $%-6.2f|%n", food, quantity, price);
+           
+        }// loop food name and quantity
+        System.out.println("+-----------------------------------------------+-------------------+");
+                 
+        //display the total sales
+            System.out.printf("|%57s | $%.2f|\n", "Total Sales", totalSales);
+            
+        System.out.println("+-----------------------------------------------+-------------------+");
+            }
+            catch (FileNotFoundException fe2){
+                fe2.printStackTrace();
+                        
+            }
+            
+            
+            
+        
         }//try. 
         
         catch (FileNotFoundException fe){
@@ -1455,8 +1730,226 @@ public abstract class JOJOLandsRestaurant {
         
         
         
+      
+                
+    }// end of viewMaxSales milagro
+    
+    
+    //k hIGHEST sales Milagro man
+    public void view_K_Highest_Sales_Milagro(String restaurant_name,
+            HashMap<String, Double> restaurantPrice){
+        
+        Scanner sc= new Scanner(System.in);
+        
+        //start and end day
+        int startDay=0 , endDay=0;
+        
+        int k;
+        
+        System.out.println();
+        System.out.println(restaurant_name+" K-Highest Sales");
+        
+        System.out.print("Enter Start Day: ");
+        startDay= sc.nextInt();
+        
+        System.out.print("Enter End Day: ");
+        endDay= sc.nextInt();
+        
+        System.out.print("Enter k value: ");
+        k= sc.nextInt();
+        
+        //array to store sales
+        double[] sales_arr=new double[endDay];
+        
+        //hashmap to store sales for each day
+        HashMap<Integer, Double> daySalesMap= new HashMap<>();
+        
+        double totalSales=0;
+        
+        
+        //read file
+        try{  
+              
+         //read all files from day 1 to end day
+            for (int i=startDay; i<= endDay; i++){
+                
+                totalSales=0;
+                
+            //location to read.
+            //eg: Jade Garden Day 1 Order.txt
+          String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ i+" Order.txt";
+          
+         //file scanner
+         Scanner fileSc= new Scanner(new FileInputStream(filePath));
+         
+         //map to store the quantity of food
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
+         
+         
+         //loop to write
+         while( fileSc.hasNextLine()){
+             String line= fileSc.nextLine();
+             //split
+                String[] orderData = line.split("\\|");
+                
+                if (orderData.length >= 5) {
+                    
+                    //get food name
+                    String foodName = orderData[5].trim();
+                    
+                    //calculate the quantity of each food
+                    foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
+                    
+                    //get the price of food
+                    double price = restaurantPrice.getOrDefault(foodName, 0.00);
+                      
+                }//if
+            }//while
+         
+  
+         
+         // Displaying the food quantity
+        for (String food : foodQuantityMap.keySet()) {
             
-    }// end of viewMinimumSales milagro
+            //get quantity
+            int quantity = foodQuantityMap.getOrDefault(food,0);
+            
+            //calculate price. quantity x price per unit  
+            double price = quantity * restaurantPrice.getOrDefault(food,0.0);
+            
+            //calc total sales
+            totalSales+= price;
+  
+        //add totalSales for each day to array
+        sales_arr[i-1]= totalSales;
+        
+        //put totalSales according to day
+        daySalesMap.put(i, totalSales);
+         
+         fileSc.close();
+       
+        }
+            }//for startDay<=endDay
+            
+        }// end of 1st try
+        
+        catch  (FileNotFoundException e){
+            e.printStackTrace();}
+            
+        
+        //transformation
+            
+            //sort daySalesMap according to value
+            List< Map.Entry<Integer, Double> > sortedList= 
+                    daySalesMap.entrySet().stream().
+                    sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                    .collect(Collectors.toList());
+            
+            //get key from K highest
+            List<Integer> highestKeys= 
+                    sortedList.subList(0, k).stream()
+                    .map(entry-> entry.getKey())
+                    .collect(Collectors.toList());
+           
+            //create an array containing the day with highest key
+            int[] day_with_highestSales = new int[highestKeys.size()];
+            
+            //store the array with day with highest key. descending
+         for (int i = 0; i < highestKeys.size(); i++) {
+             day_with_highestSales[i] = highestKeys.get(i);
+            }
+         
+           //FOR DEbugging
+            System.out.println("\nANALYSIS");
+            System.out.println("k= "+day_with_highestSales.length);
+            for (int i: day_with_highestSales){
+                System.out.println("Day "+ i);
+            }
+            
+            try{
+            //display minimum sales
+            //location to read.
+            
+            for ( int i=0; i<k; i++){
+            //eg: Jade Garden Day 1 Order.txt
+           String filePath="src\\ga_wia1002\\"+restaurant_name+" Day "+ day_with_highestSales[i]+" Order.txt";
+          
+         //file scanner
+          Scanner fileSc= new Scanner(new FileInputStream(filePath));
+         
+         //map to store the quantity of food
+         HashMap<String, Integer> foodQuantityMap= new HashMap<>();
+         
+         
+         //loop to write
+         while( fileSc.hasNextLine()){
+             String line= fileSc.nextLine();
+             //split
+                String[] orderData = line.split("\\|");
+                
+                if (orderData.length >= 5) {
+                    
+                    //get food name
+                    String foodName = orderData[5].trim();
+                    
+                    //calculate the quantity of each food
+                    foodQuantityMap.put(foodName, foodQuantityMap.getOrDefault(foodName, 0) + 1);
+                    
+                    //get the price of food
+                    double price = restaurantPrice.getOrDefault(foodName, 0.00);
+                      
+                }//if
+            }//while
+         
+         
+         //display food, quantity and price
+         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("Day "+day_with_highestSales[i]+" Sales");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
+         System.out.println("+-----------------------------------------------+-------------------+");
+         //calc total sales
+          totalSales=0; 
+         
+         // Displaying the food quantity
+        for (String food : foodQuantityMap.keySet()) {
+            
+            //get quantity
+            int quantity = foodQuantityMap.getOrDefault(food,0);
+            
+            //calculate price. quantity x price per unit  
+            double price = quantity * restaurantPrice.getOrDefault(food,0.0);
+            
+            //calc total sales
+            totalSales+= price;
+            
+            //display food, quantity and price
+            System.out.printf("| %-45s | %-8d | $%-6.2f|%n", food, quantity, price);
+           
+        }// loop food name and quantity
+        System.out.println("+-----------------------------------------------+-------------------+");
+                 
+        //display the total sales
+            System.out.printf("|%57s | $%.2f|\n", "Total Sales", totalSales);
+            
+        System.out.println("+-----------------------------------------------+-------------------+");
+            }//for 
+            
+            }//try
+            catch (FileNotFoundException fe2){
+                fe2.printStackTrace();
+                        
+            }
+            
+            
+       
+    }// end of viewKHighest milagro
+    
+    
+    
+    
+    
+    
     
     
     

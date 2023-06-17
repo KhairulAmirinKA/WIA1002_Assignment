@@ -1,15 +1,12 @@
-| 1  | Erina Pendleton        | 70  | Female |Poached Tofu with Dried Shrimps                |
-| 2  | Ermes Costello         | 21  | Female |Braised Goose Web with Vermicelli              |
-| 3  | Jotaro Kujo            | 17  | Male   |Deep-fried Hiroshima Oysters                   |
-| 4  | Prosciutto             | -1  | Male   |Poached Tofu with Dried Shrimps                |
-| 5  | Muhammad Avdol         | 29  | Male   |Braised Goose Web with Vermicelli              |
-| 6  | Melone                 | -1  | Male   |Braised Goose Web with Vermicelli              |
-| 7  | Reimi Sugimoto         | 16  | Female |Deep-fried Hiroshima Oysters                   |
-| 8  | Narancia Ghirga        | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 9  | Shigekiyo Yangu        | 14  | Male   |Braised Chicken in Black Bean Sauce            |
-| 10 | Leone Abbacchio        | 21  | Male   |Scrambled Egg White with Milk                  |
-| 11 | Toshikazu Hazamada     | 18  | Male   |Braised Chicken in Black Bean Sauce            |
-| 12 | Terunosuke Miyamoto    | -1  | Male   |Deep-fried Hiroshima Oysters                   |
-| 13 | Yukako Yamagishi       | -1  | Female |Poached Tofu with Dried Shrimps                |
-| 14 | Masazo Kinoto          | 29  | Male   |Deep-fried Hiroshima Oysters                   |
-| 15 | Ken Oyanagi            | 11  | Male   |Braised Chicken in Black Bean Sauce            |
+| 1  | George Joestar II      | 32  | Male   |Braised Chicken in Black Bean Sauce            |
+| 2  | Emporio Alnino         | 11  | Male   |Scrambled Egg White with Milk                  |
+| 3  | Giorno Giovanna        | 15  | Male   |Braised Chicken in Black Bean Sauce            |
+| 4  | Melone                 | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 5  | Jotaro Kujo            | 17  | Male   |Deep-fried Hiroshima Oysters                   |
+| 6  | Mario Zucchero         | 24  | Male   |Deep-fried Hiroshima Oysters                   |
+| 7  | Jean Pierre Polnareff  | 24  | Male   |Braised Goose Web with Vermicelli              |
+| 8  | Trish Una              | 15  | Female |Deep-fried Hiroshima Oysters                   |
+| 9  | Donatello Versus       | 25  | Male   |Poached Tofu with Dried Shrimps                |
+| 10 | Ken Oyanagi            | 11  | Male   |Scrambled Egg White with Milk                  |
+| 11 | Enrico Pucci           | 39  | Male   |Braised Goose Web with Vermicelli              |
+| 12 | Toshikazu Hazamada     | 18  | Male   |Braised Goose Web with Vermicelli              |

@@ -1,12 +1,13 @@
-| 1  | Jolyne Cujoh           | 19  | Female |Deep-fried Hiroshima Oysters                   |
-| 2  | Risotto Nero           | 28  | Male   |Poached Tofu with Dried Shrimps                |
-| 3  | Joseph Joestar         | 18  | Male   |Braised Goose Web with Vermicelli              |
-| 4  | Cioccolata             | 34  | Male   |Poached Tofu with Dried Shrimps                |
-| 5  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 6  | Leone Abbacchio        | 21  | Male   |Deep-fried Hiroshima Oysters                   |
-| 7  | Noriaki Kakyoin        | 17  | Male   |Deep-fried Hiroshima Oysters                   |
-| 8  | Toshikazu Hazamada     | 18  | Male   |Braised Chicken in Black Bean Sauce            |
-| 9  | Enrico Pucci           | 39  | Male   |Braised Goose Web with Vermicelli              |
-| 10 | Koichi Hirose          | 15  | Male   |Braised Goose Web with Vermicelli              |
-| 11 | Rikiel                 | 24  | Male   |Braised Goose Web with Vermicelli              |
-| 12 | Aya Tsuji              | -1  | Female |Braised Chicken in Black Bean Sauce            |
+| 1  | Jolyne Cujoh           | 19  | Female |Braised Chicken in Black Bean Sauce            |
+| 2  | Emporio Alnino         | 11  | Male   |Deep-fried Hiroshima Oysters                   |
+| 3  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 4  | Carne                  | -1  | Male   |Poached Tofu with Dried Shrimps                |
+| 5  | Lisa Lisa              | 50  | Female |Poached Tofu with Dried Shrimps                |
+| 6  | Toyohiro Kanedaichi    | -1  | Male   |Scrambled Egg White with Milk                  |
+| 7  | Tomoko Higashikata     | 37  | Female |Braised Chicken in Black Bean Sauce            |
+| 8  | Terunosuke Miyamoto    | -1  | Male   |Poached Tofu with Dried Shrimps                |
+| 9  | Muhammad Avdol         | 29  | Male   |Poached Tofu with Dried Shrimps                |
+| 10 | Masazo Kinoto          | 29  | Male   |Braised Goose Web with Vermicelli              |
+| 11 | Enya the Hag           | -1  | Female |Deep-fried Hiroshima Oysters                   |
+| 12 | Keicho Nijimura        | 18  | Male   |Braised Chicken in Black Bean Sauce            |
+| 13 | Akira Otoishi          | 19  | Male   |Poached Tofu with Dried Shrimps                |
