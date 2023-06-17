@@ -256,43 +256,7 @@ public abstract class JOJOLandsRestaurant {
          System.out.println("There is no order on that day");
      }
         
-    }
-    
-    //milagro man map. will return hashmap
-    public HashMap<String,Double> milagroManMap(String restaurant_name){
-        
-        System.out.println("Milagro Man mode");
-        
-        //for hashmap
-        HashMap<String, Double> restaurantPrice= chooseHashMap(restaurant_name);
-        Scanner sc= new Scanner(System.in);
-        
-        
-        //modify food
-        String foodName;
-        double newPrice;
-        
-        //DAY
-        int startDay, endDay;
-        
-        
-        System.out.print("Enter food name: ");
-        foodName= sc.nextLine();
-        
-        System.out.print("Enter new price: $");
-        newPrice= sc.nextDouble();
-        
-        System.out.print("Enter Start Day: ");
-        startDay= sc.nextInt();
-        
-        System.out.print("Enter End Day: ");
-        endDay= sc.nextInt();
-        
-        //modify price
-        restaurantPrice.put(foodName, newPrice);
-        
-        return restaurantPrice;
-    }
+    } //
     
     //total and average sales
     public void viewTotalSales(String restaurant_name){
@@ -1027,6 +991,43 @@ public abstract class JOJOLandsRestaurant {
     //===================================================
     //MIlagro zone! it is not Dio!!!!
 
+    //milagro man map. will return hashmap
+    public HashMap<String,Double> milagroManMap(String restaurant_name){
+        
+        System.out.println("Milagro Man mode");
+        
+        //for hashmap
+        HashMap<String, Double> restaurantPrice= chooseHashMap(restaurant_name);
+        Scanner sc= new Scanner(System.in);
+        
+        
+        //modify food
+        String foodName;
+        double newPrice;
+        
+        //DAY
+        int startDay, endDay;
+        
+        
+        System.out.print("Enter food name: ");
+        foodName= sc.nextLine();
+        
+        System.out.print("Enter new price: $");
+        newPrice= sc.nextDouble();
+        
+        System.out.print("Enter Start Day: ");
+        startDay= sc.nextInt();
+        
+        System.out.print("Enter End Day: ");
+        endDay= sc.nextInt();
+        
+        //modify price
+        restaurantPrice.put(foodName, newPrice);
+        
+        return restaurantPrice;
+    }
+    
+    
     //milagroMan mode 13/6. including modify and view sales milagro
     public void MilagroMode(String restaurant_name,int currentDay){
         
