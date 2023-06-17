@@ -1,10 +1,19 @@
 | 1  | Giorno Giovanna        | 15  | Male   |Lamb Chops with Apple Sauce                    |
-| 2  | Tomoko Higashikata     | 37  | Female |Caprese Salad                                  |
-| 3  | Akira Otoishi          | 19  | Male   |Creme caramel                                  |
-| 4  | Keicho Nijimura        | 18  | Male   |Spaghetti alla Puttanesca                      |
-| 5  | Terunosuke Miyamoto    | -1  | Male   |Spaghetti alla Puttanesca                      |
-| 6  | Yoshihiro Kira         | -1  | Male   |Caprese Salad                                  |
-| 7  | Cioccolata             | 34  | Male   |Spaghetti alla Puttanesca                      |
-| 8  | Prosciutto             | -1  | Male   |Caprese Salad                                  |
-| 9  | Squalo                 | -1  | Male   |Creme caramel                                  |
-| 10 | Weather Report         | 39  | Male   |Spaghetti alla Puttanesca                      |
+| 2  | Lisa Lisa              | 50  | Female |Creme caramel                                  |
+| 3  | Tomoko Higashikata     | 37  | Female |Lamb Chops with Apple Sauce                    |
+| 4  | DIO                    | 121 | Male   |Lamb Chops with Apple Sauce                    |
+| 5  | Enrico Pucci           | 39  | Male   |Creme caramel                                  |
+| 6  | Enya the Hag           | -1  | Female |Caprese Salad                                  |
+| 7  | Rikiel                 | 24  | Male   |Creme caramel                                  |
+| 8  | Hayato Kawajiri        | 11  | Male   |Creme caramel                                  |
+| 9  | Mikitaka Hazekura      | 216 | Male   |Lamb Chops with Apple Sauce                    |
+| 10 | Okuyasu Nijimura       | 15  | Male   |Lamb Chops with Apple Sauce                    |
+| 11 | Reimi Sugimoto         | 16  | Female |Creme caramel                                  |
+| 12 | Yukako Yamagishi       | -1  | Female |Creme caramel                                  |
+| 13 | Yoshikage Kira         | 33  | Male   |Lamb Chops with Apple Sauce                    |
+| 14 | Carne                  | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 15 | Illuso                 | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 16 | Melone                 | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 17 | Sale                   | -1  | Male   |Creme caramel                                  |
+| 18 | Secco                  | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 19 | Narciso Anasui         | 25  | Male   |Caprese Salad                                  |

@@ -16,6 +16,10 @@ public abstract class JOJOLandsRestaurant {
     HashMap<String, Double> libeccio_Price = new HashMap<>();
     HashMap<String, Double> cafeDeuxMagots_Price = new HashMap<>();
     
+    //milagroMan day
+    int startDay_Milagro;
+    int endDay_Milagro;
+    
     public JOJOLandsRestaurant(){
         waitingList=new ArrayList<>();
         orderProcessingList=new ArrayList<>();
@@ -1005,10 +1009,6 @@ public abstract class JOJOLandsRestaurant {
         String foodName;
         double newPrice;
         
-        //DAY
-        int startDay, endDay;
-        
-        
         System.out.print("Enter food name: ");
         foodName= sc.nextLine();
         
@@ -1016,10 +1016,10 @@ public abstract class JOJOLandsRestaurant {
         newPrice= sc.nextDouble();
         
         System.out.print("Enter Start Day: ");
-        startDay= sc.nextInt();
+        startDay_Milagro= sc.nextInt();
         
         System.out.print("Enter End Day: ");
-        endDay= sc.nextInt();
+        endDay_Milagro= sc.nextInt();
         
         //modify price
         restaurantPrice.put(foodName, newPrice);
@@ -1149,7 +1149,7 @@ public abstract class JOJOLandsRestaurant {
          
          
          //display food, quantity and price
-         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("\nRestaurant: "+restaurant_name+" (Milagro Man Mode)");
          System.out.println("Day "+userInputDay+" Sales");
          System.out.println("+-----------------------------------------------+-------------------+");
          System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
@@ -1285,7 +1285,7 @@ public abstract class JOJOLandsRestaurant {
          
          
          //display food, quantity and price
-         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("\nRestaurant: "+restaurant_name+" (Milagro Man Mode)");
          System.out.printf("Total and Average Sales (Day %d - %d)\n", startDay, endDay);
          System.out.println("+-----------------------------------------------+-------------------+");
          System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
@@ -1469,7 +1469,7 @@ public abstract class JOJOLandsRestaurant {
          
          
          //display food, quantity and price
-         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("\nRestaurant: "+restaurant_name+" (Milagro Man Mode)");
          System.out.println("Day "+day_minimumSales+" Sales");
          System.out.println("+-----------------------------------------------+-------------------+");
          System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
@@ -1529,7 +1529,7 @@ public abstract class JOJOLandsRestaurant {
         int startDay=0 , endDay=0;
         
         System.out.println();
-        System.out.println(restaurant_name+" Minimum Sales");
+        System.out.println(restaurant_name+" Maximum Sales"+" (Milagro Man Mode)");
         
         System.out.print("Enter Start Day: ");
         startDay= sc.nextInt();
@@ -1614,7 +1614,7 @@ public abstract class JOJOLandsRestaurant {
                 }
             }
             
-            System.out.printf("Minimum Sales is: $%.2f on day %d",maximum_sales, day_maximumSales);
+            System.out.printf("Maximum Sales is: $%.2f on day %d",maximum_sales, day_maximumSales);
            
             
             try{
@@ -1652,7 +1652,7 @@ public abstract class JOJOLandsRestaurant {
          
          
          //display food, quantity and price
-         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("\nRestaurant: "+restaurant_name+" (Milagro Man Mode)");
          System.out.println("Day "+day_maximumSales+" Sales");
          System.out.println("+-----------------------------------------------+-------------------+");
          System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
@@ -1716,7 +1716,7 @@ public abstract class JOJOLandsRestaurant {
         int k;
         
         System.out.println();
-        System.out.println(restaurant_name+" K-Highest Sales");
+        System.out.println(restaurant_name+" K-Highest Sales"+" (Milagro Man Mode)");
         
         System.out.print("Enter Start Day: ");
         startDay= sc.nextInt();
@@ -1869,7 +1869,7 @@ public abstract class JOJOLandsRestaurant {
          
          
          //display food, quantity and price
-         System.out.println("\nRestaurant: "+restaurant_name);
+         System.out.println("\nRestaurant: "+restaurant_name+" (Milagro Man Mode)");
          System.out.println("Day "+day_with_highestSales[i]+" Sales");
          System.out.println("+-----------------------------------------------+-------------------+");
          System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
@@ -1912,22 +1912,7 @@ public abstract class JOJOLandsRestaurant {
     }// end of viewKHighest milagro
     
     
-    
-    
-    
-    
-    
-    
-    
-}
-
-
-    
-    
-    
-    
-    
   
-    
+}
 
 

@@ -1,12 +1,10 @@
-| 1  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
-| 2  | Lisa Lisa              | 50  | Female |Melone                                         |
-| 3  | Iggy                   | -1  | Male   |Ghiaccio                                       |
-| 4  | Noriaki Kakyoin        | 17  | Male   |Zucchero and Sale                              |
-| 5  | Ungalo                 | 24  | Male   |Ghiaccio                                       |
-| 6  | Shigekiyo Yangu        | 14  | Male   |Formaggio                                      |
-| 7  | Yoshikage Kira         | 33  | Male   |Melone                                         |
-| 8  | Trish Una              | 15  | Female |Prosciutto and Pesci                           |
-| 9  | Pesci                  | -1  | Male   |Formaggio                                      |
-| 10 | Tizzano                | -1  | Male   |Ghiaccio                                       |
-| 11 | Emporio Alnino         | 11  | Male   |Risotto                                        |
-| 12 | Foo Fighters           | 22  | Female |Melone                                         |
+| 1  | Joseph Joestar         | 18  | Male   |Formaggio                                      |
+| 2  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
+| 3  | DIO                    | 121 | Male   |Ghiaccio                                       |
+| 4  | Shigekiyo Yangu        | 14  | Male   |Risotto                                        |
+| 5  | Akira Otoishi          | 19  | Male   |Zucchero and Sale                              |
+| 6  | Anjuro Katagiri        | 34  | Male   |Prosciutto and Pesci                           |
+| 7  | Cioccolata             | 34  | Male   |Ghiaccio                                       |
+| 8  | Risotto Nero           | 28  | Male   |Risotto                                        |
+| 9  | Secco                  | -1  | Male   |Formaggio                                      |
+| 10 | Squalo                 | -1  | Male   |Zucchero and Sale                              |

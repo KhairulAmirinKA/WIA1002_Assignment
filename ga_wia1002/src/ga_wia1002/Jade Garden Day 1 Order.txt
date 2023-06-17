@@ -1,14 +1,13 @@
-| 1  | Jolyne Cujoh           | 19  | Female |Poached Tofu with Dried Shrimps                |
-| 2  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 3  | Jean Pierre Polnareff  | 24  | Male   |Braised Goose Web with Vermicelli              |
-| 4  | DIO                    | 121 | Male   |Poached Tofu with Dried Shrimps                |
-| 5  | Donatello Versus       | 25  | Male   |Braised Chicken in Black Bean Sauce            |
-| 6  | Enrico Pucci           | 39  | Male   |Deep-fried Hiroshima Oysters                   |
-| 7  | Toshikazu Hazamada     | 18  | Male   |Braised Chicken in Black Bean Sauce            |
-| 8  | Yuya Fungami           | -1  | Male   |Braised Goose Web with Vermicelli              |
-| 9  | Masazo Kinoto          | 29  | Male   |Deep-fried Hiroshima Oysters                   |
-| 10 | Yoshihiro Kira         | -1  | Male   |Braised Goose Web with Vermicelli              |
-| 11 | Guido Mista            | 18  | Male   |Braised Chicken in Black Bean Sauce            |
-| 12 | Leone Abbacchio        | 21  | Male   |Braised Goose Web with Vermicelli              |
-| 13 | Cioccolata             | 34  | Male   |Braised Chicken in Black Bean Sauce            |
-| 14 | Formaggio              | -1  | Male   |Deep-fried Hiroshima Oysters                   |
+| 1  | George Joestar II      | 32  | Male   |Scrambled Egg White with Milk                  |
+| 2  | Jolyne Cujoh           | 19  | Female |Deep-fried Hiroshima Oysters                   |
+| 3  | Jonathan Joestar       | 20  | Male   |Braised Goose Web with Vermicelli              |
+| 4  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 5  | Jean Pierre Polnareff  | 24  | Male   |Braised Chicken in Black Bean Sauce            |
+| 6  | Rikiel                 | 24  | Male   |Scrambled Egg White with Milk                  |
+| 7  | Mikitaka Hazekura      | 216 | Male   |Braised Chicken in Black Bean Sauce            |
+| 8  | Toshikazu Hazamada     | 18  | Male   |Scrambled Egg White with Milk                  |
+| 9  | Ken Oyanagi            | 11  | Male   |Braised Chicken in Black Bean Sauce            |
+| 10 | Toyohiro Kanedaichi    | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 11 | Narancia Ghirga        | 17  | Male   |Scrambled Egg White with Milk                  |
+| 12 | Mario Zucchero         | 24  | Male   |Poached Tofu with Dried Shrimps                |
+| 13 | Weather Report         | 39  | Male   |Poached Tofu with Dried Shrimps                |

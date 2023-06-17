@@ -1,17 +1,21 @@
-| 1  | Jolyne Cujoh           | 19  | Female |Caprese Salad                                  |
-| 2  | Jonathan Joestar       | 20  | Male   |Caprese Salad                                  |
-| 3  | Josuke Higashikata     | 16  | Male   |DIO’s Bread                                    |
-| 4  | Jean Pierre Polnareff  | 24  | Male   |Caprese Salad                                  |
-| 5  | Donatello Versus       | 25  | Male   |Caprese Salad                                  |
-| 6  | Enrico Pucci           | 39  | Male   |Caprese Salad                                  |
-| 7  | Rikiel                 | 24  | Male   |Caprese Salad                                  |
-| 8  | Ungalo                 | 24  | Male   |Spaghetti alla Puttanesca                      |
-| 9  | Hayato Kawajiri        | 11  | Male   |Caprese Salad                                  |
-| 10 | Mikitaka Hazekura      | 216 | Male   |Lamb Chops with Apple Sauce                    |
-| 11 | Rohan Kishibe          | 20  | Male   |Creme caramel                                  |
-| 12 | Toshikazu Hazamada     | 18  | Male   |Spaghetti alla Puttanesca                      |
-| 13 | Ken Oyanagi            | 11  | Male   |Creme caramel                                  |
-| 14 | Yoshihiro Kira         | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 15 | Secco                  | -1  | Male   |Caprese Salad                                  |
-| 16 | Squalo                 | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 17 | Foo Fighters           | 22  | Female |Spaghetti alla Puttanesca                      |
+| 1  | Holy Kujo              | 45  | Female |Lamb Chops with Apple Sauce                    |
+| 2  | Jolyne Cujoh           | 19  | Female |Creme caramel                                  |
+| 3  | Josuke Higashikata     | 16  | Male   |Creme caramel                                  |
+| 4  | Iggy                   | -1  | Male   |Caprese Salad                                  |
+| 5  | Enya the Hag           | -1  | Female |Creme caramel                                  |
+| 6  | Rikiel                 | 24  | Male   |Creme caramel                                  |
+| 7  | Hayato Kawajiri        | 11  | Male   |Spaghetti alla Puttanesca                      |
+| 8  | Shigekiyo Yangu        | 14  | Male   |Creme caramel                                  |
+| 9  | Tamami Kobayashi       | 20  | Male   |Lamb Chops with Apple Sauce                    |
+| 10 | Tonio Trussardi        | 29  | Male   |Caprese Salad                                  |
+| 11 | Yukako Yamagishi       | -1  | Female |Creme caramel                                  |
+| 12 | Terunosuke Miyamoto    | -1  | Male   |Creme caramel                                  |
+| 13 | Yoshihiro Kira         | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 14 | Narancia Ghirga        | 17  | Male   |Caprese Salad                                  |
+| 15 | Pannacotta Fugo        | 16  | Male   |Caprese Salad                                  |
+| 16 | Melone                 | -1  | Male   |Creme caramel                                  |
+| 17 | Prosciutto             | -1  | Male   |Creme caramel                                  |
+| 18 | Risotto Nero           | 28  | Male   |Caprese Salad                                  |
+| 19 | Secco                  | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 20 | Squalo                 | -1  | Male   |Creme caramel                                  |
+| 21 | Tizzano                | -1  | Male   |Creme caramel                                  |

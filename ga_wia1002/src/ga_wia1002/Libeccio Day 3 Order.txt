@@ -1,14 +1,13 @@
-| 1  | George Joestar II      | 32  | Male   |Formaggio                                      |
-| 2  | Holy Kujo              | 45  | Female |Prosciutto and Pesci                           |
-| 3  | Lisa Lisa              | 50  | Female |Ghiaccio                                       |
-| 4  | Iggy                   | -1  | Male   |Zucchero and Sale                              |
-| 5  | Vanilla Ice            | -1  | Male   |Formaggio                                      |
-| 6  | Tonio Trussardi        | 29  | Male   |Ghiaccio                                       |
-| 7  | Yuya Fungami           | -1  | Male   |Prosciutto and Pesci                           |
-| 8  | Anjuro Katagiri        | 34  | Male   |Prosciutto and Pesci                           |
-| 9  | Bruno Bucciarati       | 20  | Male   |Formaggio                                      |
-| 10 | Pannacotta Fugo        | 16  | Male   |Melone                                         |
-| 11 | Trish Una              | 15  | Female |Risotto                                        |
-| 12 | Pesci                  | -1  | Male   |Ghiaccio                                       |
-| 13 | Ermes Costello         | 21  | Female |Ghiaccio                                       |
-| 14 | Weather Report         | 39  | Male   |Prosciutto and Pesci                           |
+| 1  | Lisa Lisa              | 50  | Female |Zucchero and Sale                              |
+| 2  | Suzi Q.                | -1  | Female |Ghiaccio                                       |
+| 3  | Muhammad Avdol         | 29  | Male   |Formaggio                                      |
+| 4  | DIO                    | 121 | Male   |Zucchero and Sale                              |
+| 5  | Ungalo                 | 24  | Male   |Prosciutto and Pesci                           |
+| 6  | Vanilla Ice            | -1  | Male   |Prosciutto and Pesci                           |
+| 7  | Ken Oyanagi            | 11  | Male   |Risotto                                        |
+| 8  | Toyohiro Kanedaichi    | -1  | Male   |Risotto                                        |
+| 9  | Guido Mista            | 18  | Male   |Prosciutto and Pesci                           |
+| 10 | Leone Abbacchio        | 21  | Male   |Ghiaccio                                       |
+| 11 | Diavolo                | 33  | Male   |Prosciutto and Pesci                           |
+| 12 | Emporio Alnino         | 11  | Male   |Prosciutto and Pesci                           |
+| 13 | Weather Report         | 39  | Male   |Risotto                                        |

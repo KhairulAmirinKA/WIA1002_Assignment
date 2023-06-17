@@ -1,18 +1,21 @@
-| 1  | George Joestar II      | 32  | Male   |Spaghetti alla Puttanesca                      |
-| 2  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
-| 3  | Jonathan Joestar       | 20  | Male   |Caprese Salad                                  |
-| 4  | Suzi Q.                | -1  | Female |Spaghetti alla Puttanesca                      |
-| 5  | Vanilla Ice            | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 6  | Aya Tsuji              | -1  | Female |Creme caramel                                  |
-| 7  | Mikitaka Hazekura      | 216 | Male   |Caprese Salad                                  |
-| 8  | Anjuro Katagiri        | 34  | Male   |Creme caramel                                  |
-| 9  | Ken Oyanagi            | 11  | Male   |Lamb Chops with Apple Sauce                    |
-| 10 | Bruno Bucciarati       | 20  | Male   |Lamb Chops with Apple Sauce                    |
-| 11 | Narancia Ghirga        | 17  | Male   |Lamb Chops with Apple Sauce                    |
-| 12 | Ghiaccio               | -1  | Male   |Creme caramel                                  |
-| 13 | Melone                 | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 14 | Secco                  | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 15 | Squalo                 | -1  | Male   |Creme caramel                                  |
-| 16 | Ermes Costello         | 21  | Female |Spaghetti alla Puttanesca                      |
-| 17 | Narciso Anasui         | 25  | Male   |Lamb Chops with Apple Sauce                    |
-| 18 | Weather Report         | 39  | Male   |Caprese Salad                                  |
+| 1  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
+| 2  | Donatello Versus       | 25  | Male   |Spaghetti alla Puttanesca                      |
+| 3  | Enrico Pucci           | 39  | Male   |Spaghetti alla Puttanesca                      |
+| 4  | Koichi Hirose          | 15  | Male   |Spaghetti alla Puttanesca                      |
+| 5  | Reimi Sugimoto         | 16  | Female |Caprese Salad                                  |
+| 6  | Tamami Kobayashi       | 20  | Male   |Caprese Salad                                  |
+| 7  | Yuya Fungami           | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 8  | Keicho Nijimura        | 18  | Male   |Caprese Salad                                  |
+| 9  | Masazo Kinoto          | 29  | Male   |Spaghetti alla Puttanesca                      |
+| 10 | Bruno Bucciarati       | 20  | Male   |Creme caramel                                  |
+| 11 | Leone Abbacchio        | 21  | Male   |Caprese Salad                                  |
+| 12 | Pannacotta Fugo        | 16  | Male   |Creme caramel                                  |
+| 13 | Trish Una              | 15  | Female |Creme caramel                                  |
+| 14 | Formaggio              | -1  | Male   |Caprese Salad                                  |
+| 15 | Ghiaccio               | -1  | Male   |Caprese Salad                                  |
+| 16 | Pesci                  | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 17 | Prosciutto             | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 18 | Sale                   | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 19 | Tizzano                | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 20 | Ermes Costello         | 21  | Female |Caprese Salad                                  |
+| 21 | Narciso Anasui         | 25  | Male   |Caprese Salad                                  |

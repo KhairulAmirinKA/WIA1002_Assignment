@@ -1,20 +1,13 @@
-| 1  | George Joestar II      | 32  | Male   |Abbacchio’s Tea                                |
-| 2  | Donatello Versus       | 25  | Male   |DIO’s Bread                                    |
-| 3  | Enya the Hag           | -1  | Female |DIO’s Bread                                    |
-| 4  | Rikiel                 | 24  | Male   |Kakyoin’s Cherry                               |
-| 5  | Vanilla Ice            | -1  | Male   |Kakyoin’s Porridge                             |
-| 6  | Aya Tsuji              | -1  | Female |Joseph’s Tequila                               |
-| 7  | Koichi Hirose          | 15  | Male   |Giorno’s Donuts                                |
-| 8  | Rohan Kishibe          | 20  | Male   |Kakyoin’s Porridge                             |
-| 9  | Yuya Fungami           | -1  | Male   |Abbacchio’s Tea                                |
-| 10 | Anjuro Katagiri        | 34  | Male   |Giorno’s Donuts                                |
-| 11 | Masazo Kinoto          | 29  | Male   |DIO’s Bread                                    |
-| 12 | Guido Mista            | 18  | Male   |Abbacchio’s Tea                                |
-| 13 | Leone Abbacchio        | 21  | Male   |Kakyoin’s Cherry                               |
-| 14 | Trish Una              | 15  | Female |Giorno’s Donuts                                |
-| 15 | Carne                  | -1  | Male   |DIO’s Bread                                    |
-| 16 | Ghiaccio               | -1  | Male   |DIO’s Bread                                    |
-| 17 | Mario Zucchero         | 24  | Male   |Giorno’s Donuts                                |
-| 18 | Pesci                  | -1  | Male   |Giorno’s Donuts                                |
-| 19 | Sale                   | -1  | Male   |Kakyoin’s Porridge                             |
-| 20 | Foo Fighters           | 22  | Female |Giorno’s Donuts                                |
+| 1  | Erina Pendleton        | 70  | Female |Kakyoin’s Cherry                               |
+| 2  | George Joestar II      | 32  | Male   |Kakyoin’s Cherry                               |
+| 3  | Aya Tsuji              | -1  | Female |Joseph’s Tequila                               |
+| 4  | Koichi Hirose          | 15  | Male   |Abbacchio’s Tea                                |
+| 5  | Akira Otoishi          | 19  | Male   |Kakyoin’s Porridge                             |
+| 6  | Masazo Kinoto          | 29  | Male   |Kakyoin’s Porridge                             |
+| 7  | Terunosuke Miyamoto    | -1  | Male   |DIO’s Bread                                    |
+| 8  | Yoshihiro Kira         | -1  | Male   |DIO’s Bread                                    |
+| 9  | Narancia Ghirga        | 17  | Male   |Kakyoin’s Cherry                               |
+| 10 | Diavolo                | 33  | Male   |Kakyoin’s Porridge                             |
+| 11 | Mario Zucchero         | 24  | Male   |Giorno’s Donuts                                |
+| 12 | Pesci                  | -1  | Male   |Giorno’s Donuts                                |
+| 13 | Emporio Alnino         | 11  | Male   |Kakyoin’s Porridge                             |

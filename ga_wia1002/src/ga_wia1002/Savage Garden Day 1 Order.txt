@@ -1,11 +1,10 @@
-| 1  | Erina Pendleton        | 70  | Female |DIO’s Bread                                    |
-| 2  | Holy Kujo              | 45  | Female |Giorno’s Donuts                                |
-| 3  | Tomoko Higashikata     | 37  | Female |Joseph’s Tequila                               |
-| 4  | Muhammad Avdol         | 29  | Male   |DIO’s Bread                                    |
-| 5  | Enya the Hag           | -1  | Female |DIO’s Bread                                    |
-| 6  | Tonio Trussardi        | 29  | Male   |DIO’s Bread                                    |
-| 7  | Terunosuke Miyamoto    | -1  | Male   |Kakyoin’s Cherry                               |
-| 8  | Diavolo                | 33  | Male   |DIO’s Bread                                    |
-| 9  | Illuso                 | -1  | Male   |Kakyoin’s Porridge                             |
-| 10 | Mario Zucchero         | 24  | Male   |Abbacchio’s Tea                                |
-| 11 | Risotto Nero           | 28  | Male   |Giorno’s Donuts                                |
+| 1  | Lisa Lisa              | 50  | Female |Kakyoin’s Porridge                             |
+| 2  | Iggy                   | -1  | Male   |Giorno’s Donuts                                |
+| 3  | Noriaki Kakyoin        | 17  | Male   |DIO’s Bread                                    |
+| 4  | Aya Tsuji              | -1  | Female |Abbacchio’s Tea                                |
+| 5  | Rohan Kishibe          | 20  | Male   |Kakyoin’s Porridge                             |
+| 6  | Yukako Yamagishi       | -1  | Female |Abbacchio’s Tea                                |
+| 7  | Yoshikage Kira         | 33  | Male   |DIO’s Bread                                    |
+| 8  | Diavolo                | 33  | Male   |Giorno’s Donuts                                |
+| 9  | Illuso                 | -1  | Male   |DIO’s Bread                                    |
+| 10 | Foo Fighters           | 22  | Female |Joseph’s Tequila                               |
