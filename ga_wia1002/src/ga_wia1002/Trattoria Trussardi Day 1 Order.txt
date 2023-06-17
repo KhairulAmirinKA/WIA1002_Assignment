@@ -1,21 +1,14 @@
 | 1  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
-| 2  | Donatello Versus       | 25  | Male   |Spaghetti alla Puttanesca                      |
-| 3  | Enrico Pucci           | 39  | Male   |Spaghetti alla Puttanesca                      |
-| 4  | Koichi Hirose          | 15  | Male   |Spaghetti alla Puttanesca                      |
-| 5  | Reimi Sugimoto         | 16  | Female |Caprese Salad                                  |
-| 6  | Tamami Kobayashi       | 20  | Male   |Caprese Salad                                  |
-| 7  | Yuya Fungami           | -1  | Male   |Spaghetti alla Puttanesca                      |
-| 8  | Keicho Nijimura        | 18  | Male   |Caprese Salad                                  |
-| 9  | Masazo Kinoto          | 29  | Male   |Spaghetti alla Puttanesca                      |
-| 10 | Bruno Bucciarati       | 20  | Male   |Creme caramel                                  |
-| 11 | Leone Abbacchio        | 21  | Male   |Caprese Salad                                  |
-| 12 | Pannacotta Fugo        | 16  | Male   |Creme caramel                                  |
-| 13 | Trish Una              | 15  | Female |Creme caramel                                  |
-| 14 | Formaggio              | -1  | Male   |Caprese Salad                                  |
-| 15 | Ghiaccio               | -1  | Male   |Caprese Salad                                  |
-| 16 | Pesci                  | -1  | Male   |Spaghetti alla Puttanesca                      |
-| 17 | Prosciutto             | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 18 | Sale                   | -1  | Male   |Spaghetti alla Puttanesca                      |
-| 19 | Tizzano                | -1  | Male   |Spaghetti alla Puttanesca                      |
-| 20 | Ermes Costello         | 21  | Female |Caprese Salad                                  |
-| 21 | Narciso Anasui         | 25  | Male   |Caprese Salad                                  |
+| 2  | Jonathan Joestar       | 20  | Male   |Creme caramel                                  |
+| 3  | Iggy                   | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 4  | Jean Pierre Polnareff  | 24  | Male   |Lamb Chops with Apple Sauce                    |
+| 5  | DIO                    | 121 | Male   |Caprese Salad                                  |
+| 6  | Aya Tsuji              | -1  | Female |Lamb Chops with Apple Sauce                    |
+| 7  | Tamami Kobayashi       | 20  | Male   |Creme caramel                                  |
+| 8  | Yoshihiro Kira         | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 9  | Leone Abbacchio        | 21  | Male   |Caprese Salad                                  |
+| 10 | Melone                 | -1  | Male   |Caprese Salad                                  |
+| 11 | Prosciutto             | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 12 | Secco                  | -1  | Male   |Creme caramel                                  |
+| 13 | Foo Fighters           | 22  | Female |Caprese Salad                                  |
+| 14 | Weather Report         | 39  | Male   |Lamb Chops with Apple Sauce                    |

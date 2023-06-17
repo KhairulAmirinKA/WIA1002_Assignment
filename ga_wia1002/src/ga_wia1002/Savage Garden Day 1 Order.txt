@@ -1,10 +1,12 @@
-| 1  | Lisa Lisa              | 50  | Female |Kakyoin’s Porridge                             |
-| 2  | Iggy                   | -1  | Male   |Giorno’s Donuts                                |
-| 3  | Noriaki Kakyoin        | 17  | Male   |DIO’s Bread                                    |
-| 4  | Aya Tsuji              | -1  | Female |Abbacchio’s Tea                                |
-| 5  | Rohan Kishibe          | 20  | Male   |Kakyoin’s Porridge                             |
-| 6  | Yukako Yamagishi       | -1  | Female |Abbacchio’s Tea                                |
-| 7  | Yoshikage Kira         | 33  | Male   |DIO’s Bread                                    |
-| 8  | Diavolo                | 33  | Male   |Giorno’s Donuts                                |
-| 9  | Illuso                 | -1  | Male   |DIO’s Bread                                    |
-| 10 | Foo Fighters           | 22  | Female |Joseph’s Tequila                               |
+| 1  | Holy Kujo              | 45  | Female |Abbacchio’s Tea                                |
+| 2  | Tomoko Higashikata     | 37  | Female |Kakyoin’s Porridge                             |
+| 3  | Muhammad Avdol         | 29  | Male   |DIO’s Bread                                    |
+| 4  | Enrico Pucci           | 39  | Male   |Joseph’s Tequila                               |
+| 5  | Vanilla Ice            | -1  | Male   |Joseph’s Tequila                               |
+| 6  | Koichi Hirose          | 15  | Male   |Giorno’s Donuts                                |
+| 7  | Yukako Yamagishi       | -1  | Female |Abbacchio’s Tea                                |
+| 8  | Masazo Kinoto          | 29  | Male   |Giorno’s Donuts                                |
+| 9  | Yoshikage Kira         | 33  | Male   |Giorno’s Donuts                                |
+| 10 | Trish Una              | 15  | Female |Giorno’s Donuts                                |
+| 11 | Cioccolata             | 34  | Male   |Kakyoin’s Cherry                               |
+| 12 | Tizzano                | -1  | Male   |DIO’s Bread                                    |

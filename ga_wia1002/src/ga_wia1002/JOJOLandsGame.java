@@ -185,7 +185,13 @@ public class JOJOLandsGame{
             System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
             printCurrentLocation();
         } else if (input.equals("3")) {
-            saveGame();
+            SaveLoad saveLoad = new SaveLoad();
+            saveLoad.addContentToSave(movementHistory);
+            saveLoad.addContentToSave(forwardHistory);
+            saveLoad.addContentToSave(currentLocation);
+            saveLoad.addContentToSave(day);
+            saveLoad.addContentToSave(map);
+            saveLoad.save();
             System.out.println("Game saved.");
         } else if (input.equals("4")) {
             System.out.println("Exiting JOJOLands game. Goodbye!");
