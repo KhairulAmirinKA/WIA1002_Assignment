@@ -1,14 +1,10 @@
-| 1  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
-| 2  | Lisa Lisa              | 50  | Female |Melone                                         |
-| 3  | Suzi Q.                | -1  | Female |Risotto                                        |
-| 4  | Jean Pierre Polnareff  | 24  | Male   |Prosciutto and Pesci                           |
-| 5  | DIO                    | 121 | Male   |Melone                                         |
-| 6  | Ungalo                 | 24  | Male   |Zucchero and Sale                              |
-| 7  | Shigekiyo Yangu        | 14  | Male   |Zucchero and Sale                              |
-| 8  | Yuya Fungami           | -1  | Male   |Ghiaccio                                       |
-| 9  | Masazo Kinoto          | 29  | Male   |Zucchero and Sale                              |
-| 10 | Yoshihiro Kira         | -1  | Male   |Prosciutto and Pesci                           |
-| 11 | Ghiaccio               | -1  | Male   |Risotto                                        |
-| 12 | Illuso                 | -1  | Male   |Formaggio                                      |
-| 13 | Secco                  | -1  | Male   |Risotto                                        |
-| 14 | Narciso Anasui         | 25  | Male   |Formaggio                                      |
+| 1  | George Joestar II      | 32  | Male   |Ghiaccio                                       |
+| 2  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
+| 3  | Lisa Lisa              | 50  | Female |Risotto                                        |
+| 4  | Enrico Pucci           | 39  | Male   |Melone                                         |
+| 5  | Rikiel                 | 24  | Male   |Risotto                                        |
+| 6  | Okuyasu Nijimura       | 15  | Male   |Formaggio                                      |
+| 7  | Terunosuke Miyamoto    | -1  | Male   |Risotto                                        |
+| 8  | Trish Una              | 15  | Female |Prosciutto and Pesci                           |
+| 9  | Pesci                  | -1  | Male   |Risotto                                        |
+| 10 | Emporio Alnino         | 11  | Male   |Risotto                                        |

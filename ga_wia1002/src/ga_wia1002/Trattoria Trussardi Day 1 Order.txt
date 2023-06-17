@@ -1,15 +1,15 @@
 | 1  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
-| 2  | Noriaki Kakyoin        | 17  | Male   |Caprese Salad                                  |
-| 3  | Rohan Kishibe          | 20  | Male   |Spaghetti alla Puttanesca                      |
-| 4  | Toshikazu Hazamada     | 18  | Male   |Caprese Salad                                  |
-| 5  | Yukako Yamagishi       | -1  | Female |Creme caramel                                  |
-| 6  | Akira Otoishi          | 19  | Male   |Caprese Salad                                  |
-| 7  | Anjuro Katagiri        | 34  | Male   |Spaghetti alla Puttanesca                      |
-| 8  | Keicho Nijimura        | 18  | Male   |Caprese Salad                                  |
-| 9  | Ken Oyanagi            | 11  | Male   |Caprese Salad                                  |
-| 10 | Mario Zucchero         | 24  | Male   |Caprese Salad                                  |
-| 11 | Pesci                  | -1  | Male   |Spaghetti alla Puttanesca                      |
-| 12 | Prosciutto             | -1  | Male   |Creme caramel                                  |
-| 13 | Sale                   | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 14 | Squalo                 | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 15 | Foo Fighters           | 22  | Female |Spaghetti alla Puttanesca                      |
+| 2  | Joseph Joestar         | 18  | Male   |Caprese Salad                                  |
+| 3  | Koichi Hirose          | 15  | Male   |Spaghetti alla Puttanesca                      |
+| 4  | Mikitaka Hazekura      | 216 | Male   |Caprese Salad                                  |
+| 5  | Reimi Sugimoto         | 16  | Female |Spaghetti alla Puttanesca                      |
+| 6  | Yuya Fungami           | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 7  | Masazo Kinoto          | 29  | Male   |Creme caramel                                  |
+| 8  | Toyohiro Kanedaichi    | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 9  | Narancia Ghirga        | 17  | Male   |Spaghetti alla Puttanesca                      |
+| 10 | Illuso                 | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 11 | Mario Zucchero         | 24  | Male   |Caprese Salad                                  |
+| 12 | Melone                 | -1  | Male   |Caprese Salad                                  |
+| 13 | Secco                  | -1  | Male   |Caprese Salad                                  |
+| 14 | Narciso Anasui         | 25  | Male   |Spaghetti alla Puttanesca                      |
+| 15 | Weather Report         | 39  | Male   |Caprese Salad                                  |

@@ -1,11 +1,18 @@
-| 1  | Jonathan Joestar       | 20  | Male   |White Asparagus                                |
-| 2  | Joseph Joestar         | 18  | Male   |Spring Organic Omelette                        |
-| 3  | Tomoko Higashikata     | 37  | Female |Truffle-flavoured Poultry Supreme              |
-| 4  | Enrico Pucci           | 39  | Male   |Spring Organic Omelette                        |
-| 5  | Rikiel                 | 24  | Male   |Truffle-flavoured Poultry Supreme              |
-| 6  | Aya Tsuji              | -1  | Female |Spring Organic Omelette                        |
-| 7  | Hayato Kawajiri        | 11  | Male   |Spring Lobster Salad                           |
-| 8  | Toyohiro Kanedaichi    | -1  | Male   |Truffle-flavoured Poultry Supreme              |
-| 9  | Guido Mista            | 18  | Male   |Truffle-flavoured Poultry Supreme              |
-| 10 | Narancia Ghirga        | 17  | Male   |Sampling Matured Cheese Platter                |
-| 11 | Diavolo                | 33  | Male   |Truffle-flavoured Poultry Supreme              |
+| 1  | Tomoko Higashikata     | 37  | Female |Sampling Matured Cheese Platter                |
+| 2  | Jean Pierre Polnareff  | 24  | Male   |White Asparagus                                |
+| 3  | Muhammad Avdol         | 29  | Male   |Truffle-flavoured Poultry Supreme              |
+| 4  | DIO                    | 121 | Male   |Sampling Matured Cheese Platter                |
+| 5  | Ungalo                 | 24  | Male   |Sampling Matured Cheese Platter                |
+| 6  | Vanilla Ice            | -1  | Male   |Spring Organic Omelette                        |
+| 7  | Rohan Kishibe          | 20  | Male   |Truffle-flavoured Poultry Supreme              |
+| 8  | Shigekiyo Yangu        | 14  | Male   |Sampling Matured Cheese Platter                |
+| 9  | Tonio Trussardi        | 29  | Male   |Sampling Matured Cheese Platter                |
+| 10 | Toshikazu Hazamada     | 18  | Male   |White Asparagus                                |
+| 11 | Yukako Yamagishi       | -1  | Female |Spring Organic Omelette                        |
+| 12 | Akira Otoishi          | 19  | Male   |Sampling Matured Cheese Platter                |
+| 13 | Ken Oyanagi            | 11  | Male   |Spring Organic Omelette                        |
+| 14 | Yoshikage Kira         | 33  | Male   |Sampling Matured Cheese Platter                |
+| 15 | Bruno Bucciarati       | 20  | Male   |Spring Organic Omelette                        |
+| 16 | Cioccolata             | 34  | Male   |Spring Organic Omelette                        |
+| 17 | Sale                   | -1  | Male   |Spring Organic Omelette                        |
+| 18 | Foo Fighters           | 22  | Female |Spring Organic Omelette                        |

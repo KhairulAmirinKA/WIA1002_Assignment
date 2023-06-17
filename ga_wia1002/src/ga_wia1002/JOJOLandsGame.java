@@ -107,7 +107,7 @@ public void loadMap() {
         mapType = "Default";
         map.initializeDefaultMap();
     }
-
+    currentLocation = map.getLocation("Town Hall"); //
     System.out.println("Map loaded successfully!");
 }
 
@@ -154,6 +154,7 @@ public void loadMap() {
 //        System.out.println("[2] Parallel Map");
 //        System.out.println("[3] Alternate Map");
      
+        currentLocation = map.getLocation("Town Hall"); //
         resInfo = new RestaurantInfo(currentDay);
         System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
         printCurrentLocation();
@@ -202,7 +203,7 @@ public void loadMap() {
 
         System.out.println("[1] Move To: ");
         int optionCounter = 1;
-        for (JojolandLocation neighbor : currentLocation.getPaths().keySet()) {
+        for (JojolandLocation neighbor : this.currentLocation.getPaths().keySet()) {
             System.out.print("\t[" + (char)('A' + optionCounter - 1) + "] " + neighbor.getName() + "\t\t");
             optionCounter++;
         }

@@ -1,15 +1,17 @@
-| 1  | Erina Pendleton        | 70  | Female |Kakyoin’s Cherry                               |
-| 2  | Iggy                   | -1  | Male   |Kakyoin’s Cherry                               |
-| 3  | Muhammad Avdol         | 29  | Male   |Joseph’s Tequila                               |
-| 4  | Mikitaka Hazekura      | 216 | Male   |Abbacchio’s Tea                                |
-| 5  | Tonio Trussardi        | 29  | Male   |Joseph’s Tequila                               |
-| 6  | Terunosuke Miyamoto    | -1  | Male   |Joseph’s Tequila                               |
-| 7  | Yoshikage Kira         | 33  | Male   |Kakyoin’s Cherry                               |
-| 8  | Bruno Bucciarati       | 20  | Male   |Kakyoin’s Porridge                             |
-| 9  | Leone Abbacchio        | 21  | Male   |Kakyoin’s Cherry                               |
-| 10 | Trish Una              | 15  | Female |Giorno’s Donuts                                |
-| 11 | Cioccolata             | 34  | Male   |Kakyoin’s Cherry                               |
-| 12 | Formaggio              | -1  | Male   |Giorno’s Donuts                                |
-| 13 | Melone                 | -1  | Male   |Joseph’s Tequila                               |
-| 14 | Risotto Nero           | 28  | Male   |Joseph’s Tequila                               |
-| 15 | Weather Report         | 39  | Male   |Giorno’s Donuts                                |
+| 1  | Holy Kujo              | 45  | Female |Abbacchio’s Tea                                |
+| 2  | Jonathan Joestar       | 20  | Male   |DIO’s Bread                                    |
+| 3  | Iggy                   | -1  | Male   |Giorno’s Donuts                                |
+| 4  | Noriaki Kakyoin        | 17  | Male   |Abbacchio’s Tea                                |
+| 5  | Donatello Versus       | 25  | Male   |DIO’s Bread                                    |
+| 6  | Enya the Hag           | -1  | Female |Kakyoin’s Porridge                             |
+| 7  | Aya Tsuji              | -1  | Female |Joseph’s Tequila                               |
+| 8  | Hayato Kawajiri        | 11  | Male   |Kakyoin’s Porridge                             |
+| 9  | Tamami Kobayashi       | 20  | Male   |Kakyoin’s Cherry                               |
+| 10 | Guido Mista            | 18  | Male   |Abbacchio’s Tea                                |
+| 11 | Pannacotta Fugo        | 16  | Male   |DIO’s Bread                                    |
+| 12 | Ghiaccio               | -1  | Male   |Abbacchio’s Tea                                |
+| 13 | Prosciutto             | -1  | Male   |Kakyoin’s Porridge                             |
+| 14 | Risotto Nero           | 28  | Male   |DIO’s Bread                                    |
+| 15 | Squalo                 | -1  | Male   |Giorno’s Donuts                                |
+| 16 | Tizzano                | -1  | Male   |Kakyoin’s Cherry                               |
+| 17 | Ermes Costello         | 21  | Female |Kakyoin’s Cherry                               |

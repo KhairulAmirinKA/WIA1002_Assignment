@@ -1,16 +1,11 @@
-| 1  | George Joestar II      | 32  | Male   |Poached Tofu with Dried Shrimps                |
-| 2  | Holy Kujo              | 45  | Female |Deep-fried Hiroshima Oysters                   |
-| 3  | Jolyne Cujoh           | 19  | Female |Braised Chicken in Black Bean Sauce            |
-| 4  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 5  | Donatello Versus       | 25  | Male   |Braised Chicken in Black Bean Sauce            |
-| 6  | Enya the Hag           | -1  | Female |Braised Chicken in Black Bean Sauce            |
-| 7  | Vanilla Ice            | -1  | Male   |Deep-fried Hiroshima Oysters                   |
-| 8  | Koichi Hirose          | 15  | Male   |Deep-fried Hiroshima Oysters                   |
-| 9  | Okuyasu Nijimura       | 15  | Male   |Deep-fried Hiroshima Oysters                   |
-| 10 | Reimi Sugimoto         | 16  | Female |Poached Tofu with Dried Shrimps                |
-| 11 | Tamami Kobayashi       | 20  | Male   |Deep-fried Hiroshima Oysters                   |
-| 12 | Pannacotta Fugo        | 16  | Male   |Scrambled Egg White with Milk                  |
-| 13 | Carne                  | -1  | Male   |Deep-fried Hiroshima Oysters                   |
-| 14 | Tizzano                | -1  | Male   |Scrambled Egg White with Milk                  |
-| 15 | Emporio Alnino         | 11  | Male   |Braised Goose Web with Vermicelli              |
-| 16 | Ermes Costello         | 21  | Female |Braised Chicken in Black Bean Sauce            |
+| 1  | Erina Pendleton        | 70  | Female |Scrambled Egg White with Milk                  |
+| 2  | Jolyne Cujoh           | 19  | Female |Scrambled Egg White with Milk                  |
+| 3  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 4  | Suzi Q.                | -1  | Female |Braised Chicken in Black Bean Sauce            |
+| 5  | Anjuro Katagiri        | 34  | Male   |Scrambled Egg White with Milk                  |
+| 6  | Keicho Nijimura        | 18  | Male   |Poached Tofu with Dried Shrimps                |
+| 7  | Yoshihiro Kira         | -1  | Male   |Scrambled Egg White with Milk                  |
+| 8  | Leone Abbacchio        | 21  | Male   |Deep-fried Hiroshima Oysters                   |
+| 9  | Carne                  | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 10 | Diavolo                | 33  | Male   |Braised Goose Web with Vermicelli              |
+| 11 | Formaggio              | -1  | Male   |Braised Goose Web with Vermicelli              |
