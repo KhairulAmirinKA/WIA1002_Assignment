@@ -1,0 +1,17 @@
+| 1  | Erina Pendleton        | 70  | Female |Joseph’s Tequila                               |
+| 2  | Joseph Joestar         | 18  | Male   |Giorno’s Donuts                                |
+| 3  | Tomoko Higashikata     | 37  | Female |DIO’s Bread                                    |
+| 4  | Muhammad Avdol         | 29  | Male   |Giorno’s Donuts                                |
+| 5  | DIO                    | 121 | Male   |Giorno’s Donuts                                |
+| 6  | Koichi Hirose          | 15  | Male   |DIO’s Bread                                    |
+| 7  | Reimi Sugimoto         | 16  | Female |Kakyoin’s Cherry                               |
+| 8  | Akira Otoishi          | 19  | Male   |Kakyoin’s Porridge                             |
+| 9  | Terunosuke Miyamoto    | -1  | Male   |Joseph’s Tequila                               |
+| 10 | Toyohiro Kanedaichi    | -1  | Male   |DIO’s Bread                                    |
+| 11 | Diavolo                | 33  | Male   |Kakyoin’s Porridge                             |
+| 12 | Illuso                 | -1  | Male   |Kakyoin’s Cherry                               |
+| 13 | Melone                 | -1  | Male   |Giorno’s Donuts                                |
+| 14 | Risotto Nero           | 28  | Male   |Kakyoin’s Cherry                               |
+| 15 | Sale                   | -1  | Male   |Giorno’s Donuts                                |
+| 16 | Tizzano                | -1  | Male   |Giorno’s Donuts                                |
+| 17 | Emporio Alnino         | 11  | Male   |Giorno’s Donuts                                |

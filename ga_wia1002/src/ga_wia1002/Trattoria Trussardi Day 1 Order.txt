@@ -1,16 +1,13 @@
-| 1  | Emporio Alnino         | 11  | Male   |Spaghetti alla Puttanesca                      |
-| 2  | Erina Pendleton        | 70  | Female |Caprese Salad                                  |
-| 3  | Weather Report         | 39  | Male   |Lamb Chops with Apple Sauce                    |
-| 4  | Reimi Sugimoto         | 16  | Female |Lamb Chops with Apple Sauce                    |
-| 5  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
-| 6  | Diavolo                | 33  | Male   |Lamb Chops with Apple Sauce                    |
-| 7  | Koichi Hirose          | 15  | Male   |Caprese Salad                                  |
-| 8  | Donatello Versus       | 25  | Male   |Caprese Salad                                  |
-| 9  | Pannacotta Fugo        | 16  | Male   |Creme caramel                                  |
-| 10 | Bruno Bucciarati       | 20  | Male   |Caprese Salad                                  |
-| 11 | Keicho Nijimura        | 18  | Male   |Spaghetti alla Puttanesca                      |
-| 12 | Guido Mista            | 18  | Male   |Caprese Salad                                  |
-| 13 | Suzi Q.                | -1  | Female |Creme caramel                                  |
-| 14 | Carne                  | -1  | Male   |Caprese Salad                                  |
-| 15 | Illuso                 | -1  | Male   |Lamb Chops with Apple Sauce                    |
-| 16 | Squalo                 | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 1  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
+| 2  | Jean Pierre Polnareff  | 24  | Male   |Caprese Salad                                  |
+| 3  | DIO                    | 121 | Male   |Creme caramel                                  |
+| 4  | Donatello Versus       | 25  | Male   |Caprese Salad                                  |
+| 5  | Rikiel                 | 24  | Male   |Creme caramel                                  |
+| 6  | Rohan Kishibe          | 20  | Male   |Caprese Salad                                  |
+| 7  | Shigekiyo Yangu        | 14  | Male   |Lamb Chops with Apple Sauce                    |
+| 8  | Tamami Kobayashi       | 20  | Male   |Caprese Salad                                  |
+| 9  | Toshikazu Hazamada     | 18  | Male   |Lamb Chops with Apple Sauce                    |
+| 10 | Terunosuke Miyamoto    | -1  | Male   |Caprese Salad                                  |
+| 11 | Leone Abbacchio        | 21  | Male   |Creme caramel                                  |
+| 12 | Mario Zucchero         | 24  | Male   |Lamb Chops with Apple Sauce                    |
+| 13 | Ermes Costello         | 21  | Female |Creme caramel                                  |

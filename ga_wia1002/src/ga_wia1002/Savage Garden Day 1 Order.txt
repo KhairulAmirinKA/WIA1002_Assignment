@@ -1,0 +1,13 @@
+| 1  | George Joestar II      | 32  | Male   |DIO’s Bread                                    |
+| 2  | Jonathan Joestar       | 20  | Male   |Abbacchio’s Tea                                |
+| 3  | Lisa Lisa              | 50  | Female |Kakyoin’s Cherry                               |
+| 4  | Tomoko Higashikata     | 37  | Female |Kakyoin’s Cherry                               |
+| 5  | Muhammad Avdol         | 29  | Male   |Kakyoin’s Cherry                               |
+| 6  | Yukako Yamagishi       | -1  | Female |Giorno’s Donuts                                |
+| 7  | Anjuro Katagiri        | 34  | Male   |DIO’s Bread                                    |
+| 8  | Ken Oyanagi            | 11  | Male   |Kakyoin’s Porridge                             |
+| 9  | Yoshikage Kira         | 33  | Male   |Abbacchio’s Tea                                |
+| 10 | Guido Mista            | 18  | Male   |Kakyoin’s Cherry                               |
+| 11 | Squalo                 | -1  | Male   |Kakyoin’s Cherry                               |
+| 12 | Foo Fighters           | 22  | Female |Abbacchio’s Tea                                |
+| 13 | Weather Report         | 39  | Male   |Kakyoin’s Cherry                               |

@@ -337,7 +337,7 @@ public class JOJOLandsGame{
             System.out.println("Restaurant: "+currentLocation.getName());
             System.out.println("Sales Information");
             System.out.println("[1] View Sales");
-            System.out.println("[2] View Agrregated Information");
+            System.out.println("[2] View Aggregated Information");
             System.out.println("\t[A] Minimum Sales");
             System.out.println("\t[B] Maximum Sales");
             System.out.println("\t[C] Top k Highest Sales");

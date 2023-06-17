@@ -1,0 +1,14 @@
+| 1  | George Joestar II      | 32  | Male   |Formaggio                                      |
+| 2  | Holy Kujo              | 45  | Female |Prosciutto and Pesci                           |
+| 3  | Lisa Lisa              | 50  | Female |Ghiaccio                                       |
+| 4  | Iggy                   | -1  | Male   |Zucchero and Sale                              |
+| 5  | Vanilla Ice            | -1  | Male   |Formaggio                                      |
+| 6  | Tonio Trussardi        | 29  | Male   |Ghiaccio                                       |
+| 7  | Yuya Fungami           | -1  | Male   |Prosciutto and Pesci                           |
+| 8  | Anjuro Katagiri        | 34  | Male   |Prosciutto and Pesci                           |
+| 9  | Bruno Bucciarati       | 20  | Male   |Formaggio                                      |
+| 10 | Pannacotta Fugo        | 16  | Male   |Melone                                         |
+| 11 | Trish Una              | 15  | Female |Risotto                                        |
+| 12 | Pesci                  | -1  | Male   |Ghiaccio                                       |
+| 13 | Ermes Costello         | 21  | Female |Ghiaccio                                       |
+| 14 | Weather Report         | 39  | Male   |Prosciutto and Pesci                           |

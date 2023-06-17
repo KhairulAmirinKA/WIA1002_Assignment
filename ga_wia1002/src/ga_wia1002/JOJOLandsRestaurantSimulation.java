@@ -93,7 +93,7 @@ public class JOJOLandsRestaurantSimulation {
                 cafeDeuxMagots.viewWaitingList();
                 cafeDeuxMagots.processOrders();
                 cafeDeuxMagots.displayOrderProcessingList();
-                cafeDeuxMagots.storeOrder("Cafe Deux Magots");
+                cafeDeuxMagots.storeOrder("Cafe Deux Magots", currentDay);
                 cafeDeuxMagots.viewSales("Cafe Deux Magots", currentDay);
                 cafeDeuxMagots.viewTotalSales("Cafe Deux Magots");
                 cafeDeuxMagots.MilagroMode("Cafe Deux Magots", currentDay);

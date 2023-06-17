@@ -222,6 +222,7 @@ public abstract class JOJOLandsRestaurant {
          System.out.println("+-----------------------------------------------+-------------------+");
          System.out.printf("%-48s| %-9s| %-11s\n","|Food", "Quantity", "Price  |");
          System.out.println("+-----------------------------------------------+-------------------+");
+         
          //calc total sales
          double totalSales=0; 
          
@@ -1785,9 +1786,6 @@ public abstract class JOJOLandsRestaurant {
             
             //calc total sales
             totalSales+= price;
-  
-        //add totalSales for each day to array
-        sales_arr[i-1]= totalSales;
         
         //put totalSales according to day
         daySalesMap.put(i, totalSales);
@@ -1803,8 +1801,7 @@ public abstract class JOJOLandsRestaurant {
             e.printStackTrace();}
             
         
-        //transformation
-            
+            //transformation 
             //sort daySalesMap according to value
             List< Map.Entry<Integer, Double> > sortedList= 
                     daySalesMap.entrySet().stream().

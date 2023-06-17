@@ -1,12 +1,11 @@
-| 1  | George Joestar II      | 32  | Male   |Braised Chicken in Black Bean Sauce            |
-| 2  | Emporio Alnino         | 11  | Male   |Scrambled Egg White with Milk                  |
-| 3  | Giorno Giovanna        | 15  | Male   |Braised Chicken in Black Bean Sauce            |
-| 4  | Melone                 | -1  | Male   |Braised Goose Web with Vermicelli              |
-| 5  | Jotaro Kujo            | 17  | Male   |Deep-fried Hiroshima Oysters                   |
-| 6  | Mario Zucchero         | 24  | Male   |Deep-fried Hiroshima Oysters                   |
-| 7  | Jean Pierre Polnareff  | 24  | Male   |Braised Goose Web with Vermicelli              |
-| 8  | Trish Una              | 15  | Female |Deep-fried Hiroshima Oysters                   |
-| 9  | Donatello Versus       | 25  | Male   |Poached Tofu with Dried Shrimps                |
-| 10 | Ken Oyanagi            | 11  | Male   |Scrambled Egg White with Milk                  |
-| 11 | Enrico Pucci           | 39  | Male   |Braised Goose Web with Vermicelli              |
-| 12 | Toshikazu Hazamada     | 18  | Male   |Braised Goose Web with Vermicelli              |
+| 1  | Jotaro Kujo            | 17  | Male   |Deep-fried Hiroshima Oysters                   |
+| 2  | Suzi Q.                | -1  | Female |Braised Chicken in Black Bean Sauce            |
+| 3  | Noriaki Kakyoin        | 17  | Male   |Deep-fried Hiroshima Oysters                   |
+| 4  | Enya the Hag           | -1  | Female |Deep-fried Hiroshima Oysters                   |
+| 5  | Tamami Kobayashi       | 20  | Male   |Deep-fried Hiroshima Oysters                   |
+| 6  | Yoshikage Kira         | 33  | Male   |Braised Goose Web with Vermicelli              |
+| 7  | Guido Mista            | 18  | Male   |Braised Goose Web with Vermicelli              |
+| 8  | Leone Abbacchio        | 21  | Male   |Poached Tofu with Dried Shrimps                |
+| 9  | Narancia Ghirga        | 17  | Male   |Scrambled Egg White with Milk                  |
+| 10 | Formaggio              | -1  | Male   |Poached Tofu with Dried Shrimps                |
+| 11 | Narciso Anasui         | 25  | Male   |Braised Chicken in Black Bean Sauce            |

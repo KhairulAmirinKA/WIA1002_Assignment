@@ -1,6 +1,16 @@
-| 1  | Squalo                 | -1  | Male   |Risotto                                        |
-| 2  | Mario Zucchero         | 24  | Male   |Risotto                                        |
-| 3  | Leone Abbacchio        | 21  | Male   |Zucchero and Sale                              |
-| 4  | Koichi Hirose          | 15  | Male   |Risotto                                        |
-| 5  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
-| 6  | Jonathan Joestar       | 20  | Male   |Zucchero and Sale                              |
+| 1  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
+| 2  | Iggy                   | -1  | Male   |Formaggio                                      |
+| 3  | Enrico Pucci           | 39  | Male   |Risotto                                        |
+| 4  | Enya the Hag           | -1  | Female |Prosciutto and Pesci                           |
+| 5  | Koichi Hirose          | 15  | Male   |Formaggio                                      |
+| 6  | Mikitaka Hazekura      | 216 | Male   |Ghiaccio                                       |
+| 7  | Okuyasu Nijimura       | 15  | Male   |Ghiaccio                                       |
+| 8  | Tonio Trussardi        | 29  | Male   |Risotto                                        |
+| 9  | Yuya Fungami           | -1  | Male   |Prosciutto and Pesci                           |
+| 10 | Bruno Bucciarati       | 20  | Male   |Melone                                         |
+| 11 | Pannacotta Fugo        | 16  | Male   |Zucchero and Sale                              |
+| 12 | Cioccolata             | 34  | Male   |Zucchero and Sale                              |
+| 13 | Ghiaccio               | -1  | Male   |Zucchero and Sale                              |
+| 14 | Melone                 | -1  | Male   |Zucchero and Sale                              |
+| 15 | Emporio Alnino         | 11  | Male   |Ghiaccio                                       |
+| 16 | Narciso Anasui         | 25  | Male   |Melone                                         |

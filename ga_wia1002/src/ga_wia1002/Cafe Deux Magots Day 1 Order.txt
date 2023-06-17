@@ -1,14 +1,9 @@
-| 1  | DIO                    | 121 | Male   |White Asparagus                                |
-| 2  | Hayato Kawajiri        | 11  | Male   |Spring Organic Omelette                        |
-| 3  | Lisa Lisa              | 50  | Female |Spring Lobster Salad                           |
-| 4  | Koichi Hirose          | 15  | Male   |Sampling Matured Cheese Platter                |
-| 5  | Yoshikage Kira         | 33  | Male   |Spring Organic Omelette                        |
-| 6  | Reimi Sugimoto         | 16  | Female |Spring Lobster Salad                           |
-| 7  | Mario Zucchero         | 24  | Male   |Sampling Matured Cheese Platter                |
-| 8  | Pannacotta Fugo        | 16  | Male   |White Asparagus                                |
-| 9  | Toshikazu Hazamada     | 18  | Male   |Truffle-flavoured Poultry Supreme              |
-| 10 | Noriaki Kakyoin        | 17  | Male   |Truffle-flavoured Poultry Supreme              |
-| 11 | Aya Tsuji              | -1  | Female |Truffle-flavoured Poultry Supreme              |
-| 12 | Yuya Fungami           | -1  | Male   |Spring Organic Omelette                        |
-| 13 | Carne                  | -1  | Male   |White Asparagus                                |
-| 14 | Squalo                 | -1  | Male   |Truffle-flavoured Poultry Supreme              |
+| 1  | Joseph Joestar         | 18  | Male   |Spring Lobster Salad                           |
+| 2  | Suzi Q.                | -1  | Female |Sampling Matured Cheese Platter                |
+| 3  | Noriaki Kakyoin        | 17  | Male   |Truffle-flavoured Poultry Supreme              |
+| 4  | Akira Otoishi          | 19  | Male   |Truffle-flavoured Poultry Supreme              |
+| 5  | Masazo Kinoto          | 29  | Male   |White Asparagus                                |
+| 6  | Toyohiro Kanedaichi    | -1  | Male   |Truffle-flavoured Poultry Supreme              |
+| 7  | Yoshihiro Kira         | -1  | Male   |Sampling Matured Cheese Platter                |
+| 8  | Narancia Ghirga        | 17  | Male   |White Asparagus                                |
+| 9  | Secco                  | -1  | Male   |White Asparagus                                |

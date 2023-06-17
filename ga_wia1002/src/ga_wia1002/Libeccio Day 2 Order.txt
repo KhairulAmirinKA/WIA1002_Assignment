@@ -1,9 +1,9 @@
-| 1  | Yukako Yamagishi       | -1  | Female |Zucchero and Sale                              |
-| 2  | Cioccolata             | 34  | Male   |Risotto                                        |
-| 3  | Pesci                  | -1  | Male   |Risotto                                        |
-| 4  | Terunosuke Miyamoto    | -1  | Male   |Risotto                                        |
-| 5  | Erina Pendleton        | 70  | Female |Melone                                         |
-| 6  | Illuso                 | -1  | Male   |Melone                                         |
-| 7  | Leone Abbacchio        | 21  | Male   |Melone                                         |
-| 8  | Yuya Fungami           | -1  | Male   |Prosciutto and Pesci                           |
-| 9  | Donatello Versus       | 25  | Male   |Prosciutto and Pesci                           |
+| 1  | Holy Kujo              | 45  | Female |Melone                                         |
+| 2  | Noriaki Kakyoin        | 17  | Male   |Prosciutto and Pesci                           |
+| 3  | Ungalo                 | 24  | Male   |Zucchero and Sale                              |
+| 4  | Okuyasu Nijimura       | 15  | Male   |Formaggio                                      |
+| 5  | Tamami Kobayashi       | 20  | Male   |Prosciutto and Pesci                           |
+| 6  | Bruno Bucciarati       | 20  | Male   |Prosciutto and Pesci                           |
+| 7  | Formaggio              | -1  | Male   |Ghiaccio                                       |
+| 8  | Melone                 | -1  | Male   |Risotto                                        |
+| 9  | Risotto Nero           | 28  | Male   |Risotto                                        |
