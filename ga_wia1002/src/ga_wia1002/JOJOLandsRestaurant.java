@@ -138,7 +138,7 @@ public abstract class JOJOLandsRestaurant {
         }
         
         catch (IOException ie){
-            ie.printStackTrace();
+            System.out.println("Run again");
         }
     }
     
@@ -253,7 +253,7 @@ public abstract class JOJOLandsRestaurant {
      }
      
      catch (FileNotFoundException fe){
-         fe.printStackTrace();
+         System.out.println("There is no order on that day");
      }
         
     }
@@ -346,7 +346,7 @@ public abstract class JOJOLandsRestaurant {
         }//try
         
         catch (FileNotFoundException fe){
-            fe.printStackTrace();
+            System.out.println("There is no order on that day");
         }  //end of write to file
         
         
@@ -434,7 +434,7 @@ public abstract class JOJOLandsRestaurant {
      }
      
      catch (FileNotFoundException fe){
-         fe.printStackTrace();
+         System.out.println("There is no order on that day");
      }
         
                 
@@ -610,7 +610,7 @@ public abstract class JOJOLandsRestaurant {
         System.out.println("+-----------------------------------------------+-------------------+");
             }
             catch (FileNotFoundException fe2){
-                fe2.printStackTrace();
+                System.out.println("There is no order on that day");
                         
             }
             
@@ -620,7 +620,7 @@ public abstract class JOJOLandsRestaurant {
         }//try. 
         
         catch (FileNotFoundException fe){
-            fe.printStackTrace();
+            System.out.println("There is no sales on that day");
         }  //end of write to file
         
         
@@ -795,7 +795,7 @@ public abstract class JOJOLandsRestaurant {
         System.out.println("+-----------------------------------------------+-------------------+");
             }
             catch (FileNotFoundException fe2){
-                fe2.printStackTrace();
+                System.out.println("There is no sales on that day");
                         
             }
             
@@ -805,7 +805,7 @@ public abstract class JOJOLandsRestaurant {
         }//try. 
         
         catch (FileNotFoundException fe){
-            fe.printStackTrace();
+            System.out.println("There is no sales on that day");
         }  //end of write to file             
     }// end of viewMaxSales
     
@@ -911,7 +911,8 @@ public abstract class JOJOLandsRestaurant {
         }// end of 1st try
         
         catch  (FileNotFoundException e){
-            e.printStackTrace();}
+            System.out.println("There is no sale on that day");
+        }
             
         
         //transformation
@@ -1014,7 +1015,7 @@ public abstract class JOJOLandsRestaurant {
             
             }//try
             catch (FileNotFoundException fe2){
-                fe2.printStackTrace();
+                System.out.println("There is no sale on that day");
                         
             }
             
@@ -1182,7 +1183,7 @@ public abstract class JOJOLandsRestaurant {
      }
      
      catch (FileNotFoundException fe){
-         fe.printStackTrace();
+         System.out.println("There is no sale on that day");
      }
         
     }
@@ -1240,7 +1241,7 @@ public abstract class JOJOLandsRestaurant {
         }//try
         
         catch (FileNotFoundException fe){
-            fe.printStackTrace();
+            System.out.println("There is no sale on that day");
         }  //end of write to file
         
         
@@ -1326,7 +1327,7 @@ public abstract class JOJOLandsRestaurant {
      }
      
      catch (FileNotFoundException fe){
-         fe.printStackTrace();
+         System.out.println("There is no sale on that day");
      }
         
                 
@@ -1499,7 +1500,7 @@ public abstract class JOJOLandsRestaurant {
         System.out.println("+-----------------------------------------------+-------------------+");
             }
             catch (FileNotFoundException fe2){
-                fe2.printStackTrace();
+                System.out.println("There is no sale on that day");
                         
             }
             
@@ -1509,7 +1510,7 @@ public abstract class JOJOLandsRestaurant {
         }//try. 
         
         catch (FileNotFoundException fe){
-            fe.printStackTrace();
+            System.out.println("There is no sale on that day");
         }  //end of write to file
         
         
@@ -1682,7 +1683,7 @@ public abstract class JOJOLandsRestaurant {
         System.out.println("+-----------------------------------------------+-------------------+");
             }
             catch (FileNotFoundException fe2){
-                fe2.printStackTrace();
+                System.out.println("There is no sale on that day");
                         
             }
             
@@ -1692,7 +1693,7 @@ public abstract class JOJOLandsRestaurant {
         }//try. 
         
         catch (FileNotFoundException fe){
-            fe.printStackTrace();
+           System.out.println("There is no sale on that day");
         }  //end of write to file
         
         
@@ -1798,7 +1799,8 @@ public abstract class JOJOLandsRestaurant {
         }// end of 1st try
         
         catch  (FileNotFoundException e){
-            e.printStackTrace();}
+            System.out.println("There is no sale on that day");
+        }
             
         
             //transformation 
@@ -1900,7 +1902,7 @@ public abstract class JOJOLandsRestaurant {
             
             }//try
             catch (FileNotFoundException fe2){
-                fe2.printStackTrace();
+                System.out.println("There is no sale on that day");
                         
             }
             

@@ -1,13 +1,18 @@
-| 1  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
-| 2  | Jean Pierre Polnareff  | 24  | Male   |Caprese Salad                                  |
-| 3  | DIO                    | 121 | Male   |Creme caramel                                  |
-| 4  | Donatello Versus       | 25  | Male   |Caprese Salad                                  |
-| 5  | Rikiel                 | 24  | Male   |Creme caramel                                  |
-| 6  | Rohan Kishibe          | 20  | Male   |Caprese Salad                                  |
-| 7  | Shigekiyo Yangu        | 14  | Male   |Lamb Chops with Apple Sauce                    |
-| 8  | Tamami Kobayashi       | 20  | Male   |Caprese Salad                                  |
-| 9  | Toshikazu Hazamada     | 18  | Male   |Lamb Chops with Apple Sauce                    |
-| 10 | Terunosuke Miyamoto    | -1  | Male   |Caprese Salad                                  |
-| 11 | Leone Abbacchio        | 21  | Male   |Creme caramel                                  |
-| 12 | Mario Zucchero         | 24  | Male   |Lamb Chops with Apple Sauce                    |
-| 13 | Ermes Costello         | 21  | Female |Creme caramel                                  |
+| 1  | George Joestar II      | 32  | Male   |Spaghetti alla Puttanesca                      |
+| 2  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
+| 3  | Jonathan Joestar       | 20  | Male   |Caprese Salad                                  |
+| 4  | Suzi Q.                | -1  | Female |Spaghetti alla Puttanesca                      |
+| 5  | Vanilla Ice            | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 6  | Aya Tsuji              | -1  | Female |Creme caramel                                  |
+| 7  | Mikitaka Hazekura      | 216 | Male   |Caprese Salad                                  |
+| 8  | Anjuro Katagiri        | 34  | Male   |Creme caramel                                  |
+| 9  | Ken Oyanagi            | 11  | Male   |Lamb Chops with Apple Sauce                    |
+| 10 | Bruno Bucciarati       | 20  | Male   |Lamb Chops with Apple Sauce                    |
+| 11 | Narancia Ghirga        | 17  | Male   |Lamb Chops with Apple Sauce                    |
+| 12 | Ghiaccio               | -1  | Male   |Creme caramel                                  |
+| 13 | Melone                 | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 14 | Secco                  | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 15 | Squalo                 | -1  | Male   |Creme caramel                                  |
+| 16 | Ermes Costello         | 21  | Female |Spaghetti alla Puttanesca                      |
+| 17 | Narciso Anasui         | 25  | Male   |Lamb Chops with Apple Sauce                    |
+| 18 | Weather Report         | 39  | Male   |Caprese Salad                                  |
