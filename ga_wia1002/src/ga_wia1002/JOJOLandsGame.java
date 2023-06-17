@@ -115,6 +115,15 @@ public class JOJOLandsGame{
                 }
         }
         
+        else if(currentLocation.getName().equals("San Giorgio Maggiore")){
+            if(forwardHistory.size()>1){    //[6]Forward
+                menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall","Stay the Hell Away from Me!", "Forward (" + forwardLocation + ")"}; 
+            }
+            else{
+                menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall","Stay the Hell Away from Me!"}; 
+            }
+        }
+        
         else if(currentLocation.getName().equals("Green Dolphin Street Prison")){
             if(forwardHistory.size()>1){    //[6]Forward
                 menuOptions= new String[]{"View Resident Information","Back (" + backLocation + ")","Back to Town Hall","Dirty Deeds Done Dirt Cheap", "Forward (" + forwardLocation + ")"}; 
@@ -228,6 +237,7 @@ public class JOJOLandsGame{
         standManager.loadStands("stands.csv");
         ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
         DirtyDeeds dd = new DirtyDeeds();   //extraFeaturesQ4
+        DiavoloJourney Q6extra = new DiavoloJourney();  //extrafeaturesQ6
         
                 while (input.equals("2")) {
                 // View Resident Information
@@ -300,6 +310,16 @@ public class JOJOLandsGame{
                             moveForward();
                         }        
                     }
+                    if(currentLocation.getName().equals("San Giorgio Maggiore")){
+                        if(input.equals("5")){
+                            //[5]  Stay the Hell Away from Me!                            
+                            Q6extra.stayTheHellAway();
+                        }
+                        else if(input.equals("6")){
+                            //[6] Forward
+                            moveForward();    
+                        }
+                    }
                     else{   //otherResidentialArea
                         if(input.equals("5")){
                             //[5]Forward
@@ -328,7 +348,13 @@ public class JOJOLandsGame{
                         if(input.equals("5")){
                             //[5] The Hand
                         }
-                    }        
+                    }
+                    if(currentLocation.getName().equals("San Giorgio Maggiore")){
+                        if(input.equals("5")){
+                            //[5]Stay the Hell Away from Me!
+                            Q6extra.stayTheHellAway();
+                        }
+                    }
                 }
     }
 
