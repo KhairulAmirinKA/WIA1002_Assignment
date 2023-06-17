@@ -45,6 +45,12 @@ public class JOJOLandsGame{
         
         while (true) {
             //at Town Hall
+                if(diffDay){ 
+                    resInfo = new RestaurantInfo(currentDay);
+                    resInfo.generateFoodAndWaitingList(currentDay);
+                    resInfo.storeOrder(currentDay);
+                    diffDay=false;
+                }
                 moveOption(currentLocation.getName());  //print[1]MoveTo: A B C
                 otherOption();
                 String input = userInput();
@@ -321,10 +327,6 @@ public class JOJOLandsGame{
     }
 
     private void restaurants(String input) {       
-        if(diffDay){ 
-            resInfo.processList(currentDay, currentLocation.getName());
-            diffDay=false;
-        }
         if (input.equals("2")) {      
             resInfo.displayWaitingAndProcessingList(currentLocation.getName());
         } else if (input.equals("3")) {
