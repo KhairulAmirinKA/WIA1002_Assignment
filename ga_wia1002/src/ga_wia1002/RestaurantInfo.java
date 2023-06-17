@@ -63,7 +63,7 @@ public class RestaurantInfo {
         savageGarden_Price.put("Kakyoin’s Porridge", 4.44);
     }              
         
-    public void processList(int currentDay,String location){
+    public void generateFoodAndWaitingList(int currentDay){
          // Create separate copies of the waitingOrder list for each restaurant
         List<Resident> jadeGardenWaitingOrder = new ArrayList<>();
         List<Resident> cafeDeuxMagotsWaitingOrder = new ArrayList<>();
@@ -113,83 +113,26 @@ public class RestaurantInfo {
         trattoriaTrussardi.setWaitingList(trattoriaTrussardiWaitingOrder);
         libeccio.setWaitingList(libeccioWaitingOrder);
         savageGarden.setWaitingList(savageGardenWaitingOrder);
-        }
+        }}
         
         //correct the queue order and store all the food,must execute processOders() 1st before storing, else, will get empty data 
-        switch (location) {
-            case "Jade Garden":                          
+        public void storeOrder(int currentDay) {
                 jadeGarden.processOrders();  
-                jadeGarden.storeOrder(location, currentDay);
-                break;
-
-            case "Cafe Deux Magots":
-                cafeDeuxMagots.processOrders();  
-                cafeDeuxMagots.storeOrder(location, currentDay);
-                break;
-
-            case "Trattoria Trussardi":
-                trattoriaTrussardi.processOrders();  
-                trattoriaTrussardi.storeOrder(location, currentDay);
-                break;
-
-            case "Libeccio":
-                libeccio.processOrders();  
-                libeccio.storeOrder(location, currentDay);
-                break;
-
-            case "Savage Garden":                 
+                cafeDeuxMagots.processOrders(); 
+                trattoriaTrussardi.processOrders();
+                libeccio.processOrders();
                 savageGarden.processOrders();
-                savageGarden.storeOrder(location,currentDay);
-                break;
+            
+            jadeGarden.storeOrder("Jade Garden",currentDay);
+            cafeDeuxMagots.storeOrder("Cafe Deux Magots",currentDay);
+            trattoriaTrussardi.storeOrder("Trattoria Trussardi",currentDay);
+            libeccio.storeOrder("Libeccio",currentDay);
+            savageGarden.storeOrder("Savage Garden",currentDay);
         }
+
         //rearrange waiting list to correct queue according special order rule for each restaurant
-    }
 
     public void displayWaitingAndProcessingList(String location){
-        //correct the queue order and store all the food,must execute processOders() 1st before storing, else, will get empty data 
-        
-        switch (location) {
-            case "Jade Garden":    
-                if(jadeGarden.getOrderProcessingList().isEmpty()){
-                    jadeGarden.processOrders();    
-                }else{
-                     break;   
-                }     
-                
-                break;
-
-            case "Cafe Deux Magots":
-                if(cafeDeuxMagots.getOrderProcessingList().isEmpty()){
-                    cafeDeuxMagots.processOrders();    
-                }else{
-                     break;   
-                }     
-                break;
-
-            case "Trattoria Trussardi":
-                if(trattoriaTrussardi.getOrderProcessingList().isEmpty()){
-                    trattoriaTrussardi.processOrders();
-                }else{
-                    break;
-                }
-                break;
-
-            case "Libeccio":
-                if(libeccio.getOrderProcessingList().isEmpty()){
-                    libeccio.processOrders();
-                }else{
-                    break;
-                }
-                break;
-
-            case "Savage Garden":
-                if(savageGarden.getOrderProcessingList().isEmpty()){
-                    savageGarden.processOrders();
-                }else{
-                    break;
-                }                        
-                break;
-        }
         //rearrange waiting list to correct queue according special order rule for each restaurant
             
         System.out.println("====================================================================================================");
