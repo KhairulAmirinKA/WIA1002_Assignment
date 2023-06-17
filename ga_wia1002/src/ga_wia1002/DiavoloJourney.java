@@ -1,28 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ga_wia1002;
-import diavolojourney.DiavoloJourneyclass.Graph;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Set;
-import javax.tools.JavaFileManager.Location;
-/**
- *
- * @author Abdul Hadi
- */
+
+import ga_wia1002.DiavoloJourneyclass.Graph;
+import java.util.*;
+
 public class DiavoloJourney {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
- Graph graph = new Graph(7);
+    public void stayTheHellAway(){
+        Graph graph = new Graph(7);
         graph.addLocation("Town Hall");
         graph.addLocation("Cafe Deux Magots");
         graph.addLocation("Savage Garden");
@@ -38,10 +22,19 @@ public class DiavoloJourney {
         graph.addEdge("Town Hall", "San Giorgio Maggiore", 8);
         graph.addEdge("San Giorgio Maggiore", "Joestar Mansion", 6);
         graph.addEdge("San Giorgio Maggiore", "Vineyard", 2);
+        
+        List<String> identifiedLocations = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Source: ");
+        String source = scanner.nextLine();
+        System.out.print("Destination: ");
+        String destination = scanner.nextLine();
+        System.out.print("Identified Locations: ");
+        String identifiedLoc= scanner.nextLine();
+        String[] loc = identifiedLoc.split(", ");
+        identifiedLocations.add(loc.toString());
 
-        String source = "Town Hall";
-        String destination = "Joestar Mansion";
-        List<String> identifiedLocations = Arrays.asList("Jade Garden", "San Giorgio Maggiore", "Vineyard");
+        
 
         for (String location : identifiedLocations) {
             if (graph.locationIndices.containsKey(location)) {
@@ -52,10 +45,11 @@ public class DiavoloJourney {
         }
 
         List<String> shortestPath = graph.findShortestPath(source, destination);
-
+        System.out.println("==================================================================================================================");  
         System.out.println("Optimal Path:");
         System.out.println(String.join(" > ", shortestPath));
         System.out.println("(" + calculateTotalDistance(graph, shortestPath) + " km)");
+        System.out.println("==================================================================================================================");  
     }
 
     private static int calculateTotalDistance(Graph graph, List<String> path) {
@@ -72,6 +66,11 @@ public class DiavoloJourney {
         }
         return totalDistance;
     }
+    
+//    public static void main(String[] args) {
+//        DiavoloJourney Q6extra = new DiavoloJourney();
+//        Q6extra.stayTheHellAway();
+//    }
 }
     
 
