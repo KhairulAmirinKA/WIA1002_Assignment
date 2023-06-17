@@ -1,14 +1,15 @@
-| 1  | Josuke Higashikata     | 16  | Male   |Lamb Chops with Apple Sauce                    |
-| 2  | Foo Fighters           | 22  | Female |Braised Chicken in Black Bean Sauce            |
+| 1  | Erina Pendleton        | 70  | Female |Poached Tofu with Dried Shrimps                |
+| 2  | Ermes Costello         | 21  | Female |Braised Goose Web with Vermicelli              |
 | 3  | Jotaro Kujo            | 17  | Male   |Deep-fried Hiroshima Oysters                   |
-| 4  | Emporio Alnino         | 11  | Male   |Poached Tofu with Dried Shrimps                |
-| 5  | Lisa Lisa              | 50  | Female |Deep-fried Hiroshima Oysters                   |
-| 6  | Secco                  | -1  | Male   |Scrambled Egg White with Milk                  |
-| 7  | Tomoko Higashikata     | 37  | Female |Poached Tofu with Dried Shrimps                |
-| 8  | Illuso                 | -1  | Male   |Scrambled Egg White with Milk                  |
-| 9  | Jean Pierre Polnareff  | 24  | Male   |Poached Tofu with Dried Shrimps                |
-| 10 | Diavolo                | 33  | Male   |Braised Goose Web with Vermicelli              |
-| 11 | Shigekiyo Yangu        | 14  | Male   |Scrambled Egg White with Milk                  |
-| 12 | Carne                  | -1  | Male   |Braised Goose Web with Vermicelli              |
-| 13 | Yuya Fungami           | -1  | Male   |Braised Goose Web with Vermicelli              |
-| 14 | Guido Mista            | 18  | Male   |Braised Chicken in Black Bean Sauce            |
+| 4  | Prosciutto             | -1  | Male   |Poached Tofu with Dried Shrimps                |
+| 5  | Muhammad Avdol         | 29  | Male   |Braised Goose Web with Vermicelli              |
+| 6  | Melone                 | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 7  | Reimi Sugimoto         | 16  | Female |Deep-fried Hiroshima Oysters                   |
+| 8  | Narancia Ghirga        | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 9  | Shigekiyo Yangu        | 14  | Male   |Braised Chicken in Black Bean Sauce            |
+| 10 | Leone Abbacchio        | 21  | Male   |Scrambled Egg White with Milk                  |
+| 11 | Toshikazu Hazamada     | 18  | Male   |Braised Chicken in Black Bean Sauce            |
+| 12 | Terunosuke Miyamoto    | -1  | Male   |Deep-fried Hiroshima Oysters                   |
+| 13 | Yukako Yamagishi       | -1  | Female |Poached Tofu with Dried Shrimps                |
+| 14 | Masazo Kinoto          | 29  | Male   |Deep-fried Hiroshima Oysters                   |
+| 15 | Ken Oyanagi            | 11  | Male   |Braised Chicken in Black Bean Sauce            |

@@ -1,11 +1,20 @@
 | 1  | Jotaro Kujo            | 17  | Male   |Braised Goose Web with Vermicelli              |
-| 2  | Foo Fighters           | 22  | Female |Deep-fried Hiroshima Oysters                   |
-| 3  | Tomoko Higashikata     | 37  | Female |Poached Tofu with Dried Shrimps                |
-| 4  | Sale                   | -1  | Male   |Deep-fried Hiroshima Oysters                   |
-| 5  | Muhammad Avdol         | 29  | Male   |Braised Goose Web with Vermicelli              |
-| 6  | Bruno Bucciarati       | 20  | Male   |Poached Tofu with Dried Shrimps                |
-| 7  | Noriaki Kakyoin        | 17  | Male   |Poached Tofu with Dried Shrimps                |
-| 8  | Toyohiro Kanedaichi    | -1  | Male   |Poached Tofu with Dried Shrimps                |
-| 9  | Aya Tsuji              | -1  | Female |Deep-fried Hiroshima Oysters                   |
-| 10 | Rohan Kishibe          | 20  | Male   |Deep-fried Hiroshima Oysters                   |
-| 11 | Koichi Hirose          | 15  | Male   |Poached Tofu with Dried Shrimps                |
+| 2  | Narciso Anasui         | 25  | Male   |Deep-fried Hiroshima Oysters                   |
+| 3  | Lisa Lisa              | 50  | Female |Deep-fried Hiroshima Oysters                   |
+| 4  | Emporio Alnino         | 11  | Male   |Braised Chicken in Black Bean Sauce            |
+| 5  | Suzi Q.                | -1  | Female |Braised Chicken in Black Bean Sauce            |
+| 6  | Tizzano                | -1  | Male   |Deep-fried Hiroshima Oysters                   |
+| 7  | Muhammad Avdol         | 29  | Male   |Poached Tofu with Dried Shrimps                |
+| 8  | Prosciutto             | -1  | Male   |Poached Tofu with Dried Shrimps                |
+| 9  | DIO                    | 121 | Male   |Deep-fried Hiroshima Oysters                   |
+| 10 | Illuso                 | -1  | Male   |Deep-fried Hiroshima Oysters                   |
+| 11 | Enrico Pucci           | 39  | Male   |Poached Tofu with Dried Shrimps                |
+| 12 | Ghiaccio               | -1  | Male   |Scrambled Egg White with Milk                  |
+| 13 | Enya the Hag           | -1  | Female |Braised Goose Web with Vermicelli              |
+| 14 | Trish Una              | 15  | Female |Braised Goose Web with Vermicelli              |
+| 15 | Reimi Sugimoto         | 16  | Female |Deep-fried Hiroshima Oysters                   |
+| 16 | Bruno Bucciarati       | 20  | Male   |Braised Goose Web with Vermicelli              |
+| 17 | Tonio Trussardi        | 29  | Male   |Poached Tofu with Dried Shrimps                |
+| 18 | Anjuro Katagiri        | 34  | Male   |Braised Goose Web with Vermicelli              |
+| 19 | Yukako Yamagishi       | -1  | Female |Braised Goose Web with Vermicelli              |
+| 20 | Akira Otoishi          | 19  | Male   |Braised Chicken in Black Bean Sauce            |

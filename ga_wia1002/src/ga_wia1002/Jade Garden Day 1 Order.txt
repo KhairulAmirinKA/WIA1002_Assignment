@@ -1,18 +1,12 @@
-| 1  | Holy Kujo              | 45  | Female |Braised Chicken in Black Bean Sauce            |
-| 2  | Narciso Anasui         | 25  | Male   |Deep-fried Hiroshima Oysters                   |
-| 3  | Jolyne Cujoh           | 19  | Female |Braised Chicken in Black Bean Sauce            |
-| 4  | Secco                  | -1  | Male   |Braised Goose Web with Vermicelli              |
+| 1  | Jolyne Cujoh           | 19  | Female |Deep-fried Hiroshima Oysters                   |
+| 2  | Risotto Nero           | 28  | Male   |Poached Tofu with Dried Shrimps                |
+| 3  | Joseph Joestar         | 18  | Male   |Braised Goose Web with Vermicelli              |
+| 4  | Cioccolata             | 34  | Male   |Poached Tofu with Dried Shrimps                |
 | 5  | Jotaro Kujo            | 17  | Male   |Braised Chicken in Black Bean Sauce            |
-| 6  | Sale                   | -1  | Male   |Poached Tofu with Dried Shrimps                |
-| 7  | Muhammad Avdol         | 29  | Male   |Deep-fried Hiroshima Oysters                   |
-| 8  | Prosciutto             | -1  | Male   |Deep-fried Hiroshima Oysters                   |
+| 6  | Leone Abbacchio        | 21  | Male   |Deep-fried Hiroshima Oysters                   |
+| 7  | Noriaki Kakyoin        | 17  | Male   |Deep-fried Hiroshima Oysters                   |
+| 8  | Toshikazu Hazamada     | 18  | Male   |Braised Chicken in Black Bean Sauce            |
 | 9  | Enrico Pucci           | 39  | Male   |Braised Goose Web with Vermicelli              |
-| 10 | Pesci                  | -1  | Male   |Braised Goose Web with Vermicelli              |
-| 11 | Vanilla Ice            | -1  | Male   |Deep-fried Hiroshima Oysters                   |
-| 12 | Carne                  | -1  | Male   |Scrambled Egg White with Milk                  |
-| 13 | Aya Tsuji              | -1  | Female |Braised Chicken in Black Bean Sauce            |
-| 14 | Yoshikage Kira         | 33  | Male   |Scrambled Egg White with Milk                  |
-| 15 | Hayato Kawajiri        | 11  | Male   |Braised Goose Web with Vermicelli              |
-| 16 | Tonio Trussardi        | 29  | Male   |Deep-fried Hiroshima Oysters                   |
-| 17 | Okuyasu Nijimura       | 15  | Male   |Deep-fried Hiroshima Oysters                   |
-| 18 | Rohan Kishibe          | 20  | Male   |Braised Chicken in Black Bean Sauce            |
+| 10 | Koichi Hirose          | 15  | Male   |Braised Goose Web with Vermicelli              |
+| 11 | Rikiel                 | 24  | Male   |Braised Goose Web with Vermicelli              |
+| 12 | Aya Tsuji              | -1  | Female |Braised Chicken in Black Bean Sauce            |
