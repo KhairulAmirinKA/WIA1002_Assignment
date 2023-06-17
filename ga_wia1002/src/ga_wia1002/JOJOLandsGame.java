@@ -9,6 +9,10 @@ public class JOJOLandsGame{
     private Scanner scanner;
     private Stack<JojolandLocation> movementHistory;
     private Stack<JojolandLocation> forwardHistory;    
+    private List<Resident> waitingList;
+    private List<Resident> orderProcessingList;
+    private boolean diffDay;
+    RestaurantInfo resInfo ;
     
     public JOJOLandsGame() {
         map = new JOJOLandsMap();
@@ -18,6 +22,9 @@ public class JOJOLandsGame{
         scanner = new Scanner(System.in);
         movementHistory = new Stack<>();
         forwardHistory = new Stack<>(); // Initialize the forward history stack    
+        waitingList=new ArrayList<>();
+        orderProcessingList=new ArrayList<>();
+        diffDay=true;
     }
 
     public void start() {
@@ -35,7 +42,7 @@ public class JOJOLandsGame{
 //        System.out.println("[2] Parallel Map");
 //        System.out.println("[3] Alternate Map");
      
-
+        resInfo = new RestaurantInfo(currentDay);
         System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
         printCurrentLocation();
         movementHistory.add(currentLocation);
@@ -318,10 +325,11 @@ public class JOJOLandsGame{
     }
 
     private void restaurants(String input) {
-        RestaurantInfo resInfo = new RestaurantInfo(currentDay);
-
-        if (input.equals("2")) {
+        
+        if(diffDay){ 
             resInfo.processList(currentDay, currentLocation.getName());
+            diffDay=false;}
+        if (input.equals("2")) {      
             resInfo.displayWaitingAndProcessingList(currentLocation.getName());
         } else if (input.equals("3")) {
             resInfo.viewMenu(currentLocation.getName());
