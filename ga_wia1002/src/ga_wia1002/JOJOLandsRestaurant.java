@@ -1042,8 +1042,17 @@ public abstract class JOJOLandsRestaurant {
         System.out.println("[2] View Sales Information");
         System.out.println("[3] Exit Milagro Man");
         
-        System.out.print("Select: ");
-        choice= sc1.nextInt();
+//        System.out.print("Select: ");
+//        choice= sc1.nextInt();
+
+        try {
+            System.out.print("Select: ");
+            choice = sc1.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Invalid input. Please enter a number.\n");
+            sc1.nextLine(); // consume the invalid input
+            continue; // restart the loop
+        }
         
         //choice=3 exiting
         if (choice==3){
