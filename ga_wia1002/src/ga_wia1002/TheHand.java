@@ -105,7 +105,7 @@ private static List<EdgeTheHand> getEdgesConnectedToVertex(List<EdgeTheHand> edg
         List<EdgeTheHand> minimumSpanningTree = prim(graphStr, rootVertex);
         System.out.println("Unnecessary water connections to be removed :");
         
-int count = 1;
+        int count = 1;
         int totalLength = 0;
         for (EdgeTheHand edge : minimumSpanningTree) {
             System.out.println(count + ". " + edge.vertex1 + "--" + edge.vertex2 + "(" + edge.weight +"km)");
@@ -114,9 +114,10 @@ int count = 1;
         }
 
         System.out.println("Total Length: " + totalLength +"km");
+        System.out.println("==========================================================================================================================");
     }
         else if(mapType.equals("Parallel")){
-            
+            System.out.println("==========================================================================================================================");
             String graphStr = "Town Hall-Vineyard:3,Town Hall-Libeccio:2,Town Hall-Cafe Deux Magots:4,Town Hall-Trattoria Trussardi:6,"
                               +"Morioh Grand Hotel-Cafe Deux Magots:6,Morioh Grand Hotel-Joestar Mansion:4,"
                               +"Jade Garden-Cafe Deux Magots:3,Jade Garden-Savage Garden:4,Jade Garden-Joestar Mansion:3,"
@@ -132,7 +133,7 @@ int count = 1;
         List<EdgeTheHand> minimumSpanningTree = prim(graphStr, rootVertex);
         System.out.println("Unnecessary water connections to be removed :");
         
-int count = 1;
+        int count = 1;
         int totalLength = 0;
         for (EdgeTheHand edge : minimumSpanningTree) {
             System.out.println(count + ". " + edge.vertex1 + "--" + edge.vertex2 + "(" + edge.weight +"km)");
@@ -141,8 +142,11 @@ int count = 1;
         }
 
         System.out.println("Total Length: " + totalLength +"km");
+        System.out.println("==========================================================================================================================");
     }
         else{
+            System.out.println("==========================================================================================================================");
+            System.out.println("Unnecessary water connections to be removed :");
             String graphStr = "Town Hall-Morioh Grand Hotel:2,Town Hall-Green Dolphin Street Prison:3,Town Hall-Libeccio:7,"
                               +"Morioh Grand Hotel-Green Dolphin Street Prison:2,Morioh Grand Hotel-San Giorgio Maggiore:3,Morioh Grand Hotel-Joestar Mansion:4,"
                               +"Jade Garden-Angelo Rock:1,Jade Garden-Polnareff Land:2,"
@@ -153,10 +157,8 @@ int count = 1;
                               +"DIO's Mansion-Libeccio:2,DIO's Mansion-Polnareff Land:2,";
             
             String rootVertex = "Town Hall"; // Set the desired root vertex
-        List<EdgeTheHand> minimumSpanningTree = prim(graphStr, rootVertex);
-        System.out.println("Unnecessary water connections to be removed :");
-        
-int count = 1;
+        List<EdgeTheHand> minimumSpanningTree = prim(graphStr, rootVertex);       
+        int count = 1;
         int totalLength = 0;
         for (EdgeTheHand edge : minimumSpanningTree) {
             System.out.println(count + ". " + edge.vertex1 + "--" + edge.vertex2 + "(" + edge.weight +"km)");
