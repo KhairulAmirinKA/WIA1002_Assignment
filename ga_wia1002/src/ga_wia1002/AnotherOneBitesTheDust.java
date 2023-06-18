@@ -36,11 +36,11 @@ public class AnotherOneBitesTheDust {
         }
 
         // Remove non-repeated path and remoove path with repeated location
-        Iterator<Map.Entry<String, Integer>> iterator = pathCounts.entrySet().iterator();
-        while (iterator.hasNext()) {
-            Map.Entry<String, Integer> entry = iterator.next();
+        Iterator<Map.Entry<String, Integer>> next = pathCounts.entrySet().iterator();
+        while (next.hasNext()) {
+            Map.Entry<String, Integer> entry = next.next();
             if (entry.getValue()<=1||!hasNoRepeatedLocations(entry.getKey())) {
-                iterator.remove();
+                next.remove();
             }
         }
 
