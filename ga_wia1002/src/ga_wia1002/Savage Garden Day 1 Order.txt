@@ -1,13 +1,13 @@
-| 1  | Jonathan Joestar       | 20  | Male   |Abbacchio’s Tea                                |
-| 2  | DIO                    | 121 | Male   |Giorno’s Donuts                                |
-| 3  | Donatello Versus       | 25  | Male   |Abbacchio’s Tea                                |
-| 4  | Tonio Trussardi        | 29  | Male   |Kakyoin’s Cherry                               |
-| 5  | Toshikazu Hazamada     | 18  | Male   |Kakyoin’s Porridge                             |
-| 6  | Akira Otoishi          | 19  | Male   |DIO’s Bread                                    |
-| 7  | Keicho Nijimura        | 18  | Male   |Joseph’s Tequila                               |
-| 8  | Carne                  | -1  | Male   |Abbacchio’s Tea                                |
-| 9  | Cioccolata             | 34  | Male   |Kakyoin’s Porridge                             |
-| 10 | Melone                 | -1  | Male   |Kakyoin’s Cherry                               |
+| 1  | Jonathan Joestar       | 20  | Male   |Kakyoin’s Cherry                               |
+| 2  | Rikiel                 | 24  | Male   |Kakyoin’s Porridge                             |
+| 3  | Ungalo                 | 24  | Male   |Kakyoin’s Porridge                             |
+| 4  | Hayato Kawajiri        | 11  | Male   |Abbacchio’s Tea                                |
+| 5  | Koichi Hirose          | 15  | Male   |DIO’s Bread                                    |
+| 6  | Okuyasu Nijimura       | 15  | Male   |Kakyoin’s Porridge                             |
+| 7  | Yoshikage Kira         | 33  | Male   |Kakyoin’s Porridge                             |
+| 8  | Leone Abbacchio        | 21  | Male   |Giorno’s Donuts                                |
+| 9  | Pannacotta Fugo        | 16  | Male   |Abbacchio’s Tea                                |
+| 10 | Formaggio              | -1  | Male   |Joseph’s Tequila                               |
 | 11 | Secco                  | -1  | Male   |Kakyoin’s Porridge                             |
 | 12 | Emporio Alnino         | 11  | Male   |Giorno’s Donuts                                |
-| 13 | Weather Report         | 39  | Male   |Giorno’s Donuts                                |
+| 13 | Narciso Anasui         | 25  | Male   |Kakyoin’s Porridge                             |

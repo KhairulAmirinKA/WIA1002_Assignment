@@ -13,7 +13,7 @@ public class JOJOLandsGame{
     RestaurantInfo resInfo ;
     private int selectedMapType;
     private SaveLoad saveLoad;
-    private MapClass gameData;
+    private SaveFileContainer gameData;
     private String mapType;
 
     

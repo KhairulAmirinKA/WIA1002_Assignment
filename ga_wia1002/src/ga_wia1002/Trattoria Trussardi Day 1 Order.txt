@@ -1,16 +1,11 @@
-| 1  | George Joestar II      | 32  | Male   |Caprese Salad                                  |
-| 2  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
-| 3  | Suzi Q.                | -1  | Female |Caprese Salad                                  |
-| 4  | Tomoko Higashikata     | 37  | Female |Spaghetti alla Puttanesca                      |
-| 5  | Muhammad Avdol         | 29  | Male   |Creme caramel                                  |
-| 6  | Ungalo                 | 24  | Male   |Caprese Salad                                  |
-| 7  | Reimi Sugimoto         | 16  | Female |Caprese Salad                                  |
-| 8  | Tamami Kobayashi       | 20  | Male   |Spaghetti alla Puttanesca                      |
-| 9  | Yoshihiro Kira         | -1  | Male   |Caprese Salad                                  |
-| 10 | Leone Abbacchio        | 21  | Male   |Caprese Salad                                  |
-| 11 | Narancia Ghirga        | 17  | Male   |Creme caramel                                  |
-| 12 | Pannacotta Fugo        | 16  | Male   |Caprese Salad                                  |
-| 13 | Mario Zucchero         | 24  | Male   |Lamb Chops with Apple Sauce                    |
-| 14 | Risotto Nero           | 28  | Male   |Lamb Chops with Apple Sauce                    |
-| 15 | Sale                   | -1  | Male   |Creme caramel                                  |
-| 16 | Foo Fighters           | 22  | Female |Caprese Salad                                  |
+| 1  | Giorno Giovanna        | 15  | Male   |Creme caramel                                  |
+| 2  | Joseph Joestar         | 18  | Male   |Spaghetti alla Puttanesca                      |
+| 3  | Tomoko Higashikata     | 37  | Female |Creme caramel                                  |
+| 4  | Enrico Pucci           | 39  | Male   |Lamb Chops with Apple Sauce                    |
+| 5  | Vanilla Ice            | -1  | Male   |Lamb Chops with Apple Sauce                    |
+| 6  | Toshikazu Hazamada     | 18  | Male   |Lamb Chops with Apple Sauce                    |
+| 7  | Anjuro Katagiri        | 34  | Male   |Lamb Chops with Apple Sauce                    |
+| 8  | Carne                  | -1  | Male   |Creme caramel                                  |
+| 9  | Pesci                  | -1  | Male   |Caprese Salad                                  |
+| 10 | Sale                   | -1  | Male   |Spaghetti alla Puttanesca                      |
+| 11 | Ermes Costello         | 21  | Female |Creme caramel                                  |

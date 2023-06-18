@@ -4,10 +4,10 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapClass implements Serializable {
+public class SaveFileContainer implements Serializable {
     private List<Object> contentList;
 
-    public MapClass() {
+    public SaveFileContainer() {
         contentList = new ArrayList<>();
     }
 

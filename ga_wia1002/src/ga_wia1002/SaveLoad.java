@@ -12,12 +12,12 @@ import java.util.Scanner;
 
 public class SaveLoad {
 
-    private MapClass content;
-    private MapClass outputContent;
+    private SaveFileContainer content;
+    private SaveFileContainer outputContent;
 
     public SaveLoad(){
-        content = new MapClass();
-        outputContent = new MapClass();
+        content = new SaveFileContainer();
+        outputContent = new SaveFileContainer();
     }
 
     public void addContentToSave(Object data){
@@ -36,18 +36,18 @@ public class SaveLoad {
             saving.close();
             System.out.println("Game saved successfully.");
         } catch (Exception e){
-            System.out.println("Failed to save the game.");
+            System.out.println("");
         }
     }
 
-    public MapClass load(){
+    public SaveFileContainer load(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the file path to load the game:");
         String filePath = scanner.nextLine();
         try {
             FileInputStream file = new FileInputStream(filePath + ".bin");
             ObjectInputStream loading = new ObjectInputStream(file);
-            outputContent = (MapClass) loading.readObject();
+            outputContent = (SaveFileContainer) loading.readObject();
             file.close();
             loading.close();
             System.out.println("Game loaded successfully.");

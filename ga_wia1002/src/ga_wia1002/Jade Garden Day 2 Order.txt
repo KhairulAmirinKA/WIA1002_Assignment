@@ -1,0 +1,13 @@
+| 1  | Jonathan Joestar       | 20  | Male   |Braised Goose Web with Vermicelli              |
+| 2  | Joseph Joestar         | 18  | Male   |Scrambled Egg White with Milk                  |
+| 3  | Jotaro Kujo            | 17  | Male   |Braised Goose Web with Vermicelli              |
+| 4  | Noriaki Kakyoin        | 17  | Male   |Poached Tofu with Dried Shrimps                |
+| 5  | Reimi Sugimoto         | 16  | Female |Poached Tofu with Dried Shrimps                |
+| 6  | Tamami Kobayashi       | 20  | Male   |Braised Goose Web with Vermicelli              |
+| 7  | Toshikazu Hazamada     | 18  | Male   |Deep-fried Hiroshima Oysters                   |
+| 8  | Akira Otoishi          | 19  | Male   |Poached Tofu with Dried Shrimps                |
+| 9  | Yoshikage Kira         | 33  | Male   |Poached Tofu with Dried Shrimps                |
+| 10 | Leone Abbacchio        | 21  | Male   |Scrambled Egg White with Milk                  |
+| 11 | Narancia Ghirga        | 17  | Male   |Braised Chicken in Black Bean Sauce            |
+| 12 | Carne                  | -1  | Male   |Braised Chicken in Black Bean Sauce            |
+| 13 | Mario Zucchero         | 24  | Male   |Braised Chicken in Black Bean Sauce            |

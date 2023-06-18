@@ -1,15 +1,13 @@
-| 1  | Holy Kujo              | 45  | Female |Ghiaccio                                       |
+| 1  | George Joestar II      | 32  | Male   |Melone                                         |
 | 2  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
-| 3  | Lisa Lisa              | 50  | Female |Risotto                                        |
-| 4  | Iggy                   | -1  | Male   |Risotto                                        |
-| 5  | Noriaki Kakyoin        | 17  | Male   |Risotto                                        |
-| 6  | Vanilla Ice            | -1  | Male   |Ghiaccio                                       |
-| 7  | Masazo Kinoto          | 29  | Male   |Formaggio                                      |
-| 8  | Toyohiro Kanedaichi    | -1  | Male   |Zucchero and Sale                              |
-| 9  | Guido Mista            | 18  | Male   |Risotto                                        |
-| 10 | Trish Una              | 15  | Female |Prosciutto and Pesci                           |
-| 11 | Diavolo                | 33  | Male   |Zucchero and Sale                              |
-| 12 | Formaggio              | -1  | Male   |Ghiaccio                                       |
-| 13 | Ghiaccio               | -1  | Male   |Melone                                         |
-| 14 | Prosciutto             | -1  | Male   |Prosciutto and Pesci                           |
-| 15 | Ermes Costello         | 21  | Female |Formaggio                                      |
+| 3  | Suzi Q.                | -1  | Female |Formaggio                                      |
+| 4  | Jean Pierre Polnareff  | 24  | Male   |Formaggio                                      |
+| 5  | Rohan Kishibe          | 20  | Male   |Zucchero and Sale                              |
+| 6  | Shigekiyo Yangu        | 14  | Male   |Zucchero and Sale                              |
+| 7  | Akira Otoishi          | 19  | Male   |Ghiaccio                                       |
+| 8  | Ken Oyanagi            | 11  | Male   |Ghiaccio                                       |
+| 9  | Diavolo                | 33  | Male   |Risotto                                        |
+| 10 | Ghiaccio               | -1  | Male   |Prosciutto and Pesci                           |
+| 11 | Illuso                 | -1  | Male   |Formaggio                                      |
+| 12 | Melone                 | -1  | Male   |Melone                                         |
+| 13 | Weather Report         | 39  | Male   |Risotto                                        |

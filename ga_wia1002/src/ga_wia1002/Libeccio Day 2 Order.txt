@@ -1,0 +1,9 @@
+| 1  | Muhammad Avdol         | 29  | Male   |Risotto                                        |
+| 2  | Rikiel                 | 24  | Male   |Ghiaccio                                       |
+| 3  | Vanilla Ice            | -1  | Male   |Formaggio                                      |
+| 4  | Aya Tsuji              | -1  | Female |Ghiaccio                                       |
+| 5  | Mikitaka Hazekura      | 216 | Male   |Melone                                         |
+| 6  | Rohan Kishibe          | 20  | Male   |Risotto                                        |
+| 7  | Yukako Yamagishi       | -1  | Female |Zucchero and Sale                              |
+| 8  | Emporio Alnino         | 11  | Male   |Risotto                                        |
+| 9  | Weather Report         | 39  | Male   |Zucchero and Sale                              |
