@@ -103,8 +103,6 @@ public class RedHotChilliPepper{
             edges.add(new GraphEdge("DIO's Mansion", "Polnareff Land", 2));
 
             System.out.println("Necessary Power Cables to be Upgraded: ");
-
-            System.out.println("Necessary Power Cables to be Upgraded: ");
             List<GraphEdge> kruskal = Kruskal(edges);
 
             int totalLength = 0;
@@ -116,7 +114,9 @@ public class RedHotChilliPepper{
             }
             System.out.println();
             System.out.println("Total length: " + totalLength + "km");
+            System.out.println("==========================================================================================================================");
         } else if (mapType.equals("Parallel")) {
+            System.out.println("==========================================================================================================================");
             List<GraphEdge> edges = new ArrayList<>();
             edges.add(new GraphEdge("Town Hall", "Vineyard", 3));
             edges.add(new GraphEdge("Town Hall", "Libeccio", 2));
@@ -151,9 +151,11 @@ public class RedHotChilliPepper{
             }
             System.out.println();
             System.out.println("Total length: " + totalLength + "km");
+            System.out.println("==========================================================================================================================");
         }
 
         else {
+            System.out.println("==========================================================================================================================");
             List<GraphEdge> edges = new ArrayList<>();
             edges.add(new GraphEdge("Town Hall", "Morioh Grand Hotel", 5));
             edges.add(new GraphEdge("Town Hall", "Jade Garden", 5));
