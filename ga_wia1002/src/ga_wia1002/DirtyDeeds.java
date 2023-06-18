@@ -12,7 +12,7 @@ public class DirtyDeeds {
     }
 
     public void runDirtyDeeds() {
-        map.initializeMap();
+        map.initializeDefaultMap();
         List<String> currentPath = new ArrayList<>();
         System.out.print("Source: ");
         String source = sc.nextLine();

@@ -1,18 +1,7 @@
-| 1  | Tomoko Higashikata     | 37  | Female |Sampling Matured Cheese Platter                |
-| 2  | Jean Pierre Polnareff  | 24  | Male   |White Asparagus                                |
-| 3  | Muhammad Avdol         | 29  | Male   |Truffle-flavoured Poultry Supreme              |
-| 4  | DIO                    | 121 | Male   |Sampling Matured Cheese Platter                |
-| 5  | Ungalo                 | 24  | Male   |Sampling Matured Cheese Platter                |
-| 6  | Vanilla Ice            | -1  | Male   |Spring Organic Omelette                        |
-| 7  | Rohan Kishibe          | 20  | Male   |Truffle-flavoured Poultry Supreme              |
-| 8  | Shigekiyo Yangu        | 14  | Male   |Sampling Matured Cheese Platter                |
-| 9  | Tonio Trussardi        | 29  | Male   |Sampling Matured Cheese Platter                |
-| 10 | Toshikazu Hazamada     | 18  | Male   |White Asparagus                                |
-| 11 | Yukako Yamagishi       | -1  | Female |Spring Organic Omelette                        |
-| 12 | Akira Otoishi          | 19  | Male   |Sampling Matured Cheese Platter                |
-| 13 | Ken Oyanagi            | 11  | Male   |Spring Organic Omelette                        |
-| 14 | Yoshikage Kira         | 33  | Male   |Sampling Matured Cheese Platter                |
-| 15 | Bruno Bucciarati       | 20  | Male   |Spring Organic Omelette                        |
-| 16 | Cioccolata             | 34  | Male   |Spring Organic Omelette                        |
-| 17 | Sale                   | -1  | Male   |Spring Organic Omelette                        |
-| 18 | Foo Fighters           | 22  | Female |Spring Organic Omelette                        |
+| 1  | Enya the Hag           | -1  | Female |White Asparagus                                |
+| 2  | Vanilla Ice            | -1  | Male   |Sampling Matured Cheese Platter                |
+| 3  | Mikitaka Hazekura      | 216 | Male   |Sampling Matured Cheese Platter                |
+| 4  | Reimi Sugimoto         | 16  | Female |Spring Organic Omelette                        |
+| 5  | Illuso                 | -1  | Male   |Truffle-flavoured Poultry Supreme              |
+| 6  | Pesci                  | -1  | Male   |Spring Organic Omelette                        |
+| 7  | Foo Fighters           | 22  | Female |Truffle-flavoured Poultry Supreme              |

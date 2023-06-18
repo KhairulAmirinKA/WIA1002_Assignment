@@ -1100,6 +1100,11 @@ public abstract class JOJOLandsRestaurant {
                     //[2D]Total and Average Sales
                     viewTotalSales_Milagro(restaurant_name, restaurantPrice);
                     break;      
+                    
+                default:
+                    System.out.println("Wrong input. Try again");
+                    break;
+                            
                 }//dwitch
             
         
