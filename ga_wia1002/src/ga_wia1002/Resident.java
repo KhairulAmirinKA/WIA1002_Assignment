@@ -46,6 +46,11 @@ public class Resident {
         this.name = name;
         this.orderHistory = new ArrayList<>();
     }
+    public Resident(String name, String residentialArea) {
+        this.name = name;
+        this.residentialArea = residentialArea;
+    }
+    
 
     public String getParents() {
         return parents;

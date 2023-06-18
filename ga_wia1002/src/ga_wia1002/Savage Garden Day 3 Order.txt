@@ -1,7 +1,0 @@
-| 1  | Erina Pendleton        | 70  | Female |Kakyoin’s Cherry                               |
-| 2  | George Joestar II      | 32  | Male   |DIO’s Bread                                    |
-| 3  | Jonathan Joestar       | 20  | Male   |DIO’s Bread                                    |
-| 4  | Aya Tsuji              | -1  | Female |DIO’s Bread                                    |
-| 5  | Rohan Kishibe          | 20  | Male   |Abbacchio’s Tea                                |
-| 6  | Trish Una              | 15  | Female |Giorno’s Donuts                                |
-| 7  | Formaggio              | -1  | Male   |DIO’s Bread                                    |

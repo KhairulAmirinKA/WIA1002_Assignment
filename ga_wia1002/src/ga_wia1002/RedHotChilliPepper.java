@@ -1,9 +1,9 @@
 package ga_wia1002;
-
 import java.util.*;
 
 public class RedHotChilliPepper{
-
+    private String mapType;
+            
     public static List<GraphEdge> Kruskal(List<GraphEdge> edges) { // implement kruskal's logic
 
         // Sort edges by weight
@@ -70,8 +70,90 @@ public class RedHotChilliPepper{
         parent.set(x, y); // set parent of vertex x to be vertex y
     }
 
-    public void display() {
-            System.out.println("========================================================================================================");
+    public void display(String mapType) {
+        System.out.println("==========================================================================================================================");
+        if (mapType.equals("Alternate")) {
+            List<GraphEdge> edges = new ArrayList<>();
+            edges.add(new GraphEdge("Town Hall", "Morioh Grand Hotel", 2));
+            edges.add(new GraphEdge("Town Hall", "Green Dolphin Street Prison", 3));
+            edges.add(new GraphEdge("Town Hall", "Libeccio", 7));
+
+            edges.add(new GraphEdge("Morioh Grand Hotel", "Green Dolphin Street Prison", 2));
+            edges.add(new GraphEdge("Morioh Grand Hotel", "San Giorgio Maggiore", 3));
+            edges.add(new GraphEdge("Morioh Grand Hotel", "Joestar Mansion", 4));
+
+            edges.add(new GraphEdge("Jade Garden", "Angelo Rock", 1));
+            edges.add(new GraphEdge("Jade Garden", "Polnareff Land", 2));
+
+            edges.add(new GraphEdge("Cafe Deux Magots", "Libeccio", 4));
+            edges.add(new GraphEdge("Cafe Deux Magots", "DIO's Mansion", 1));
+            edges.add(new GraphEdge("Cafe Deux Magots", "Vineyard", 4));
+
+            edges.add(new GraphEdge("Trattoria Trussardi", "Joestar Mansion", 5));
+            edges.add(new GraphEdge("Trattoria Trussardi", "Green Dolphin Street Prison", 4));
+            edges.add(new GraphEdge("Trattoria Trussardi", "Libeccio", 1));
+
+            edges.add(new GraphEdge("Angelo Rock", "Libeccio", 6));
+            edges.add(new GraphEdge("Angelo Rock", "Polnareff Land", 2));
+
+            edges.add(new GraphEdge("Savage Garden", "San Giorgio Maggiore", 6));
+            edges.add(new GraphEdge("Savage Garden", "Vineyard", 4));
+
+            edges.add(new GraphEdge("DIO's Mansion", "Libeccio", 2));
+            edges.add(new GraphEdge("DIO's Mansion", "Polnareff Land", 2));
+
+            System.out.println("Necessary Power Cables to be Upgraded: ");
+
+            System.out.println("Necessary Power Cables to be Upgraded: ");
+            List<GraphEdge> kruskal = Kruskal(edges);
+
+            int totalLength = 0;
+
+            for (int i = 0; i < kruskal.size(); i++) {
+                GraphEdge edge = kruskal.get(i);
+                totalLength += edge.weight;
+                System.out.println((i + 1) + ". " + edge.vertex1 + " -- " + edge.vertex2 + "(" + edge.weight + "km)");
+            }
+            System.out.println();
+            System.out.println("Total length: " + totalLength + "km");
+        } else if (mapType.equals("Parallel")) {
+            List<GraphEdge> edges = new ArrayList<>();
+            edges.add(new GraphEdge("Town Hall", "Vineyard", 3));
+            edges.add(new GraphEdge("Town Hall", "Libeccio", 2));
+            edges.add(new GraphEdge("Town Hall", "Cafe Deux Magots", 4));
+            edges.add(new GraphEdge("Town Hall", "Trattoria Trussardi", 6));
+            edges.add(new GraphEdge("Morioh Grand Hotel", "Cafe Deux Magots", 6));
+            edges.add(new GraphEdge("Morioh Grand Hotel", "Joestar Mansion", 4));
+            edges.add(new GraphEdge("Jade Garden", "Cafe Deux Magots", 3));
+            edges.add(new GraphEdge("Jade Garden", "Savage Garden", 4));
+            edges.add(new GraphEdge("Jade Garden", "Joestar Mansion", 3));
+            edges.add(new GraphEdge("Cafe Deux Magots", "Polnareff Land", 2));
+            edges.add(new GraphEdge("Cafe Deux Magots", "Savage Garden", 5));
+            edges.add(new GraphEdge("Trattoria Trussardi", "DIO's Mansion", 4));
+            edges.add(new GraphEdge("Trattoria Trussardi", "Angelo Rock", 3));
+            edges.add(new GraphEdge("Trattoria Trussardi", "Joestar Mansion", 5));
+            edges.add(new GraphEdge("Green Dolphin Street Prison", "DIO's Mansion", 6));
+            edges.add(new GraphEdge("Green Dolphin Street Prison", "Angelo Rock", 8));
+            edges.add(new GraphEdge("Libeccio", "Vineyard", 3));
+            edges.add(new GraphEdge("Angelo Rock", "DIO's Mansion", 1));
+            edges.add(new GraphEdge("Savage Garden", "San Giorgio Maggiore", 6));
+            edges.add(new GraphEdge("Joestar Mansion", "San Giorgio Maggiore", 5));
+
+            System.out.println("Necessary Power Cables to be Upgraded: ");
+            List<GraphEdge> kruskal = Kruskal(edges);
+
+            int totalLength = 0;
+
+            for (int i = 0; i < kruskal.size(); i++) {
+                GraphEdge edge = kruskal.get(i);
+                totalLength += edge.weight;
+                System.out.println((i + 1) + ". " + edge.vertex1 + " -- " + edge.vertex2 + "(" + edge.weight + "km)");
+            }
+            System.out.println();
+            System.out.println("Total length: " + totalLength + "km");
+        }
+
+        else {
             List<GraphEdge> edges = new ArrayList<>();
             edges.add(new GraphEdge("Town Hall", "Morioh Grand Hotel", 5));
             edges.add(new GraphEdge("Town Hall", "Jade Garden", 5));
@@ -110,14 +192,10 @@ public class RedHotChilliPepper{
             }
             System.out.println();
             System.out.println("Total length: " + totalLength + "km");
-            System.out.println("========================================================================================================");
+            System.out.println("==========================================================================================================================");
         }
-    
-    public static void main(String[] args) {
-        RedHotChilliPepper hotChilli = new RedHotChilliPepper();
-        hotChilli.display();
     }
-    }
+}
 
 class GraphEdge implements Comparable<GraphEdge> {
     String vertex1;

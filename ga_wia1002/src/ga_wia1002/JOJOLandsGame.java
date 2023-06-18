@@ -13,7 +13,8 @@ public class JOJOLandsGame{
     RestaurantInfo resInfo ;
     private int selectedMapType;
     private SaveLoad saveLoad;
-    private Container gameData;
+    private MapClass gameData;
+    private String mapType;
 
     
     public JOJOLandsGame() {
@@ -26,134 +27,40 @@ public class JOJOLandsGame{
         forwardHistory = new Stack<>(); // Initialize the forward history stack    
         diffDay=true;
         saveLoad = new SaveLoad();
+        this.mapType=" ";
     }
         public class JOJOLandsInterface {
-            private static JOJOLandsMap jojoMaps;
+            private JOJOLandsMap jojoMaps;
 
             public JOJOLandsInterface(JOJOLandsMap jojoMaps) {
             this.jojoMaps = jojoMaps;
     }
         }        
-    public void startGame() {
-        displayMainMenu();
-        int menuChoice = getMenuChoice();
-
-        switch (menuChoice) {
-            case 1:
-               loadMap();
-                // Start the game
-                break;
-            case 2:
-                loadGame();
-                // Continue the game
-                break;
-            case 3:
-                exitGame();
-                break;
-            default:
-                System.out.println("Invalid choice. Please try again.");
-                startGame();
-                break;
-        }
-    }
-
-    private void displayMainMenu() {
-        System.out.println("Welcome to the fantastical realm of JOJOLands.");
-        System.out.println("[1] Start Game");
-        System.out.println("[2] Load Game");
-        System.out.println("[3] Exit");
-    }
-
-    private void displayMapSelectionMenu() {
-        System.out.println("Select a map:");
-        System.out.println("[1] Default Map");
-        System.out.println("[2] Parallel Map");
-        System.out.println("[3] Alternate Map");
-    }
-
-    private int getMenuChoice() {
-        int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
-        return choice;
-    }
-
-    private String getSaveFilePath() {
-        System.out.println("Enter the path of your save file:");
-        String filePath = scanner.nextLine();
-        return filePath;
-    }
-
-public void loadMap() {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Select a map type:");
-    System.out.println("1. Default Map");
-    System.out.println("2. Parallel Map");
-    System.out.println("3. Alternate Map");
-    int choice = scanner.nextInt();
-    scanner.nextLine(); // Consume the newline character
-
-    String mapType;
-    if (choice == 1) {
-        mapType = "Default";
-        map.initializeDefaultMap();
-    } else if (choice == 2) {
-        mapType = "Parallel";
-        map.initializeParallelMap();
-    } else if (choice == 3) {
-        mapType = "Alternate";
-        map.initializedAlternateMap();
-    } else {
-        System.out.println("Invalid choice. Using default map.");
-        mapType = "Default";
-        map.initializeDefaultMap();
-    }
-    currentLocation = map.getLocation("Town Hall"); //
-    System.out.println("Map loaded successfully!");
-}
-
-
-
-    public void loadGame() {
-        gameData = saveLoad.load();
-        if (gameData != null) {
-            // Process the loaded game data
-            System.out.println("Game data loaded successfully!");
-        } else {
-            System.out.println("Failed to load game data.");
-        }
-    }
-    public void exitGame() {
-    System.out.println("Exiting JOJOLands...");
-    // Perform any necessary cleanup or saving operations here
-
-    System.exit(0); // Exit the program with a status of 0 (successful termination)
-}
-
-
-    public static void main(String[] args) {
-    JOJOLandsGame game = new JOJOLandsGame();
-    game.startGame();
-    game.start();
-}
-
-
 
 
     public void start() {
-        //start
-//        System.out.println("Welcome, the fantastical realm of JOJOLands.");
-//        System.out.println("[1] Start Game");
-//        System.out.println("[2] Load Game");
-//        System.out.println("[3] Exit");
-//       
-//        System.out.println("\n Select: ");
-//        String select = scanner.nextLine();
-//        System.out.println("========================================================================================================");
-//        System.out.println("Select a map:");
-//        System.out.println("[1] Default Map");
-//        System.out.println("[2] Parallel Map");
-//        System.out.println("[3] Alternate Map");
-     
+        displayMainMenu();
+        System.out.print("Select: ");
+        String menuChoice =scanner.nextLine(); // Consume the newline character
+
+        switch (menuChoice) {
+            case "1":
+               loadMap();
+                // Start the game
+                break;
+            case "2":
+                loadGame();
+                // Continue the game
+                break;
+            case "3":
+                System.out.println("Exiting JOJOLands...");
+                System.exit(0); // Exit the program with a status of 0 (successful termination)
+                break;
+            default:
+                System.out.println("Invalid choice. Please try again.");
+                start();
+                break;
+        }
         currentLocation = map.getLocation("Town Hall"); //
         resInfo = new RestaurantInfo(currentDay);
         System.out.println("It's Day " + currentDay + " (" + day + ") of our journey in JOJOLands!");
@@ -194,8 +101,66 @@ public void loadMap() {
                 }
 
                 System.out.println("CurrentDay: "+currentDay);
+                System.out.println("Current Map: "+mapType);
         }
         
+    }
+    
+    private void displayMainMenu() {
+        System.out.println("Welcome to the fantastical realm of JOJOLands.");
+        System.out.println("[1] Start Game");
+        System.out.println("[2] Load Game");
+        System.out.println("[3] Exit");
+    }
+
+    private void displayMapSelectionMenu() {
+        System.out.println("Select a map:");
+        System.out.println("[1] Default Map");
+        System.out.println("[2] Parallel Map");
+        System.out.println("[3] Alternate Map");
+    }
+
+    private String getSaveFilePath() {
+        System.out.println("Enter the path of your save file:");
+        String filePath = scanner.nextLine();
+        return filePath;
+    }
+
+public void loadMap() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Select a map type:");
+    System.out.println("1. Default Map");
+    System.out.println("2. Parallel Map");
+    System.out.println("3. Alternate Map");
+    int choice = scanner.nextInt();
+    scanner.nextLine(); // Consume the newline character
+
+    if (choice == 1) {
+        mapType = "Default";
+        map.initializeDefaultMap();
+    } else if (choice == 2) {
+        mapType = "Parallel";
+        map.initializeParallelMap();
+    } else if (choice == 3) {
+        mapType = "Alternate";
+        map.initializedAlternateMap();
+    } else {
+        System.out.println("Invalid choice. Using default map.");
+        mapType = "Default";
+        map.initializeDefaultMap();
+    }
+    currentLocation = map.getLocation("Town Hall"); //
+    System.out.println("Map loaded successfully!");
+}
+
+    public void loadGame() {
+        gameData = saveLoad.load();
+        if (gameData != null) {
+            // Process the loaded game data
+            System.out.println("Game data loaded successfully!");
+        } else {
+            System.out.println("Failed to load game data.");
+        }
     }
     
     private void moveOption(String location) {
@@ -354,7 +319,10 @@ public void loadMap() {
         standManager.loadStands("stands.csv");
         ProjectJOJOLandSystem jojoSystem = new ProjectJOJOLandSystem();
         DirtyDeeds dd = new DirtyDeeds();   //extraFeaturesQ4
-        DiavoloJourney Q6extra = new DiavoloJourney();  //extrafeaturesQ6
+        StaytheHellAwayfromMe Q6extra = new StaytheHellAwayfromMe();  //extrafeaturesQ6
+        RedHotChilliPepper hotChilli = new RedHotChilliPepper();
+        TheHand hand = new TheHand();
+        AnotherOneBitesTheDust bitedust = new AnotherOneBitesTheDust();
         
                 while (input.equals("2")) {
                 // View Resident Information
@@ -399,9 +367,11 @@ public void loadMap() {
                     if(currentLocation.getName().equals("Angelo Rock")){
                         if(input.equals("5")){
                             //[5]Red Hot Chili Pepper
+                            hotChilli.display(mapType);
                         }
                         else if(input.equals("6")){
                             //[6] Another One Bites the Dust
+                            bitedust.runOneBites();
                         }
                         else if(input.equals("7")){
                             //[7] Forward
@@ -411,7 +381,7 @@ public void loadMap() {
                     if(currentLocation.getName().equals("Green Dolphin Street Prison")){
                         if(input.equals("5")){
                          //[5]Dirty Deeds Done Dirt Cheap
-                         dd.runDirtyDeeds();
+                         dd.runDirtyDeeds(mapType);
                         }
                         else if(input.equals("6")){
                           //[6] Forward
@@ -421,6 +391,7 @@ public void loadMap() {
                     if(currentLocation.getName().equals("Morioh Grand Hotel")){
                         if(input.equals("5")){
                             //[5] The Hand
+                            hand.display(mapType);
                         }
                         else if(input.equals("6")){
                             //[6] Forward
@@ -450,20 +421,23 @@ public void loadMap() {
                     if(currentLocation.getName().equals("Green Dolphin Street Prison")){
                         if(input.equals("5")){
                          //[5]Dirty Deeds Done Dirt Cheap
-                         dd.runDirtyDeeds();
+                         dd.runDirtyDeeds(mapType);
                         }
                     }                    
                     if(currentLocation.getName().equals("Angelo Rock")){
                         if(input.equals("5")){
                             //[5]Red Hot Chili Pepper
+                            hotChilli.display(mapType);
                         }
                         else if(input.equals("6")){
                             //[6] Another One Bites the Dust
+                            bitedust.runOneBites();
                         }
                     }
                     if(currentLocation.getName().equals("Morioh Grand Hotel")){
                         if(input.equals("5")){
                             //[5] The Hand
+                            hand.display(mapType);
                         }
                     }
                     if(currentLocation.getName().equals("San Giorgio Maggiore")){
@@ -663,9 +637,16 @@ public void loadMap() {
             System.out.println("No forward history available.");
         }
     }
-
+    
+    public String getMapType() {
+        return mapType;
+    }
+    
+    public static void main(String[] args) {
+    JOJOLandsGame game = new JOJOLandsGame();
+    game.start();
+}
         
     }
-
 
 

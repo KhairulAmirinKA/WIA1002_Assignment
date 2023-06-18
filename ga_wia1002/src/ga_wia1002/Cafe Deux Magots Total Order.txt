@@ -1,7 +1,0 @@
-| 1  | Enya the Hag           | -1  | Female |White Asparagus                                |
-| 2  | Vanilla Ice            | -1  | Male   |Sampling Matured Cheese Platter                |
-| 3  | Mikitaka Hazekura      | 216 | Male   |Sampling Matured Cheese Platter                |
-| 4  | Reimi Sugimoto         | 16  | Female |Spring Organic Omelette                        |
-| 5  | Illuso                 | -1  | Male   |Truffle-flavoured Poultry Supreme              |
-| 6  | Pesci                  | -1  | Male   |Spring Organic Omelette                        |
-| 7  | Foo Fighters           | 22  | Female |Truffle-flavoured Poultry Supreme              |

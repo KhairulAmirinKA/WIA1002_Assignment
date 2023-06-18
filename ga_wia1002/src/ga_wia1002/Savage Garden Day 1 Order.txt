@@ -1,17 +1,13 @@
-| 1  | Holy Kujo              | 45  | Female |Abbacchio’s Tea                                |
-| 2  | Jonathan Joestar       | 20  | Male   |DIO’s Bread                                    |
-| 3  | Iggy                   | -1  | Male   |Giorno’s Donuts                                |
-| 4  | Noriaki Kakyoin        | 17  | Male   |Abbacchio’s Tea                                |
-| 5  | Donatello Versus       | 25  | Male   |DIO’s Bread                                    |
-| 6  | Enya the Hag           | -1  | Female |Kakyoin’s Porridge                             |
-| 7  | Aya Tsuji              | -1  | Female |Joseph’s Tequila                               |
-| 8  | Hayato Kawajiri        | 11  | Male   |Kakyoin’s Porridge                             |
-| 9  | Tamami Kobayashi       | 20  | Male   |Kakyoin’s Cherry                               |
-| 10 | Guido Mista            | 18  | Male   |Abbacchio’s Tea                                |
-| 11 | Pannacotta Fugo        | 16  | Male   |DIO’s Bread                                    |
-| 12 | Ghiaccio               | -1  | Male   |Abbacchio’s Tea                                |
-| 13 | Prosciutto             | -1  | Male   |Kakyoin’s Porridge                             |
-| 14 | Risotto Nero           | 28  | Male   |DIO’s Bread                                    |
-| 15 | Squalo                 | -1  | Male   |Giorno’s Donuts                                |
-| 16 | Tizzano                | -1  | Male   |Kakyoin’s Cherry                               |
-| 17 | Ermes Costello         | 21  | Female |Kakyoin’s Cherry                               |
+| 1  | Jonathan Joestar       | 20  | Male   |Abbacchio’s Tea                                |
+| 2  | DIO                    | 121 | Male   |Giorno’s Donuts                                |
+| 3  | Donatello Versus       | 25  | Male   |Abbacchio’s Tea                                |
+| 4  | Tonio Trussardi        | 29  | Male   |Kakyoin’s Cherry                               |
+| 5  | Toshikazu Hazamada     | 18  | Male   |Kakyoin’s Porridge                             |
+| 6  | Akira Otoishi          | 19  | Male   |DIO’s Bread                                    |
+| 7  | Keicho Nijimura        | 18  | Male   |Joseph’s Tequila                               |
+| 8  | Carne                  | -1  | Male   |Abbacchio’s Tea                                |
+| 9  | Cioccolata             | 34  | Male   |Kakyoin’s Porridge                             |
+| 10 | Melone                 | -1  | Male   |Kakyoin’s Cherry                               |
+| 11 | Secco                  | -1  | Male   |Kakyoin’s Porridge                             |
+| 12 | Emporio Alnino         | 11  | Male   |Giorno’s Donuts                                |
+| 13 | Weather Report         | 39  | Male   |Giorno’s Donuts                                |

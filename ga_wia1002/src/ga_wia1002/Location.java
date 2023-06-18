@@ -1,3 +1,65 @@
+//package ga_wia1002;
+//
+//import java.util.*;
+//
+//class Location {
+//    String name;
+//    int distance;
+//
+//    public Location(String name, int distance) {
+//        this.name = name;
+//        this.distance = distance;
+//    }
+//}
+//
+//class Path implements Comparable<Path> {
+//    private List<String> locations;
+//    private int distance;
+//
+//    public Path(List<String> locations, int distance) {
+//        this.locations = locations;
+//        this.distance = distance;
+//    }
+//
+//    public List<String> getLocations() {
+//        return locations;
+//    }
+//
+//    public int getDistance() {
+//        return distance;
+//    }
+//
+//    @Override
+//    public int compareTo(Path other) {
+//        return Integer.compare(distance, other.distance);
+//    }
+//}
+//
+//
+////Q7
+////Q7
+////package ga_wia1002;
+////import java.util.ArrayList;
+////import java.util.List;
+////
+/////**
+//// *
+//// * @author Abdul Hadi
+//// */
+////public class Location {
+////     String name;
+////     public List<Location> connections;
+////    public List<Integer> cablesLengths;
+////    public Location(String name) {
+////        this.name = name;
+////        this.connections = new ArrayList<>();
+////        this.cablesLengths = new ArrayList<>();
+////    }
+////    public void addConnection(Location location, int length) {
+////        connections.add(location);
+////        cablesLengths.add(length);
+////    }
+////}
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates

@@ -1,8 +1,0 @@
-| 1  | Holy Kujo              | 45  | Female |Truffle-flavoured Poultry Supreme              |
-| 2  | Okuyasu Nijimura       | 15  | Male   |Spring Lobster Salad                           |
-| 3  | Tonio Trussardi        | 29  | Male   |Spring Organic Omelette                        |
-| 4  | Toshikazu Hazamada     | 18  | Male   |Truffle-flavoured Poultry Supreme              |
-| 5  | Akira Otoishi          | 19  | Male   |Spring Lobster Salad                           |
-| 6  | Guido Mista            | 18  | Male   |Spring Organic Omelette                        |
-| 7  | Sale                   | -1  | Male   |Sampling Matured Cheese Platter                |
-| 8  | Tizzano                | -1  | Male   |Sampling Matured Cheese Platter                |

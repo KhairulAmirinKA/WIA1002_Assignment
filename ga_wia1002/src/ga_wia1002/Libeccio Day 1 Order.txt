@@ -1,10 +1,15 @@
-| 1  | George Joestar II      | 32  | Male   |Ghiaccio                                       |
+| 1  | Holy Kujo              | 45  | Female |Ghiaccio                                       |
 | 2  | Josuke Higashikata     | 16  | Male   |Zucchero and Sale                              |
 | 3  | Lisa Lisa              | 50  | Female |Risotto                                        |
-| 4  | Enrico Pucci           | 39  | Male   |Melone                                         |
-| 5  | Rikiel                 | 24  | Male   |Risotto                                        |
-| 6  | Okuyasu Nijimura       | 15  | Male   |Formaggio                                      |
-| 7  | Terunosuke Miyamoto    | -1  | Male   |Risotto                                        |
-| 8  | Trish Una              | 15  | Female |Prosciutto and Pesci                           |
-| 9  | Pesci                  | -1  | Male   |Risotto                                        |
-| 10 | Emporio Alnino         | 11  | Male   |Risotto                                        |
+| 4  | Iggy                   | -1  | Male   |Risotto                                        |
+| 5  | Noriaki Kakyoin        | 17  | Male   |Risotto                                        |
+| 6  | Vanilla Ice            | -1  | Male   |Ghiaccio                                       |
+| 7  | Masazo Kinoto          | 29  | Male   |Formaggio                                      |
+| 8  | Toyohiro Kanedaichi    | -1  | Male   |Zucchero and Sale                              |
+| 9  | Guido Mista            | 18  | Male   |Risotto                                        |
+| 10 | Trish Una              | 15  | Female |Prosciutto and Pesci                           |
+| 11 | Diavolo                | 33  | Male   |Zucchero and Sale                              |
+| 12 | Formaggio              | -1  | Male   |Ghiaccio                                       |
+| 13 | Ghiaccio               | -1  | Male   |Melone                                         |
+| 14 | Prosciutto             | -1  | Male   |Prosciutto and Pesci                           |
+| 15 | Ermes Costello         | 21  | Female |Formaggio                                      |

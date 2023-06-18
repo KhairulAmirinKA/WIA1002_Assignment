@@ -11,9 +11,7 @@ public class LibeccioRestaurant extends JOJOLandsRestaurant {
 
     @Override
     public void processOrders() {
-        orderProcessingList.addAll(LibeccioRule.processOrder(waitingList, currentDay));
-    }
-}
+        orderProcessingList.addAll(LibeccioRule.processOrder(waitingList, currentDay));}}
 class LibeccioRule{
     public static List<Resident> processOrder(List<Resident> waitingList, int currentDay) {
          List<Resident> waitingListCopy = new ArrayList<>(waitingList);
@@ -39,8 +37,7 @@ class LibeccioRule{
 
                  if (index > waitingListCopy.size()) {
                      // Reached the end of the waiting list, start over from the first person
-                     index = 1; 
-                 }
+                     index = 1; }
              }
          }
          Collections.reverse(processedList);    //make sure it back to First in last out order

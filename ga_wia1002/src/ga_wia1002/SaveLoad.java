@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ga_wia1002;
 
 /**
@@ -16,12 +12,12 @@ import java.util.Scanner;
 
 public class SaveLoad {
 
-    private Container content;
-    private Container outputContent;
+    private MapClass content;
+    private MapClass outputContent;
 
     public SaveLoad(){
-        content = new Container();
-        outputContent = new Container();
+        content = new MapClass();
+        outputContent = new MapClass();
     }
 
     public void addContentToSave(Object data){
@@ -44,14 +40,14 @@ public class SaveLoad {
         }
     }
 
-    public Container load(){
+    public MapClass load(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the file path to load the game:");
         String filePath = scanner.nextLine();
         try {
             FileInputStream file = new FileInputStream(filePath + ".bin");
             ObjectInputStream loading = new ObjectInputStream(file);
-            outputContent = (Container) loading.readObject();
+            outputContent = (MapClass) loading.readObject();
             file.close();
             loading.close();
             System.out.println("Game loaded successfully.");
@@ -63,4 +59,3 @@ public class SaveLoad {
         return null;
     }
 }
-

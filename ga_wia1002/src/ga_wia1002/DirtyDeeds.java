@@ -2,17 +2,27 @@ package ga_wia1002;
 
 import java.util.*;
 
-public class DirtyDeeds {
+public class DirtyDeeds{
     private static JOJOLandsMap map;
+    private String mapType;
     private Scanner sc = new Scanner(System.in);
     List<List<String>> paths = new ArrayList<>();
     
     public DirtyDeeds() {
         map = new JOJOLandsMap();
     }
-
-    public void runDirtyDeeds() {
-        map.initializeDefaultMap();
+        
+    
+    public void runDirtyDeeds(String mapType) {
+        if(mapType.equals("Default")){       
+            map.initializeDefaultMap();
+        }
+        else if(mapType.equals("Parallel")){
+            map.initializeParallelMap();
+        } 
+        else{
+            map.initializedAlternateMap();
+        }
         List<String> currentPath = new ArrayList<>();
         System.out.print("Source: ");
         String source = sc.nextLine();
@@ -84,6 +94,8 @@ public class DirtyDeeds {
 
     //tester
 //    public static void main(String[] args) {
+////        JOJOLandsGame game = new JOJOLandsGame();
+////        String currentMap = "Default";
 //        DirtyDeeds dd = new DirtyDeeds();
 //        dd.runDirtyDeeds();
 //    }    

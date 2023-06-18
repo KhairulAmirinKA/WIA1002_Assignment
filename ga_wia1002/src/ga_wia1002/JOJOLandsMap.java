@@ -7,10 +7,13 @@ public class JOJOLandsMap {     //JojolandLocation can receive locationName and 
 
     
     public JOJOLandsMap() {
-        locations = new HashMap<>();    //intialise locations
-        
+        locations = new HashMap<>();    //intialise locations        
         previousLocation = null; // Initialize previousLocation as null
+        initializeDefaultMap();   
+        initializeParallelMap();
+        initializedAlternateMap(); 
     }
+    
     public JojolandLocation getPreviousLocation() {
            return previousLocation;
        }
@@ -111,6 +114,8 @@ public void initializeDefaultMap(){
         addPath("Savage Garden", "Cafe Deux Magots", 5);
         addPath("Polnareff Land", "Cafe Deux Magots", 2);
         addPath("Cafe Deux Magots", "Jade Garden", 3);
+        addPath("San Giorgio Maggiore", "Joestar Mansion",5);
+        addPath("Joestar Mansion","Jade Garden",3);
     }
   public void initializedAlternateMap () {
     addLocation("Town Hall");
@@ -130,40 +135,26 @@ public void initializeDefaultMap(){
     addPath("Town Hall", "Morioh Grand Hotel", 2);
     addPath("Town Hall", "Green Dolphin Street Prison", 3);
     addPath("Town Hall", "Libeccio", 7);
-
     addPath("Morioh Grand Hotel", "San Giorgio Maggiore", 3);
     addPath("Morioh Grand Hotel", "Joestar Mansion", 4);
     addPath("Morioh Grand Hotel", "Green Dolphin Street Prison", 2);
-
     addPath("Trattoria Trussardi", "Green Dolphin Street Prison", 4);
     addPath("Trattoria Trussardi", "Joestar Mansion", 5);
     addPath("Trattoria Trussardi", "Libeccio", 1);
-
-    addPath("Green Dolphin Street Prison", "Angelo Rock", 6);
-
-    addPath("Angelo Rock", "Libeccio", 6);
+    addPath("Libeccio", "Angelo Rock", 6);
     addPath("Angelo Rock", "Polnareff Land", 2);
     addPath("Angelo Rock", "Jade Garden", 1);
-
     addPath("DIO's Mansion", "Cafe Deux Magots", 1);
     addPath("DIO's Mansion", "Polnareff Land", 2);
     addPath("DIO's Mansion", "Libeccio", 2);
-
     addPath("Vineyard", "Savage Garden", 4);
     addPath("Vineyard", "Cafe Deux Magots", 4);
-
     addPath("Savage Garden", "San Giorgio Maggiore", 6);
-
     addPath("Polnareff Land", "Jade Garden", 2);
-
-    addPath("Cafe Deux Magots", "Polnareff Land", 4);
-
-    addPath("Jade Garden", "Trattoria Trussardi", 3);
-
-    addPath("San Giorgio Maggiore", "Jade Garden", 2);
-
-    addPath("Libeccio", "DIO's Mansion", 5);
-    addPath("Libeccio", "Trattoria Trussardi", 1);
+    addPath("Cafe Deux Magots","Libeccio",4);
+    addPath("Cafe Deux Magots","Vineyard",4);
+    addPath("Vineyard","Savage Garden",4);
+    addPath("Savage Garden","San Giorgio Maggiore",6);
     }  
   
 

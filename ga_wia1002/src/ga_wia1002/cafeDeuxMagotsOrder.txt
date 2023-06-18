@@ -1,8 +1,0 @@
-| 1  | Enrico Pucci           | 39  | Male   |White Asparagus                                |
-| 2  | Hayato Kawajiri        | 11  | Male   |Spring Lobster Salad                           |
-| 3  | Mario Zucchero         | 24  | Male   |Spring Lobster Salad                           |
-| 4  | Toshikazu Hazamada     | 18  | Male   |Sampling Matured Cheese Platter                |
-| 5  | Foo Fighters           | 22  | Female |Truffle-flavoured Poultry Supreme              |
-| 6  | Jonathan Joestar       | 20  | Male   |Spring Lobster Salad                           |
-| 7  | Carne                  | -1  | Male   |Truffle-flavoured Poultry Supreme              |
-| 8  | Prosciutto             | -1  | Male   |Truffle-flavoured Poultry Supreme              |

@@ -20,12 +20,9 @@ class EdgeTheHand implements Comparable<EdgeTheHand> {
     }
 }
 
-public class TheHand extends JOJOLandsGame{
-    private JOJOLandsGame game;
-    
-    public TheHand(){
-        game = new JOJOLandsGame();
-    }
+public class TheHand{
+    private String mapType;
+
     public static List<EdgeTheHand> assignGraph(String graphStr) {
         List<EdgeTheHand> edges = new ArrayList<>();
         String[] edgeList = graphStr.split(",");
@@ -90,9 +87,9 @@ private static List<EdgeTheHand> getEdgesConnectedToVertex(List<EdgeTheHand> edg
         return vertices.size();
     }
 
-    public void display() {
-        
-        if(game.getMapType().equals("Default")){
+    public void display(String mapType) {
+       System.out.println("=========================================================================================================================="); 
+        if(mapType.equals("Default")){
             
         String graphStr = "Town Hall-Morioh Grand Hotel:5,Town Hall-Jade Garden:5,Town Hall-Cafe Deux Magots:4,"
                 + "Morioh Grand Hotel-Trattoria Trussardi:6,Morioh Grand Hotel-Jade Garden:3,"
@@ -118,7 +115,7 @@ int count = 1;
 
         System.out.println("Total Length: " + totalLength +"km");
     }
-        else if(game.getMapType().equals("Parallel")){
+        else if(mapType.equals("Parallel")){
             
             String graphStr = "Town Hall-Vineyard:3,Town Hall-Libeccio:2,Town Hall-Cafe Deux Magots:4,Town Hall-Trattoria Trussardi:6,"
                               +"Morioh Grand Hotel-Cafe Deux Magots:6,Morioh Grand Hotel-Joestar Mansion:4,"
@@ -169,6 +166,6 @@ int count = 1;
 
         System.out.println("Total Length: " + totalLength +"km");
         }
-        System.out.println("================================================================================");
+        System.out.println("==========================================================================================================================");
    }
  }

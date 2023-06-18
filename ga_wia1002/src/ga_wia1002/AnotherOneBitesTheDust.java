@@ -3,25 +3,23 @@ import java.util.*;
 
 public class AnotherOneBitesTheDust {
     
-    public AnotherOneBitesTheDust() {
+    public void runOneBites(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Yoshikage Kira’s path: ");
         String paths = sc.nextLine();
 
         String longestPath = findLongestRepeatedPath(paths);
-        System.out.println("======================================================================");
+        System.out.println("==========================================================================================================================");
 
         if (longestPath.length() > 0) {
             System.out.println("Bites the Dust is most likely to be activated when Kira passed through " + longestPath);
         } else {
             System.out.println("Bites the Dust is not activated.");
         }
-        
-        System.out.println("======================================================================");
-        
+        System.out.println("==========================================================================================================================");
     }
 
-    private static String findLongestRepeatedPath(String paths) {
+    public String findLongestRepeatedPath(String paths) {
         String[] pathArray = paths.split(" -> ");
         int n = pathArray.length;
         Map<String, Integer> pathCounts = new HashMap<>();
@@ -39,11 +37,11 @@ public class AnotherOneBitesTheDust {
         }
 
         // Remove non-repeated path and remoove path with repeated location
-        Iterator<Map.Entry<String, Integer>> next = pathCounts.entrySet().iterator();
-        while (next.hasNext()) {
-            Map.Entry<String, Integer> entry = next.next();
+        Iterator<Map.Entry<String, Integer>> iterator = pathCounts.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<String, Integer> entry = iterator.next();
             if (entry.getValue()<=1||!hasNoRepeatedLocations(entry.getKey())) {
-                next.remove();
+                iterator.remove();
             }
         }
 
@@ -61,7 +59,7 @@ public class AnotherOneBitesTheDust {
         return longestPath;
     }
 
-    private static boolean hasNoRepeatedLocations(String path) {
+    private boolean hasNoRepeatedLocations(String path) {
         String[] locations = path.split(" -> ");
         Set<String> visited = new HashSet<>();
         for (String location : locations) {
@@ -71,13 +69,6 @@ public class AnotherOneBitesTheDust {
         }
         return true; // No repeated locations found
     }
-    
-    public static void main(String[] args) {
-
-        AnotherOneBitesTheDust bitedust = new AnotherOneBitesTheDust();
-        bitedust.findLongestRepeatedPath("");
-}
-
 }
 
 //Savage Garden -> Angelo Rock -> Savage Garden -> Angelo Rock -> Savage Garden

@@ -1,7 +1,12 @@
-| 1  | Enya the Hag           | -1  | Female |White Asparagus                                |
-| 2  | Vanilla Ice            | -1  | Male   |Sampling Matured Cheese Platter                |
-| 3  | Mikitaka Hazekura      | 216 | Male   |Sampling Matured Cheese Platter                |
-| 4  | Reimi Sugimoto         | 16  | Female |Spring Organic Omelette                        |
-| 5  | Illuso                 | -1  | Male   |Truffle-flavoured Poultry Supreme              |
-| 6  | Pesci                  | -1  | Male   |Spring Organic Omelette                        |
-| 7  | Foo Fighters           | 22  | Female |Truffle-flavoured Poultry Supreme              |
+| 1  | Erina Pendleton        | 70  | Female |Spring Organic Omelette                        |
+| 2  | Jean Pierre Polnareff  | 24  | Male   |Sampling Matured Cheese Platter                |
+| 3  | Enrico Pucci           | 39  | Male   |Spring Lobster Salad                           |
+| 4  | Aya Tsuji              | -1  | Female |Spring Lobster Salad                           |
+| 5  | Hayato Kawajiri        | 11  | Male   |Truffle-flavoured Poultry Supreme              |
+| 6  | Mikitaka Hazekura      | 216 | Male   |Sampling Matured Cheese Platter                |
+| 7  | Yukako Yamagishi       | -1  | Female |Sampling Matured Cheese Platter                |
+| 8  | Yuya Fungami           | -1  | Male   |Truffle-flavoured Poultry Supreme              |
+| 9  | Anjuro Katagiri        | 34  | Male   |Truffle-flavoured Poultry Supreme              |
+| 10 | Ken Oyanagi            | 11  | Male   |Truffle-flavoured Poultry Supreme              |
+| 11 | Terunosuke Miyamoto    | -1  | Male   |Spring Lobster Salad                           |
+| 12 | Narciso Anasui         | 25  | Male   |Sampling Matured Cheese Platter                |
