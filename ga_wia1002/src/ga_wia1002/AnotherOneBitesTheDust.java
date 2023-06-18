@@ -16,6 +16,9 @@ public class AnotherOneBitesTheDust {
         } else {
             System.out.println("Bites the Dust is not activated.");
         }
+        
+        System.out.println("======================================================================");
+        
     }
 
     private static String findLongestRepeatedPath(String paths) {
