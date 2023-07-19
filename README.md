@@ -1,5 +1,11 @@
 # WIA1002_Assignment
 
+Teammates:
+1.Khairul Amirin
+2. Xiao Wei
+3. Daniel
+4. Aini Khairina
+5. Abdul Hadi Jano7
 
 put our files in ga_wia1002/src/ga_wia1002
 
